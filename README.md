@@ -1,16 +1,20 @@
-# mee-personal-insight-site 国内访问可用性优化（Vercel + EdgeOne 镜像）
+# mee-personal-insight-site 访问可用性优化（Vercel + 无 ICP 备援）
 
 > 本仓库为静态站点，不改正文内容，仅调整发布/运维接入：
 > - 保留 **Vercel** 主链路，不动页面正文与资源原文。
-> - 增加 **EdgeOne Pages** 国内镜像作为优先备援（未就绪时可临时切到 COS/Cloudflare Pages）。
+> - 增加一个 **无 ICP 备援访问入口**，目标不是中国大陆节点加速，而是降低默认平台域名不可访问的风险。
 
 ## 一、当前目标与角色划分
 
 - 主链路（Production）：`Vercel`
   - 负责全球访问、主域名 `www` 对应域名（或官方 `*.vercel.app` 访问）。
-- 镜像链路（China）：`EdgeOne Pages`
-  - 负责大陆访问优先，独立部署同一份静态站点产物。
-  - 如短期 EdgeOne 不可用，可回退到 `COS + CDN` 或 `Cloudflare Pages`。
+- 备援链路（No-ICP fallback）：`Netlify` 优先
+  - 负责提供第二个海外静态站点访问入口，建议绑定自有域名。
+  - 不走中国大陆节点，因此不需要 ICP。
+  - 如果 Netlify 默认域名仍不可用，再试 `Cloudflare Pages`、`GitHub Pages(公开仓库/支持 Pages 的账号计划)` 或香港/新加坡对象存储。
+- EdgeOne Pages 状态
+  - `中国大陆可用区` 或 `全球可用区（含中国大陆）` 需要 ICP，不适合当前“快速平替”目标。
+  - `全球可用区（不含中国大陆）` 可作为备选，但如果默认链接不可访问，不再作为优先方案。
 
 ## 二、文件检查状态（站点正文保持不变）
 
@@ -39,12 +43,15 @@
   - Vercel 发布命令（默认：`vercel --prod`）
   - 建议 CI/本地统一使用该约定，便于脚本兼容。
 - `EDGEONE_DEPLOY_CMD`
-  - 国内镜像发布命令（必选用于镜像部署）
+  - EdgeOne 镜像发布命令（仅在继续使用 EdgeOne 时需要）
   - 推荐保持命令与项目参数通过环境变量注入，避免命令泄露。
+- `NETLIFY_DEPLOY_CMD`
+  - Netlify 发布命令（可选；GitHub 自动部署时不需要）
+  - 示例：`netlify deploy --prod --dir .`
 - `VERCEL_PRIMARY_URL`
   - Vercel 生产域名，用于发布后验收。
-- `EDGEONE_MIRROR_URL`
-  - EdgeOne 镜像域名，用于发布后验收。
+- `FALLBACK_MIRROR_URL`
+  - 备援镜像域名，用于发布后验收。
 
 ### 建议的扩展变量（如你的 CLI 需要）
 
@@ -82,6 +89,8 @@ EDGEONE_DEPLOY_CMD="edgeone pages deploy . --project-id \"$EDGEONE_PROJECT_ID\" 
 ```
 
 ## 六、EdgeOne Pages 部署步骤与命令模板
+
+> 说明：EdgeOne 如果选择中国大陆/含中国大陆，需要 ICP；当前不作为首选。若只选择全球可用区（不含中国大陆），可按下列模板试用。
 
 ### 方案 A（优先，推荐）
 
@@ -122,14 +131,14 @@ echo "Release at: $RELEASE_AT_UTC"
 
 ```bash
 curl -I "$VERCEL_PRIMARY_URL"
-curl -I "$EDGEONE_MIRROR_URL"
+curl -I "$FALLBACK_MIRROR_URL"
 ```
 
 3. 验证关键页面可用（推荐）
 
 ```bash
 curl -L "$VERCEL_PRIMARY_URL" | head -n 5
-curl -L "$EDGEONE_MIRROR_URL" | head -n 5
+curl -L "$FALLBACK_MIRROR_URL" | head -n 5
 ```
 
 4. 记录首次发布时间（可选）
@@ -150,8 +159,8 @@ echo "Vercel+EdgeOne deployed at $VERCEL_DEPLOY_TS"
 
 ## 九、建议对外展示文案（可直接用于站内说明或对接页面）
 
-- 「全球访问优先走 Vercel，国内访问请使用镜像域名」
-- 「本站采用双链路发布：Vercel 负责全球可用性，EdgeOne Pages 负责大陆加速与可访问性」
+- 「主访问入口走 Vercel，备用访问入口请使用镜像域名」
+- 「本站采用双入口发布：Vercel 负责主链路，备援镜像负责访问兜底」
 
 ## 十、当前可直接执行命令清单（按顺序）
 
@@ -161,8 +170,9 @@ cd /Users/michael/ai/projects/mee-personal-insight-site
 # 1) 创建发布环境变量（按你的真实值替换）
 export VERCEL_DEPLOY_CMD="vercel --prod"
 export EDGEONE_DEPLOY_CMD='edgeone pages deploy . --project-id "$EDGEONE_PROJECT_ID" --token "$EDGEONE_TOKEN"'
+export NETLIFY_DEPLOY_CMD='netlify deploy --prod --dir .'
 export VERCEL_PRIMARY_URL="https://<你的 vercel 主域名或自定义域名>"
-export EDGEONE_MIRROR_URL="https://<你的 edgeone 镜像域名>"
+export FALLBACK_MIRROR_URL="https://<你的备援镜像域名>"
 
 # 2) 生成/确认脚本
 chmod +x scripts/publish-dual.sh
@@ -172,7 +182,7 @@ chmod +x scripts/publish-dual.sh
 
 # 4) 逐链路验证
 curl -I "$VERCEL_PRIMARY_URL"
-curl -I "$EDGEONE_MIRROR_URL"
+curl -I "$FALLBACK_MIRROR_URL"
 
 # 5) 如需只发主链路或镜像链路，单独触发
 ./scripts/publish-dual.sh --vercel
@@ -182,10 +192,27 @@ curl -I "$EDGEONE_MIRROR_URL"
 ## 十一、你需要配置的账号 / Token / CNAME 清单
 
 - Vercel 账户与项目权限（有 Deploy 权限）
-- EdgeOne 账户与 Pages 项目权限（可创建/更新部署）
-- `EDGEONE_TOKEN`（建议新建只用于部署的最小权限 token）
-- `EDGEONE_PROJECT_ID` 或对应项目标识（与你的 EdgeOne 项目绑定）
+- Netlify 账户与 GitHub 仓库授权（推荐先试）
+- 可选：EdgeOne 账户与 Pages 项目权限（仅当继续试 EdgeOne Global）
+- 可选：`EDGEONE_TOKEN` / `EDGEONE_PROJECT_ID`
 - 镜像域名 CNAME 解析：
-  - `insight.mee.cn` -> EdgeOne 提供的目标 CNAME
+  - `mirror.<your-domain>` -> Netlify / Cloudflare Pages / EdgeOne 提供的目标 CNAME
   - 视域名提供商允许，保持 TTL 短期可回退
-- 可选：COS/Cloudflare 备援的 bucket、API key、CDN 站点配置
+- 可选：Cloudflare Pages / COS / OSS 备援配置
+
+## 十二、Netlify 推荐配置
+
+本仓库已包含 `netlify.toml`。
+
+在 Netlify 中选择从 GitHub 导入仓库：
+
+```text
+Repository: superqyl/mee-personal-insight-site
+Branch: main
+Base directory: 留空
+Build command: 留空
+Publish directory: .
+Environment variables: 不需要
+```
+
+部署完成后，先测试 Netlify 默认域名；若默认域名可用，再绑定自有备援域名。
