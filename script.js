@@ -12,6 +12,8 @@
       ]
     },
     periods: [],
+    report_packs: [],
+    reports: [],
     tracks: [],
     rollup_steps: [],
     evidence_clusters: [],
@@ -19,7 +21,7 @@
     publications: []
   };
 
-  const state = { data: fallback, selectedTrack: "mee" };
+  const state = { data: fallback, selectedTrack: "mee", selectedPack: "daily", selectedReport: "" };
   const progress = document.querySelector(".reading-progress");
   const navLinks = Array.from(document.querySelectorAll(".site-nav a"));
   const sections = navLinks.map((link) => document.querySelector(link.getAttribute("href"))).filter(Boolean);
@@ -64,6 +66,171 @@
       card.append(list(period.items || []));
       return card;
     }));
+  }
+
+  function renderReferenceChips(items) {
+    const row = el("div", "reference-row");
+    for (const item of items || []) {
+      const link = document.createElement("a");
+      link.href = item.url || "#top";
+      link.textContent = item.label || item.url || "参考资料";
+      if (item.url && /^https?:/i.test(item.url)) {
+        link.target = "_blank";
+        link.rel = "noreferrer noopener";
+      }
+      row.appendChild(link);
+    }
+    return row;
+  }
+
+  function normalizeReportPacks(data) {
+    const packs = data.report_packs || [];
+    if (packs.length) return packs;
+    if ((data.reports || []).length) {
+      const period = data.meta?.period || {};
+      return [{
+        id: data.meta?.cadence || period.cadence || "current",
+        label: data.meta?.cadence === "weekly" ? "周报" : data.meta?.cadence === "monthly" ? "月报" : "日报",
+        title: period.display || period.label || "当前报告",
+        summary: "当前周期报告正文。",
+        reports: data.reports || []
+      }];
+    }
+    return [];
+  }
+
+  function renderReportPackTabs(packs) {
+    const target = document.querySelector("#report-pack-tabs");
+    if (!target) return;
+    target.replaceChildren(...packs.map((pack) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.role = "tab";
+      btn.textContent = pack.label || pack.title;
+      btn.setAttribute("aria-selected", String(pack.id === state.selectedPack));
+      btn.addEventListener("click", () => {
+        state.selectedPack = pack.id;
+        state.selectedReport = "";
+        renderReports(state.data);
+      });
+      return btn;
+    }));
+  }
+
+  function renderReportTabs(reports) {
+    const target = document.querySelector("#report-tabs");
+    if (!target) return;
+    target.replaceChildren(...reports.map((report) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.role = "tab";
+      btn.textContent = report.label || report.title;
+      btn.setAttribute("aria-selected", String(report.id === state.selectedReport));
+      btn.addEventListener("click", () => {
+        state.selectedReport = report.id;
+        renderReports(state.data);
+      });
+      return btn;
+    }));
+  }
+
+  function renderReports(data) {
+    const target = document.querySelector("#report-detail");
+    const summaryTarget = document.querySelector("#report-pack-summary");
+    if (!target) return;
+    const packs = normalizeReportPacks(data);
+    if (!packs.length) {
+      target.textContent = "暂无报告正文。";
+      summaryTarget?.replaceChildren();
+      return;
+    }
+    if (!packs.some((pack) => pack.id === state.selectedPack)) state.selectedPack = packs[0].id;
+    const pack = packs.find((item) => item.id === state.selectedPack) || packs[0];
+    const reports = pack.reports || [];
+    if (!reports.some((report) => report.id === state.selectedReport)) state.selectedReport = reports[0]?.id || "";
+    renderReportPackTabs(packs);
+    renderReportTabs(reports);
+
+    const packBox = el("div", "report-pack-card");
+    packBox.append(el("strong", "", pack.title || pack.label || "报告包"));
+    packBox.append(el("p", "", pack.summary || ""));
+    packBox.append(el("span", "report-count", `${reports.length} 份报告正文`));
+    summaryTarget?.replaceChildren(packBox);
+
+    const report = reports.find((item) => item.id === state.selectedReport) || reports[0];
+    if (!report) {
+      target.textContent = "当前周期暂无报告正文。";
+      return;
+    }
+    const wrapper = el("article", "report-body");
+
+    const intro = el("div", "report-intro");
+    const introText = document.createElement("div");
+    introText.append(el("div", "report-kicker", report.kicker || report.label || "报告"));
+    introText.append(el("h3", "", report.title));
+    introText.append(el("p", "", report.lead || report.summary || ""));
+    intro.appendChild(introText);
+    if (report.visual && report.visual.src) {
+      const figure = el("figure", "report-figure");
+      const button = el("button", "image-zoom");
+      button.type = "button";
+      button.dataset.full = report.visual.src;
+      const img = document.createElement("img");
+      img.src = report.visual.src;
+      img.alt = report.visual.alt || report.title;
+      button.appendChild(img);
+      figure.append(button);
+      if (report.visual.alt) figure.append(el("figcaption", "", report.visual.alt));
+      intro.appendChild(figure);
+    }
+    wrapper.appendChild(intro);
+
+    const insightSection = el("section", "report-subsection");
+    insightSection.append(el("h4", "", "1. 核心洞察"));
+    (report.insights || []).forEach((insight, index) => {
+      const card = el("article", "insight-card");
+      card.append(el("h5", "", `1.${index + 1}. ${insight.title}`));
+      card.append(el("p", "", insight.summary || ""));
+      if (insight.sub_insights && insight.sub_insights.length) {
+        const sub = el("div", "sub-insights");
+        sub.append(el("strong", "", "子洞察"));
+        sub.append(list(insight.sub_insights));
+        card.append(sub);
+      }
+      if (insight.evidence && insight.evidence.length) {
+        const ev = el("div", "evidence-line");
+        ev.append(el("strong", "", "证据簇"));
+        const chips = el("div", "meta-row");
+        insight.evidence.forEach((item) => chips.append(el("span", "", item)));
+        ev.append(chips);
+        card.append(ev);
+      }
+      insightSection.append(card);
+    });
+    wrapper.appendChild(insightSection);
+
+    const actionSection = el("section", "report-subsection");
+    actionSection.append(el("h4", "", "2. 关键行动建议"));
+    const actions = el("ol", "action-list");
+    (report.actions || []).forEach((action) => {
+      const li = document.createElement("li");
+      li.textContent = action;
+      actions.appendChild(li);
+    });
+    actionSection.append(actions);
+    wrapper.appendChild(actionSection);
+
+    const sourceSection = el("section", "report-subsection source-summary-block");
+    sourceSection.append(el("h4", "", "3. 参考数据来源"));
+    sourceSection.append(list(report.source_summary || []));
+    if (report.references && report.references.length) {
+      sourceSection.append(el("strong", "source-reference-title", "公开参考资料"));
+      sourceSection.append(renderReferenceChips(report.references));
+    }
+    wrapper.appendChild(sourceSection);
+
+    target.replaceChildren(wrapper);
+    setupLightbox();
   }
 
   function renderTrackTabs(data) {
@@ -176,6 +343,7 @@
       state.selectedTrack = (data.tracks || [])[0]?.id || "mee";
     }
     renderHero(data);
+    renderReports(data);
     renderPeriods(data);
     renderTracks(data);
     renderRollup(data);

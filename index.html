@@ -16,6 +16,7 @@
         <span>MEE Insight Hub</span>
       </a>
       <nav class="site-nav" aria-label="站点导航">
+        <a href="#reports">报告中心</a>
         <a href="#periods">时间层</a>
         <a href="#tracks">主题频道</a>
         <a href="#evidence">证据簇</a>
@@ -30,8 +31,8 @@
           <h1>MEE Insight Hub</h1>
           <p id="hero-thesis" class="hero-lead">把日报、周报、月报沉淀成一个持续更新的认知、机会和系统进化中枢。</p>
           <div class="hero-actions" aria-label="核心入口">
-            <a class="primary-link" href="#tracks">进入主题频道</a>
-            <a class="secondary-link" href="#sources">查看数据源</a>
+            <a class="primary-link" href="#reports">查看报告中心</a>
+            <a class="secondary-link" href="#tracks">进入主题频道</a>
           </div>
         </div>
         <aside class="signal-panel" aria-label="当前信号摘要">
@@ -41,9 +42,23 @@
         </aside>
       </section>
 
-      <section id="periods" class="section">
+      <section id="reports" class="section report-section">
         <div class="section-heading">
           <span>01</span>
+          <div>
+            <h2>报告中心：日报、周报、月报</h2>
+            <p>本站点的核心是报告主体内容。先按时间周期选择日报、周报或月报，再进入 MEE、个人、产品、新闻和来源五类报告正文。</p>
+          </div>
+        </div>
+        <div id="report-pack-tabs" class="report-pack-tabs" role="tablist" aria-label="报告周期"></div>
+        <div id="report-pack-summary" class="report-pack-summary"></div>
+        <div id="report-tabs" class="report-tabs" role="tablist" aria-label="报告类型"></div>
+        <div id="report-detail" class="report-detail"></div>
+      </section>
+
+      <section id="periods" class="section">
+        <div class="section-heading">
+          <span>02</span>
           <div>
             <h2>时间层：今日、最近 7 天、本月</h2>
             <p>日报负责 delta，周报负责聚类，月报负责稳定判断。三种周期共享同一个证据系统。</p>
@@ -54,7 +69,7 @@
 
       <section id="tracks" class="section section-muted">
         <div class="section-heading">
-          <span>02</span>
+          <span>03</span>
           <div>
             <h2>五类主题频道</h2>
             <p>同一来源可以同时服务多个主题；新闻热点也是全站统一证据底座的一部分。</p>
@@ -68,7 +83,7 @@
         <div class="rollup-grid">
           <div>
             <div class="section-heading compact">
-              <span>03</span>
+              <span>04</span>
               <div>
                 <h2>从信号到判断</h2>
                 <p>避免日报、周报、月报重复堆叠，用稳定 ID 把内容逐层上卷。</p>
@@ -87,7 +102,7 @@
 
       <section id="evidence" class="section section-muted">
         <div class="section-heading">
-          <span>04</span>
+          <span>05</span>
           <div>
             <h2>证据簇与跨周期去重</h2>
             <p>每个洞察必须能回到证据簇；已上卷的内容只显示摘要和增量。</p>
@@ -98,7 +113,7 @@
 
       <section id="sources" class="section">
         <div class="section-heading">
-          <span>05</span>
+          <span>06</span>
           <div>
             <h2>参考数据来源</h2>
             <p>官方/一手源优先作为高可信证据，媒体/社区/排行榜作为趋势线索，登录墙和付费墙只进入索引。</p>
@@ -109,7 +124,7 @@
 
       <section id="archive" class="section archive-section">
         <div class="section-heading">
-          <span>06</span>
+          <span>07</span>
           <div>
             <h2>发布归档</h2>
             <p>GitHub Pages 是默认主链路；Vercel 和 Feishu 只在显式 opt-in 时生成。</p>

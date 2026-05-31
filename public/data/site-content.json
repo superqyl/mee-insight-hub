@@ -1,7 +1,7 @@
 {
   "meta": {
     "site_name": "MEE Insight Hub",
-    "generated_at": "2026-05-31T05:13:02.905Z",
+    "generated_at": "2026-05-31T06:20:14.361Z",
     "cadence": "daily",
     "period": {
       "cadence": "daily",
@@ -70,6 +70,1498 @@
         "月度 theses",
         "跨主题机会和风险",
         "下月执行重点"
+      ]
+    }
+  ],
+  "report_packs": [
+    {
+      "id": "daily",
+      "label": "日报",
+      "title": "日报 2026-05-30",
+      "summary": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。",
+      "reports": [
+        {
+          "id": "daily-sources",
+          "track_id": "sources",
+          "label": "参考数据来源",
+          "title": "参考数据来源索引（日报 2026-05-30）",
+          "kicker": "日报 / 先看证据，再看结论",
+          "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：当期有哪些来源进入统一证据系统，哪些可作为判断依据，哪些只能留在待补读或趋势线索层。",
+          "visual": {
+            "src": "./public/assets/hub-overview.png",
+            "alt": "MEE Insight Hub 来源、证据和报告路由关系图"
+          },
+          "insights": [
+            {
+              "title": "来源不是材料堆积，而是判断入口",
+              "summary": "所有来源先进入 source-index，再通过可读性、可信边界、主题路由和 delta 判定，进入五类主题报告。",
+              "sub_insights": [
+                "同一来源可以同时支持 MEE、个人、产品、新闻和来源索引，不再按栏目孤立消费。",
+                "私域收藏只公开标题、链接、短摘要和可信边界，私聊原文留在本地 runtime。",
+                "媒体、社区和排行榜先作为趋势线索，只有交叉验证后才进入正式判断。"
+              ],
+              "evidence": [
+                "新闻、行业与政策 (25)",
+                "量化、金融与市场基础设施 (21)",
+                "开源工程与仓库 (12)",
+                "产品、创业与市场 (11)",
+                "Skill / MCP / Agent 能力市场 (9)"
+              ]
+            },
+            {
+              "title": "新闻源扩展服务全站，不只是新闻栏目",
+              "summary": "Reuters、Bloomberg、FT、WSJ、CNBC、The Verge、36Kr、财新等用于校准外部变化，也会反哺产品机会、个人判断和 MEE 治理。",
+              "sub_insights": [
+                "新闻热点用于识别外部环境变化，但高影响结论必须回到官方公告或一手材料。",
+                "政策和监管源是风险感知的硬边界，不应和媒体评论混作同一证据等级。",
+                "公开趋势与私域问题感需要合并为判断网络，避免只看热度或只看兴趣。"
+              ],
+              "evidence": [
+                "Reuters/Bloomberg/FT/WSJ/CNBC",
+                "SEC/FINRA/CFTC/Federal Reserve",
+                "国内官方政策公开信息"
+              ]
+            }
+          ],
+          "actions": [
+            "每日只补新增 delta，不重复重写已被周报/月报吸收的旧结论。",
+            "不可读、付费墙、登录墙来源只进 ledger，不编造摘要。",
+            "每条进入主报告的来源必须保留为什么值得参考和可信边界。",
+            "周报/月报从 evidence_cluster_id 上卷，不从日报全文复制。"
+          ],
+          "source_summary": [
+            "私域收藏与转发: 0 个启用来源；可信边界：只公开标题、链接、短摘要和可信边界；私聊原文留在本地 runtime。",
+            "开源工程与仓库: 12 个启用来源；可信边界：仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。",
+            "Skill / MCP / Agent 能力市场: 9 个启用来源；可信边界：第三方能力先进入供应链审查，不直接安装或写入母体真源。",
+            "AI 官方与研究: 7 个启用来源；可信边界：论文和官方博客需要核对方法、实验条件、局限和发布日期，不能把标题当结论。",
+            "产品、创业与市场: 11 个启用来源；可信边界：排行榜和社区热度只表示趋势，进入产品判断前要交叉验证用户需求和留存。",
+            "新闻、行业与政策: 25 个启用来源；可信边界：媒体报道进入趋势层；高影响判断需回到官方公告、一手资料或多源交叉确认。",
+            "量化、金融与市场基础设施: 21 个启用来源；可信边界：只用于研究和工具启发；不构成交易、投资或收益承诺。"
+          ],
+          "references": [
+            {
+              "label": "MEE Insight Hub GitHub Pages",
+              "url": "https://superqyl.github.io/mee-insight-hub/"
+            },
+            {
+              "label": "MEE Insight Hub repository",
+              "url": "https://github.com/superqyl/mee-insight-hub"
+            },
+            {
+              "label": "arXiv q-fin",
+              "url": "https://arxiv.org/archive/q-fin"
+            },
+            {
+              "label": "Hugging Face Papers",
+              "url": "https://huggingface.co/papers"
+            }
+          ]
+        },
+        {
+          "id": "daily-mee",
+          "track_id": "mee",
+          "label": "MEE 本体进化",
+          "title": "MEE 本体进化报告（日报 2026-05-30）",
+          "kicker": "日报 / 从工具链到治理链",
+          "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：MEE 自身的调度、证据、Skill、发布和质量门禁当期有哪些可执行的进化点。",
+          "visual": {
+            "src": "./public/assets/hub-overview.png",
+            "alt": "MEE Insight Hub 作为 MEE 发布与证据治理入口"
+          },
+          "insights": [
+            {
+              "title": "默认发布链路应从飞书文档切换为 GitHub Pages 站点",
+              "summary": "飞书文档适合内部协作沉淀，但不适合作为公开站点的长期必需中间层；站点生成应直接消费统一证据系统。",
+              "sub_insights": [
+                "GitHub Pages 成为主链路后，国内访问实测更稳，也减少 Vercel fallback 的默认噪音。",
+                "Feishu/Vercel 仍保留能力，但必须显式 opt-in，避免每次自动化都生成多套产物。",
+                "自动化提示、CLI help、Capsule 和测试必须一起更新，否则旧入口会把报告结构带回旧形态。"
+              ],
+              "evidence": [
+                "mee radar site",
+                "MEE Insight Hub repository",
+                "intelligence-foraging-scheduler capsule"
+              ]
+            },
+            {
+              "title": "报告质量门禁要检查正文层，而不只检查站点能打开",
+              "summary": "站点 200、图片可加载、JSON 合法都不等于报告可读；必须检查今日报告是否有核心洞察、子洞察、行动建议和来源摘要。",
+              "sub_insights": [
+                "仅有频道定义会让页面看起来完整，但读者找不到实际报告内容。",
+                "后续 QA 应增加 report_body / reports 字段检查，防止抽象外壳通过验收。",
+                "日报、周报、月报的差异应是时间窗口，不是阅读契约变化。"
+              ],
+              "evidence": [
+                "public/data/site-content.json",
+                "tests/mee-cli.test.mjs",
+                "reader contract"
+              ]
+            }
+          ],
+          "actions": [
+            "把 `mee radar site` 作为默认自动化入口，Feishu/Vercel 仅作为显式参数。",
+            "为站点 JSON 增加 `reports` 正文字段，并在测试中断言每份报告有洞察、子洞察和行动建议。",
+            "把站点 QA 从 HTTP 200 扩展为内容结构 QA。",
+            "将旧低质量发布链路继续保持 fail-closed。"
+          ],
+          "source_summary": [
+            "私域收藏与转发: 0 个启用来源；可信边界：只公开标题、链接、短摘要和可信边界；私聊原文留在本地 runtime。",
+            "开源工程与仓库: 12 个启用来源；可信边界：仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。",
+            "Skill / MCP / Agent 能力市场: 9 个启用来源；可信边界：第三方能力先进入供应链审查，不直接安装或写入母体真源。",
+            "AI 官方与研究: 7 个启用来源；可信边界：论文和官方博客需要核对方法、实验条件、局限和发布日期，不能把标题当结论。"
+          ],
+          "references": [
+            {
+              "label": "MEE Insight Hub GitHub Pages",
+              "url": "https://superqyl.github.io/mee-insight-hub/"
+            },
+            {
+              "label": "MEE Insight Hub repository",
+              "url": "https://github.com/superqyl/mee-insight-hub"
+            },
+            {
+              "label": "MEE repository",
+              "url": "https://github.com/superqyl/mee"
+            },
+            {
+              "label": "GitHub Topics: AI agents",
+              "url": "https://github.com/topics/ai-agent"
+            }
+          ]
+        },
+        {
+          "id": "daily-personal",
+          "track_id": "personal",
+          "label": "个人认知与洞察",
+          "title": "个人认知与洞察报告（日报 2026-05-30）",
+          "kicker": "日报 / 从收藏到能力复利",
+          "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：当期材料如何帮助个人把收藏、阅读、判断、练习和复盘连成可持续更新的操作系统。",
+          "visual": {
+            "src": "./public/assets/personal-os.png",
+            "alt": "个人操作系统：从信息输入到判断闭环"
+          },
+          "insights": [
+            {
+              "title": "个人竞争力正在从工具熟练度转向操作系统",
+              "summary": "会用更多工具不是长期优势；能把信息、问题、技能、判断和行动组织成闭环，才会形成能力复利。",
+              "sub_insights": [
+                "收藏只是输入层，只有进入问题库、判断模型和行动清单后才产生复利。",
+                "每条高价值材料都应转化为一个可回答问题、一个可练习技能或一个可验证小实验。",
+                "复盘不是写总结，而是检查判断是否产生了更好的下一步动作。"
+              ],
+              "evidence": [
+                "GitHub/Skill 市场信号",
+                "公开产品与工程讨论",
+                "私域收藏的问题感"
+              ]
+            },
+            {
+              "title": "公开趋势和私域兴趣需要合并校准",
+              "summary": "只看公开趋势容易被热点牵引，只看私域收藏容易困在兴趣回音室；两者合并后才构成判断网络。",
+              "sub_insights": [
+                "公开新闻和产品榜单负责提示外部变化。",
+                "私域转发和笔记负责暴露真实困惑、兴趣和需求。",
+                "个人洞察的价值来自两者之间的不一致：哪些趋势你反复关注，哪些热点你应主动忽略。"
+              ],
+              "evidence": [
+                "Product Hunt / Hacker News",
+                "Reuters / The Verge",
+                "飞书收藏摘要"
+              ]
+            }
+          ],
+          "actions": [
+            "把今日材料分成：要补读、要练习、要验证、要忽略四类。",
+            "每周从日报中挑 3 个重复出现的问题，做成练习题或小实验。",
+            "对高热度材料写一句反证：如果它不重要，可能是因为什么？",
+            "保留个人品味判断，不把公开热度直接等同于机会。"
+          ],
+          "source_summary": [
+            "私域收藏与转发: 0 个启用来源；可信边界：只公开标题、链接、短摘要和可信边界；私聊原文留在本地 runtime。",
+            "开源工程与仓库: 12 个启用来源；可信边界：仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。",
+            "Skill / MCP / Agent 能力市场: 9 个启用来源；可信边界：第三方能力先进入供应链审查，不直接安装或写入母体真源。",
+            "AI 官方与研究: 7 个启用来源；可信边界：论文和官方博客需要核对方法、实验条件、局限和发布日期，不能把标题当结论。",
+            "产品、创业与市场: 11 个启用来源；可信边界：排行榜和社区热度只表示趋势，进入产品判断前要交叉验证用户需求和留存。"
+          ],
+          "references": [
+            {
+              "label": "MEE Insight Hub GitHub Pages",
+              "url": "https://superqyl.github.io/mee-insight-hub/"
+            },
+            {
+              "label": "MEE Insight Hub repository",
+              "url": "https://github.com/superqyl/mee-insight-hub"
+            },
+            {
+              "label": "Hacker News",
+              "url": "https://news.ycombinator.com/"
+            },
+            {
+              "label": "GitHub Trending",
+              "url": "https://github.com/trending"
+            }
+          ]
+        },
+        {
+          "id": "daily-product",
+          "track_id": "product",
+          "label": "产品与商机",
+          "title": "产品与商机机会报告（日报 2026-05-30）",
+          "kicker": "日报 / 从信号到可验证机会",
+          "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：当期哪些公开趋势、开源机制、私域需求和市场变化可以转化为产品假设或商业实验。",
+          "visual": {
+            "src": "./public/assets/judgment-network.png",
+            "alt": "从市场信号到产品判断网络"
+          },
+          "insights": [
+            {
+              "title": "报告站点本身就是一个产品机会样本",
+              "summary": "从飞书文档到公开站点的转化，暴露了一个明确需求：把私域材料、公开来源、图文表达和证据索引变成可传播、可更新、可追溯的研究页面。",
+              "sub_insights": [
+                "用户需要的不是更多摘要，而是能定位具体报告、具体证据和具体行动的阅读界面。",
+                "报告网站应同时服务阅读、转发、复盘和后续自动化，不只是静态展示。",
+                "内容生成链路越长，越需要结构化数据契约来避免质量回退。"
+              ],
+              "evidence": [
+                "MEE Insight Hub",
+                "GitHub Pages 公开站点",
+                "飞书文档到站点的迁移需求"
+              ]
+            },
+            {
+              "title": "Agent 产品机会应优先落在高价值工作流",
+              "summary": "通用聊天入口竞争会迅速同质化，更有价值的是审计、报告、研究、证据整理、质量门禁这类可验证工作流。",
+              "sub_insights": [
+                "高价值工作流通常有明确输入、可审计过程、可复核交付物和责任边界。",
+                "产品切口应先从单一高价值流程验证，而不是泛化成平台。",
+                "能把证据、日志、权限和输出质量串起来的系统，比只生成内容的工具更接近商业价值。"
+              ],
+              "evidence": [
+                "Product Hunt / AI tool directories",
+                "GitHub Agent repos",
+                "Adapora 相关工作流经验"
+              ]
+            }
+          ],
+          "actions": [
+            "把站点报告生成能力拆成可复用产品模块：source ingest、evidence cluster、report renderer、publish backend。",
+            "为每个产品机会写清楚：目标用户、原始输入、可验证输出、失败边界和付费理由。",
+            "Adapora 只作为落地样本之一，不限制产品机会地图。",
+            "优先验证能减少人工复核负担的场景，而不是只提升表达效果。"
+          ],
+          "source_summary": [
+            "私域收藏与转发: 0 个启用来源；可信边界：只公开标题、链接、短摘要和可信边界；私聊原文留在本地 runtime。",
+            "开源工程与仓库: 12 个启用来源；可信边界：仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。",
+            "Skill / MCP / Agent 能力市场: 9 个启用来源；可信边界：第三方能力先进入供应链审查，不直接安装或写入母体真源。",
+            "AI 官方与研究: 7 个启用来源；可信边界：论文和官方博客需要核对方法、实验条件、局限和发布日期，不能把标题当结论。",
+            "产品、创业与市场: 11 个启用来源；可信边界：排行榜和社区热度只表示趋势，进入产品判断前要交叉验证用户需求和留存。"
+          ],
+          "references": [
+            {
+              "label": "MEE Insight Hub GitHub Pages",
+              "url": "https://superqyl.github.io/mee-insight-hub/"
+            },
+            {
+              "label": "MEE Insight Hub repository",
+              "url": "https://github.com/superqyl/mee-insight-hub"
+            },
+            {
+              "label": "Product Hunt",
+              "url": "https://www.producthunt.com/"
+            },
+            {
+              "label": "Indie Hackers",
+              "url": "https://www.indiehackers.com/"
+            }
+          ]
+        },
+        {
+          "id": "daily-news",
+          "track_id": "news",
+          "label": "新闻热点",
+          "title": "新闻热点与外部环境报告（日报 2026-05-30）",
+          "kicker": "日报 / 从热点到影响判断",
+          "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：公开世界的变化如何影响 MEE 进化、个人判断、产品机会和风险感知。",
+          "visual": {
+            "src": "./public/assets/source-coverage.png",
+            "alt": "公开来源覆盖与可信边界"
+          },
+          "insights": [
+            {
+              "title": "新闻热点应进入影响分析，而不是停留在事件罗列",
+              "summary": "日报里的新闻栏目不应只是链接列表；每个热点都要回答它对能力边界、需求变化、监管风险或市场机会意味着什么。",
+              "sub_insights": [
+                "AI 官方和研究源用于校准能力边界，不直接转化为产品承诺。",
+                "商业媒体用于识别市场叙事变化，但要避免把情绪当事实。",
+                "政策监管源进入风险与边界层，优先级高于社区讨论。"
+              ],
+              "evidence": [
+                "OpenAI/Anthropic/DeepMind 官方源",
+                "Reuters/Bloomberg/FT/WSJ",
+                "SEC/FINRA/CFTC/央行/工信部/网信办"
+              ]
+            },
+            {
+              "title": "高价值新闻源要反哺所有主题",
+              "summary": "同一条新闻可能同时影响 MEE 的能力规划、个人学习优先级、产品机会判断和风险边界，不应只出现在新闻频道。",
+              "sub_insights": [
+                "技术突破影响 MEE Skill 和 Agent 能力边界。",
+                "市场融资与产品发布影响产品机会优先级。",
+                "监管和宏观变化影响量化、金融、数据和合规边界。"
+              ],
+              "evidence": [
+                "新闻、研究、产品、政策四类来源组合",
+                "source-index 多主题路由",
+                "evidence_cluster_id"
+              ]
+            }
+          ],
+          "actions": [
+            "新闻条目进入报告前必须写出“对哪个主题有影响”。",
+            "高影响新闻至少配一个一手或准一手来源。",
+            "把短期热点和长期变量分开，避免月报被日报噪音污染。",
+            "新闻源默认可以服务全部五类主题，但结论必须标可信边界。"
+          ],
+          "source_summary": [
+            "AI 官方与研究: 7 个启用来源；可信边界：论文和官方博客需要核对方法、实验条件、局限和发布日期，不能把标题当结论。",
+            "产品、创业与市场: 11 个启用来源；可信边界：排行榜和社区热度只表示趋势，进入产品判断前要交叉验证用户需求和留存。",
+            "新闻、行业与政策: 25 个启用来源；可信边界：媒体报道进入趋势层；高影响判断需回到官方公告、一手资料或多源交叉确认。"
+          ],
+          "references": [
+            {
+              "label": "MEE Insight Hub GitHub Pages",
+              "url": "https://superqyl.github.io/mee-insight-hub/"
+            },
+            {
+              "label": "MEE Insight Hub repository",
+              "url": "https://github.com/superqyl/mee-insight-hub"
+            },
+            {
+              "label": "Reuters Technology",
+              "url": "https://www.reuters.com/technology/"
+            },
+            {
+              "label": "Google DeepMind Blog",
+              "url": "https://deepmind.google/discover/blog/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weekly",
+      "label": "周报",
+      "title": "周报 2026-W22",
+      "summary": "本周层负责把多日重复信号压缩成主题簇、优先级和待验证假设。",
+      "reports": [
+        {
+          "id": "weekly-sources",
+          "track_id": "sources",
+          "label": "参考数据来源",
+          "title": "参考数据来源索引（周报 2026-W22）",
+          "kicker": "周报 / 先看证据，再看结论",
+          "lead": "本周层负责把多日重复信号压缩成主题簇、优先级和待验证假设。 本报告回答：当期有哪些来源进入统一证据系统，哪些可作为判断依据，哪些只能留在待补读或趋势线索层。",
+          "visual": {
+            "src": "./public/assets/hub-overview.png",
+            "alt": "MEE Insight Hub 来源、证据和报告路由关系图"
+          },
+          "insights": [
+            {
+              "title": "来源不是材料堆积，而是判断入口",
+              "summary": "所有来源先进入 source-index，再通过可读性、可信边界、主题路由和 delta 判定，进入五类主题报告。",
+              "sub_insights": [
+                "同一来源可以同时支持 MEE、个人、产品、新闻和来源索引，不再按栏目孤立消费。",
+                "私域收藏只公开标题、链接、短摘要和可信边界，私聊原文留在本地 runtime。",
+                "媒体、社区和排行榜先作为趋势线索，只有交叉验证后才进入正式判断。"
+              ],
+              "evidence": [
+                "新闻、行业与政策 (25)",
+                "量化、金融与市场基础设施 (21)",
+                "开源工程与仓库 (12)",
+                "产品、创业与市场 (11)",
+                "Skill / MCP / Agent 能力市场 (9)"
+              ]
+            },
+            {
+              "title": "新闻源扩展服务全站，不只是新闻栏目",
+              "summary": "Reuters、Bloomberg、FT、WSJ、CNBC、The Verge、36Kr、财新等用于校准外部变化，也会反哺产品机会、个人判断和 MEE 治理。",
+              "sub_insights": [
+                "新闻热点用于识别外部环境变化，但高影响结论必须回到官方公告或一手材料。",
+                "政策和监管源是风险感知的硬边界，不应和媒体评论混作同一证据等级。",
+                "公开趋势与私域问题感需要合并为判断网络，避免只看热度或只看兴趣。"
+              ],
+              "evidence": [
+                "Reuters/Bloomberg/FT/WSJ/CNBC",
+                "SEC/FINRA/CFTC/Federal Reserve",
+                "国内官方政策公开信息"
+              ]
+            }
+          ],
+          "actions": [
+            "每日只补新增 delta，不重复重写已被周报/月报吸收的旧结论。",
+            "不可读、付费墙、登录墙来源只进 ledger，不编造摘要。",
+            "每条进入主报告的来源必须保留为什么值得参考和可信边界。",
+            "周报/月报从 evidence_cluster_id 上卷，不从日报全文复制。"
+          ],
+          "source_summary": [
+            "私域收藏与转发: 0 个启用来源；可信边界：只公开标题、链接、短摘要和可信边界；私聊原文留在本地 runtime。",
+            "开源工程与仓库: 12 个启用来源；可信边界：仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。",
+            "Skill / MCP / Agent 能力市场: 9 个启用来源；可信边界：第三方能力先进入供应链审查，不直接安装或写入母体真源。",
+            "AI 官方与研究: 7 个启用来源；可信边界：论文和官方博客需要核对方法、实验条件、局限和发布日期，不能把标题当结论。",
+            "产品、创业与市场: 11 个启用来源；可信边界：排行榜和社区热度只表示趋势，进入产品判断前要交叉验证用户需求和留存。",
+            "新闻、行业与政策: 25 个启用来源；可信边界：媒体报道进入趋势层；高影响判断需回到官方公告、一手资料或多源交叉确认。",
+            "量化、金融与市场基础设施: 21 个启用来源；可信边界：只用于研究和工具启发；不构成交易、投资或收益承诺。"
+          ],
+          "references": [
+            {
+              "label": "MEE Insight Hub GitHub Pages",
+              "url": "https://superqyl.github.io/mee-insight-hub/"
+            },
+            {
+              "label": "MEE Insight Hub repository",
+              "url": "https://github.com/superqyl/mee-insight-hub"
+            },
+            {
+              "label": "arXiv q-fin",
+              "url": "https://arxiv.org/archive/q-fin"
+            },
+            {
+              "label": "Hugging Face Papers",
+              "url": "https://huggingface.co/papers"
+            }
+          ]
+        },
+        {
+          "id": "weekly-mee",
+          "track_id": "mee",
+          "label": "MEE 本体进化",
+          "title": "MEE 本体进化报告（周报 2026-W22）",
+          "kicker": "周报 / 从工具链到治理链",
+          "lead": "本周层负责把多日重复信号压缩成主题簇、优先级和待验证假设。 本报告回答：MEE 自身的调度、证据、Skill、发布和质量门禁当期有哪些可执行的进化点。",
+          "visual": {
+            "src": "./public/assets/hub-overview.png",
+            "alt": "MEE Insight Hub 作为 MEE 发布与证据治理入口"
+          },
+          "insights": [
+            {
+              "title": "默认发布链路应从飞书文档切换为 GitHub Pages 站点",
+              "summary": "飞书文档适合内部协作沉淀，但不适合作为公开站点的长期必需中间层；站点生成应直接消费统一证据系统。",
+              "sub_insights": [
+                "GitHub Pages 成为主链路后，国内访问实测更稳，也减少 Vercel fallback 的默认噪音。",
+                "Feishu/Vercel 仍保留能力，但必须显式 opt-in，避免每次自动化都生成多套产物。",
+                "自动化提示、CLI help、Capsule 和测试必须一起更新，否则旧入口会把报告结构带回旧形态。"
+              ],
+              "evidence": [
+                "mee radar site",
+                "MEE Insight Hub repository",
+                "intelligence-foraging-scheduler capsule"
+              ]
+            },
+            {
+              "title": "报告质量门禁要检查正文层，而不只检查站点能打开",
+              "summary": "站点 200、图片可加载、JSON 合法都不等于报告可读；必须检查今日报告是否有核心洞察、子洞察、行动建议和来源摘要。",
+              "sub_insights": [
+                "仅有频道定义会让页面看起来完整，但读者找不到实际报告内容。",
+                "后续 QA 应增加 report_body / reports 字段检查，防止抽象外壳通过验收。",
+                "日报、周报、月报的差异应是时间窗口，不是阅读契约变化。"
+              ],
+              "evidence": [
+                "public/data/site-content.json",
+                "tests/mee-cli.test.mjs",
+                "reader contract"
+              ]
+            }
+          ],
+          "actions": [
+            "把 `mee radar site` 作为默认自动化入口，Feishu/Vercel 仅作为显式参数。",
+            "为站点 JSON 增加 `reports` 正文字段，并在测试中断言每份报告有洞察、子洞察和行动建议。",
+            "把站点 QA 从 HTTP 200 扩展为内容结构 QA。",
+            "将旧低质量发布链路继续保持 fail-closed。"
+          ],
+          "source_summary": [
+            "私域收藏与转发: 0 个启用来源；可信边界：只公开标题、链接、短摘要和可信边界；私聊原文留在本地 runtime。",
+            "开源工程与仓库: 12 个启用来源；可信边界：仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。",
+            "Skill / MCP / Agent 能力市场: 9 个启用来源；可信边界：第三方能力先进入供应链审查，不直接安装或写入母体真源。",
+            "AI 官方与研究: 7 个启用来源；可信边界：论文和官方博客需要核对方法、实验条件、局限和发布日期，不能把标题当结论。"
+          ],
+          "references": [
+            {
+              "label": "MEE Insight Hub GitHub Pages",
+              "url": "https://superqyl.github.io/mee-insight-hub/"
+            },
+            {
+              "label": "MEE Insight Hub repository",
+              "url": "https://github.com/superqyl/mee-insight-hub"
+            },
+            {
+              "label": "MEE repository",
+              "url": "https://github.com/superqyl/mee"
+            },
+            {
+              "label": "GitHub Topics: AI agents",
+              "url": "https://github.com/topics/ai-agent"
+            }
+          ]
+        },
+        {
+          "id": "weekly-personal",
+          "track_id": "personal",
+          "label": "个人认知与洞察",
+          "title": "个人认知与洞察报告（周报 2026-W22）",
+          "kicker": "周报 / 从收藏到能力复利",
+          "lead": "本周层负责把多日重复信号压缩成主题簇、优先级和待验证假设。 本报告回答：当期材料如何帮助个人把收藏、阅读、判断、练习和复盘连成可持续更新的操作系统。",
+          "visual": {
+            "src": "./public/assets/personal-os.png",
+            "alt": "个人操作系统：从信息输入到判断闭环"
+          },
+          "insights": [
+            {
+              "title": "个人竞争力正在从工具熟练度转向操作系统",
+              "summary": "会用更多工具不是长期优势；能把信息、问题、技能、判断和行动组织成闭环，才会形成能力复利。",
+              "sub_insights": [
+                "收藏只是输入层，只有进入问题库、判断模型和行动清单后才产生复利。",
+                "每条高价值材料都应转化为一个可回答问题、一个可练习技能或一个可验证小实验。",
+                "复盘不是写总结，而是检查判断是否产生了更好的下一步动作。"
+              ],
+              "evidence": [
+                "GitHub/Skill 市场信号",
+                "公开产品与工程讨论",
+                "私域收藏的问题感"
+              ]
+            },
+            {
+              "title": "公开趋势和私域兴趣需要合并校准",
+              "summary": "只看公开趋势容易被热点牵引，只看私域收藏容易困在兴趣回音室；两者合并后才构成判断网络。",
+              "sub_insights": [
+                "公开新闻和产品榜单负责提示外部变化。",
+                "私域转发和笔记负责暴露真实困惑、兴趣和需求。",
+                "个人洞察的价值来自两者之间的不一致：哪些趋势你反复关注，哪些热点你应主动忽略。"
+              ],
+              "evidence": [
+                "Product Hunt / Hacker News",
+                "Reuters / The Verge",
+                "飞书收藏摘要"
+              ]
+            }
+          ],
+          "actions": [
+            "把今日材料分成：要补读、要练习、要验证、要忽略四类。",
+            "每周从日报中挑 3 个重复出现的问题，做成练习题或小实验。",
+            "对高热度材料写一句反证：如果它不重要，可能是因为什么？",
+            "保留个人品味判断，不把公开热度直接等同于机会。"
+          ],
+          "source_summary": [
+            "私域收藏与转发: 0 个启用来源；可信边界：只公开标题、链接、短摘要和可信边界；私聊原文留在本地 runtime。",
+            "开源工程与仓库: 12 个启用来源；可信边界：仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。",
+            "Skill / MCP / Agent 能力市场: 9 个启用来源；可信边界：第三方能力先进入供应链审查，不直接安装或写入母体真源。",
+            "AI 官方与研究: 7 个启用来源；可信边界：论文和官方博客需要核对方法、实验条件、局限和发布日期，不能把标题当结论。",
+            "产品、创业与市场: 11 个启用来源；可信边界：排行榜和社区热度只表示趋势，进入产品判断前要交叉验证用户需求和留存。"
+          ],
+          "references": [
+            {
+              "label": "MEE Insight Hub GitHub Pages",
+              "url": "https://superqyl.github.io/mee-insight-hub/"
+            },
+            {
+              "label": "MEE Insight Hub repository",
+              "url": "https://github.com/superqyl/mee-insight-hub"
+            },
+            {
+              "label": "Hacker News",
+              "url": "https://news.ycombinator.com/"
+            },
+            {
+              "label": "GitHub Trending",
+              "url": "https://github.com/trending"
+            }
+          ]
+        },
+        {
+          "id": "weekly-product",
+          "track_id": "product",
+          "label": "产品与商机",
+          "title": "产品与商机机会报告（周报 2026-W22）",
+          "kicker": "周报 / 从信号到可验证机会",
+          "lead": "本周层负责把多日重复信号压缩成主题簇、优先级和待验证假设。 本报告回答：当期哪些公开趋势、开源机制、私域需求和市场变化可以转化为产品假设或商业实验。",
+          "visual": {
+            "src": "./public/assets/judgment-network.png",
+            "alt": "从市场信号到产品判断网络"
+          },
+          "insights": [
+            {
+              "title": "报告站点本身就是一个产品机会样本",
+              "summary": "从飞书文档到公开站点的转化，暴露了一个明确需求：把私域材料、公开来源、图文表达和证据索引变成可传播、可更新、可追溯的研究页面。",
+              "sub_insights": [
+                "用户需要的不是更多摘要，而是能定位具体报告、具体证据和具体行动的阅读界面。",
+                "报告网站应同时服务阅读、转发、复盘和后续自动化，不只是静态展示。",
+                "内容生成链路越长，越需要结构化数据契约来避免质量回退。"
+              ],
+              "evidence": [
+                "MEE Insight Hub",
+                "GitHub Pages 公开站点",
+                "飞书文档到站点的迁移需求"
+              ]
+            },
+            {
+              "title": "Agent 产品机会应优先落在高价值工作流",
+              "summary": "通用聊天入口竞争会迅速同质化，更有价值的是审计、报告、研究、证据整理、质量门禁这类可验证工作流。",
+              "sub_insights": [
+                "高价值工作流通常有明确输入、可审计过程、可复核交付物和责任边界。",
+                "产品切口应先从单一高价值流程验证，而不是泛化成平台。",
+                "能把证据、日志、权限和输出质量串起来的系统，比只生成内容的工具更接近商业价值。"
+              ],
+              "evidence": [
+                "Product Hunt / AI tool directories",
+                "GitHub Agent repos",
+                "Adapora 相关工作流经验"
+              ]
+            }
+          ],
+          "actions": [
+            "把站点报告生成能力拆成可复用产品模块：source ingest、evidence cluster、report renderer、publish backend。",
+            "为每个产品机会写清楚：目标用户、原始输入、可验证输出、失败边界和付费理由。",
+            "Adapora 只作为落地样本之一，不限制产品机会地图。",
+            "优先验证能减少人工复核负担的场景，而不是只提升表达效果。"
+          ],
+          "source_summary": [
+            "私域收藏与转发: 0 个启用来源；可信边界：只公开标题、链接、短摘要和可信边界；私聊原文留在本地 runtime。",
+            "开源工程与仓库: 12 个启用来源；可信边界：仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。",
+            "Skill / MCP / Agent 能力市场: 9 个启用来源；可信边界：第三方能力先进入供应链审查，不直接安装或写入母体真源。",
+            "AI 官方与研究: 7 个启用来源；可信边界：论文和官方博客需要核对方法、实验条件、局限和发布日期，不能把标题当结论。",
+            "产品、创业与市场: 11 个启用来源；可信边界：排行榜和社区热度只表示趋势，进入产品判断前要交叉验证用户需求和留存。"
+          ],
+          "references": [
+            {
+              "label": "MEE Insight Hub GitHub Pages",
+              "url": "https://superqyl.github.io/mee-insight-hub/"
+            },
+            {
+              "label": "MEE Insight Hub repository",
+              "url": "https://github.com/superqyl/mee-insight-hub"
+            },
+            {
+              "label": "Product Hunt",
+              "url": "https://www.producthunt.com/"
+            },
+            {
+              "label": "Indie Hackers",
+              "url": "https://www.indiehackers.com/"
+            }
+          ]
+        },
+        {
+          "id": "weekly-news",
+          "track_id": "news",
+          "label": "新闻热点",
+          "title": "新闻热点与外部环境报告（周报 2026-W22）",
+          "kicker": "周报 / 从热点到影响判断",
+          "lead": "本周层负责把多日重复信号压缩成主题簇、优先级和待验证假设。 本报告回答：公开世界的变化如何影响 MEE 进化、个人判断、产品机会和风险感知。",
+          "visual": {
+            "src": "./public/assets/source-coverage.png",
+            "alt": "公开来源覆盖与可信边界"
+          },
+          "insights": [
+            {
+              "title": "新闻热点应进入影响分析，而不是停留在事件罗列",
+              "summary": "日报里的新闻栏目不应只是链接列表；每个热点都要回答它对能力边界、需求变化、监管风险或市场机会意味着什么。",
+              "sub_insights": [
+                "AI 官方和研究源用于校准能力边界，不直接转化为产品承诺。",
+                "商业媒体用于识别市场叙事变化，但要避免把情绪当事实。",
+                "政策监管源进入风险与边界层，优先级高于社区讨论。"
+              ],
+              "evidence": [
+                "OpenAI/Anthropic/DeepMind 官方源",
+                "Reuters/Bloomberg/FT/WSJ",
+                "SEC/FINRA/CFTC/央行/工信部/网信办"
+              ]
+            },
+            {
+              "title": "高价值新闻源要反哺所有主题",
+              "summary": "同一条新闻可能同时影响 MEE 的能力规划、个人学习优先级、产品机会判断和风险边界，不应只出现在新闻频道。",
+              "sub_insights": [
+                "技术突破影响 MEE Skill 和 Agent 能力边界。",
+                "市场融资与产品发布影响产品机会优先级。",
+                "监管和宏观变化影响量化、金融、数据和合规边界。"
+              ],
+              "evidence": [
+                "新闻、研究、产品、政策四类来源组合",
+                "source-index 多主题路由",
+                "evidence_cluster_id"
+              ]
+            }
+          ],
+          "actions": [
+            "新闻条目进入报告前必须写出“对哪个主题有影响”。",
+            "高影响新闻至少配一个一手或准一手来源。",
+            "把短期热点和长期变量分开，避免月报被日报噪音污染。",
+            "新闻源默认可以服务全部五类主题，但结论必须标可信边界。"
+          ],
+          "source_summary": [
+            "AI 官方与研究: 7 个启用来源；可信边界：论文和官方博客需要核对方法、实验条件、局限和发布日期，不能把标题当结论。",
+            "产品、创业与市场: 11 个启用来源；可信边界：排行榜和社区热度只表示趋势，进入产品判断前要交叉验证用户需求和留存。",
+            "新闻、行业与政策: 25 个启用来源；可信边界：媒体报道进入趋势层；高影响判断需回到官方公告、一手资料或多源交叉确认。"
+          ],
+          "references": [
+            {
+              "label": "MEE Insight Hub GitHub Pages",
+              "url": "https://superqyl.github.io/mee-insight-hub/"
+            },
+            {
+              "label": "MEE Insight Hub repository",
+              "url": "https://github.com/superqyl/mee-insight-hub"
+            },
+            {
+              "label": "Reuters Technology",
+              "url": "https://www.reuters.com/technology/"
+            },
+            {
+              "label": "Google DeepMind Blog",
+              "url": "https://deepmind.google/discover/blog/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "monthly",
+      "label": "月报",
+      "title": "月报 2026-05",
+      "summary": "本月层负责沉淀跨周仍成立的主线、策略建议和下月行动重点。",
+      "reports": [
+        {
+          "id": "monthly-sources",
+          "track_id": "sources",
+          "label": "参考数据来源",
+          "title": "参考数据来源索引（月报 2026-05）",
+          "kicker": "月报 / 先看证据，再看结论",
+          "lead": "本月层负责沉淀跨周仍成立的主线、策略建议和下月行动重点。 本报告回答：当期有哪些来源进入统一证据系统，哪些可作为判断依据，哪些只能留在待补读或趋势线索层。",
+          "visual": {
+            "src": "./public/assets/hub-overview.png",
+            "alt": "MEE Insight Hub 来源、证据和报告路由关系图"
+          },
+          "insights": [
+            {
+              "title": "来源不是材料堆积，而是判断入口",
+              "summary": "所有来源先进入 source-index，再通过可读性、可信边界、主题路由和 delta 判定，进入五类主题报告。",
+              "sub_insights": [
+                "同一来源可以同时支持 MEE、个人、产品、新闻和来源索引，不再按栏目孤立消费。",
+                "私域收藏只公开标题、链接、短摘要和可信边界，私聊原文留在本地 runtime。",
+                "媒体、社区和排行榜先作为趋势线索，只有交叉验证后才进入正式判断。"
+              ],
+              "evidence": [
+                "新闻、行业与政策 (25)",
+                "量化、金融与市场基础设施 (21)",
+                "开源工程与仓库 (12)",
+                "产品、创业与市场 (11)",
+                "Skill / MCP / Agent 能力市场 (9)"
+              ]
+            },
+            {
+              "title": "新闻源扩展服务全站，不只是新闻栏目",
+              "summary": "Reuters、Bloomberg、FT、WSJ、CNBC、The Verge、36Kr、财新等用于校准外部变化，也会反哺产品机会、个人判断和 MEE 治理。",
+              "sub_insights": [
+                "新闻热点用于识别外部环境变化，但高影响结论必须回到官方公告或一手材料。",
+                "政策和监管源是风险感知的硬边界，不应和媒体评论混作同一证据等级。",
+                "公开趋势与私域问题感需要合并为判断网络，避免只看热度或只看兴趣。"
+              ],
+              "evidence": [
+                "Reuters/Bloomberg/FT/WSJ/CNBC",
+                "SEC/FINRA/CFTC/Federal Reserve",
+                "国内官方政策公开信息"
+              ]
+            }
+          ],
+          "actions": [
+            "每日只补新增 delta，不重复重写已被周报/月报吸收的旧结论。",
+            "不可读、付费墙、登录墙来源只进 ledger，不编造摘要。",
+            "每条进入主报告的来源必须保留为什么值得参考和可信边界。",
+            "周报/月报从 evidence_cluster_id 上卷，不从日报全文复制。"
+          ],
+          "source_summary": [
+            "私域收藏与转发: 0 个启用来源；可信边界：只公开标题、链接、短摘要和可信边界；私聊原文留在本地 runtime。",
+            "开源工程与仓库: 12 个启用来源；可信边界：仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。",
+            "Skill / MCP / Agent 能力市场: 9 个启用来源；可信边界：第三方能力先进入供应链审查，不直接安装或写入母体真源。",
+            "AI 官方与研究: 7 个启用来源；可信边界：论文和官方博客需要核对方法、实验条件、局限和发布日期，不能把标题当结论。",
+            "产品、创业与市场: 11 个启用来源；可信边界：排行榜和社区热度只表示趋势，进入产品判断前要交叉验证用户需求和留存。",
+            "新闻、行业与政策: 25 个启用来源；可信边界：媒体报道进入趋势层；高影响判断需回到官方公告、一手资料或多源交叉确认。",
+            "量化、金融与市场基础设施: 21 个启用来源；可信边界：只用于研究和工具启发；不构成交易、投资或收益承诺。"
+          ],
+          "references": [
+            {
+              "label": "MEE Insight Hub GitHub Pages",
+              "url": "https://superqyl.github.io/mee-insight-hub/"
+            },
+            {
+              "label": "MEE Insight Hub repository",
+              "url": "https://github.com/superqyl/mee-insight-hub"
+            },
+            {
+              "label": "arXiv q-fin",
+              "url": "https://arxiv.org/archive/q-fin"
+            },
+            {
+              "label": "Hugging Face Papers",
+              "url": "https://huggingface.co/papers"
+            }
+          ]
+        },
+        {
+          "id": "monthly-mee",
+          "track_id": "mee",
+          "label": "MEE 本体进化",
+          "title": "MEE 本体进化报告（月报 2026-05）",
+          "kicker": "月报 / 从工具链到治理链",
+          "lead": "本月层负责沉淀跨周仍成立的主线、策略建议和下月行动重点。 本报告回答：MEE 自身的调度、证据、Skill、发布和质量门禁当期有哪些可执行的进化点。",
+          "visual": {
+            "src": "./public/assets/hub-overview.png",
+            "alt": "MEE Insight Hub 作为 MEE 发布与证据治理入口"
+          },
+          "insights": [
+            {
+              "title": "默认发布链路应从飞书文档切换为 GitHub Pages 站点",
+              "summary": "飞书文档适合内部协作沉淀，但不适合作为公开站点的长期必需中间层；站点生成应直接消费统一证据系统。",
+              "sub_insights": [
+                "GitHub Pages 成为主链路后，国内访问实测更稳，也减少 Vercel fallback 的默认噪音。",
+                "Feishu/Vercel 仍保留能力，但必须显式 opt-in，避免每次自动化都生成多套产物。",
+                "自动化提示、CLI help、Capsule 和测试必须一起更新，否则旧入口会把报告结构带回旧形态。"
+              ],
+              "evidence": [
+                "mee radar site",
+                "MEE Insight Hub repository",
+                "intelligence-foraging-scheduler capsule"
+              ]
+            },
+            {
+              "title": "报告质量门禁要检查正文层，而不只检查站点能打开",
+              "summary": "站点 200、图片可加载、JSON 合法都不等于报告可读；必须检查今日报告是否有核心洞察、子洞察、行动建议和来源摘要。",
+              "sub_insights": [
+                "仅有频道定义会让页面看起来完整，但读者找不到实际报告内容。",
+                "后续 QA 应增加 report_body / reports 字段检查，防止抽象外壳通过验收。",
+                "日报、周报、月报的差异应是时间窗口，不是阅读契约变化。"
+              ],
+              "evidence": [
+                "public/data/site-content.json",
+                "tests/mee-cli.test.mjs",
+                "reader contract"
+              ]
+            }
+          ],
+          "actions": [
+            "把 `mee radar site` 作为默认自动化入口，Feishu/Vercel 仅作为显式参数。",
+            "为站点 JSON 增加 `reports` 正文字段，并在测试中断言每份报告有洞察、子洞察和行动建议。",
+            "把站点 QA 从 HTTP 200 扩展为内容结构 QA。",
+            "将旧低质量发布链路继续保持 fail-closed。"
+          ],
+          "source_summary": [
+            "私域收藏与转发: 0 个启用来源；可信边界：只公开标题、链接、短摘要和可信边界；私聊原文留在本地 runtime。",
+            "开源工程与仓库: 12 个启用来源；可信边界：仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。",
+            "Skill / MCP / Agent 能力市场: 9 个启用来源；可信边界：第三方能力先进入供应链审查，不直接安装或写入母体真源。",
+            "AI 官方与研究: 7 个启用来源；可信边界：论文和官方博客需要核对方法、实验条件、局限和发布日期，不能把标题当结论。"
+          ],
+          "references": [
+            {
+              "label": "MEE Insight Hub GitHub Pages",
+              "url": "https://superqyl.github.io/mee-insight-hub/"
+            },
+            {
+              "label": "MEE Insight Hub repository",
+              "url": "https://github.com/superqyl/mee-insight-hub"
+            },
+            {
+              "label": "MEE repository",
+              "url": "https://github.com/superqyl/mee"
+            },
+            {
+              "label": "GitHub Topics: AI agents",
+              "url": "https://github.com/topics/ai-agent"
+            }
+          ]
+        },
+        {
+          "id": "monthly-personal",
+          "track_id": "personal",
+          "label": "个人认知与洞察",
+          "title": "个人认知与洞察报告（月报 2026-05）",
+          "kicker": "月报 / 从收藏到能力复利",
+          "lead": "本月层负责沉淀跨周仍成立的主线、策略建议和下月行动重点。 本报告回答：当期材料如何帮助个人把收藏、阅读、判断、练习和复盘连成可持续更新的操作系统。",
+          "visual": {
+            "src": "./public/assets/personal-os.png",
+            "alt": "个人操作系统：从信息输入到判断闭环"
+          },
+          "insights": [
+            {
+              "title": "个人竞争力正在从工具熟练度转向操作系统",
+              "summary": "会用更多工具不是长期优势；能把信息、问题、技能、判断和行动组织成闭环，才会形成能力复利。",
+              "sub_insights": [
+                "收藏只是输入层，只有进入问题库、判断模型和行动清单后才产生复利。",
+                "每条高价值材料都应转化为一个可回答问题、一个可练习技能或一个可验证小实验。",
+                "复盘不是写总结，而是检查判断是否产生了更好的下一步动作。"
+              ],
+              "evidence": [
+                "GitHub/Skill 市场信号",
+                "公开产品与工程讨论",
+                "私域收藏的问题感"
+              ]
+            },
+            {
+              "title": "公开趋势和私域兴趣需要合并校准",
+              "summary": "只看公开趋势容易被热点牵引，只看私域收藏容易困在兴趣回音室；两者合并后才构成判断网络。",
+              "sub_insights": [
+                "公开新闻和产品榜单负责提示外部变化。",
+                "私域转发和笔记负责暴露真实困惑、兴趣和需求。",
+                "个人洞察的价值来自两者之间的不一致：哪些趋势你反复关注，哪些热点你应主动忽略。"
+              ],
+              "evidence": [
+                "Product Hunt / Hacker News",
+                "Reuters / The Verge",
+                "飞书收藏摘要"
+              ]
+            }
+          ],
+          "actions": [
+            "把今日材料分成：要补读、要练习、要验证、要忽略四类。",
+            "每周从日报中挑 3 个重复出现的问题，做成练习题或小实验。",
+            "对高热度材料写一句反证：如果它不重要，可能是因为什么？",
+            "保留个人品味判断，不把公开热度直接等同于机会。"
+          ],
+          "source_summary": [
+            "私域收藏与转发: 0 个启用来源；可信边界：只公开标题、链接、短摘要和可信边界；私聊原文留在本地 runtime。",
+            "开源工程与仓库: 12 个启用来源；可信边界：仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。",
+            "Skill / MCP / Agent 能力市场: 9 个启用来源；可信边界：第三方能力先进入供应链审查，不直接安装或写入母体真源。",
+            "AI 官方与研究: 7 个启用来源；可信边界：论文和官方博客需要核对方法、实验条件、局限和发布日期，不能把标题当结论。",
+            "产品、创业与市场: 11 个启用来源；可信边界：排行榜和社区热度只表示趋势，进入产品判断前要交叉验证用户需求和留存。"
+          ],
+          "references": [
+            {
+              "label": "MEE Insight Hub GitHub Pages",
+              "url": "https://superqyl.github.io/mee-insight-hub/"
+            },
+            {
+              "label": "MEE Insight Hub repository",
+              "url": "https://github.com/superqyl/mee-insight-hub"
+            },
+            {
+              "label": "Hacker News",
+              "url": "https://news.ycombinator.com/"
+            },
+            {
+              "label": "GitHub Trending",
+              "url": "https://github.com/trending"
+            }
+          ]
+        },
+        {
+          "id": "monthly-product",
+          "track_id": "product",
+          "label": "产品与商机",
+          "title": "产品与商机机会报告（月报 2026-05）",
+          "kicker": "月报 / 从信号到可验证机会",
+          "lead": "本月层负责沉淀跨周仍成立的主线、策略建议和下月行动重点。 本报告回答：当期哪些公开趋势、开源机制、私域需求和市场变化可以转化为产品假设或商业实验。",
+          "visual": {
+            "src": "./public/assets/judgment-network.png",
+            "alt": "从市场信号到产品判断网络"
+          },
+          "insights": [
+            {
+              "title": "报告站点本身就是一个产品机会样本",
+              "summary": "从飞书文档到公开站点的转化，暴露了一个明确需求：把私域材料、公开来源、图文表达和证据索引变成可传播、可更新、可追溯的研究页面。",
+              "sub_insights": [
+                "用户需要的不是更多摘要，而是能定位具体报告、具体证据和具体行动的阅读界面。",
+                "报告网站应同时服务阅读、转发、复盘和后续自动化，不只是静态展示。",
+                "内容生成链路越长，越需要结构化数据契约来避免质量回退。"
+              ],
+              "evidence": [
+                "MEE Insight Hub",
+                "GitHub Pages 公开站点",
+                "飞书文档到站点的迁移需求"
+              ]
+            },
+            {
+              "title": "Agent 产品机会应优先落在高价值工作流",
+              "summary": "通用聊天入口竞争会迅速同质化，更有价值的是审计、报告、研究、证据整理、质量门禁这类可验证工作流。",
+              "sub_insights": [
+                "高价值工作流通常有明确输入、可审计过程、可复核交付物和责任边界。",
+                "产品切口应先从单一高价值流程验证，而不是泛化成平台。",
+                "能把证据、日志、权限和输出质量串起来的系统，比只生成内容的工具更接近商业价值。"
+              ],
+              "evidence": [
+                "Product Hunt / AI tool directories",
+                "GitHub Agent repos",
+                "Adapora 相关工作流经验"
+              ]
+            }
+          ],
+          "actions": [
+            "把站点报告生成能力拆成可复用产品模块：source ingest、evidence cluster、report renderer、publish backend。",
+            "为每个产品机会写清楚：目标用户、原始输入、可验证输出、失败边界和付费理由。",
+            "Adapora 只作为落地样本之一，不限制产品机会地图。",
+            "优先验证能减少人工复核负担的场景，而不是只提升表达效果。"
+          ],
+          "source_summary": [
+            "私域收藏与转发: 0 个启用来源；可信边界：只公开标题、链接、短摘要和可信边界；私聊原文留在本地 runtime。",
+            "开源工程与仓库: 12 个启用来源；可信边界：仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。",
+            "Skill / MCP / Agent 能力市场: 9 个启用来源；可信边界：第三方能力先进入供应链审查，不直接安装或写入母体真源。",
+            "AI 官方与研究: 7 个启用来源；可信边界：论文和官方博客需要核对方法、实验条件、局限和发布日期，不能把标题当结论。",
+            "产品、创业与市场: 11 个启用来源；可信边界：排行榜和社区热度只表示趋势，进入产品判断前要交叉验证用户需求和留存。"
+          ],
+          "references": [
+            {
+              "label": "MEE Insight Hub GitHub Pages",
+              "url": "https://superqyl.github.io/mee-insight-hub/"
+            },
+            {
+              "label": "MEE Insight Hub repository",
+              "url": "https://github.com/superqyl/mee-insight-hub"
+            },
+            {
+              "label": "Product Hunt",
+              "url": "https://www.producthunt.com/"
+            },
+            {
+              "label": "Indie Hackers",
+              "url": "https://www.indiehackers.com/"
+            }
+          ]
+        },
+        {
+          "id": "monthly-news",
+          "track_id": "news",
+          "label": "新闻热点",
+          "title": "新闻热点与外部环境报告（月报 2026-05）",
+          "kicker": "月报 / 从热点到影响判断",
+          "lead": "本月层负责沉淀跨周仍成立的主线、策略建议和下月行动重点。 本报告回答：公开世界的变化如何影响 MEE 进化、个人判断、产品机会和风险感知。",
+          "visual": {
+            "src": "./public/assets/source-coverage.png",
+            "alt": "公开来源覆盖与可信边界"
+          },
+          "insights": [
+            {
+              "title": "新闻热点应进入影响分析，而不是停留在事件罗列",
+              "summary": "日报里的新闻栏目不应只是链接列表；每个热点都要回答它对能力边界、需求变化、监管风险或市场机会意味着什么。",
+              "sub_insights": [
+                "AI 官方和研究源用于校准能力边界，不直接转化为产品承诺。",
+                "商业媒体用于识别市场叙事变化，但要避免把情绪当事实。",
+                "政策监管源进入风险与边界层，优先级高于社区讨论。"
+              ],
+              "evidence": [
+                "OpenAI/Anthropic/DeepMind 官方源",
+                "Reuters/Bloomberg/FT/WSJ",
+                "SEC/FINRA/CFTC/央行/工信部/网信办"
+              ]
+            },
+            {
+              "title": "高价值新闻源要反哺所有主题",
+              "summary": "同一条新闻可能同时影响 MEE 的能力规划、个人学习优先级、产品机会判断和风险边界，不应只出现在新闻频道。",
+              "sub_insights": [
+                "技术突破影响 MEE Skill 和 Agent 能力边界。",
+                "市场融资与产品发布影响产品机会优先级。",
+                "监管和宏观变化影响量化、金融、数据和合规边界。"
+              ],
+              "evidence": [
+                "新闻、研究、产品、政策四类来源组合",
+                "source-index 多主题路由",
+                "evidence_cluster_id"
+              ]
+            }
+          ],
+          "actions": [
+            "新闻条目进入报告前必须写出“对哪个主题有影响”。",
+            "高影响新闻至少配一个一手或准一手来源。",
+            "把短期热点和长期变量分开，避免月报被日报噪音污染。",
+            "新闻源默认可以服务全部五类主题，但结论必须标可信边界。"
+          ],
+          "source_summary": [
+            "AI 官方与研究: 7 个启用来源；可信边界：论文和官方博客需要核对方法、实验条件、局限和发布日期，不能把标题当结论。",
+            "产品、创业与市场: 11 个启用来源；可信边界：排行榜和社区热度只表示趋势，进入产品判断前要交叉验证用户需求和留存。",
+            "新闻、行业与政策: 25 个启用来源；可信边界：媒体报道进入趋势层；高影响判断需回到官方公告、一手资料或多源交叉确认。"
+          ],
+          "references": [
+            {
+              "label": "MEE Insight Hub GitHub Pages",
+              "url": "https://superqyl.github.io/mee-insight-hub/"
+            },
+            {
+              "label": "MEE Insight Hub repository",
+              "url": "https://github.com/superqyl/mee-insight-hub"
+            },
+            {
+              "label": "Reuters Technology",
+              "url": "https://www.reuters.com/technology/"
+            },
+            {
+              "label": "Google DeepMind Blog",
+              "url": "https://deepmind.google/discover/blog/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "id": "daily-sources",
+      "track_id": "sources",
+      "label": "参考数据来源",
+      "title": "参考数据来源索引（日报 2026-05-30）",
+      "kicker": "日报 / 先看证据，再看结论",
+      "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：当期有哪些来源进入统一证据系统，哪些可作为判断依据，哪些只能留在待补读或趋势线索层。",
+      "visual": {
+        "src": "./public/assets/hub-overview.png",
+        "alt": "MEE Insight Hub 来源、证据和报告路由关系图"
+      },
+      "insights": [
+        {
+          "title": "来源不是材料堆积，而是判断入口",
+          "summary": "所有来源先进入 source-index，再通过可读性、可信边界、主题路由和 delta 判定，进入五类主题报告。",
+          "sub_insights": [
+            "同一来源可以同时支持 MEE、个人、产品、新闻和来源索引，不再按栏目孤立消费。",
+            "私域收藏只公开标题、链接、短摘要和可信边界，私聊原文留在本地 runtime。",
+            "媒体、社区和排行榜先作为趋势线索，只有交叉验证后才进入正式判断。"
+          ],
+          "evidence": [
+            "新闻、行业与政策 (25)",
+            "量化、金融与市场基础设施 (21)",
+            "开源工程与仓库 (12)",
+            "产品、创业与市场 (11)",
+            "Skill / MCP / Agent 能力市场 (9)"
+          ]
+        },
+        {
+          "title": "新闻源扩展服务全站，不只是新闻栏目",
+          "summary": "Reuters、Bloomberg、FT、WSJ、CNBC、The Verge、36Kr、财新等用于校准外部变化，也会反哺产品机会、个人判断和 MEE 治理。",
+          "sub_insights": [
+            "新闻热点用于识别外部环境变化，但高影响结论必须回到官方公告或一手材料。",
+            "政策和监管源是风险感知的硬边界，不应和媒体评论混作同一证据等级。",
+            "公开趋势与私域问题感需要合并为判断网络，避免只看热度或只看兴趣。"
+          ],
+          "evidence": [
+            "Reuters/Bloomberg/FT/WSJ/CNBC",
+            "SEC/FINRA/CFTC/Federal Reserve",
+            "国内官方政策公开信息"
+          ]
+        }
+      ],
+      "actions": [
+        "每日只补新增 delta，不重复重写已被周报/月报吸收的旧结论。",
+        "不可读、付费墙、登录墙来源只进 ledger，不编造摘要。",
+        "每条进入主报告的来源必须保留为什么值得参考和可信边界。",
+        "周报/月报从 evidence_cluster_id 上卷，不从日报全文复制。"
+      ],
+      "source_summary": [
+        "私域收藏与转发: 0 个启用来源；可信边界：只公开标题、链接、短摘要和可信边界；私聊原文留在本地 runtime。",
+        "开源工程与仓库: 12 个启用来源；可信边界：仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。",
+        "Skill / MCP / Agent 能力市场: 9 个启用来源；可信边界：第三方能力先进入供应链审查，不直接安装或写入母体真源。",
+        "AI 官方与研究: 7 个启用来源；可信边界：论文和官方博客需要核对方法、实验条件、局限和发布日期，不能把标题当结论。",
+        "产品、创业与市场: 11 个启用来源；可信边界：排行榜和社区热度只表示趋势，进入产品判断前要交叉验证用户需求和留存。",
+        "新闻、行业与政策: 25 个启用来源；可信边界：媒体报道进入趋势层；高影响判断需回到官方公告、一手资料或多源交叉确认。",
+        "量化、金融与市场基础设施: 21 个启用来源；可信边界：只用于研究和工具启发；不构成交易、投资或收益承诺。"
+      ],
+      "references": [
+        {
+          "label": "MEE Insight Hub GitHub Pages",
+          "url": "https://superqyl.github.io/mee-insight-hub/"
+        },
+        {
+          "label": "MEE Insight Hub repository",
+          "url": "https://github.com/superqyl/mee-insight-hub"
+        },
+        {
+          "label": "arXiv q-fin",
+          "url": "https://arxiv.org/archive/q-fin"
+        },
+        {
+          "label": "Hugging Face Papers",
+          "url": "https://huggingface.co/papers"
+        }
+      ]
+    },
+    {
+      "id": "daily-mee",
+      "track_id": "mee",
+      "label": "MEE 本体进化",
+      "title": "MEE 本体进化报告（日报 2026-05-30）",
+      "kicker": "日报 / 从工具链到治理链",
+      "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：MEE 自身的调度、证据、Skill、发布和质量门禁当期有哪些可执行的进化点。",
+      "visual": {
+        "src": "./public/assets/hub-overview.png",
+        "alt": "MEE Insight Hub 作为 MEE 发布与证据治理入口"
+      },
+      "insights": [
+        {
+          "title": "默认发布链路应从飞书文档切换为 GitHub Pages 站点",
+          "summary": "飞书文档适合内部协作沉淀，但不适合作为公开站点的长期必需中间层；站点生成应直接消费统一证据系统。",
+          "sub_insights": [
+            "GitHub Pages 成为主链路后，国内访问实测更稳，也减少 Vercel fallback 的默认噪音。",
+            "Feishu/Vercel 仍保留能力，但必须显式 opt-in，避免每次自动化都生成多套产物。",
+            "自动化提示、CLI help、Capsule 和测试必须一起更新，否则旧入口会把报告结构带回旧形态。"
+          ],
+          "evidence": [
+            "mee radar site",
+            "MEE Insight Hub repository",
+            "intelligence-foraging-scheduler capsule"
+          ]
+        },
+        {
+          "title": "报告质量门禁要检查正文层，而不只检查站点能打开",
+          "summary": "站点 200、图片可加载、JSON 合法都不等于报告可读；必须检查今日报告是否有核心洞察、子洞察、行动建议和来源摘要。",
+          "sub_insights": [
+            "仅有频道定义会让页面看起来完整，但读者找不到实际报告内容。",
+            "后续 QA 应增加 report_body / reports 字段检查，防止抽象外壳通过验收。",
+            "日报、周报、月报的差异应是时间窗口，不是阅读契约变化。"
+          ],
+          "evidence": [
+            "public/data/site-content.json",
+            "tests/mee-cli.test.mjs",
+            "reader contract"
+          ]
+        }
+      ],
+      "actions": [
+        "把 `mee radar site` 作为默认自动化入口，Feishu/Vercel 仅作为显式参数。",
+        "为站点 JSON 增加 `reports` 正文字段，并在测试中断言每份报告有洞察、子洞察和行动建议。",
+        "把站点 QA 从 HTTP 200 扩展为内容结构 QA。",
+        "将旧低质量发布链路继续保持 fail-closed。"
+      ],
+      "source_summary": [
+        "私域收藏与转发: 0 个启用来源；可信边界：只公开标题、链接、短摘要和可信边界；私聊原文留在本地 runtime。",
+        "开源工程与仓库: 12 个启用来源；可信边界：仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。",
+        "Skill / MCP / Agent 能力市场: 9 个启用来源；可信边界：第三方能力先进入供应链审查，不直接安装或写入母体真源。",
+        "AI 官方与研究: 7 个启用来源；可信边界：论文和官方博客需要核对方法、实验条件、局限和发布日期，不能把标题当结论。"
+      ],
+      "references": [
+        {
+          "label": "MEE Insight Hub GitHub Pages",
+          "url": "https://superqyl.github.io/mee-insight-hub/"
+        },
+        {
+          "label": "MEE Insight Hub repository",
+          "url": "https://github.com/superqyl/mee-insight-hub"
+        },
+        {
+          "label": "MEE repository",
+          "url": "https://github.com/superqyl/mee"
+        },
+        {
+          "label": "GitHub Topics: AI agents",
+          "url": "https://github.com/topics/ai-agent"
+        }
+      ]
+    },
+    {
+      "id": "daily-personal",
+      "track_id": "personal",
+      "label": "个人认知与洞察",
+      "title": "个人认知与洞察报告（日报 2026-05-30）",
+      "kicker": "日报 / 从收藏到能力复利",
+      "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：当期材料如何帮助个人把收藏、阅读、判断、练习和复盘连成可持续更新的操作系统。",
+      "visual": {
+        "src": "./public/assets/personal-os.png",
+        "alt": "个人操作系统：从信息输入到判断闭环"
+      },
+      "insights": [
+        {
+          "title": "个人竞争力正在从工具熟练度转向操作系统",
+          "summary": "会用更多工具不是长期优势；能把信息、问题、技能、判断和行动组织成闭环，才会形成能力复利。",
+          "sub_insights": [
+            "收藏只是输入层，只有进入问题库、判断模型和行动清单后才产生复利。",
+            "每条高价值材料都应转化为一个可回答问题、一个可练习技能或一个可验证小实验。",
+            "复盘不是写总结，而是检查判断是否产生了更好的下一步动作。"
+          ],
+          "evidence": [
+            "GitHub/Skill 市场信号",
+            "公开产品与工程讨论",
+            "私域收藏的问题感"
+          ]
+        },
+        {
+          "title": "公开趋势和私域兴趣需要合并校准",
+          "summary": "只看公开趋势容易被热点牵引，只看私域收藏容易困在兴趣回音室；两者合并后才构成判断网络。",
+          "sub_insights": [
+            "公开新闻和产品榜单负责提示外部变化。",
+            "私域转发和笔记负责暴露真实困惑、兴趣和需求。",
+            "个人洞察的价值来自两者之间的不一致：哪些趋势你反复关注，哪些热点你应主动忽略。"
+          ],
+          "evidence": [
+            "Product Hunt / Hacker News",
+            "Reuters / The Verge",
+            "飞书收藏摘要"
+          ]
+        }
+      ],
+      "actions": [
+        "把今日材料分成：要补读、要练习、要验证、要忽略四类。",
+        "每周从日报中挑 3 个重复出现的问题，做成练习题或小实验。",
+        "对高热度材料写一句反证：如果它不重要，可能是因为什么？",
+        "保留个人品味判断，不把公开热度直接等同于机会。"
+      ],
+      "source_summary": [
+        "私域收藏与转发: 0 个启用来源；可信边界：只公开标题、链接、短摘要和可信边界；私聊原文留在本地 runtime。",
+        "开源工程与仓库: 12 个启用来源；可信边界：仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。",
+        "Skill / MCP / Agent 能力市场: 9 个启用来源；可信边界：第三方能力先进入供应链审查，不直接安装或写入母体真源。",
+        "AI 官方与研究: 7 个启用来源；可信边界：论文和官方博客需要核对方法、实验条件、局限和发布日期，不能把标题当结论。",
+        "产品、创业与市场: 11 个启用来源；可信边界：排行榜和社区热度只表示趋势，进入产品判断前要交叉验证用户需求和留存。"
+      ],
+      "references": [
+        {
+          "label": "MEE Insight Hub GitHub Pages",
+          "url": "https://superqyl.github.io/mee-insight-hub/"
+        },
+        {
+          "label": "MEE Insight Hub repository",
+          "url": "https://github.com/superqyl/mee-insight-hub"
+        },
+        {
+          "label": "Hacker News",
+          "url": "https://news.ycombinator.com/"
+        },
+        {
+          "label": "GitHub Trending",
+          "url": "https://github.com/trending"
+        }
+      ]
+    },
+    {
+      "id": "daily-product",
+      "track_id": "product",
+      "label": "产品与商机",
+      "title": "产品与商机机会报告（日报 2026-05-30）",
+      "kicker": "日报 / 从信号到可验证机会",
+      "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：当期哪些公开趋势、开源机制、私域需求和市场变化可以转化为产品假设或商业实验。",
+      "visual": {
+        "src": "./public/assets/judgment-network.png",
+        "alt": "从市场信号到产品判断网络"
+      },
+      "insights": [
+        {
+          "title": "报告站点本身就是一个产品机会样本",
+          "summary": "从飞书文档到公开站点的转化，暴露了一个明确需求：把私域材料、公开来源、图文表达和证据索引变成可传播、可更新、可追溯的研究页面。",
+          "sub_insights": [
+            "用户需要的不是更多摘要，而是能定位具体报告、具体证据和具体行动的阅读界面。",
+            "报告网站应同时服务阅读、转发、复盘和后续自动化，不只是静态展示。",
+            "内容生成链路越长，越需要结构化数据契约来避免质量回退。"
+          ],
+          "evidence": [
+            "MEE Insight Hub",
+            "GitHub Pages 公开站点",
+            "飞书文档到站点的迁移需求"
+          ]
+        },
+        {
+          "title": "Agent 产品机会应优先落在高价值工作流",
+          "summary": "通用聊天入口竞争会迅速同质化，更有价值的是审计、报告、研究、证据整理、质量门禁这类可验证工作流。",
+          "sub_insights": [
+            "高价值工作流通常有明确输入、可审计过程、可复核交付物和责任边界。",
+            "产品切口应先从单一高价值流程验证，而不是泛化成平台。",
+            "能把证据、日志、权限和输出质量串起来的系统，比只生成内容的工具更接近商业价值。"
+          ],
+          "evidence": [
+            "Product Hunt / AI tool directories",
+            "GitHub Agent repos",
+            "Adapora 相关工作流经验"
+          ]
+        }
+      ],
+      "actions": [
+        "把站点报告生成能力拆成可复用产品模块：source ingest、evidence cluster、report renderer、publish backend。",
+        "为每个产品机会写清楚：目标用户、原始输入、可验证输出、失败边界和付费理由。",
+        "Adapora 只作为落地样本之一，不限制产品机会地图。",
+        "优先验证能减少人工复核负担的场景，而不是只提升表达效果。"
+      ],
+      "source_summary": [
+        "私域收藏与转发: 0 个启用来源；可信边界：只公开标题、链接、短摘要和可信边界；私聊原文留在本地 runtime。",
+        "开源工程与仓库: 12 个启用来源；可信边界：仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。",
+        "Skill / MCP / Agent 能力市场: 9 个启用来源；可信边界：第三方能力先进入供应链审查，不直接安装或写入母体真源。",
+        "AI 官方与研究: 7 个启用来源；可信边界：论文和官方博客需要核对方法、实验条件、局限和发布日期，不能把标题当结论。",
+        "产品、创业与市场: 11 个启用来源；可信边界：排行榜和社区热度只表示趋势，进入产品判断前要交叉验证用户需求和留存。"
+      ],
+      "references": [
+        {
+          "label": "MEE Insight Hub GitHub Pages",
+          "url": "https://superqyl.github.io/mee-insight-hub/"
+        },
+        {
+          "label": "MEE Insight Hub repository",
+          "url": "https://github.com/superqyl/mee-insight-hub"
+        },
+        {
+          "label": "Product Hunt",
+          "url": "https://www.producthunt.com/"
+        },
+        {
+          "label": "Indie Hackers",
+          "url": "https://www.indiehackers.com/"
+        }
+      ]
+    },
+    {
+      "id": "daily-news",
+      "track_id": "news",
+      "label": "新闻热点",
+      "title": "新闻热点与外部环境报告（日报 2026-05-30）",
+      "kicker": "日报 / 从热点到影响判断",
+      "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：公开世界的变化如何影响 MEE 进化、个人判断、产品机会和风险感知。",
+      "visual": {
+        "src": "./public/assets/source-coverage.png",
+        "alt": "公开来源覆盖与可信边界"
+      },
+      "insights": [
+        {
+          "title": "新闻热点应进入影响分析，而不是停留在事件罗列",
+          "summary": "日报里的新闻栏目不应只是链接列表；每个热点都要回答它对能力边界、需求变化、监管风险或市场机会意味着什么。",
+          "sub_insights": [
+            "AI 官方和研究源用于校准能力边界，不直接转化为产品承诺。",
+            "商业媒体用于识别市场叙事变化，但要避免把情绪当事实。",
+            "政策监管源进入风险与边界层，优先级高于社区讨论。"
+          ],
+          "evidence": [
+            "OpenAI/Anthropic/DeepMind 官方源",
+            "Reuters/Bloomberg/FT/WSJ",
+            "SEC/FINRA/CFTC/央行/工信部/网信办"
+          ]
+        },
+        {
+          "title": "高价值新闻源要反哺所有主题",
+          "summary": "同一条新闻可能同时影响 MEE 的能力规划、个人学习优先级、产品机会判断和风险边界，不应只出现在新闻频道。",
+          "sub_insights": [
+            "技术突破影响 MEE Skill 和 Agent 能力边界。",
+            "市场融资与产品发布影响产品机会优先级。",
+            "监管和宏观变化影响量化、金融、数据和合规边界。"
+          ],
+          "evidence": [
+            "新闻、研究、产品、政策四类来源组合",
+            "source-index 多主题路由",
+            "evidence_cluster_id"
+          ]
+        }
+      ],
+      "actions": [
+        "新闻条目进入报告前必须写出“对哪个主题有影响”。",
+        "高影响新闻至少配一个一手或准一手来源。",
+        "把短期热点和长期变量分开，避免月报被日报噪音污染。",
+        "新闻源默认可以服务全部五类主题，但结论必须标可信边界。"
+      ],
+      "source_summary": [
+        "AI 官方与研究: 7 个启用来源；可信边界：论文和官方博客需要核对方法、实验条件、局限和发布日期，不能把标题当结论。",
+        "产品、创业与市场: 11 个启用来源；可信边界：排行榜和社区热度只表示趋势，进入产品判断前要交叉验证用户需求和留存。",
+        "新闻、行业与政策: 25 个启用来源；可信边界：媒体报道进入趋势层；高影响判断需回到官方公告、一手资料或多源交叉确认。"
+      ],
+      "references": [
+        {
+          "label": "MEE Insight Hub GitHub Pages",
+          "url": "https://superqyl.github.io/mee-insight-hub/"
+        },
+        {
+          "label": "MEE Insight Hub repository",
+          "url": "https://github.com/superqyl/mee-insight-hub"
+        },
+        {
+          "label": "Reuters Technology",
+          "url": "https://www.reuters.com/technology/"
+        },
+        {
+          "label": "Google DeepMind Blog",
+          "url": "https://deepmind.google/discover/blog/"
+        }
       ]
     }
   ],
