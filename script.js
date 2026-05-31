@@ -191,52 +191,61 @@
     }));
   }
 
-  function reportCardBullets(report) {
-    if (report.report_kind === "source-index" || report.track_id === "sources") {
-      const summary = report.source_index?.summary || [];
-      return summary.slice(0, 3);
-    }
-    return (report.insights || []).slice(0, 4).map((insight) => insight.title);
+  function isSourceIndexReport(report) {
+    return report?.report_kind === "source-index" || report?.report_contract?.id === "source-index" || report?.track_id === "sources";
   }
 
-  function reportCardMeta(report) {
-    if (report.report_kind === "source-index" || report.track_id === "sources") {
-      const groupCount = report.source_index?.groups?.length || 0;
-      const ledgerCount = report.source_index?.ledger?.length || 0;
-      return [`${groupCount} 类来源`, `${ledgerCount} 类 ledger`];
-    }
-    return [`${(report.insights || []).length} 条洞察`, `${(report.actions || []).length} 条行动`];
+  function isFactSummaryReport(report) {
+    return report?.report_kind === "fact-summary" || report?.report_contract?.id === "fact-summary";
   }
 
-  function renderReportOverview(pack, reports) {
-    const target = document.querySelector("#report-overview");
-    if (!target) return;
-    const header = el("div", "report-overview-head");
-    const title = el("div", "");
-    title.append(el("strong", "", "本周期报告目录"));
-    title.append(el("p", "", "先扫这里判断该读哪份正文；点击卡片会切换到对应完整报告。"));
-    header.append(title);
+  function renderFactSummaryReport(report) {
+    const wrapper = el("article", "report-body fact-summary-report");
+    wrapper.appendChild(renderReportIntro(report));
 
-    const cards = el("div", "report-overview-grid");
-    reports.forEach((report) => {
-      const card = el("button", "report-overview-card");
-      card.type = "button";
-      card.setAttribute("aria-current", String(report.id === state.selectedReport));
-      card.addEventListener("click", () => {
-        state.selectedReport = report.id;
-        renderReports(state.data);
-        document.querySelector("#report-detail")?.scrollIntoView({ behavior: "smooth", block: "start" });
-      });
-      const label = el("span", "overview-label", report.label || report.title);
-      const h = el("strong", "", report.title || report.label);
-      const lead = el("p", "", report.lead || "来源索引与报告追溯入口。");
+    const itemsSection = el("section", "fact-summary-section");
+    itemsSection.append(el("h4", "", "1. 热点摘要"));
+    const grid = el("div", "news-digest-grid");
+    (report.news_items || []).forEach((item, index) => {
+      const card = el("article", "news-digest-card");
+      card.append(el("span", "news-rank", String(index + 1).padStart(2, "0")));
+      card.append(el("h5", "", item.title || "未命名热点"));
+      if (item.summary) card.append(el("p", "", item.summary));
       const meta = el("div", "meta-row");
-      reportCardMeta(report).forEach((item) => meta.append(el("span", "", item)));
-      const bullets = list(reportCardBullets(report));
-      card.append(label, h, lead, meta, bullets);
-      cards.append(card);
+      [item.source_group, item.source_type, item.trust_tier].filter(Boolean).forEach((value) => meta.append(el("span", "", value)));
+      if ((item.related_themes || []).length) meta.append(el("span", "", `关联：${item.related_themes.join(" / ")}`));
+      if (meta.childNodes.length) card.append(meta);
+      if (item.boundary) card.append(el("p", "news-boundary", item.boundary));
+      if (item.url) {
+        const link = document.createElement("a");
+        link.className = "news-link";
+        link.href = item.url;
+        link.textContent = "查看公开来源";
+        if (/^https?:/i.test(item.url)) {
+          link.target = "_blank";
+          link.rel = "noreferrer noopener";
+        }
+        card.append(link);
+      }
+      grid.append(card);
     });
-    target.replaceChildren(header, cards);
+    itemsSection.append(grid);
+    wrapper.append(itemsSection);
+
+    const watchSection = el("section", "fact-summary-section");
+    watchSection.append(el("h4", "", "2. 观察重点"));
+    watchSection.append(list(report.watch_points || []));
+    wrapper.append(watchSection);
+
+    const sourceSection = el("section", "fact-summary-section source-summary-block");
+    sourceSection.append(el("h4", "", "3. 参考数据来源"));
+    sourceSection.append(list(report.source_summary || []));
+    if (report.references && report.references.length) {
+      sourceSection.append(el("strong", "source-reference-title", "公开参考资料"));
+      sourceSection.append(renderReferenceChips(report.references));
+    }
+    wrapper.append(sourceSection);
+    return wrapper;
   }
 
   function renderReports(data) {
@@ -255,7 +264,6 @@
     if (!reports.some((report) => report.id === state.selectedReport)) state.selectedReport = reports[0]?.id || "";
     renderReportPackTabs(packs);
     renderReportTabs(reports);
-    renderReportOverview(pack, reports);
 
     const packBox = el("div", "report-pack-card");
     packBox.append(el("strong", "", pack.title || pack.label || "报告包"));
@@ -268,8 +276,13 @@
       target.textContent = "当前周期暂无报告正文。";
       return;
     }
-    if (report.report_kind === "source-index" || report.track_id === "sources") {
+    if (isSourceIndexReport(report)) {
       target.replaceChildren(renderSourceIndexReport(report));
+      setupLightbox();
+      return;
+    }
+    if (isFactSummaryReport(report)) {
+      target.replaceChildren(renderFactSummaryReport(report));
       setupLightbox();
       return;
     }

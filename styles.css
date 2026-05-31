@@ -98,36 +98,6 @@ h1, h2, h3, h4, a, p { overflow-wrap: anywhere; }
 .report-pack-tabs button[aria-selected="true"] { color: #fff; background: var(--teal); border-color: var(--teal); }
 .report-tabs button[aria-selected="true"] { color: #fff; background: var(--ink); border-color: var(--ink); }
 .report-pack-summary { margin: 4px 0 16px; }
-.report-overview {
-  margin: 0 0 18px;
-  padding: 18px;
-  background: rgba(255, 255, 255, 0.94);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  box-shadow: 0 12px 34px rgba(23, 32, 51, 0.06);
-}
-.report-overview-head { display: flex; align-items: end; justify-content: space-between; gap: 18px; margin-bottom: 14px; }
-.report-overview-head strong { display: block; font-size: 20px; }
-.report-overview-head p { margin: 4px 0 0; color: var(--muted); }
-.report-overview-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
-.report-overview-card {
-  display: block;
-  width: 100%;
-  padding: 16px;
-  color: inherit;
-  text-align: left;
-  background: #fbfdff;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  font: inherit;
-  cursor: pointer;
-}
-.report-overview-card:hover, .report-overview-card[aria-current="true"] { border-color: #92b7e7; box-shadow: 0 10px 28px rgba(37, 99, 235, 0.12); }
-.report-overview-card[aria-current="true"] { background: #f1f7ff; }
-.report-overview-card .overview-label { display: block; margin-bottom: 8px; color: var(--teal); font-size: 12px; font-weight: 900; }
-.report-overview-card strong { display: block; font-size: 17px; line-height: 1.28; }
-.report-overview-card p { margin: 8px 0 0; color: #44536b; font-size: 14px; line-height: 1.55; }
-.report-overview-card ul { margin: 12px 0 0; padding-left: 18px; color: #44536b; font-size: 13px; line-height: 1.55; }
 .report-pack-card, .report-body {
   background: rgba(255, 255, 255, 0.94);
   border: 1px solid var(--line);
@@ -167,7 +137,23 @@ h1, h2, h3, h4, a, p { overflow-wrap: anywhere; }
 .action-list li { margin: 8px 0; }
 .reference-row { display: flex; flex-wrap: wrap; gap: 8px; }
 .reference-row a { display: inline-flex; min-height: 34px; align-items: center; padding: 5px 10px; color: var(--blue); background: #eef4fb; border: 1px solid var(--line); border-radius: 999px; font-size: 13px; font-weight: 800; }
-.source-index-report .report-intro { align-items: start; }
+.fact-summary-report .report-intro, .source-index-report .report-intro { align-items: start; }
+.fact-summary-section { padding-top: 28px; }
+.fact-summary-section h4 { margin: 0 0 16px; font-size: 26px; }
+.fact-summary-section > ul { margin: 0; padding-left: 22px; color: #44536b; }
+.fact-summary-section > ul li { margin: 8px 0; }
+.news-digest-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.news-digest-card {
+  padding: 18px;
+  background: #fbfdff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.news-rank { display: inline-flex; min-width: 34px; height: 28px; align-items: center; justify-content: center; margin-bottom: 12px; color: #fff; background: var(--ink); border-radius: 7px; font-weight: 900; }
+.news-digest-card h5 { margin: 0 0 10px; font-size: 20px; line-height: 1.28; }
+.news-digest-card p { margin: 8px 0 0; color: #44536b; line-height: 1.72; }
+.news-boundary { padding-top: 10px; border-top: 1px solid var(--line); font-size: 14px; }
+.news-link { display: inline-flex; min-height: 34px; align-items: center; margin-top: 12px; padding: 5px 10px; color: var(--blue); background: #eef4fb; border: 1px solid var(--line); border-radius: 999px; font-size: 13px; font-weight: 850; }
 .source-index-section { padding-top: 28px; }
 .source-index-section h4 { margin: 0 0 16px; font-size: 26px; }
 .source-index-section > ul { margin: 0; padding-left: 22px; color: #44536b; }
@@ -203,9 +189,9 @@ h1, h2, h3, h4, a, p { overflow-wrap: anywhere; }
 @media (max-width: 900px) {
   .hero { padding: 42px 0 24px; }
   .report-section { padding-top: 42px; }
-  .report-overview-grid,
   .report-intro,
   .insight-content,
+  .news-digest-grid,
   .source-index-grid,
   .source-ledger-card { grid-template-columns: 1fr; }
   .report-pack-card { grid-template-columns: 1fr; }
@@ -216,5 +202,4 @@ h1, h2, h3, h4, a, p { overflow-wrap: anywhere; }
   .section, .section-band { width: min(100% - 28px, var(--max)); }
   .section-muted { padding-inline: 14px; }
   .hero h1 { font-size: 50px; }
-  .report-overview { padding: 14px; }
 }
