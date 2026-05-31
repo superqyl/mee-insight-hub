@@ -209,8 +209,30 @@
     (report.news_items || []).forEach((item, index) => {
       const card = el("article", "news-digest-card");
       card.append(el("span", "news-rank", String(index + 1).padStart(2, "0")));
+      const imageSrc = item.image?.src || item.image_url || "";
+      if (imageSrc) {
+        const figure = el("figure", "news-source-figure");
+        const button = el("button", "image-zoom");
+        button.type = "button";
+        button.dataset.full = imageSrc;
+        const img = document.createElement("img");
+        img.src = imageSrc;
+        img.alt = item.image?.alt || `${item.title || "热点新闻"} 原始来源图片`;
+        button.appendChild(img);
+        figure.append(button);
+        figure.append(el("figcaption", "", item.image?.origin === "source" ? "原始新闻图片" : "来源图片"));
+        card.append(figure);
+      }
       card.append(el("h5", "", item.title || "未命名热点"));
+      const newsMeta = [item.source_name, item.published_at && item.published_at !== "unknown" ? item.published_at : ""].filter(Boolean).join(" · ");
+      if (newsMeta) card.append(el("p", "news-meta", newsMeta));
       if (item.summary) card.append(el("p", "", item.summary));
+      if (item.key_points && item.key_points.length) {
+        const points = el("div", "news-key-points");
+        points.append(el("strong", "", "重点信息"));
+        points.append(list(item.key_points));
+        card.append(points);
+      }
       const meta = el("div", "meta-row");
       [item.source_group, item.source_type, item.trust_tier].filter(Boolean).forEach((value) => meta.append(el("span", "", value)));
       if ((item.related_themes || []).length) meta.append(el("span", "", `关联：${item.related_themes.join(" / ")}`));

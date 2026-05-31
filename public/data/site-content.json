@@ -1,7 +1,7 @@
 {
   "meta": {
     "site_name": "MEE Insight Hub",
-    "generated_at": "2026-05-31T21:37:13.367Z",
+    "generated_at": "2026-05-31T23:18:06.064Z",
     "cadence": "daily",
     "period": {
       "cadence": "daily",
@@ -99,190 +99,354 @@
           "title": "新闻热点摘要（日报 2026-05-31）",
           "kicker": "日报 / 事实摘要与外部变化",
           "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告先呈现当期公开世界发生了什么、来自哪些来源、有什么观察重点；不把新闻摘要伪装成洞察报告。",
-          "visual": {
-            "src": "./public/assets/judgment-network.png",
-            "alt": "公开热点来源进入统一证据底座"
-          },
           "news_items": [
             {
-              "title": "OpenAI official news feed",
-              "url": "https://openai.com/news/rss.xml",
+              "title": "Introducing Claude Opus 4.8",
+              "url": "https://www.anthropic.com/news/claude-opus-4-8",
+              "source_name": "Anthropic official newsroom",
+              "source_id": "anthropic-claude-opus-4-8",
+              "source_group": "ai-research",
+              "source_type": "official-news",
+              "trust_tier": "P0",
+              "published_at": "2026-05-28",
+              "summary": "Anthropic 发布 Claude Opus 4.8：在 Opus 4.7 基础上提升编码、agentic skills、推理和知识工作任务表现；同篇公告还提到 claude.ai 的 effort control、Claude Code 的 Dynamic workflows，以及 Opus 4.8 fast mode 的成本变化。",
+              "key_points": [
+                "Claude Opus 4.8 是官方产品发布，不是媒体二次转述。",
+                "Dynamic workflows 是 Claude Code 面向大规模问题处理的新能力，应进入 MEE 与 Agent 工作流能力边界观察。",
+                "fast mode 成本变化会影响产品侧对高阶模型的调用策略与体验设计。"
+              ],
+              "image_url": "https://cdn.sanity.io/images/4zrzovbb/website/0eaa0ed2dce9810169112e1c77de2585fcf1f5c2-2880x1620.jpg",
+              "image": {
+                "src": "https://cdn.sanity.io/images/4zrzovbb/website/0eaa0ed2dce9810169112e1c77de2585fcf1f5c2-2880x1620.jpg",
+                "alt": "Anthropic Claude Opus 4.8 official announcement image",
+                "origin": "source"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "官方一手公告，可用于确认产品能力与发布事实；具体评测表现和生产采用仍需结合系统卡、实际测试和成本约束。"
+            },
+            {
+              "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
+              "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/",
+              "source_name": "Google AI blog feed",
+              "source_id": "google-ai-blog-rss",
               "source_group": "news",
               "source_type": "commentary",
               "trust_tier": "P0",
-              "summary": "来源状态：fetchable；刷新节奏：daily。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 OpenAI official news feed",
+              "published_at": "2026-05-29",
+              "summary": "Google 用 AI Studio 快速生成 I/O 2026 主题互动内容，说明官方正在把“用 AI 生成小型应用/互动页面”包装成面向普通开发者和内容团队的可感知能力。",
+              "key_points": [
+                "事实重点：Google AI Studio 被用于快速生成 I/O 主题互动体验。",
+                "观察重点：低门槛应用生成正在成为开发者工具的传播样板。",
+                "可借鉴点：报告站点、互动问答和轻应用可以作为高频内容表达形态。"
+              ],
+              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOQuiz2026_social.max-600x600.format-webp.webp",
+              "image": {
+                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOQuiz2026_social.max-600x600.format-webp.webp",
+                "alt": "Take our I/O 2026 quiz, vibe coded in Google AI Studio. 原始来源图片",
+                "origin": "source"
+              },
               "related_themes": [
                 "MEE",
                 "个人",
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间和上下文。"
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
             },
             {
-              "title": "Anthropic official newsroom",
-              "url": "https://www.anthropic.com/news",
+              "title": "9 demos of Gemini Omni and Gemini 3.5 in action",
+              "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/",
+              "source_name": "Google AI blog feed",
+              "source_id": "google-ai-blog-rss",
               "source_group": "news",
               "source_type": "commentary",
               "trust_tier": "P0",
-              "summary": "来源状态：fetchable；刷新节奏：daily。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Anthropic official newsroom",
+              "published_at": "2026-05-29",
+              "summary": "Google I/O 相关材料集中展示 Gemini Omni 与 Gemini 3.5 的多模态和应用能力，适合作为观察 Google AI 产品化节奏、交互形态和开发者入口变化的事实样本。",
+              "key_points": [
+                "事实重点：Google 将 Gemini Omni 与 Gemini 3.5 作为 I/O 2026 的核心能力展示。",
+                "观察重点：多模态能力正在从演示走向应用场景与开发者材料。",
+                "后续需要回读官方 demo，区分可用能力、概念展示和区域/权限限制。"
+              ],
+              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Omni_and_Gemini_3.5_hero.max-600x600.format-webp.webp",
+              "image": {
+                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Omni_and_Gemini_3.5_hero.max-600x600.format-webp.webp",
+                "alt": "9 demos of Gemini Omni and Gemini 3.5 in action 原始来源图片",
+                "origin": "source"
+              },
               "related_themes": [
                 "MEE",
                 "个人",
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间和上下文。"
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
             },
             {
-              "title": "Google AI blog feed",
-              "url": "https://blog.google/technology/ai/rss/",
+              "title": "Check out real-life AI prototypes from the Futures Lab.",
+              "url": "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs/",
+              "source_name": "Google AI blog feed",
+              "source_id": "google-ai-blog-rss",
               "source_group": "news",
               "source_type": "commentary",
               "trust_tier": "P0",
-              "summary": "来源状态：fetchable；刷新节奏：weekly。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Google AI blog feed",
+              "published_at": "2026-05-29",
+              "summary": "Google Futures Lab 展示来自大学场景的 AI 原型，例如教育、工作和辅助交互方向；这类案例更接近真实用户场景，而不只是模型能力展示。",
+              "key_points": [
+                "事实重点：优先确认发布时间、原始来源和新闻主体。",
+                "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
+                "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
+              ],
+              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FutureLabs_social.max-600x600.format-webp.webp",
+              "image": {
+                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FutureLabs_social.max-600x600.format-webp.webp",
+                "alt": "Check out real-life AI prototypes from the Futures Lab. 原始来源图片",
+                "origin": "source"
+              },
               "related_themes": [
                 "MEE",
                 "个人",
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间和上下文。"
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
             },
             {
-              "title": "Google DeepMind official blog page",
-              "url": "https://deepmind.google/discover/blog/",
+              "title": "Profiling in PyTorch (Part 1): A Beginner&apos;s Guide to torch.profiler",
+              "url": "https://huggingface.co/blog/torch-profiler",
+              "source_name": "Hugging Face blog feed",
+              "source_id": "huggingface-blog-rss",
+              "source_group": "news",
+              "source_type": "commentary",
+              "trust_tier": "P1",
+              "published_at": "2026-05-29",
+              "summary": "PyTorch profiling 教程更新强化了性能观测基础：当模型和 agent 系统进入工程化阶段，profiling、trace 和瓶颈定位会成为比单次效果展示更重要的能力。",
+              "key_points": [
+                "事实重点：优先确认发布时间、原始来源和新闻主体。",
+                "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
+                "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
+              ],
+              "image_url": "https://huggingface.co/blog/assets/torch-profiler/thumbnail.png",
+              "image": {
+                "src": "https://huggingface.co/blog/assets/torch-profiler/thumbnail.png",
+                "alt": "Profiling in PyTorch (Part 1): A Beginner&apos;s Guide to torch.profiler 原始来源图片",
+                "origin": "source"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+            },
+            {
+              "title": "Catch up on 12 major I/O 2026 moments",
+              "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
+              "source_name": "Google AI blog feed",
+              "source_id": "google-ai-blog-rss",
               "source_group": "news",
               "source_type": "commentary",
               "trust_tier": "P0",
-              "summary": "来源状态：fetchable；刷新节奏：weekly。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Google DeepMind official blog page",
+              "published_at": "2026-05-28",
+              "summary": "Google I/O 相关材料集中展示 Gemini Omni 与 Gemini 3.5 的多模态和应用能力，适合作为观察 Google AI 产品化节奏、交互形态和开发者入口变化的事实样本。",
+              "key_points": [
+                "事实重点：Google 将 Gemini Omni 与 Gemini 3.5 作为 I/O 2026 的核心能力展示。",
+                "观察重点：多模态能力正在从演示走向应用场景与开发者材料。",
+                "后续需要回读官方 demo，区分可用能力、概念展示和区域/权限限制。"
+              ],
+              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_KNH.max-600x600.format-webp.webp",
+              "image": {
+                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_KNH.max-600x600.format-webp.webp",
+                "alt": "Catch up on 12 major I/O 2026 moments 原始来源图片",
+                "origin": "source"
+              },
               "related_themes": [
                 "MEE",
                 "个人",
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间和上下文。"
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
             },
             {
-              "title": "Official macro, financial, and China policy seeds for high-trust external context",
-              "url": "",
+              "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
+              "url": "https://huggingface.co/blog/ibm-research/itbench-aa",
+              "source_name": "Hugging Face blog feed",
+              "source_id": "huggingface-blog-rss",
               "source_group": "news",
-              "source_type": "platform",
+              "source_type": "commentary",
+              "trust_tier": "P1",
+              "published_at": "2026-05-27",
+              "summary": "ITBench-AA 指向一个重要事实：前沿模型在企业 IT agentic 任务上的得分仍低于 50%，说明真实企业任务中的状态、权限、工具和流程复杂度仍是能力边界。",
+              "key_points": [
+                "事实重点：该基准把企业 IT 任务作为 agentic 能力测试对象。",
+                "边界重点：前沿模型低于 50% 的成绩说明工具、权限、状态和流程仍是主要难点。",
+                "产品重点：企业 Agent 产品需要把可观测、回滚、审批和验证做成一等能力。"
+              ],
+              "image_url": "https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/QzGxABeEDggNYzvgSLQqU.png",
+              "image": {
+                "src": "https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/QzGxABeEDggNYzvgSLQqU.png",
+                "alt": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM 原始来源图片",
+                "origin": "source"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+            },
+            {
+              "title": "Harness, Scaffold, and the AI Agent Terms Worth Getting Right",
+              "url": "https://huggingface.co/blog/agent-glossary",
+              "source_name": "Hugging Face blog feed",
+              "source_id": "huggingface-blog-rss",
+              "source_group": "news",
+              "source_type": "commentary",
+              "trust_tier": "P1",
+              "published_at": "2026-05-25",
+              "summary": "Hugging Face 对 Harness、Scaffold 等 Agent 术语做澄清，价值在于帮助区分模型、工具、运行时、流程脚手架和评测环境，避免把不同层级混成一个概念。",
+              "key_points": [
+                "事实重点：Agent 领域正在形成更细的术语分层。",
+                "判断重点：Harness、Scaffold、Runtime、Eval 不应混用。",
+                "沉淀重点：MEE 的 Skill、Capsule、solidify 和 source index 需要保持清晰边界。"
+              ],
+              "image_url": "https://huggingface.co/blog/assets/agent-glossary/thumbnail.png",
+              "image": {
+                "src": "https://huggingface.co/blog/assets/agent-glossary/thumbnail.png",
+                "alt": "Harness, Scaffold, and the AI Agent Terms Worth Getting Right 原始来源图片",
+                "origin": "source"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+            },
+            {
+              "title": "Catch up on the Dialogues stage at Google I/O 2026.",
+              "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-dialogues-recap/",
+              "source_name": "Google AI blog feed",
+              "source_id": "google-ai-blog-rss",
+              "source_group": "news",
+              "source_type": "commentary",
               "trust_tier": "P0",
-              "summary": "来源状态：manual_or_browser_followup；刷新节奏：weekly。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Official macro, financial, and China policy seeds for high-trust external context",
+              "published_at": "2026-05-22",
+              "summary": "A recap of the 2026 I/O Dialogues, where leaders discuss the future of AI, quantum computing, robotics and creativity.",
+              "key_points": [
+                "事实重点：优先确认发布时间、原始来源和新闻主体。",
+                "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
+                "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
+              ],
+              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IO26_Dialogues_3z680sK.max-600x600.format-webp.webp",
+              "image": {
+                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IO26_Dialogues_3z680sK.max-600x600.format-webp.webp",
+                "alt": "Catch up on the Dialogues stage at Google I/O 2026. 原始来源图片",
+                "origin": "source"
+              },
               "related_themes": [
                 "MEE",
                 "个人",
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间和上下文。"
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
             },
             {
-              "title": "Hugging Face blog feed",
-              "url": "https://huggingface.co/blog/feed.xml",
+              "title": "We’re announcing new community investments in Missouri.",
+              "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/missouri-programs/",
+              "source_name": "Google AI blog feed",
+              "source_id": "google-ai-blog-rss",
+              "source_group": "news",
+              "source_type": "commentary",
+              "trust_tier": "P0",
+              "published_at": "2026-05-20",
+              "summary": "We’re helping build the state’s next-generation workforce and investing in energy programs.",
+              "key_points": [
+                "事实重点：优先确认发布时间、原始来源和新闻主体。",
+                "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
+                "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
+              ],
+              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/MissouriSocial.max-600x600.format-webp.webp",
+              "image": {
+                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/MissouriSocial.max-600x600.format-webp.webp",
+                "alt": "We’re announcing new community investments in Missouri. 原始来源图片",
+                "origin": "source"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
+            },
+            {
+              "title": "Reachy Mini goes fully local",
+              "url": "https://huggingface.co/blog/local-reachy-mini-conversation",
+              "source_name": "Hugging Face blog feed",
+              "source_id": "huggingface-blog-rss",
               "source_group": "news",
               "source_type": "commentary",
               "trust_tier": "P1",
-              "summary": "来源状态：fetchable；刷新节奏：weekly。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Hugging Face blog feed",
+              "published_at": "2026-05-27",
+              "summary": "Reachy Mini fully local 指向本地化机器人/边缘 AI 的产品方向：把对话、控制和交互尽量放到本地执行，可降低网络依赖并改善隐私边界。",
+              "key_points": [
+                "事实重点：优先确认发布时间、原始来源和新闻主体。",
+                "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
+                "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
+              ],
+              "image_url": "https://huggingface.co/blog/assets/local-reachy-mini-conversation/thumbnail.png",
+              "image": {
+                "src": "https://huggingface.co/blog/assets/local-reachy-mini-conversation/thumbnail.png",
+                "alt": "Reachy Mini goes fully local 原始来源图片",
+                "origin": "source"
+              },
               "related_themes": [
                 "MEE",
                 "个人",
                 "产品",
                 "新闻"
               ],
-              "boundary": "媒体、社区、搜索种子或榜单来源只作热点摘要和趋势线索，高影响判断需交叉验证。"
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
             },
             {
-              "title": "Reuters AI and technology news surfaced through Google News RSS",
-              "url": "https://news.google.com/rss/search?q=site:reuters.com%20%28AI%20OR%20artificial%20intelligence%20OR%20technology%29&hl=en-US&gl=US&ceid=US:en",
+              "title": "Shipping a Trillion Parameters With a Hub Bucket: Delta Weight Sync in TRL",
+              "url": "https://huggingface.co/blog/delta-weight-sync",
+              "source_name": "Hugging Face blog feed",
+              "source_id": "huggingface-blog-rss",
               "source_group": "news",
               "source_type": "commentary",
               "trust_tier": "P1",
-              "summary": "来源状态：fetchable；刷新节奏：daily。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Reuters AI and technology news surfaced through Google News RSS",
+              "published_at": "2026-05-27",
+              "summary": "Delta Weight Sync 关注大模型权重分发与训练产物同步问题，说明开源模型生态的瓶颈正在从‘能否训练’扩展到‘如何低成本分发、复现和协作’。",
+              "key_points": [
+                "事实重点：优先确认发布时间、原始来源和新闻主体。",
+                "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
+                "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
+              ],
+              "image_url": "https://huggingface.co/blog/assets/delta-weight-sync/thumbnail.png",
+              "image": {
+                "src": "https://huggingface.co/blog/assets/delta-weight-sync/thumbnail.png",
+                "alt": "Shipping a Trillion Parameters With a Hub Bucket: Delta Weight Sync in TRL 原始来源图片",
+                "origin": "source"
+              },
               "related_themes": [
                 "MEE",
                 "个人",
                 "产品",
                 "新闻"
               ],
-              "boundary": "媒体、社区、搜索种子或榜单来源只作热点摘要和趋势线索，高影响判断需交叉验证。"
-            },
-            {
-              "title": "MIT Technology Review feed for AI, technology, and research context",
-              "url": "https://www.technologyreview.com/feed/",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P1",
-              "summary": "来源状态：fetchable；刷新节奏：daily。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 MIT Technology Review feed for AI, technology, and research context",
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "媒体、社区、搜索种子或榜单来源只作热点摘要和趋势线索，高影响判断需交叉验证。"
-            },
-            {
-              "title": "BBC Technology RSS for broad international technology news context",
-              "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P1",
-              "summary": "来源状态：fetchable；刷新节奏：daily。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 BBC Technology RSS for broad international technology news context",
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "媒体、社区、搜索种子或榜单来源只作热点摘要和趋势线索，高影响判断需交叉验证。"
-            },
-            {
-              "title": "Bloomberg AI, technology, startup, and market news surfaced through Google News RSS; paywall/manual review may apply",
-              "url": "https://news.google.com/rss/search?q=site:bloomberg.com%20(AI%20OR%20technology%20OR%20startup%20OR%20markets)&hl=en-US&gl=US&ceid=US:en",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P1",
-              "summary": "来源状态：fetchable；刷新节奏：daily。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Bloomberg AI, technology, startup, and market news surfaced through Google News RSS; paywall/manual review may apply",
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "媒体、社区、搜索种子或榜单来源只作热点摘要和趋势线索，高影响判断需交叉验证。"
-            },
-            {
-              "title": "FT, WSJ, and CNBC technology/business signal seed through Google News RSS; paywall/manual review may apply",
-              "url": "https://news.google.com/rss/search?q=(site:ft.com%20OR%20site:wsj.com%20OR%20site:cnbc.com)%20(AI%20OR%20technology%20OR%20markets%20OR%20startup)&hl=en-US&gl=US&ceid=US:en",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P1",
-              "summary": "来源状态：fetchable；刷新节奏：daily。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 FT, WSJ, and CNBC technology/business signal seed through Google News RSS; paywall/manual review may apply",
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "媒体、社区、搜索种子或榜单来源只作热点摘要和趋势线索，高影响判断需交叉验证。"
-            },
-            {
-              "title": "Stratechery feed for business strategy and platform analysis; paywall/manual review may apply",
-              "url": "https://stratechery.com/feed/",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P1",
-              "summary": "来源状态：fetchable；刷新节奏：weekly。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Stratechery feed for business strategy and platform analysis; paywall/manual review may apply",
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "媒体、社区、搜索种子或榜单来源只作热点摘要和趋势线索，高影响判断需交叉验证。"
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
             }
           ],
           "watch_points": [
@@ -1548,190 +1712,354 @@
           "title": "新闻热点摘要（周报 2026-W22）",
           "kicker": "周报 / 事实摘要与外部变化",
           "lead": "本周层负责把多日重复信号压缩成主题簇、优先级和待验证假设。 本报告先呈现当期公开世界发生了什么、来自哪些来源、有什么观察重点；不把新闻摘要伪装成洞察报告。",
-          "visual": {
-            "src": "./public/assets/judgment-network.png",
-            "alt": "公开热点来源进入统一证据底座"
-          },
           "news_items": [
             {
-              "title": "OpenAI official news feed",
-              "url": "https://openai.com/news/rss.xml",
+              "title": "Introducing Claude Opus 4.8",
+              "url": "https://www.anthropic.com/news/claude-opus-4-8",
+              "source_name": "Anthropic official newsroom",
+              "source_id": "anthropic-claude-opus-4-8",
+              "source_group": "ai-research",
+              "source_type": "official-news",
+              "trust_tier": "P0",
+              "published_at": "2026-05-28",
+              "summary": "Anthropic 发布 Claude Opus 4.8：在 Opus 4.7 基础上提升编码、agentic skills、推理和知识工作任务表现；同篇公告还提到 claude.ai 的 effort control、Claude Code 的 Dynamic workflows，以及 Opus 4.8 fast mode 的成本变化。",
+              "key_points": [
+                "Claude Opus 4.8 是官方产品发布，不是媒体二次转述。",
+                "Dynamic workflows 是 Claude Code 面向大规模问题处理的新能力，应进入 MEE 与 Agent 工作流能力边界观察。",
+                "fast mode 成本变化会影响产品侧对高阶模型的调用策略与体验设计。"
+              ],
+              "image_url": "https://cdn.sanity.io/images/4zrzovbb/website/0eaa0ed2dce9810169112e1c77de2585fcf1f5c2-2880x1620.jpg",
+              "image": {
+                "src": "https://cdn.sanity.io/images/4zrzovbb/website/0eaa0ed2dce9810169112e1c77de2585fcf1f5c2-2880x1620.jpg",
+                "alt": "Anthropic Claude Opus 4.8 official announcement image",
+                "origin": "source"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "官方一手公告，可用于确认产品能力与发布事实；具体评测表现和生产采用仍需结合系统卡、实际测试和成本约束。"
+            },
+            {
+              "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
+              "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/",
+              "source_name": "Google AI blog feed",
+              "source_id": "google-ai-blog-rss",
               "source_group": "news",
               "source_type": "commentary",
               "trust_tier": "P0",
-              "summary": "来源状态：fetchable；刷新节奏：daily。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 OpenAI official news feed",
+              "published_at": "2026-05-29",
+              "summary": "Google 用 AI Studio 快速生成 I/O 2026 主题互动内容，说明官方正在把“用 AI 生成小型应用/互动页面”包装成面向普通开发者和内容团队的可感知能力。",
+              "key_points": [
+                "事实重点：Google AI Studio 被用于快速生成 I/O 主题互动体验。",
+                "观察重点：低门槛应用生成正在成为开发者工具的传播样板。",
+                "可借鉴点：报告站点、互动问答和轻应用可以作为高频内容表达形态。"
+              ],
+              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOQuiz2026_social.max-600x600.format-webp.webp",
+              "image": {
+                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOQuiz2026_social.max-600x600.format-webp.webp",
+                "alt": "Take our I/O 2026 quiz, vibe coded in Google AI Studio. 原始来源图片",
+                "origin": "source"
+              },
               "related_themes": [
                 "MEE",
                 "个人",
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间和上下文。"
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
             },
             {
-              "title": "Anthropic official newsroom",
-              "url": "https://www.anthropic.com/news",
+              "title": "9 demos of Gemini Omni and Gemini 3.5 in action",
+              "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/",
+              "source_name": "Google AI blog feed",
+              "source_id": "google-ai-blog-rss",
               "source_group": "news",
               "source_type": "commentary",
               "trust_tier": "P0",
-              "summary": "来源状态：fetchable；刷新节奏：daily。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Anthropic official newsroom",
+              "published_at": "2026-05-29",
+              "summary": "Google I/O 相关材料集中展示 Gemini Omni 与 Gemini 3.5 的多模态和应用能力，适合作为观察 Google AI 产品化节奏、交互形态和开发者入口变化的事实样本。",
+              "key_points": [
+                "事实重点：Google 将 Gemini Omni 与 Gemini 3.5 作为 I/O 2026 的核心能力展示。",
+                "观察重点：多模态能力正在从演示走向应用场景与开发者材料。",
+                "后续需要回读官方 demo，区分可用能力、概念展示和区域/权限限制。"
+              ],
+              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Omni_and_Gemini_3.5_hero.max-600x600.format-webp.webp",
+              "image": {
+                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Omni_and_Gemini_3.5_hero.max-600x600.format-webp.webp",
+                "alt": "9 demos of Gemini Omni and Gemini 3.5 in action 原始来源图片",
+                "origin": "source"
+              },
               "related_themes": [
                 "MEE",
                 "个人",
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间和上下文。"
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
             },
             {
-              "title": "Google AI blog feed",
-              "url": "https://blog.google/technology/ai/rss/",
+              "title": "Check out real-life AI prototypes from the Futures Lab.",
+              "url": "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs/",
+              "source_name": "Google AI blog feed",
+              "source_id": "google-ai-blog-rss",
               "source_group": "news",
               "source_type": "commentary",
               "trust_tier": "P0",
-              "summary": "来源状态：fetchable；刷新节奏：weekly。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Google AI blog feed",
+              "published_at": "2026-05-29",
+              "summary": "Google Futures Lab 展示来自大学场景的 AI 原型，例如教育、工作和辅助交互方向；这类案例更接近真实用户场景，而不只是模型能力展示。",
+              "key_points": [
+                "事实重点：优先确认发布时间、原始来源和新闻主体。",
+                "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
+                "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
+              ],
+              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FutureLabs_social.max-600x600.format-webp.webp",
+              "image": {
+                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FutureLabs_social.max-600x600.format-webp.webp",
+                "alt": "Check out real-life AI prototypes from the Futures Lab. 原始来源图片",
+                "origin": "source"
+              },
               "related_themes": [
                 "MEE",
                 "个人",
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间和上下文。"
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
             },
             {
-              "title": "Google DeepMind official blog page",
-              "url": "https://deepmind.google/discover/blog/",
+              "title": "Profiling in PyTorch (Part 1): A Beginner&apos;s Guide to torch.profiler",
+              "url": "https://huggingface.co/blog/torch-profiler",
+              "source_name": "Hugging Face blog feed",
+              "source_id": "huggingface-blog-rss",
+              "source_group": "news",
+              "source_type": "commentary",
+              "trust_tier": "P1",
+              "published_at": "2026-05-29",
+              "summary": "PyTorch profiling 教程更新强化了性能观测基础：当模型和 agent 系统进入工程化阶段，profiling、trace 和瓶颈定位会成为比单次效果展示更重要的能力。",
+              "key_points": [
+                "事实重点：优先确认发布时间、原始来源和新闻主体。",
+                "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
+                "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
+              ],
+              "image_url": "https://huggingface.co/blog/assets/torch-profiler/thumbnail.png",
+              "image": {
+                "src": "https://huggingface.co/blog/assets/torch-profiler/thumbnail.png",
+                "alt": "Profiling in PyTorch (Part 1): A Beginner&apos;s Guide to torch.profiler 原始来源图片",
+                "origin": "source"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+            },
+            {
+              "title": "Catch up on 12 major I/O 2026 moments",
+              "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
+              "source_name": "Google AI blog feed",
+              "source_id": "google-ai-blog-rss",
               "source_group": "news",
               "source_type": "commentary",
               "trust_tier": "P0",
-              "summary": "来源状态：fetchable；刷新节奏：weekly。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Google DeepMind official blog page",
+              "published_at": "2026-05-28",
+              "summary": "Google I/O 相关材料集中展示 Gemini Omni 与 Gemini 3.5 的多模态和应用能力，适合作为观察 Google AI 产品化节奏、交互形态和开发者入口变化的事实样本。",
+              "key_points": [
+                "事实重点：Google 将 Gemini Omni 与 Gemini 3.5 作为 I/O 2026 的核心能力展示。",
+                "观察重点：多模态能力正在从演示走向应用场景与开发者材料。",
+                "后续需要回读官方 demo，区分可用能力、概念展示和区域/权限限制。"
+              ],
+              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_KNH.max-600x600.format-webp.webp",
+              "image": {
+                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_KNH.max-600x600.format-webp.webp",
+                "alt": "Catch up on 12 major I/O 2026 moments 原始来源图片",
+                "origin": "source"
+              },
               "related_themes": [
                 "MEE",
                 "个人",
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间和上下文。"
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
             },
             {
-              "title": "Official macro, financial, and China policy seeds for high-trust external context",
-              "url": "",
+              "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
+              "url": "https://huggingface.co/blog/ibm-research/itbench-aa",
+              "source_name": "Hugging Face blog feed",
+              "source_id": "huggingface-blog-rss",
               "source_group": "news",
-              "source_type": "platform",
+              "source_type": "commentary",
+              "trust_tier": "P1",
+              "published_at": "2026-05-27",
+              "summary": "ITBench-AA 指向一个重要事实：前沿模型在企业 IT agentic 任务上的得分仍低于 50%，说明真实企业任务中的状态、权限、工具和流程复杂度仍是能力边界。",
+              "key_points": [
+                "事实重点：该基准把企业 IT 任务作为 agentic 能力测试对象。",
+                "边界重点：前沿模型低于 50% 的成绩说明工具、权限、状态和流程仍是主要难点。",
+                "产品重点：企业 Agent 产品需要把可观测、回滚、审批和验证做成一等能力。"
+              ],
+              "image_url": "https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/QzGxABeEDggNYzvgSLQqU.png",
+              "image": {
+                "src": "https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/QzGxABeEDggNYzvgSLQqU.png",
+                "alt": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM 原始来源图片",
+                "origin": "source"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+            },
+            {
+              "title": "Harness, Scaffold, and the AI Agent Terms Worth Getting Right",
+              "url": "https://huggingface.co/blog/agent-glossary",
+              "source_name": "Hugging Face blog feed",
+              "source_id": "huggingface-blog-rss",
+              "source_group": "news",
+              "source_type": "commentary",
+              "trust_tier": "P1",
+              "published_at": "2026-05-25",
+              "summary": "Hugging Face 对 Harness、Scaffold 等 Agent 术语做澄清，价值在于帮助区分模型、工具、运行时、流程脚手架和评测环境，避免把不同层级混成一个概念。",
+              "key_points": [
+                "事实重点：Agent 领域正在形成更细的术语分层。",
+                "判断重点：Harness、Scaffold、Runtime、Eval 不应混用。",
+                "沉淀重点：MEE 的 Skill、Capsule、solidify 和 source index 需要保持清晰边界。"
+              ],
+              "image_url": "https://huggingface.co/blog/assets/agent-glossary/thumbnail.png",
+              "image": {
+                "src": "https://huggingface.co/blog/assets/agent-glossary/thumbnail.png",
+                "alt": "Harness, Scaffold, and the AI Agent Terms Worth Getting Right 原始来源图片",
+                "origin": "source"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+            },
+            {
+              "title": "Towards Speed-of-Light Text Generation with Nemotron-Labs Diffusion Language Models",
+              "url": "https://huggingface.co/blog/nvidia/nemotron-labs-diffusion",
+              "source_name": "Hugging Face blog feed",
+              "source_id": "huggingface-blog-rss",
+              "source_group": "news",
+              "source_type": "commentary",
+              "trust_tier": "P1",
+              "published_at": "2026-05-23",
+              "summary": "A Blog post by NVIDIA on Hugging Face",
+              "key_points": [
+                "事实重点：优先确认发布时间、原始来源和新闻主体。",
+                "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
+                "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
+              ],
+              "image_url": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/nvidia/nemotron-labs-diffusion.png",
+              "image": {
+                "src": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/nvidia/nemotron-labs-diffusion.png",
+                "alt": "Towards Speed-of-Light Text Generation with Nemotron-Labs Diffusion Language Models 原始来源图片",
+                "origin": "source"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+            },
+            {
+              "title": "Catch up on the Dialogues stage at Google I/O 2026.",
+              "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-dialogues-recap/",
+              "source_name": "Google AI blog feed",
+              "source_id": "google-ai-blog-rss",
+              "source_group": "news",
+              "source_type": "commentary",
               "trust_tier": "P0",
-              "summary": "来源状态：manual_or_browser_followup；刷新节奏：weekly。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Official macro, financial, and China policy seeds for high-trust external context",
+              "published_at": "2026-05-22",
+              "summary": "A recap of the 2026 I/O Dialogues, where leaders discuss the future of AI, quantum computing, robotics and creativity.",
+              "key_points": [
+                "事实重点：优先确认发布时间、原始来源和新闻主体。",
+                "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
+                "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
+              ],
+              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IO26_Dialogues_3z680sK.max-600x600.format-webp.webp",
+              "image": {
+                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IO26_Dialogues_3z680sK.max-600x600.format-webp.webp",
+                "alt": "Catch up on the Dialogues stage at Google I/O 2026. 原始来源图片",
+                "origin": "source"
+              },
               "related_themes": [
                 "MEE",
                 "个人",
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间和上下文。"
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
             },
             {
-              "title": "Hugging Face blog feed",
-              "url": "https://huggingface.co/blog/feed.xml",
+              "title": "We’re announcing new community investments in Missouri.",
+              "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/missouri-programs/",
+              "source_name": "Google AI blog feed",
+              "source_id": "google-ai-blog-rss",
+              "source_group": "news",
+              "source_type": "commentary",
+              "trust_tier": "P0",
+              "published_at": "2026-05-20",
+              "summary": "We’re helping build the state’s next-generation workforce and investing in energy programs.",
+              "key_points": [
+                "事实重点：优先确认发布时间、原始来源和新闻主体。",
+                "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
+                "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
+              ],
+              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/MissouriSocial.max-600x600.format-webp.webp",
+              "image": {
+                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/MissouriSocial.max-600x600.format-webp.webp",
+                "alt": "We’re announcing new community investments in Missouri. 原始来源图片",
+                "origin": "source"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
+            },
+            {
+              "title": "SoftBank to build up AI data centres in France with major investment - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNSGpvaWFPVFk5eDM4Y1RPY29QVXVhYXN4UHQyVlJ5NzJzUWMxRk90S2EwNVRjeE82MlJWeWhCMjNHN1NPSVQ2UjY5UlBBWHdQSmdKRURxZFF1YkRYVEFFbW03V3pFZ1dKSGxQdEsxVUdkNkxZalIybVhYRjlkSmlfTkZDd1RfaWFLdXFVMTF2VXZBOHlxcTVwQkRQbVNqbXRLYzN1Z1NEZVhhaUZWeXdraUZMVG1wVFVIeDZMRzB3?oc=5",
+              "source_name": "Reuters AI and technology news surfaced through Google News RSS",
+              "source_id": "reuters-ai-tech-rss",
               "source_group": "news",
               "source_type": "commentary",
               "trust_tier": "P1",
-              "summary": "来源状态：fetchable；刷新节奏：weekly。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Hugging Face blog feed",
+              "published_at": "2026-05-30",
+              "summary": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+              "key_points": [
+                "事实重点：优先确认发布时间、原始来源和新闻主体。",
+                "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
+                "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
+              ],
+              "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
+              "image": {
+                "src": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
+                "alt": "SoftBank to build up AI data centres in France with major investment - Reuters 原始来源图片",
+                "origin": "source"
+              },
               "related_themes": [
                 "MEE",
                 "个人",
                 "产品",
                 "新闻"
               ],
-              "boundary": "媒体、社区、搜索种子或榜单来源只作热点摘要和趋势线索，高影响判断需交叉验证。"
-            },
-            {
-              "title": "Reuters AI and technology news surfaced through Google News RSS",
-              "url": "https://news.google.com/rss/search?q=site:reuters.com%20%28AI%20OR%20artificial%20intelligence%20OR%20technology%29&hl=en-US&gl=US&ceid=US:en",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P1",
-              "summary": "来源状态：fetchable；刷新节奏：daily。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Reuters AI and technology news surfaced through Google News RSS",
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "媒体、社区、搜索种子或榜单来源只作热点摘要和趋势线索，高影响判断需交叉验证。"
-            },
-            {
-              "title": "MIT Technology Review feed for AI, technology, and research context",
-              "url": "https://www.technologyreview.com/feed/",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P1",
-              "summary": "来源状态：fetchable；刷新节奏：daily。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 MIT Technology Review feed for AI, technology, and research context",
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "媒体、社区、搜索种子或榜单来源只作热点摘要和趋势线索，高影响判断需交叉验证。"
-            },
-            {
-              "title": "BBC Technology RSS for broad international technology news context",
-              "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P1",
-              "summary": "来源状态：fetchable；刷新节奏：daily。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 BBC Technology RSS for broad international technology news context",
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "媒体、社区、搜索种子或榜单来源只作热点摘要和趋势线索，高影响判断需交叉验证。"
-            },
-            {
-              "title": "Bloomberg AI, technology, startup, and market news surfaced through Google News RSS; paywall/manual review may apply",
-              "url": "https://news.google.com/rss/search?q=site:bloomberg.com%20(AI%20OR%20technology%20OR%20startup%20OR%20markets)&hl=en-US&gl=US&ceid=US:en",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P1",
-              "summary": "来源状态：fetchable；刷新节奏：daily。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Bloomberg AI, technology, startup, and market news surfaced through Google News RSS; paywall/manual review may apply",
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "媒体、社区、搜索种子或榜单来源只作热点摘要和趋势线索，高影响判断需交叉验证。"
-            },
-            {
-              "title": "FT, WSJ, and CNBC technology/business signal seed through Google News RSS; paywall/manual review may apply",
-              "url": "https://news.google.com/rss/search?q=(site:ft.com%20OR%20site:wsj.com%20OR%20site:cnbc.com)%20(AI%20OR%20technology%20OR%20markets%20OR%20startup)&hl=en-US&gl=US&ceid=US:en",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P1",
-              "summary": "来源状态：fetchable；刷新节奏：daily。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 FT, WSJ, and CNBC technology/business signal seed through Google News RSS; paywall/manual review may apply",
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "媒体、社区、搜索种子或榜单来源只作热点摘要和趋势线索，高影响判断需交叉验证。"
-            },
-            {
-              "title": "Stratechery feed for business strategy and platform analysis; paywall/manual review may apply",
-              "url": "https://stratechery.com/feed/",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P1",
-              "summary": "来源状态：fetchable；刷新节奏：weekly。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Stratechery feed for business strategy and platform analysis; paywall/manual review may apply",
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "媒体、社区、搜索种子或榜单来源只作热点摘要和趋势线索，高影响判断需交叉验证。"
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
             }
           ],
           "watch_points": [
@@ -2997,190 +3325,354 @@
           "title": "新闻热点摘要（月报 2026-05）",
           "kicker": "月报 / 事实摘要与外部变化",
           "lead": "本月层负责沉淀跨周仍成立的主线、策略建议和下月行动重点。 本报告先呈现当期公开世界发生了什么、来自哪些来源、有什么观察重点；不把新闻摘要伪装成洞察报告。",
-          "visual": {
-            "src": "./public/assets/judgment-network.png",
-            "alt": "公开热点来源进入统一证据底座"
-          },
           "news_items": [
             {
-              "title": "OpenAI official news feed",
-              "url": "https://openai.com/news/rss.xml",
+              "title": "Introducing Claude Opus 4.8",
+              "url": "https://www.anthropic.com/news/claude-opus-4-8",
+              "source_name": "Anthropic official newsroom",
+              "source_id": "anthropic-claude-opus-4-8",
+              "source_group": "ai-research",
+              "source_type": "official-news",
+              "trust_tier": "P0",
+              "published_at": "2026-05-28",
+              "summary": "Anthropic 发布 Claude Opus 4.8：在 Opus 4.7 基础上提升编码、agentic skills、推理和知识工作任务表现；同篇公告还提到 claude.ai 的 effort control、Claude Code 的 Dynamic workflows，以及 Opus 4.8 fast mode 的成本变化。",
+              "key_points": [
+                "Claude Opus 4.8 是官方产品发布，不是媒体二次转述。",
+                "Dynamic workflows 是 Claude Code 面向大规模问题处理的新能力，应进入 MEE 与 Agent 工作流能力边界观察。",
+                "fast mode 成本变化会影响产品侧对高阶模型的调用策略与体验设计。"
+              ],
+              "image_url": "https://cdn.sanity.io/images/4zrzovbb/website/0eaa0ed2dce9810169112e1c77de2585fcf1f5c2-2880x1620.jpg",
+              "image": {
+                "src": "https://cdn.sanity.io/images/4zrzovbb/website/0eaa0ed2dce9810169112e1c77de2585fcf1f5c2-2880x1620.jpg",
+                "alt": "Anthropic Claude Opus 4.8 official announcement image",
+                "origin": "source"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "官方一手公告，可用于确认产品能力与发布事实；具体评测表现和生产采用仍需结合系统卡、实际测试和成本约束。"
+            },
+            {
+              "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
+              "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/",
+              "source_name": "Google AI blog feed",
+              "source_id": "google-ai-blog-rss",
               "source_group": "news",
               "source_type": "commentary",
               "trust_tier": "P0",
-              "summary": "来源状态：fetchable；刷新节奏：daily。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 OpenAI official news feed",
+              "published_at": "2026-05-29",
+              "summary": "Google 用 AI Studio 快速生成 I/O 2026 主题互动内容，说明官方正在把“用 AI 生成小型应用/互动页面”包装成面向普通开发者和内容团队的可感知能力。",
+              "key_points": [
+                "事实重点：Google AI Studio 被用于快速生成 I/O 主题互动体验。",
+                "观察重点：低门槛应用生成正在成为开发者工具的传播样板。",
+                "可借鉴点：报告站点、互动问答和轻应用可以作为高频内容表达形态。"
+              ],
+              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOQuiz2026_social.max-600x600.format-webp.webp",
+              "image": {
+                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOQuiz2026_social.max-600x600.format-webp.webp",
+                "alt": "Take our I/O 2026 quiz, vibe coded in Google AI Studio. 原始来源图片",
+                "origin": "source"
+              },
               "related_themes": [
                 "MEE",
                 "个人",
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间和上下文。"
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
             },
             {
-              "title": "Anthropic official newsroom",
-              "url": "https://www.anthropic.com/news",
+              "title": "9 demos of Gemini Omni and Gemini 3.5 in action",
+              "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/",
+              "source_name": "Google AI blog feed",
+              "source_id": "google-ai-blog-rss",
               "source_group": "news",
               "source_type": "commentary",
               "trust_tier": "P0",
-              "summary": "来源状态：fetchable；刷新节奏：daily。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Anthropic official newsroom",
+              "published_at": "2026-05-29",
+              "summary": "Google I/O 相关材料集中展示 Gemini Omni 与 Gemini 3.5 的多模态和应用能力，适合作为观察 Google AI 产品化节奏、交互形态和开发者入口变化的事实样本。",
+              "key_points": [
+                "事实重点：Google 将 Gemini Omni 与 Gemini 3.5 作为 I/O 2026 的核心能力展示。",
+                "观察重点：多模态能力正在从演示走向应用场景与开发者材料。",
+                "后续需要回读官方 demo，区分可用能力、概念展示和区域/权限限制。"
+              ],
+              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Omni_and_Gemini_3.5_hero.max-600x600.format-webp.webp",
+              "image": {
+                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Omni_and_Gemini_3.5_hero.max-600x600.format-webp.webp",
+                "alt": "9 demos of Gemini Omni and Gemini 3.5 in action 原始来源图片",
+                "origin": "source"
+              },
               "related_themes": [
                 "MEE",
                 "个人",
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间和上下文。"
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
             },
             {
-              "title": "Google AI blog feed",
-              "url": "https://blog.google/technology/ai/rss/",
+              "title": "Check out real-life AI prototypes from the Futures Lab.",
+              "url": "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs/",
+              "source_name": "Google AI blog feed",
+              "source_id": "google-ai-blog-rss",
               "source_group": "news",
               "source_type": "commentary",
               "trust_tier": "P0",
-              "summary": "来源状态：fetchable；刷新节奏：weekly。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Google AI blog feed",
+              "published_at": "2026-05-29",
+              "summary": "Google Futures Lab 展示来自大学场景的 AI 原型，例如教育、工作和辅助交互方向；这类案例更接近真实用户场景，而不只是模型能力展示。",
+              "key_points": [
+                "事实重点：优先确认发布时间、原始来源和新闻主体。",
+                "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
+                "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
+              ],
+              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FutureLabs_social.max-600x600.format-webp.webp",
+              "image": {
+                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FutureLabs_social.max-600x600.format-webp.webp",
+                "alt": "Check out real-life AI prototypes from the Futures Lab. 原始来源图片",
+                "origin": "source"
+              },
               "related_themes": [
                 "MEE",
                 "个人",
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间和上下文。"
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
             },
             {
-              "title": "Google DeepMind official blog page",
-              "url": "https://deepmind.google/discover/blog/",
+              "title": "Profiling in PyTorch (Part 1): A Beginner&apos;s Guide to torch.profiler",
+              "url": "https://huggingface.co/blog/torch-profiler",
+              "source_name": "Hugging Face blog feed",
+              "source_id": "huggingface-blog-rss",
+              "source_group": "news",
+              "source_type": "commentary",
+              "trust_tier": "P1",
+              "published_at": "2026-05-29",
+              "summary": "PyTorch profiling 教程更新强化了性能观测基础：当模型和 agent 系统进入工程化阶段，profiling、trace 和瓶颈定位会成为比单次效果展示更重要的能力。",
+              "key_points": [
+                "事实重点：优先确认发布时间、原始来源和新闻主体。",
+                "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
+                "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
+              ],
+              "image_url": "https://huggingface.co/blog/assets/torch-profiler/thumbnail.png",
+              "image": {
+                "src": "https://huggingface.co/blog/assets/torch-profiler/thumbnail.png",
+                "alt": "Profiling in PyTorch (Part 1): A Beginner&apos;s Guide to torch.profiler 原始来源图片",
+                "origin": "source"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+            },
+            {
+              "title": "Catch up on 12 major I/O 2026 moments",
+              "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
+              "source_name": "Google AI blog feed",
+              "source_id": "google-ai-blog-rss",
               "source_group": "news",
               "source_type": "commentary",
               "trust_tier": "P0",
-              "summary": "来源状态：fetchable；刷新节奏：weekly。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Google DeepMind official blog page",
+              "published_at": "2026-05-28",
+              "summary": "Google I/O 相关材料集中展示 Gemini Omni 与 Gemini 3.5 的多模态和应用能力，适合作为观察 Google AI 产品化节奏、交互形态和开发者入口变化的事实样本。",
+              "key_points": [
+                "事实重点：Google 将 Gemini Omni 与 Gemini 3.5 作为 I/O 2026 的核心能力展示。",
+                "观察重点：多模态能力正在从演示走向应用场景与开发者材料。",
+                "后续需要回读官方 demo，区分可用能力、概念展示和区域/权限限制。"
+              ],
+              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_KNH.max-600x600.format-webp.webp",
+              "image": {
+                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_KNH.max-600x600.format-webp.webp",
+                "alt": "Catch up on 12 major I/O 2026 moments 原始来源图片",
+                "origin": "source"
+              },
               "related_themes": [
                 "MEE",
                 "个人",
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间和上下文。"
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
             },
             {
-              "title": "Official macro, financial, and China policy seeds for high-trust external context",
-              "url": "",
+              "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
+              "url": "https://huggingface.co/blog/ibm-research/itbench-aa",
+              "source_name": "Hugging Face blog feed",
+              "source_id": "huggingface-blog-rss",
               "source_group": "news",
-              "source_type": "platform",
+              "source_type": "commentary",
+              "trust_tier": "P1",
+              "published_at": "2026-05-27",
+              "summary": "ITBench-AA 指向一个重要事实：前沿模型在企业 IT agentic 任务上的得分仍低于 50%，说明真实企业任务中的状态、权限、工具和流程复杂度仍是能力边界。",
+              "key_points": [
+                "事实重点：该基准把企业 IT 任务作为 agentic 能力测试对象。",
+                "边界重点：前沿模型低于 50% 的成绩说明工具、权限、状态和流程仍是主要难点。",
+                "产品重点：企业 Agent 产品需要把可观测、回滚、审批和验证做成一等能力。"
+              ],
+              "image_url": "https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/QzGxABeEDggNYzvgSLQqU.png",
+              "image": {
+                "src": "https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/QzGxABeEDggNYzvgSLQqU.png",
+                "alt": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM 原始来源图片",
+                "origin": "source"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+            },
+            {
+              "title": "Harness, Scaffold, and the AI Agent Terms Worth Getting Right",
+              "url": "https://huggingface.co/blog/agent-glossary",
+              "source_name": "Hugging Face blog feed",
+              "source_id": "huggingface-blog-rss",
+              "source_group": "news",
+              "source_type": "commentary",
+              "trust_tier": "P1",
+              "published_at": "2026-05-25",
+              "summary": "Hugging Face 对 Harness、Scaffold 等 Agent 术语做澄清，价值在于帮助区分模型、工具、运行时、流程脚手架和评测环境，避免把不同层级混成一个概念。",
+              "key_points": [
+                "事实重点：Agent 领域正在形成更细的术语分层。",
+                "判断重点：Harness、Scaffold、Runtime、Eval 不应混用。",
+                "沉淀重点：MEE 的 Skill、Capsule、solidify 和 source index 需要保持清晰边界。"
+              ],
+              "image_url": "https://huggingface.co/blog/assets/agent-glossary/thumbnail.png",
+              "image": {
+                "src": "https://huggingface.co/blog/assets/agent-glossary/thumbnail.png",
+                "alt": "Harness, Scaffold, and the AI Agent Terms Worth Getting Right 原始来源图片",
+                "origin": "source"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+            },
+            {
+              "title": "Catch up on the Dialogues stage at Google I/O 2026.",
+              "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-dialogues-recap/",
+              "source_name": "Google AI blog feed",
+              "source_id": "google-ai-blog-rss",
+              "source_group": "news",
+              "source_type": "commentary",
               "trust_tier": "P0",
-              "summary": "来源状态：manual_or_browser_followup；刷新节奏：weekly。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Official macro, financial, and China policy seeds for high-trust external context",
+              "published_at": "2026-05-22",
+              "summary": "A recap of the 2026 I/O Dialogues, where leaders discuss the future of AI, quantum computing, robotics and creativity.",
+              "key_points": [
+                "事实重点：优先确认发布时间、原始来源和新闻主体。",
+                "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
+                "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
+              ],
+              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IO26_Dialogues_3z680sK.max-600x600.format-webp.webp",
+              "image": {
+                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IO26_Dialogues_3z680sK.max-600x600.format-webp.webp",
+                "alt": "Catch up on the Dialogues stage at Google I/O 2026. 原始来源图片",
+                "origin": "source"
+              },
               "related_themes": [
                 "MEE",
                 "个人",
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间和上下文。"
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
             },
             {
-              "title": "Hugging Face blog feed",
-              "url": "https://huggingface.co/blog/feed.xml",
+              "title": "We’re announcing new community investments in Missouri.",
+              "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/missouri-programs/",
+              "source_name": "Google AI blog feed",
+              "source_id": "google-ai-blog-rss",
+              "source_group": "news",
+              "source_type": "commentary",
+              "trust_tier": "P0",
+              "published_at": "2026-05-20",
+              "summary": "We’re helping build the state’s next-generation workforce and investing in energy programs.",
+              "key_points": [
+                "事实重点：优先确认发布时间、原始来源和新闻主体。",
+                "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
+                "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
+              ],
+              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/MissouriSocial.max-600x600.format-webp.webp",
+              "image": {
+                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/MissouriSocial.max-600x600.format-webp.webp",
+                "alt": "We’re announcing new community investments in Missouri. 原始来源图片",
+                "origin": "source"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
+            },
+            {
+              "title": "Reachy Mini goes fully local",
+              "url": "https://huggingface.co/blog/local-reachy-mini-conversation",
+              "source_name": "Hugging Face blog feed",
+              "source_id": "huggingface-blog-rss",
               "source_group": "news",
               "source_type": "commentary",
               "trust_tier": "P1",
-              "summary": "来源状态：fetchable；刷新节奏：weekly。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Hugging Face blog feed",
+              "published_at": "2026-05-27",
+              "summary": "Reachy Mini fully local 指向本地化机器人/边缘 AI 的产品方向：把对话、控制和交互尽量放到本地执行，可降低网络依赖并改善隐私边界。",
+              "key_points": [
+                "事实重点：优先确认发布时间、原始来源和新闻主体。",
+                "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
+                "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
+              ],
+              "image_url": "https://huggingface.co/blog/assets/local-reachy-mini-conversation/thumbnail.png",
+              "image": {
+                "src": "https://huggingface.co/blog/assets/local-reachy-mini-conversation/thumbnail.png",
+                "alt": "Reachy Mini goes fully local 原始来源图片",
+                "origin": "source"
+              },
               "related_themes": [
                 "MEE",
                 "个人",
                 "产品",
                 "新闻"
               ],
-              "boundary": "媒体、社区、搜索种子或榜单来源只作热点摘要和趋势线索，高影响判断需交叉验证。"
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
             },
             {
-              "title": "Reuters AI and technology news surfaced through Google News RSS",
-              "url": "https://news.google.com/rss/search?q=site:reuters.com%20%28AI%20OR%20artificial%20intelligence%20OR%20technology%29&hl=en-US&gl=US&ceid=US:en",
+              "title": "Shipping a Trillion Parameters With a Hub Bucket: Delta Weight Sync in TRL",
+              "url": "https://huggingface.co/blog/delta-weight-sync",
+              "source_name": "Hugging Face blog feed",
+              "source_id": "huggingface-blog-rss",
               "source_group": "news",
               "source_type": "commentary",
               "trust_tier": "P1",
-              "summary": "来源状态：fetchable；刷新节奏：daily。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Reuters AI and technology news surfaced through Google News RSS",
+              "published_at": "2026-05-27",
+              "summary": "Delta Weight Sync 关注大模型权重分发与训练产物同步问题，说明开源模型生态的瓶颈正在从‘能否训练’扩展到‘如何低成本分发、复现和协作’。",
+              "key_points": [
+                "事实重点：优先确认发布时间、原始来源和新闻主体。",
+                "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
+                "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
+              ],
+              "image_url": "https://huggingface.co/blog/assets/delta-weight-sync/thumbnail.png",
+              "image": {
+                "src": "https://huggingface.co/blog/assets/delta-weight-sync/thumbnail.png",
+                "alt": "Shipping a Trillion Parameters With a Hub Bucket: Delta Weight Sync in TRL 原始来源图片",
+                "origin": "source"
+              },
               "related_themes": [
                 "MEE",
                 "个人",
                 "产品",
                 "新闻"
               ],
-              "boundary": "媒体、社区、搜索种子或榜单来源只作热点摘要和趋势线索，高影响判断需交叉验证。"
-            },
-            {
-              "title": "MIT Technology Review feed for AI, technology, and research context",
-              "url": "https://www.technologyreview.com/feed/",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P1",
-              "summary": "来源状态：fetchable；刷新节奏：daily。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 MIT Technology Review feed for AI, technology, and research context",
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "媒体、社区、搜索种子或榜单来源只作热点摘要和趋势线索，高影响判断需交叉验证。"
-            },
-            {
-              "title": "BBC Technology RSS for broad international technology news context",
-              "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P1",
-              "summary": "来源状态：fetchable；刷新节奏：daily。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 BBC Technology RSS for broad international technology news context",
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "媒体、社区、搜索种子或榜单来源只作热点摘要和趋势线索，高影响判断需交叉验证。"
-            },
-            {
-              "title": "Bloomberg AI, technology, startup, and market news surfaced through Google News RSS; paywall/manual review may apply",
-              "url": "https://news.google.com/rss/search?q=site:bloomberg.com%20(AI%20OR%20technology%20OR%20startup%20OR%20markets)&hl=en-US&gl=US&ceid=US:en",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P1",
-              "summary": "来源状态：fetchable；刷新节奏：daily。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Bloomberg AI, technology, startup, and market news surfaced through Google News RSS; paywall/manual review may apply",
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "媒体、社区、搜索种子或榜单来源只作热点摘要和趋势线索，高影响判断需交叉验证。"
-            },
-            {
-              "title": "FT, WSJ, and CNBC technology/business signal seed through Google News RSS; paywall/manual review may apply",
-              "url": "https://news.google.com/rss/search?q=(site:ft.com%20OR%20site:wsj.com%20OR%20site:cnbc.com)%20(AI%20OR%20technology%20OR%20markets%20OR%20startup)&hl=en-US&gl=US&ceid=US:en",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P1",
-              "summary": "来源状态：fetchable；刷新节奏：daily。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 FT, WSJ, and CNBC technology/business signal seed through Google News RSS; paywall/manual review may apply",
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "媒体、社区、搜索种子或榜单来源只作热点摘要和趋势线索，高影响判断需交叉验证。"
-            },
-            {
-              "title": "Stratechery feed for business strategy and platform analysis; paywall/manual review may apply",
-              "url": "https://stratechery.com/feed/",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P1",
-              "summary": "来源状态：fetchable；刷新节奏：weekly。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Stratechery feed for business strategy and platform analysis; paywall/manual review may apply",
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "媒体、社区、搜索种子或榜单来源只作热点摘要和趋势线索，高影响判断需交叉验证。"
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
             }
           ],
           "watch_points": [
@@ -4442,190 +4934,354 @@
       "title": "新闻热点摘要（日报 2026-05-31）",
       "kicker": "日报 / 事实摘要与外部变化",
       "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告先呈现当期公开世界发生了什么、来自哪些来源、有什么观察重点；不把新闻摘要伪装成洞察报告。",
-      "visual": {
-        "src": "./public/assets/judgment-network.png",
-        "alt": "公开热点来源进入统一证据底座"
-      },
       "news_items": [
         {
-          "title": "OpenAI official news feed",
-          "url": "https://openai.com/news/rss.xml",
+          "title": "Introducing Claude Opus 4.8",
+          "url": "https://www.anthropic.com/news/claude-opus-4-8",
+          "source_name": "Anthropic official newsroom",
+          "source_id": "anthropic-claude-opus-4-8",
+          "source_group": "ai-research",
+          "source_type": "official-news",
+          "trust_tier": "P0",
+          "published_at": "2026-05-28",
+          "summary": "Anthropic 发布 Claude Opus 4.8：在 Opus 4.7 基础上提升编码、agentic skills、推理和知识工作任务表现；同篇公告还提到 claude.ai 的 effort control、Claude Code 的 Dynamic workflows，以及 Opus 4.8 fast mode 的成本变化。",
+          "key_points": [
+            "Claude Opus 4.8 是官方产品发布，不是媒体二次转述。",
+            "Dynamic workflows 是 Claude Code 面向大规模问题处理的新能力，应进入 MEE 与 Agent 工作流能力边界观察。",
+            "fast mode 成本变化会影响产品侧对高阶模型的调用策略与体验设计。"
+          ],
+          "image_url": "https://cdn.sanity.io/images/4zrzovbb/website/0eaa0ed2dce9810169112e1c77de2585fcf1f5c2-2880x1620.jpg",
+          "image": {
+            "src": "https://cdn.sanity.io/images/4zrzovbb/website/0eaa0ed2dce9810169112e1c77de2585fcf1f5c2-2880x1620.jpg",
+            "alt": "Anthropic Claude Opus 4.8 official announcement image",
+            "origin": "source"
+          },
+          "related_themes": [
+            "MEE",
+            "个人",
+            "产品",
+            "新闻"
+          ],
+          "boundary": "官方一手公告，可用于确认产品能力与发布事实；具体评测表现和生产采用仍需结合系统卡、实际测试和成本约束。"
+        },
+        {
+          "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/",
+          "source_name": "Google AI blog feed",
+          "source_id": "google-ai-blog-rss",
           "source_group": "news",
           "source_type": "commentary",
           "trust_tier": "P0",
-          "summary": "来源状态：fetchable；刷新节奏：daily。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 OpenAI official news feed",
+          "published_at": "2026-05-29",
+          "summary": "Google 用 AI Studio 快速生成 I/O 2026 主题互动内容，说明官方正在把“用 AI 生成小型应用/互动页面”包装成面向普通开发者和内容团队的可感知能力。",
+          "key_points": [
+            "事实重点：Google AI Studio 被用于快速生成 I/O 主题互动体验。",
+            "观察重点：低门槛应用生成正在成为开发者工具的传播样板。",
+            "可借鉴点：报告站点、互动问答和轻应用可以作为高频内容表达形态。"
+          ],
+          "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOQuiz2026_social.max-600x600.format-webp.webp",
+          "image": {
+            "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOQuiz2026_social.max-600x600.format-webp.webp",
+            "alt": "Take our I/O 2026 quiz, vibe coded in Google AI Studio. 原始来源图片",
+            "origin": "source"
+          },
           "related_themes": [
             "MEE",
             "个人",
             "产品",
             "新闻"
           ],
-          "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间和上下文。"
+          "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
         },
         {
-          "title": "Anthropic official newsroom",
-          "url": "https://www.anthropic.com/news",
+          "title": "9 demos of Gemini Omni and Gemini 3.5 in action",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/",
+          "source_name": "Google AI blog feed",
+          "source_id": "google-ai-blog-rss",
           "source_group": "news",
           "source_type": "commentary",
           "trust_tier": "P0",
-          "summary": "来源状态：fetchable；刷新节奏：daily。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Anthropic official newsroom",
+          "published_at": "2026-05-29",
+          "summary": "Google I/O 相关材料集中展示 Gemini Omni 与 Gemini 3.5 的多模态和应用能力，适合作为观察 Google AI 产品化节奏、交互形态和开发者入口变化的事实样本。",
+          "key_points": [
+            "事实重点：Google 将 Gemini Omni 与 Gemini 3.5 作为 I/O 2026 的核心能力展示。",
+            "观察重点：多模态能力正在从演示走向应用场景与开发者材料。",
+            "后续需要回读官方 demo，区分可用能力、概念展示和区域/权限限制。"
+          ],
+          "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Omni_and_Gemini_3.5_hero.max-600x600.format-webp.webp",
+          "image": {
+            "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Omni_and_Gemini_3.5_hero.max-600x600.format-webp.webp",
+            "alt": "9 demos of Gemini Omni and Gemini 3.5 in action 原始来源图片",
+            "origin": "source"
+          },
           "related_themes": [
             "MEE",
             "个人",
             "产品",
             "新闻"
           ],
-          "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间和上下文。"
+          "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
         },
         {
-          "title": "Google AI blog feed",
-          "url": "https://blog.google/technology/ai/rss/",
+          "title": "Check out real-life AI prototypes from the Futures Lab.",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs/",
+          "source_name": "Google AI blog feed",
+          "source_id": "google-ai-blog-rss",
           "source_group": "news",
           "source_type": "commentary",
           "trust_tier": "P0",
-          "summary": "来源状态：fetchable；刷新节奏：weekly。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Google AI blog feed",
+          "published_at": "2026-05-29",
+          "summary": "Google Futures Lab 展示来自大学场景的 AI 原型，例如教育、工作和辅助交互方向；这类案例更接近真实用户场景，而不只是模型能力展示。",
+          "key_points": [
+            "事实重点：优先确认发布时间、原始来源和新闻主体。",
+            "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
+            "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
+          ],
+          "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FutureLabs_social.max-600x600.format-webp.webp",
+          "image": {
+            "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FutureLabs_social.max-600x600.format-webp.webp",
+            "alt": "Check out real-life AI prototypes from the Futures Lab. 原始来源图片",
+            "origin": "source"
+          },
           "related_themes": [
             "MEE",
             "个人",
             "产品",
             "新闻"
           ],
-          "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间和上下文。"
+          "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
         },
         {
-          "title": "Google DeepMind official blog page",
-          "url": "https://deepmind.google/discover/blog/",
+          "title": "Profiling in PyTorch (Part 1): A Beginner&apos;s Guide to torch.profiler",
+          "url": "https://huggingface.co/blog/torch-profiler",
+          "source_name": "Hugging Face blog feed",
+          "source_id": "huggingface-blog-rss",
+          "source_group": "news",
+          "source_type": "commentary",
+          "trust_tier": "P1",
+          "published_at": "2026-05-29",
+          "summary": "PyTorch profiling 教程更新强化了性能观测基础：当模型和 agent 系统进入工程化阶段，profiling、trace 和瓶颈定位会成为比单次效果展示更重要的能力。",
+          "key_points": [
+            "事实重点：优先确认发布时间、原始来源和新闻主体。",
+            "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
+            "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
+          ],
+          "image_url": "https://huggingface.co/blog/assets/torch-profiler/thumbnail.png",
+          "image": {
+            "src": "https://huggingface.co/blog/assets/torch-profiler/thumbnail.png",
+            "alt": "Profiling in PyTorch (Part 1): A Beginner&apos;s Guide to torch.profiler 原始来源图片",
+            "origin": "source"
+          },
+          "related_themes": [
+            "MEE",
+            "个人",
+            "产品",
+            "新闻"
+          ],
+          "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+        },
+        {
+          "title": "Catch up on 12 major I/O 2026 moments",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
+          "source_name": "Google AI blog feed",
+          "source_id": "google-ai-blog-rss",
           "source_group": "news",
           "source_type": "commentary",
           "trust_tier": "P0",
-          "summary": "来源状态：fetchable；刷新节奏：weekly。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Google DeepMind official blog page",
+          "published_at": "2026-05-28",
+          "summary": "Google I/O 相关材料集中展示 Gemini Omni 与 Gemini 3.5 的多模态和应用能力，适合作为观察 Google AI 产品化节奏、交互形态和开发者入口变化的事实样本。",
+          "key_points": [
+            "事实重点：Google 将 Gemini Omni 与 Gemini 3.5 作为 I/O 2026 的核心能力展示。",
+            "观察重点：多模态能力正在从演示走向应用场景与开发者材料。",
+            "后续需要回读官方 demo，区分可用能力、概念展示和区域/权限限制。"
+          ],
+          "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_KNH.max-600x600.format-webp.webp",
+          "image": {
+            "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_KNH.max-600x600.format-webp.webp",
+            "alt": "Catch up on 12 major I/O 2026 moments 原始来源图片",
+            "origin": "source"
+          },
           "related_themes": [
             "MEE",
             "个人",
             "产品",
             "新闻"
           ],
-          "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间和上下文。"
+          "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
         },
         {
-          "title": "Official macro, financial, and China policy seeds for high-trust external context",
-          "url": "",
+          "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
+          "url": "https://huggingface.co/blog/ibm-research/itbench-aa",
+          "source_name": "Hugging Face blog feed",
+          "source_id": "huggingface-blog-rss",
           "source_group": "news",
-          "source_type": "platform",
+          "source_type": "commentary",
+          "trust_tier": "P1",
+          "published_at": "2026-05-27",
+          "summary": "ITBench-AA 指向一个重要事实：前沿模型在企业 IT agentic 任务上的得分仍低于 50%，说明真实企业任务中的状态、权限、工具和流程复杂度仍是能力边界。",
+          "key_points": [
+            "事实重点：该基准把企业 IT 任务作为 agentic 能力测试对象。",
+            "边界重点：前沿模型低于 50% 的成绩说明工具、权限、状态和流程仍是主要难点。",
+            "产品重点：企业 Agent 产品需要把可观测、回滚、审批和验证做成一等能力。"
+          ],
+          "image_url": "https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/QzGxABeEDggNYzvgSLQqU.png",
+          "image": {
+            "src": "https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/QzGxABeEDggNYzvgSLQqU.png",
+            "alt": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM 原始来源图片",
+            "origin": "source"
+          },
+          "related_themes": [
+            "MEE",
+            "个人",
+            "产品",
+            "新闻"
+          ],
+          "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+        },
+        {
+          "title": "Harness, Scaffold, and the AI Agent Terms Worth Getting Right",
+          "url": "https://huggingface.co/blog/agent-glossary",
+          "source_name": "Hugging Face blog feed",
+          "source_id": "huggingface-blog-rss",
+          "source_group": "news",
+          "source_type": "commentary",
+          "trust_tier": "P1",
+          "published_at": "2026-05-25",
+          "summary": "Hugging Face 对 Harness、Scaffold 等 Agent 术语做澄清，价值在于帮助区分模型、工具、运行时、流程脚手架和评测环境，避免把不同层级混成一个概念。",
+          "key_points": [
+            "事实重点：Agent 领域正在形成更细的术语分层。",
+            "判断重点：Harness、Scaffold、Runtime、Eval 不应混用。",
+            "沉淀重点：MEE 的 Skill、Capsule、solidify 和 source index 需要保持清晰边界。"
+          ],
+          "image_url": "https://huggingface.co/blog/assets/agent-glossary/thumbnail.png",
+          "image": {
+            "src": "https://huggingface.co/blog/assets/agent-glossary/thumbnail.png",
+            "alt": "Harness, Scaffold, and the AI Agent Terms Worth Getting Right 原始来源图片",
+            "origin": "source"
+          },
+          "related_themes": [
+            "MEE",
+            "个人",
+            "产品",
+            "新闻"
+          ],
+          "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+        },
+        {
+          "title": "Catch up on the Dialogues stage at Google I/O 2026.",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-dialogues-recap/",
+          "source_name": "Google AI blog feed",
+          "source_id": "google-ai-blog-rss",
+          "source_group": "news",
+          "source_type": "commentary",
           "trust_tier": "P0",
-          "summary": "来源状态：manual_or_browser_followup；刷新节奏：weekly。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Official macro, financial, and China policy seeds for high-trust external context",
+          "published_at": "2026-05-22",
+          "summary": "A recap of the 2026 I/O Dialogues, where leaders discuss the future of AI, quantum computing, robotics and creativity.",
+          "key_points": [
+            "事实重点：优先确认发布时间、原始来源和新闻主体。",
+            "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
+            "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
+          ],
+          "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IO26_Dialogues_3z680sK.max-600x600.format-webp.webp",
+          "image": {
+            "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IO26_Dialogues_3z680sK.max-600x600.format-webp.webp",
+            "alt": "Catch up on the Dialogues stage at Google I/O 2026. 原始来源图片",
+            "origin": "source"
+          },
           "related_themes": [
             "MEE",
             "个人",
             "产品",
             "新闻"
           ],
-          "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间和上下文。"
+          "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
         },
         {
-          "title": "Hugging Face blog feed",
-          "url": "https://huggingface.co/blog/feed.xml",
+          "title": "We’re announcing new community investments in Missouri.",
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/missouri-programs/",
+          "source_name": "Google AI blog feed",
+          "source_id": "google-ai-blog-rss",
+          "source_group": "news",
+          "source_type": "commentary",
+          "trust_tier": "P0",
+          "published_at": "2026-05-20",
+          "summary": "We’re helping build the state’s next-generation workforce and investing in energy programs.",
+          "key_points": [
+            "事实重点：优先确认发布时间、原始来源和新闻主体。",
+            "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
+            "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
+          ],
+          "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/MissouriSocial.max-600x600.format-webp.webp",
+          "image": {
+            "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/MissouriSocial.max-600x600.format-webp.webp",
+            "alt": "We’re announcing new community investments in Missouri. 原始来源图片",
+            "origin": "source"
+          },
+          "related_themes": [
+            "MEE",
+            "个人",
+            "产品",
+            "新闻"
+          ],
+          "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
+        },
+        {
+          "title": "Reachy Mini goes fully local",
+          "url": "https://huggingface.co/blog/local-reachy-mini-conversation",
+          "source_name": "Hugging Face blog feed",
+          "source_id": "huggingface-blog-rss",
           "source_group": "news",
           "source_type": "commentary",
           "trust_tier": "P1",
-          "summary": "来源状态：fetchable；刷新节奏：weekly。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Hugging Face blog feed",
+          "published_at": "2026-05-27",
+          "summary": "Reachy Mini fully local 指向本地化机器人/边缘 AI 的产品方向：把对话、控制和交互尽量放到本地执行，可降低网络依赖并改善隐私边界。",
+          "key_points": [
+            "事实重点：优先确认发布时间、原始来源和新闻主体。",
+            "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
+            "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
+          ],
+          "image_url": "https://huggingface.co/blog/assets/local-reachy-mini-conversation/thumbnail.png",
+          "image": {
+            "src": "https://huggingface.co/blog/assets/local-reachy-mini-conversation/thumbnail.png",
+            "alt": "Reachy Mini goes fully local 原始来源图片",
+            "origin": "source"
+          },
           "related_themes": [
             "MEE",
             "个人",
             "产品",
             "新闻"
           ],
-          "boundary": "媒体、社区、搜索种子或榜单来源只作热点摘要和趋势线索，高影响判断需交叉验证。"
+          "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
         },
         {
-          "title": "Reuters AI and technology news surfaced through Google News RSS",
-          "url": "https://news.google.com/rss/search?q=site:reuters.com%20%28AI%20OR%20artificial%20intelligence%20OR%20technology%29&hl=en-US&gl=US&ceid=US:en",
+          "title": "Shipping a Trillion Parameters With a Hub Bucket: Delta Weight Sync in TRL",
+          "url": "https://huggingface.co/blog/delta-weight-sync",
+          "source_name": "Hugging Face blog feed",
+          "source_id": "huggingface-blog-rss",
           "source_group": "news",
           "source_type": "commentary",
           "trust_tier": "P1",
-          "summary": "来源状态：fetchable；刷新节奏：daily。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Reuters AI and technology news surfaced through Google News RSS",
+          "published_at": "2026-05-27",
+          "summary": "Delta Weight Sync 关注大模型权重分发与训练产物同步问题，说明开源模型生态的瓶颈正在从‘能否训练’扩展到‘如何低成本分发、复现和协作’。",
+          "key_points": [
+            "事实重点：优先确认发布时间、原始来源和新闻主体。",
+            "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
+            "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
+          ],
+          "image_url": "https://huggingface.co/blog/assets/delta-weight-sync/thumbnail.png",
+          "image": {
+            "src": "https://huggingface.co/blog/assets/delta-weight-sync/thumbnail.png",
+            "alt": "Shipping a Trillion Parameters With a Hub Bucket: Delta Weight Sync in TRL 原始来源图片",
+            "origin": "source"
+          },
           "related_themes": [
             "MEE",
             "个人",
             "产品",
             "新闻"
           ],
-          "boundary": "媒体、社区、搜索种子或榜单来源只作热点摘要和趋势线索，高影响判断需交叉验证。"
-        },
-        {
-          "title": "MIT Technology Review feed for AI, technology, and research context",
-          "url": "https://www.technologyreview.com/feed/",
-          "source_group": "news",
-          "source_type": "commentary",
-          "trust_tier": "P1",
-          "summary": "来源状态：fetchable；刷新节奏：daily。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 MIT Technology Review feed for AI, technology, and research context",
-          "related_themes": [
-            "MEE",
-            "个人",
-            "产品",
-            "新闻"
-          ],
-          "boundary": "媒体、社区、搜索种子或榜单来源只作热点摘要和趋势线索，高影响判断需交叉验证。"
-        },
-        {
-          "title": "BBC Technology RSS for broad international technology news context",
-          "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
-          "source_group": "news",
-          "source_type": "commentary",
-          "trust_tier": "P1",
-          "summary": "来源状态：fetchable；刷新节奏：daily。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 BBC Technology RSS for broad international technology news context",
-          "related_themes": [
-            "MEE",
-            "个人",
-            "产品",
-            "新闻"
-          ],
-          "boundary": "媒体、社区、搜索种子或榜单来源只作热点摘要和趋势线索，高影响判断需交叉验证。"
-        },
-        {
-          "title": "Bloomberg AI, technology, startup, and market news surfaced through Google News RSS; paywall/manual review may apply",
-          "url": "https://news.google.com/rss/search?q=site:bloomberg.com%20(AI%20OR%20technology%20OR%20startup%20OR%20markets)&hl=en-US&gl=US&ceid=US:en",
-          "source_group": "news",
-          "source_type": "commentary",
-          "trust_tier": "P1",
-          "summary": "来源状态：fetchable；刷新节奏：daily。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Bloomberg AI, technology, startup, and market news surfaced through Google News RSS; paywall/manual review may apply",
-          "related_themes": [
-            "MEE",
-            "个人",
-            "产品",
-            "新闻"
-          ],
-          "boundary": "媒体、社区、搜索种子或榜单来源只作热点摘要和趋势线索，高影响判断需交叉验证。"
-        },
-        {
-          "title": "FT, WSJ, and CNBC technology/business signal seed through Google News RSS; paywall/manual review may apply",
-          "url": "https://news.google.com/rss/search?q=(site:ft.com%20OR%20site:wsj.com%20OR%20site:cnbc.com)%20(AI%20OR%20technology%20OR%20markets%20OR%20startup)&hl=en-US&gl=US&ceid=US:en",
-          "source_group": "news",
-          "source_type": "commentary",
-          "trust_tier": "P1",
-          "summary": "来源状态：fetchable；刷新节奏：daily。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 FT, WSJ, and CNBC technology/business signal seed through Google News RSS; paywall/manual review may apply",
-          "related_themes": [
-            "MEE",
-            "个人",
-            "产品",
-            "新闻"
-          ],
-          "boundary": "媒体、社区、搜索种子或榜单来源只作热点摘要和趋势线索，高影响判断需交叉验证。"
-        },
-        {
-          "title": "Stratechery feed for business strategy and platform analysis; paywall/manual review may apply",
-          "url": "https://stratechery.com/feed/",
-          "source_group": "news",
-          "source_type": "commentary",
-          "trust_tier": "P1",
-          "summary": "来源状态：fetchable；刷新节奏：weekly。 本来源组当前启用记录约 25 条；它提供事实性外部变化或公开趋势入口，不在新闻报告内强行生成行动建议。 Stratechery feed for business strategy and platform analysis; paywall/manual review may apply",
-          "related_themes": [
-            "MEE",
-            "个人",
-            "产品",
-            "新闻"
-          ],
-          "boundary": "媒体、社区、搜索种子或榜单来源只作热点摘要和趋势线索，高影响判断需交叉验证。"
+          "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
         }
       ],
       "watch_points": [
