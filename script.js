@@ -2,13 +2,14 @@
   const fallback = {
     meta: {
       site_name: "MEE Insight Hub",
-      current_thesis: "把日报、周报、月报沉淀成一个持续更新的认知、机会和系统进化中枢。",
-      summary: "GitHub Pages 为默认主链路；Feishu 与 Vercel 仅在显式 opt-in 时生成。",
+      hero_title: "从每日信号到长期判断",
+      current_thesis: "一个持续更新的公开情报与私域收藏洞察站：汇聚新闻热点、AI 与工程趋势、产品机会、个人认知线索和 MEE 自进化记录，按日报、周报、月报沉淀成可追溯的判断与行动建议。",
+      summary: "先读新闻热点和个人洞察，把外部变化、你的收藏线索、产品机会和 MEE 进化放进同一张判断网络；来源索引用于追溯证据，不抢占阅读入口。",
       metrics: [
-        { label: "主题频道", value: "5" },
-        { label: "时间层", value: "3" },
-        { label: "默认发布", value: "GH" },
-        { label: "证据系统", value: "1" }
+        { label: "报告周期", value: "日 / 周 / 月" },
+        { label: "优先阅读", value: "新闻 / 洞察" },
+        { label: "机会线索", value: "产品 / 商机" },
+        { label: "证据来源", value: "97" }
       ]
     },
     periods: [],
@@ -44,6 +45,7 @@
   }
 
   function renderHero(data) {
+    document.querySelector("#hero-title").textContent = data.meta.hero_title || fallback.meta.hero_title || data.meta.site_name || fallback.meta.site_name;
     document.querySelector("#hero-thesis").textContent = data.meta.current_thesis || fallback.meta.current_thesis;
     document.querySelector("#hero-summary").textContent = data.meta.summary || fallback.meta.summary;
     const metrics = document.querySelector("#hero-metrics");
@@ -117,10 +119,20 @@
     }));
   }
 
+  function preferredReportOrder(reports) {
+    const order = ["news", "personal", "product", "mee", "sources"];
+    return (reports || []).slice().sort((a, b) => {
+      const ai = order.indexOf(a.track_id);
+      const bi = order.indexOf(b.track_id);
+      return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi);
+    });
+  }
+
   function renderReportTabs(reports) {
     const target = document.querySelector("#report-tabs");
     if (!target) return;
-    target.replaceChildren(...reports.map((report) => {
+    const orderedReports = preferredReportOrder(reports);
+    target.replaceChildren(...orderedReports.map((report) => {
       const btn = document.createElement("button");
       btn.type = "button";
       btn.role = "tab";
@@ -146,7 +158,7 @@
     }
     if (!packs.some((pack) => pack.id === state.selectedPack)) state.selectedPack = packs[0].id;
     const pack = packs.find((item) => item.id === state.selectedPack) || packs[0];
-    const reports = pack.reports || [];
+    const reports = preferredReportOrder(pack.reports || []);
     if (!reports.some((report) => report.id === state.selectedReport)) state.selectedReport = reports[0]?.id || "";
     renderReportPackTabs(packs);
     renderReportTabs(reports);
