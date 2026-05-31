@@ -12,17 +12,11 @@
         { label: "最后追溯证据", value: "97 源" }
       ]
     },
-    periods: [],
     report_packs: [],
-    reports: [],
-    tracks: [],
-    rollup_steps: [],
-    evidence_clusters: [],
-    source_groups: [],
-    publications: []
+    reports: []
   };
 
-  const state = { data: fallback, selectedTrack: "mee", selectedPack: "daily", selectedReport: "" };
+  const state = { data: fallback, selectedPack: "daily", selectedReport: "" };
   const progress = document.querySelector(".reading-progress");
   const navLinks = Array.from(document.querySelectorAll(".site-nav a"));
   const sections = navLinks.map((link) => document.querySelector(link.getAttribute("href"))).filter(Boolean);
@@ -49,24 +43,22 @@
     document.querySelector("#hero-thesis").textContent = data.meta.current_thesis || fallback.meta.current_thesis;
     document.querySelector("#hero-summary").textContent = data.meta.summary || fallback.meta.summary;
     const metrics = document.querySelector("#hero-metrics");
-    metrics.replaceChildren(...(data.meta.metrics || []).map((metric) => {
+    const packs = normalizeReportPacks(data);
+    const reports = packs.flatMap((pack) => pack.reports || []);
+    const mainReports = reports.filter((report) => report.report_kind !== "source-index" && report.track_id !== "sources");
+    const sourceReports = reports.filter((report) => report.report_kind === "source-index" || report.track_id === "sources");
+    const heroMetrics = [
+      { label: "日报 / 周报 / 月报", value: `${packs.length} 个周期` },
+      { label: "主题报告正文", value: `${mainReports.length} 份` },
+      { label: "核心洞察", value: `${mainReports.reduce((sum, report) => sum + (report.insights || []).length, 0)} 条` },
+      { label: "来源索引", value: `${sourceReports.length} 份` },
+    ];
+    metrics.replaceChildren(...heroMetrics.map((metric) => {
       const box = document.createElement("div");
       const value = el("strong", "", metric.value);
       const label = el("span", "", metric.label);
       box.append(value, label);
       return box;
-    }));
-  }
-
-  function renderPeriods(data) {
-    const target = document.querySelector("#period-cards");
-    target.replaceChildren(...(data.periods || []).map((period) => {
-      const card = el("article", "period-card");
-      card.append(el("div", "label", period.label));
-      card.append(el("h3", "", period.title));
-      card.append(el("p", "", period.summary));
-      card.append(list(period.items || []));
-      return card;
     }));
   }
 
@@ -227,6 +219,54 @@
     }));
   }
 
+  function reportCardBullets(report) {
+    if (report.report_kind === "source-index" || report.track_id === "sources") {
+      const summary = report.source_index?.summary || [];
+      return summary.slice(0, 3);
+    }
+    return (report.insights || []).slice(0, 4).map((insight) => insight.title);
+  }
+
+  function reportCardMeta(report) {
+    if (report.report_kind === "source-index" || report.track_id === "sources") {
+      const groupCount = report.source_index?.groups?.length || 0;
+      const ledgerCount = report.source_index?.ledger?.length || 0;
+      return [`${groupCount} 类来源`, `${ledgerCount} 类 ledger`];
+    }
+    return [`${(report.insights || []).length} 条洞察`, `${(report.actions || []).length} 条行动`];
+  }
+
+  function renderReportOverview(pack, reports) {
+    const target = document.querySelector("#report-overview");
+    if (!target) return;
+    const header = el("div", "report-overview-head");
+    const title = el("div", "");
+    title.append(el("strong", "", "本周期报告目录"));
+    title.append(el("p", "", "先扫这里判断该读哪份正文；点击卡片会切换到对应完整报告。"));
+    header.append(title);
+
+    const cards = el("div", "report-overview-grid");
+    reports.forEach((report) => {
+      const card = el("button", "report-overview-card");
+      card.type = "button";
+      card.setAttribute("aria-current", String(report.id === state.selectedReport));
+      card.addEventListener("click", () => {
+        state.selectedReport = report.id;
+        renderReports(state.data);
+        document.querySelector("#report-detail")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+      const label = el("span", "overview-label", report.label || report.title);
+      const h = el("strong", "", report.title || report.label);
+      const lead = el("p", "", report.lead || "来源索引与报告追溯入口。");
+      const meta = el("div", "meta-row");
+      reportCardMeta(report).forEach((item) => meta.append(el("span", "", item)));
+      const bullets = list(reportCardBullets(report));
+      card.append(label, h, lead, meta, bullets);
+      cards.append(card);
+    });
+    target.replaceChildren(header, cards);
+  }
+
   function renderReports(data) {
     const target = document.querySelector("#report-detail");
     const summaryTarget = document.querySelector("#report-pack-summary");
@@ -243,10 +283,11 @@
     if (!reports.some((report) => report.id === state.selectedReport)) state.selectedReport = reports[0]?.id || "";
     renderReportPackTabs(packs);
     renderReportTabs(reports);
+    renderReportOverview(pack, reports);
 
     const packBox = el("div", "report-pack-card");
     packBox.append(el("strong", "", pack.title || pack.label || "报告包"));
-    packBox.append(el("p", "", pack.summary || ""));
+    packBox.append(el("p", "", `${pack.summary || ""} 当前周期包含 ${reports.length} 份正文，按“新闻热点、个人洞察、产品商机、MEE 进化、参考来源”的阅读顺序组织。`));
     packBox.append(el("span", "report-count", `${reports.length} 份报告正文`));
     summaryTarget?.replaceChildren(packBox);
 
@@ -333,123 +374,10 @@
     setupLightbox();
   }
 
-  function renderTrackTabs(data) {
-    const target = document.querySelector("#track-tabs");
-    target.replaceChildren(...(data.tracks || []).map((track) => {
-      const btn = document.createElement("button");
-      btn.type = "button";
-      btn.role = "tab";
-      btn.textContent = track.label;
-      btn.setAttribute("aria-selected", String(track.id === state.selectedTrack));
-      btn.addEventListener("click", () => {
-        state.selectedTrack = track.id;
-        renderTracks(state.data);
-      });
-      return btn;
-    }));
-  }
-
-  function renderTracks(data) {
-    renderTrackTabs(data);
-    const track = (data.tracks || []).find((item) => item.id === state.selectedTrack) || (data.tracks || [])[0];
-    const target = document.querySelector("#track-detail");
-    if (!track) {
-      target.textContent = "暂无主题数据。";
-      return;
-    }
-    state.selectedTrack = track.id;
-    const head = el("div", "track-head");
-    const titleWrap = document.createElement("div");
-    titleWrap.append(el("h3", "", track.label));
-    titleWrap.append(el("p", "", track.description));
-    head.append(titleWrap, el("span", "track-pill", track.default_cadence || "daily / weekly / monthly"));
-
-    const columns = el("div", "track-columns");
-    for (const group of [
-      ["日报 delta", track.daily_focus || []],
-      ["周报聚类", track.weekly_focus || []],
-      ["月报沉淀", track.monthly_focus || []]
-    ]) {
-      const col = el("div", "track-column");
-      col.append(el("h4", "", group[0]));
-      col.append(list(group[1]));
-      columns.appendChild(col);
-    }
-    target.replaceChildren(head, columns);
-  }
-
-  function renderRollup(data) {
-    const target = document.querySelector("#rollup-steps");
-    target.replaceChildren(...(data.rollup_steps || []).map((step) => {
-      const li = document.createElement("li");
-      const body = document.createElement("div");
-      body.append(el("h3", "", step.title));
-      body.append(el("p", "", step.description));
-      li.appendChild(body);
-      return li;
-    }));
-  }
-
-  function renderEvidence(data) {
-    const target = document.querySelector("#evidence-clusters");
-    target.replaceChildren(...(data.evidence_clusters || []).map((cluster) => {
-      const card = el("article", "evidence-card");
-      card.append(el("h3", "", cluster.title));
-      card.append(el("p", "", cluster.summary));
-      const meta = el("div", "meta-row");
-      for (const item of [...(cluster.tracks || []), ...(cluster.source_groups || [])]) meta.append(el("span", "", item));
-      card.append(meta);
-      return card;
-    }));
-  }
-
-  function renderSources(data) {
-    const target = document.querySelector("#source-groups");
-    target.replaceChildren(...(data.source_groups || []).map((source) => {
-      const card = el("article", "source-card");
-      card.append(el("strong", "", source.trust_tier || "mixed"));
-      card.append(el("h3", "", source.label));
-      card.append(el("p", "", source.description));
-      const meta = el("div", "meta-row");
-      for (const item of source.used_for || []) meta.append(el("span", "", item));
-      card.append(meta);
-      return card;
-    }));
-  }
-
-  function renderPublications(data) {
-    const target = document.querySelector("#publication-list");
-    target.replaceChildren(...(data.publications || []).map((pub) => {
-      const card = el("article", "publication-card");
-      const body = document.createElement("div");
-      body.append(el("h3", "", pub.title));
-      body.append(el("p", "", pub.summary));
-      const link = document.createElement("a");
-      link.href = pub.href || "#top";
-      link.textContent = pub.href ? "打开" : "待生成";
-      if (pub.href && /^https?:/i.test(pub.href)) {
-        link.target = "_blank";
-        link.rel = "noreferrer noopener";
-      }
-      card.append(body, el("span", "status", pub.status || pub.cadence || "draft"));
-      if (pub.href) body.appendChild(link);
-      return card;
-    }));
-  }
-
   function render(data) {
     state.data = data;
-    if (!(data.tracks || []).some((track) => track.id === state.selectedTrack)) {
-      state.selectedTrack = (data.tracks || [])[0]?.id || "mee";
-    }
     renderHero(data);
     renderReports(data);
-    renderPeriods(data);
-    renderTracks(data);
-    renderRollup(data);
-    renderEvidence(data);
-    renderSources(data);
-    renderPublications(data);
     setupLightbox();
   }
 

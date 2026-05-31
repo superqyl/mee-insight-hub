@@ -17,11 +17,6 @@
       </a>
       <nav class="site-nav" aria-label="站点导航">
         <a href="#reports">报告中心</a>
-        <a href="#periods">时间层</a>
-        <a href="#tracks">主题频道</a>
-        <a href="#evidence">证据簇</a>
-        <a href="#sources">数据源</a>
-        <a href="#archive">归档</a>
       </nav>
     </header>
 
@@ -32,7 +27,6 @@
           <p id="hero-thesis" class="hero-lead">这里汇总每日、每周、每月的新闻热点、个人洞察、产品机会、MEE 自进化和参考来源；先读报告正文，再按证据簇追溯来源。</p>
           <div class="hero-actions" aria-label="核心入口">
             <a class="primary-link" href="#reports">查看报告中心</a>
-            <a class="secondary-link" href="#tracks">进入主题频道</a>
           </div>
         </div>
         <aside class="signal-panel" aria-label="阅读顺序">
@@ -52,85 +46,9 @@
         </div>
         <div id="report-pack-tabs" class="report-pack-tabs" role="tablist" aria-label="报告周期"></div>
         <div id="report-pack-summary" class="report-pack-summary"></div>
+        <div id="report-overview" class="report-overview" aria-label="本周期报告目录"></div>
         <div id="report-tabs" class="report-tabs" role="tablist" aria-label="报告类型"></div>
         <div id="report-detail" class="report-detail"></div>
-      </section>
-
-      <section id="periods" class="section">
-        <div class="section-heading">
-          <span>02</span>
-          <div>
-            <h2>时间层：今日、最近 7 天、本月</h2>
-            <p>日报负责 delta，周报负责聚类，月报负责稳定判断。三种周期共享同一个证据系统。</p>
-          </div>
-        </div>
-        <div id="period-cards" class="period-grid"></div>
-      </section>
-
-      <section id="tracks" class="section section-muted">
-        <div class="section-heading">
-          <span>03</span>
-          <div>
-            <h2>五类主题频道</h2>
-            <p>同一来源可以同时服务多个主题；新闻热点也是全站统一证据底座的一部分。</p>
-          </div>
-        </div>
-        <div id="track-tabs" class="track-tabs" role="tablist" aria-label="主题频道"></div>
-        <div id="track-detail" class="track-detail"></div>
-      </section>
-
-      <section id="rollup" class="section">
-        <div class="rollup-grid">
-          <div>
-            <div class="section-heading compact">
-              <span>04</span>
-              <div>
-                <h2>从信号到判断</h2>
-                <p>避免日报、周报、月报重复堆叠，用稳定 ID 把内容逐层上卷。</p>
-              </div>
-            </div>
-            <ol id="rollup-steps" class="rollup-steps"></ol>
-          </div>
-          <figure class="hub-figure">
-            <button class="image-zoom" type="button" data-full="./public/assets/judgment-network.png" aria-label="查看判断网络图大图">
-              <img src="./public/assets/judgment-network.png" alt="判断网络图" />
-            </button>
-            <figcaption>五类主题共享数据源底座，日报信号逐步上卷为周度主题簇与月度策略判断。</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section id="evidence" class="section section-muted">
-        <div class="section-heading">
-          <span>05</span>
-          <div>
-            <h2>证据簇与跨周期去重</h2>
-            <p>每个洞察必须能回到证据簇；已上卷的内容只显示摘要和增量。</p>
-          </div>
-        </div>
-        <div id="evidence-clusters" class="evidence-grid"></div>
-      </section>
-
-      <section id="sources" class="section">
-        <div class="section-heading">
-          <span>06</span>
-          <div>
-            <h2>参考数据来源</h2>
-            <p>官方/一手源优先作为高可信证据，媒体/社区/排行榜作为趋势线索，登录墙和付费墙只进入索引。</p>
-          </div>
-        </div>
-        <div id="source-groups" class="source-grid"></div>
-      </section>
-
-      <section id="archive" class="section archive-section">
-        <div class="section-heading">
-          <span>07</span>
-          <div>
-            <h2>发布归档</h2>
-            <p>GitHub Pages 是默认主链路；Vercel 和 Feishu 只在显式 opt-in 时生成。</p>
-          </div>
-        </div>
-        <div id="publication-list" class="publication-list"></div>
       </section>
     </main>
 
