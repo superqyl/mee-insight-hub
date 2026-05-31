@@ -1,0 +1,571 @@
+{
+  "meta": {
+    "site_name": "MEE Insight Hub",
+    "generated_at": "2026-05-31T03:55:44.231Z",
+    "cadence": "daily",
+    "period": {
+      "cadence": "daily",
+      "from": "2026-05-30",
+      "to": "2026-05-30",
+      "label": "2026-05-30",
+      "display": "日报 2026-05-30"
+    },
+    "primary_url": "https://superqyl.github.io/mee-insight-hub/",
+    "default_publish_backend": "github-pages",
+    "current_thesis": "把日报、周报、月报沉淀成一个持续更新的认知、机会和系统进化中枢。",
+    "summary": "GitHub Pages 是默认主链路；Vercel 与 Feishu 仅在显式 opt-in 时生成，减少发布链路和内容重复。",
+    "metrics": [
+      {
+        "label": "主题频道",
+        "value": "5"
+      },
+      {
+        "label": "时间层",
+        "value": "3"
+      },
+      {
+        "label": "默认发布",
+        "value": "GH"
+      },
+      {
+        "label": "数据源",
+        "value": "97"
+      }
+    ],
+    "optional_backends": {
+      "vercel": false,
+      "feishu": false
+    },
+    "privacy_contract": "Public pages must not expose Feishu private links, internal media URLs, local absolute paths, or private chat bodies."
+  },
+  "periods": [
+    {
+      "id": "daily",
+      "label": "Daily",
+      "title": "今日：新增信号与待验证问题",
+      "summary": "日报只呈现新增 delta、初步判断和需要补读/交叉验证的问题。",
+      "items": [
+        "新增来源和主题漂移",
+        "初步洞察与不确定性",
+        "未读、付费墙、访问受限 ledger"
+      ]
+    },
+    {
+      "id": "weekly",
+      "label": "Weekly",
+      "title": "最近 7 天：重复信号形成主题簇",
+      "summary": "周报汇总多日重复信号，压缩噪音并给出主题优先级。",
+      "items": [
+        "跨日报 evidence_cluster_id 去重",
+        "同类来源交叉验证",
+        "转入月报候选判断"
+      ]
+    },
+    {
+      "id": "monthly",
+      "label": "Monthly",
+      "title": "本月：稳定判断与策略建议",
+      "summary": "月报只沉淀跨周仍成立的主线，形成可执行策略和能力建设方向。",
+      "items": [
+        "月度 theses",
+        "跨主题机会和风险",
+        "下月执行重点"
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "id": "daily-new-signal",
+      "cadence": "daily",
+      "title": "日报新增信号",
+      "summary": "新增来源先进入 evidence cluster，按 MEE、个人、产品、新闻和来源五类主题共同路由；不可读或付费墙来源只进入索引与待补读。",
+      "track_ids": [
+        "mee",
+        "personal",
+        "product",
+        "news",
+        "sources"
+      ]
+    },
+    {
+      "id": "daily-rollup-policy",
+      "cadence": "daily",
+      "title": "跨周期上卷",
+      "summary": "日报只展示新增 delta；周报聚合多日重复信号并排序；月报沉淀跨周主线和策略建议，避免复制日报全文。",
+      "track_ids": [
+        "sources"
+      ]
+    }
+  ],
+  "theme_clusters": [
+    {
+      "id": "agent-operating-system",
+      "name": "Agent 运行时与个人操作系统",
+      "track_ids": [
+        "mee",
+        "personal",
+        "product"
+      ],
+      "insight_ids": [
+        "personal-os",
+        "mee-runtime"
+      ],
+      "rollup_rule": "当同一信号同时涉及工具、流程、权限、日志、恢复和训练时，优先聚合为运行时/操作系统主题簇。"
+    },
+    {
+      "id": "source-to-evidence",
+      "name": "从来源到证据",
+      "track_ids": [
+        "mee",
+        "news",
+        "sources"
+      ],
+      "insight_ids": [
+        "evidence-pipeline",
+        "source-quality"
+      ],
+      "rollup_rule": "私域收藏、公开新闻、研究论文和开源仓库必须先经过可读性、可信边界和 delta 归类，再进入判断。"
+    },
+    {
+      "id": "opportunity-validation",
+      "name": "机会验证与产品实验",
+      "track_ids": [
+        "product",
+        "personal",
+        "news"
+      ],
+      "insight_ids": [
+        "product-hypothesis",
+        "market-timing"
+      ],
+      "rollup_rule": "产品线索只有在需求强度、可复用工作流、付费场景和交付成本均可解释时，才上卷为产品机会。"
+    }
+  ],
+  "theses": [
+    {
+      "id": "hub-thesis",
+      "title": "MEE Insight Hub 的核心判断",
+      "body": "把日报、周报、月报变成同一个证据系统：日报负责新增与待验证，周报负责主题簇和优先级，月报负责稳定判断与策略沉淀。"
+    },
+    {
+      "id": "source-thesis",
+      "title": "数据源扩展不是新闻栏目扩展",
+      "body": "Reuters、Bloomberg、GitHub、Product Hunt、arXiv、SEC、FRED、微信公众号和飞书文档都进入同一个 evidence substrate，可同时服务五类主题。"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "mee",
+      "name": "MEE 本体进化",
+      "label": "MEE 本体进化",
+      "question": "MEE 的调度、记忆、Skill、证据和发布链路如何变得更稳、更可审计？",
+      "cadence_role": "日报记录新增能力缺口；周报聚合重复故障与治理主题；月报沉淀为 Gene、Capsule 或 Skill 规则。",
+      "description": "关注 MEE 调度、Skill/Gene/Capsule、质量门禁、证据链和自动化发布链路的系统性进化。",
+      "default_cadence": "daily delta / weekly cluster / monthly governance",
+      "daily_focus": [
+        "新增能力缺口",
+        "质量回退风险",
+        "自动化失败和降级原因"
+      ],
+      "weekly_focus": [
+        "重复出现的工程治理问题",
+        "Skill/Agent 市场可吸收模式",
+        "工具链稳定性趋势"
+      ],
+      "monthly_focus": [
+        "调度协议升级",
+        "可复用治理规则",
+        "下一阶段 MEE 资产建设"
+      ]
+    },
+    {
+      "id": "personal",
+      "name": "个人认知与洞察",
+      "label": "个人认知与洞察",
+      "question": "如何把收藏、阅读、判断、练习和复盘连成个人操作系统？",
+      "cadence_role": "日报保留问题感；周报形成认知主题簇；月报沉淀稳定判断、训练方向和个人杠杆。",
+      "description": "覆盖个人操作系统、判断模型、学习闭环、职业杠杆、表达品味、协作方式和风险感知。",
+      "default_cadence": "daily signals / weekly learning loops / monthly operating system",
+      "daily_focus": [
+        "今日材料触发的问题",
+        "可立即练习的小技能",
+        "反复出现的认知盲区"
+      ],
+      "weekly_focus": [
+        "学习主题簇",
+        "行动反馈",
+        "私人兴趣与公开趋势校准"
+      ],
+      "monthly_focus": [
+        "个人能力系统",
+        "判断网络",
+        "长期职业杠杆"
+      ]
+    },
+    {
+      "id": "product",
+      "name": "产品与商机",
+      "label": "产品与商机",
+      "question": "哪些信号能转成可验证产品机会、工作流切口或商业实验？",
+      "cadence_role": "日报记录机会线索；周报去重和排序；月报形成产品假设、验证路径与风险边界。",
+      "description": "不限定 Adapora，把市场、开源、研究、政策和用户痛点映射为可验证机会池。",
+      "default_cadence": "daily leads / weekly opportunity map / monthly strategy",
+      "daily_focus": [
+        "产品线索",
+        "竞品和包装变化",
+        "用户痛点证据"
+      ],
+      "weekly_focus": [
+        "机会聚类",
+        "可验证 MVP 切口",
+        "需求强度与支付场景"
+      ],
+      "monthly_focus": [
+        "产品组合判断",
+        "商业化路径",
+        "风险和护城河"
+      ]
+    },
+    {
+      "id": "news",
+      "name": "新闻热点",
+      "label": "新闻热点",
+      "question": "公开世界发生了什么变化，它对 MEE、个人判断和产品机会分别意味着什么？",
+      "cadence_role": "日报记录热点；周报识别持续趋势；月报区分噪音、结构变化和长期变量。",
+      "description": "新闻不是孤立栏目，而是给 MEE、个人、产品和风险判断提供外部环境变化。",
+      "default_cadence": "daily watch / weekly implications / monthly macro context",
+      "daily_focus": [
+        "政策监管",
+        "AI/科技产业事件",
+        "资本市场与宏观变化"
+      ],
+      "weekly_focus": [
+        "热点持续性",
+        "多源交叉验证",
+        "对主题频道的影响"
+      ],
+      "monthly_focus": [
+        "行业节奏变化",
+        "高影响外部变量",
+        "风险地图"
+      ]
+    },
+    {
+      "id": "sources",
+      "name": "参考数据来源",
+      "label": "参考数据来源",
+      "question": "哪些来源支持了判断，哪些仍只是待补读或待交叉验证线索？",
+      "cadence_role": "日报写入新增来源和 unreadable ledger；周报合并证据簇；月报评估来源质量和覆盖缺口。",
+      "description": "维护全站 source-index、可读状态、可信边界和 evidence cluster 路由。",
+      "default_cadence": "daily ingest / weekly hygiene / monthly source review",
+      "daily_focus": [
+        "新增来源",
+        "可读性和访问失败",
+        "多主题路由"
+      ],
+      "weekly_focus": [
+        "来源质量和重复度",
+        "高价值源补强",
+        "不可读 ledger 清理"
+      ],
+      "monthly_focus": [
+        "源组合评估",
+        "可信层级调整",
+        "新增/淘汰来源建议"
+      ]
+    }
+  ],
+  "evidence_clusters": [
+    {
+      "id": "evidence-source-index",
+      "name": "统一来源索引",
+      "title": "统一来源索引",
+      "source_group_ids": [
+        "private-collection",
+        "github",
+        "skills-market",
+        "ai-research",
+        "product-market",
+        "news",
+        "quant-research"
+      ],
+      "source_groups": [
+        "私域收藏与转发",
+        "开源工程与仓库",
+        "Skill / MCP / Agent 能力市场",
+        "AI 官方与研究",
+        "产品、创业与市场",
+        "新闻、行业与政策",
+        "量化、金融与市场基础设施"
+      ],
+      "supports": [
+        "mee",
+        "personal",
+        "product",
+        "news",
+        "sources"
+      ],
+      "tracks": [
+        "MEE",
+        "个人",
+        "产品",
+        "新闻",
+        "来源"
+      ],
+      "method": "每条来源保留标题、链接、发布时间或抓取时间、来源类型、可读状态、关联主题、为什么值得参考和可信边界。",
+      "summary": "所有来源先进入 source-index/evidence cluster，再按 MEE、个人、产品、新闻、来源五类主题共同路由。"
+    },
+    {
+      "id": "cadence-rollup",
+      "name": "跨周期去重",
+      "title": "跨周期去重",
+      "source_group_ids": [
+        "private-collection",
+        "github",
+        "news",
+        "ai-research",
+        "product-market"
+      ],
+      "source_groups": [
+        "私域收藏",
+        "GitHub",
+        "新闻",
+        "AI 研究",
+        "产品市场"
+      ],
+      "supports": [
+        "mee",
+        "personal",
+        "product",
+        "news"
+      ],
+      "tracks": [
+        "MEE",
+        "个人",
+        "产品",
+        "新闻"
+      ],
+      "method": "用 stable insight_id 与 evidence_cluster_id 串联日报、周报和月报；已上卷内容在日报只保留新增 delta。",
+      "summary": "日报负责新增，周报负责主题簇，月报负责稳定判断；同一证据簇贯穿三个时间周期。"
+    }
+  ],
+  "publications": [
+    {
+      "id": "daily-2026-05-30",
+      "cadence": "daily",
+      "title": "日报 2026-05-30 · MEE Insight Hub",
+      "url": "https://superqyl.github.io/mee-insight-hub/",
+      "href": "https://superqyl.github.io/mee-insight-hub/",
+      "summary": "默认更新 GitHub Pages 静态站内容；Vercel 和 Feishu 只在显式 opt-in 时生成。",
+      "backend": "github-pages",
+      "status": "planned_or_updated"
+    }
+  ],
+  "rollup_steps": [
+    {
+      "title": "日报采集 delta",
+      "description": "只记录新增来源、新观点、访问失败和待验证问题，不复制历史结论。"
+    },
+    {
+      "title": "证据簇归并",
+      "description": "用 evidence_cluster_id 合并同主题来源，保留一手源、媒体源、社区源的可信边界。"
+    },
+    {
+      "title": "周报聚类排序",
+      "description": "多日重复出现且能交叉验证的信号进入周度主题簇和优先级队列。"
+    },
+    {
+      "title": "月报稳定判断",
+      "description": "跨周仍成立的主题才沉淀为 thesis、策略建议和下月行动。"
+    }
+  ],
+  "source_groups": [
+    {
+      "id": "private-collection",
+      "name": "私域收藏与转发",
+      "label": "私域收藏与转发",
+      "count": 0,
+      "source_types": [
+        "飞书私聊/群聊",
+        "微信公众号",
+        "飞书文档"
+      ],
+      "role": "问题感、真实兴趣、协作上下文和待验证线索入口",
+      "trust_boundary": "只公开标题、链接、短摘要和可信边界；私聊原文留在本地 runtime。",
+      "trust_tier": "P2/P3",
+      "description": "飞书私聊/群聊转发、微信公众号和飞书文档只公开统计、标题和必要摘要，不公开私聊正文；它们最适合暴露真实问题感。",
+      "used_for": [
+        "MEE",
+        "个人",
+        "产品",
+        "新闻",
+        "来源"
+      ]
+    },
+    {
+      "id": "github",
+      "name": "开源工程与仓库",
+      "label": "开源工程与仓库",
+      "count": 12,
+      "source_types": [
+        "GitHub Trending",
+        "GitHub Search",
+        "GitHub Topics",
+        "Awesome lists",
+        "superqyl starred"
+      ],
+      "role": "为 MEE 运行时、Skill 供应链、工程架构和产品实现提供可迁移机制。",
+      "trust_boundary": "仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。",
+      "trust_tier": "P1/P2",
+      "description": "GitHub Trending、Search、Topics、Awesome lists 与 superqyl starred 用于发现可迁移工程机制、Skill 供应链模式和产品实现样本。",
+      "used_for": [
+        "MEE",
+        "个人",
+        "产品",
+        "来源"
+      ]
+    },
+    {
+      "id": "skills-market",
+      "name": "Skill / MCP / Agent 能力市场",
+      "label": "Skill / MCP / Agent 能力市场",
+      "count": 9,
+      "source_types": [
+        "Anthropic Skills",
+        "Claude Code Skills",
+        "ClawHub",
+        "MCP registries"
+      ],
+      "role": "发现可复用能力、召回设计、权限边界、失败模式和 eval case。",
+      "trust_boundary": "第三方能力先进入供应链审查，不直接安装或写入母体真源。",
+      "trust_tier": "P1/P3",
+      "description": "Anthropic Skills、Claude Code Skills、ClawHub、MCP registries 和 Agent skill 市场用于观察能力封装、召回、权限和评测设计。",
+      "used_for": [
+        "MEE",
+        "产品",
+        "来源"
+      ]
+    },
+    {
+      "id": "ai-research",
+      "name": "AI 官方与研究",
+      "label": "AI 官方与研究",
+      "count": 7,
+      "source_types": [
+        "arXiv",
+        "Hugging Face",
+        "OpenAI",
+        "Anthropic",
+        "DeepMind",
+        "Microsoft Research",
+        "Meta AI",
+        "Apple ML",
+        "NVIDIA"
+      ],
+      "role": "为能力边界、架构趋势、安全约束和长期判断提供一手或准一手证据。",
+      "trust_boundary": "论文和官方博客需要核对方法、实验条件、局限和发布日期，不能把标题当结论。",
+      "trust_tier": "P0/P1",
+      "description": "OpenAI、Anthropic、Google DeepMind、Microsoft Research、Meta AI、Apple ML、NVIDIA、Papers with Code 和 Hugging Face 等用于校准能力边界。",
+      "used_for": [
+        "MEE",
+        "个人",
+        "产品",
+        "新闻",
+        "来源"
+      ]
+    },
+    {
+      "id": "product-market",
+      "name": "产品、创业与市场",
+      "label": "产品、创业与市场",
+      "count": 11,
+      "source_types": [
+        "Product Hunt",
+        "Hacker News",
+        "Indie Hackers",
+        "BetaList",
+        "Futurepedia",
+        "Toolify",
+        "There is An AI For That"
+      ],
+      "role": "观察需求包装、首屏叙事、目标人群、竞品切口和可验证付费场景。",
+      "trust_boundary": "排行榜和社区热度只表示趋势，进入产品判断前要交叉验证用户需求和留存。",
+      "trust_tier": "P2/P3",
+      "description": "Product Hunt、Hacker News、Indie Hackers、BetaList、Futurepedia、Toolify 等用于观察产品包装、受众、竞品和需求强度。",
+      "used_for": [
+        "个人",
+        "产品",
+        "新闻",
+        "来源"
+      ]
+    },
+    {
+      "id": "news",
+      "name": "新闻、行业与政策",
+      "label": "新闻、行业与政策",
+      "count": 25,
+      "source_types": [
+        "Reuters",
+        "Bloomberg",
+        "FT",
+        "WSJ",
+        "CNBC",
+        "BBC",
+        "The Verge",
+        "36Kr",
+        "财新",
+        "机器之心",
+        "官方政策源"
+      ],
+      "role": "作为全站共同情报底座，服务 MEE、个人、产品、新闻热点和风险感知五类主题。",
+      "trust_boundary": "媒体报道进入趋势层；高影响判断需回到官方公告、一手资料或多源交叉确认。",
+      "trust_tier": "P1/P2",
+      "description": "Reuters、Bloomberg、FT、WSJ、CNBC、BBC、The Verge、TechCrunch、36Kr、财新、机器之心、量子位和政策公开信息用于捕捉外部变化。",
+      "used_for": [
+        "MEE",
+        "个人",
+        "产品",
+        "新闻",
+        "来源"
+      ]
+    },
+    {
+      "id": "quant-research",
+      "name": "量化、金融与市场基础设施",
+      "label": "量化、金融与市场基础设施",
+      "count": 21,
+      "source_types": [
+        "arXiv q-fin",
+        "SSRN",
+        "RePEc",
+        "QuantConnect/LEAN",
+        "CBOE",
+        "CME",
+        "OCC",
+        "SEC",
+        "FRED",
+        "Binance",
+        "Deribit",
+        "Alpaca"
+      ],
+      "role": "提供研究假设、平台能力、市场结构、监管边界和风险感知材料。",
+      "trust_boundary": "只用于研究和工具启发；不构成交易、投资或收益承诺。",
+      "trust_tier": "P0/P2",
+      "description": "arXiv q-fin、SSRN、RePEc、QuantConnect/LEAN、CBOE、CME、OCC、SEC、FRED、Binance、Deribit、Alpaca 等只进入研究假设和风险边界。",
+      "used_for": [
+        "个人",
+        "产品",
+        "新闻",
+        "来源"
+      ]
+    }
+  ],
+  "stats": {
+    "enabled_source_count": 97,
+    "source_group_count": 7,
+    "track_count": 5,
+    "default_publish_backend": "github-pages",
+    "vercel_enabled": false,
+    "feishu_enabled": false
+  }
+}

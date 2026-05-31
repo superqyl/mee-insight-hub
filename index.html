@@ -3,242 +3,125 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="个人认知与洞察日报 2026-05-27 的公开网页化研究报告实验。"
-    />
-    <title>个人认知与洞察日报 | 2026-05-27</title>
+    <meta name="description" content="MEE Insight Hub：统一组织 MEE 自进化、个人洞察、产品商机、新闻热点与参考数据来源的公开情报站。" />
+    <title>MEE Insight Hub</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <div class="reading-progress" aria-hidden="true"></div>
 
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="回到顶部">
+      <a class="brand" href="#top" aria-label="MEE Insight Hub">
         <span class="brand-mark">M</span>
-        <span>MEE Insight Lab</span>
+        <span>MEE Insight Hub</span>
       </a>
-      <nav class="site-nav" aria-label="页面导航">
-        <a href="#insights">核心洞察</a>
-        <a href="#actions">行动建议</a>
-        <a href="#sources">来源说明</a>
+      <nav class="site-nav" aria-label="站点导航">
+        <a href="#periods">时间层</a>
+        <a href="#tracks">主题频道</a>
+        <a href="#evidence">证据簇</a>
+        <a href="#sources">数据源</a>
+        <a href="#archive">归档</a>
       </nav>
     </header>
 
     <main id="top">
-      <section class="hero">
+      <section class="hero section-band">
         <div class="hero-copy">
-          <p class="eyebrow">Daily Research Site Experiment / 2026-05-27</p>
-          <h1>
-            <span>个人竞争力正在从</span>
-            <span>工具熟练度转向</span>
-            <span>个人操作系统</span>
-          </h1>
-          <p class="hero-lead">
-            当天材料共同指向一个变化：把收藏、阅读、判断、练习和复盘连成闭环，个人知识才会从“资料堆积”变成“能力复利”。
-          </p>
-          <div class="hero-actions" aria-label="核心阅读入口">
-            <a class="primary-link" href="#insights">阅读洞察</a>
-            <a class="secondary-link" href="#actions">查看行动清单</a>
+          <h1>MEE Insight Hub</h1>
+          <p id="hero-thesis" class="hero-lead">把日报、周报、月报沉淀成一个持续更新的认知、机会和系统进化中枢。</p>
+          <div class="hero-actions" aria-label="核心入口">
+            <a class="primary-link" href="#tracks">进入主题频道</a>
+            <a class="secondary-link" href="#sources">查看数据源</a>
           </div>
         </div>
-
-        <aside class="hero-panel" aria-label="报告摘要">
-          <div class="panel-title">报告信号</div>
-          <div class="metric-grid">
-            <div>
-              <strong>100</strong>
-              <span>当日来源记录</span>
-            </div>
-            <div>
-              <strong>3</strong>
-              <span>核心洞察</span>
-            </div>
-            <div>
-              <strong>9</strong>
-              <span>待处理来源</span>
-            </div>
-            <div>
-              <strong>1</strong>
-              <span>已被后续覆盖</span>
-            </div>
-          </div>
-          <p>
-            三条洞察分别落在个人操作系统、学习 Skill 化，以及公开趋势与私域收藏合并的判断网络。
-          </p>
+        <aside class="signal-panel" aria-label="当前信号摘要">
+          <h2>当前窗口</h2>
+          <div id="hero-metrics" class="metric-grid"></div>
+          <p id="hero-summary">正在加载最新站点数据。</p>
         </aside>
       </section>
 
-      <section id="insights" class="section">
-        <p class="section-kicker">Insight System</p>
-        <h2>1. 核心洞察</h2>
-
-        <article class="insight" id="personal-os">
-          <div class="insight-copy">
-            <p class="insight-number">01</p>
-            <h3>1.1. 个人竞争力从工具熟练度转向个人操作系统</h3>
-            <p class="judgment">
-              今天的材料并不只在讲 AI、Agent 或量化，而是在共同指向一个更底层的变化：个人竞争力正在从“我会用哪些工具”转向“我如何把信息、问题、技能、判断和行动组织成一个持续更新的系统”。
-              工具是入口，系统才是复利。
-            </p>
-            <h4>子洞察</h4>
-            <ul class="sub-insights">
-              <li>
-                <strong>工具熟练只是输入层。</strong>
-                Codex 教程、Agent Skill、公众号文章和 GitHub repo 能降低上手门槛，但只有进入问题库、判断模型和行动清单，才会改变个人能力。
-              </li>
-              <li>
-                <strong>判断闭环比知识库存更重要。</strong>
-                个人知识库如果只存材料，会越来越像仓库；如果材料能导向问题澄清、练习设计、小实验和复盘沉淀，才会变成判断系统。
-              </li>
-              <li>
-                <strong>职业杠杆来自可复用系统。</strong>
-                长期稀缺的不是会调用模型的人，而是能把模型、工具、流程、审计和表达接成稳定产出链路的人。
-              </li>
-            </ul>
-            <div class="reference-row" aria-label="公开参考资料">
-              <span>公开参考资料</span>
-              <a href="https://mp.weixin.qq.com/s/tL-C-2w-TaBn3mlP9eFdGA" target="_blank" rel="noreferrer noopener">Karpathy 的技术员工讨论</a>
-              <a href="https://mp.weixin.qq.com/s/5kgVdLNABViv8uAnD0M6Ag" target="_blank" rel="noreferrer noopener">从 0 到 1 速通 Codex</a>
-            </div>
+      <section id="periods" class="section">
+        <div class="section-heading">
+          <span>01</span>
+          <div>
+            <h2>时间层：今日、最近 7 天、本月</h2>
+            <p>日报负责 delta，周报负责聚类，月报负责稳定判断。三种周期共享同一个证据系统。</p>
           </div>
-          <figure class="insight-figure">
-            <button class="image-zoom" type="button" data-full="./public/assets/personal-os.png" aria-label="查看个人操作系统逻辑图大图">
-              <img src="./public/assets/personal-os.png" alt="个人操作系统逻辑图" />
-            </button>
-            <figcaption>从信息输入到行动复盘，个人能力需要被组织成可持续更新的操作系统。</figcaption>
-          </figure>
-        </article>
-
-        <article class="insight insight-reverse" id="learning-as-skill">
-          <div class="insight-copy">
-            <p class="insight-number">02</p>
-            <h3>1.2. 学习不是读完，而是把材料变成可练习 Skill</h3>
-            <p class="judgment">
-              当天高价值材料里，多次出现“自动研究”“Skill”“把文章变成代码”“用 Skill 拆书”这类线索。
-              它们背后的共同点是：学习正在从阅读型活动变成生产型活动，好的材料应该转化出一个问题、一个练习、一个 eval case 或一个小实验。
-            </p>
-            <h4>子洞察</h4>
-            <ul class="sub-insights">
-              <li>
-                <strong>摘要不是学习终点。</strong>
-                摘要只能降低理解成本，不能保证能力迁移；更有价值的是把材料拆成事实、观点、问题、练习和验证标准。
-              </li>
-              <li>
-                <strong>每条深度材料都应产出练习设计。</strong>
-                自动研究 Skill 可以变成研究卡片练习，Codex 教程可以变成可审计 agent workflow 初始化练习。
-              </li>
-              <li>
-                <strong>可迁移能力来自反复验证。</strong>
-                真正的学习资产不是读过的文章，而是经过真实任务验证后留下的提示词、检查表、失败案例和判断边界。
-              </li>
-            </ul>
-            <div class="reference-row" aria-label="公开参考资料">
-              <span>公开参考资料</span>
-              <a href="https://mp.weixin.qq.com/s/I2BYFoJi6VpnyuEjTi0s7w" target="_blank" rel="noreferrer noopener">AI 自己研究自己</a>
-              <a href="https://mp.weixin.qq.com/s/u8RZZ3_PgaxAXmH-quV0wg" target="_blank" rel="noreferrer noopener">自动研究 Skill</a>
-              <a href="https://mp.weixin.qq.com/s/v6Z23DAYb4fPfkiPiw2wCw" target="_blank" rel="noreferrer noopener">把文章变成代码</a>
-            </div>
-          </div>
-          <figure class="insight-figure">
-            <button class="image-zoom" type="button" data-full="./public/assets/learning-as-skill.png" aria-label="查看把深度材料转化成练习和 Skill 的流程图大图">
-              <img src="./public/assets/learning-as-skill.png" alt="把深度材料转化成练习和 Skill 的流程图" />
-            </button>
-            <figcaption>把阅读材料转成练习、评测和复盘，学习才会变成可复用能力。</figcaption>
-          </figure>
-        </article>
-
-        <article class="insight" id="judgment-network">
-          <div class="insight-copy">
-            <p class="insight-number">03</p>
-            <h3>1.3. 公开趋势与私域收藏要合并成判断网络</h3>
-            <p class="judgment">
-              当天来源同时覆盖私域转发、公众号文章、GitHub、Skill 市场、研究源和产品市场源。
-              单看私域，容易陷入兴趣同温层；单看公开趋势，又容易被热点牵着走。更稳的方式是让私域问题感和公开趋势互相校准。
-            </p>
-            <h4>子洞察</h4>
-            <ul class="sub-insights">
-              <li>
-                <strong>私域来源负责暴露真实问题感。</strong>
-                你主动转发和收藏的材料，往往暴露当前最在意的判断缺口。
-              </li>
-              <li>
-                <strong>公开来源负责外部校准。</strong>
-                GitHub、产品市场、论文和新闻可以帮助判断某个问题是个人兴趣、社区热度，还是正在形成更广泛需求。
-              </li>
-              <li>
-                <strong>判断网络需要可追溯证据簇。</strong>
-                当一个方向同时出现在私域材料、公开 repo、研究源和产品市场中，才值得进入下一步行动实验。
-              </li>
-            </ul>
-            <div class="reference-row" aria-label="公开参考资料">
-              <span>公开参考资料</span>
-              <a href="https://mp.weixin.qq.com/s/kocuorTqAQr2NuxulUxD8g" target="_blank" rel="noreferrer noopener">Agent 需要 RAG 吗</a>
-              <a href="https://mp.weixin.qq.com/s/CApMdcFeozt8OUcaAL_3yg" target="_blank" rel="noreferrer noopener">桌面 Agent 案例</a>
-            </div>
-          </div>
-          <figure class="insight-figure">
-            <button class="image-zoom" type="button" data-full="./public/assets/judgment-network.png" aria-label="查看私域收藏和公开趋势合并为判断网络大图">
-              <img src="./public/assets/judgment-network.png" alt="私域收藏和公开趋势合并为判断网络" />
-            </button>
-            <figcaption>让私域问题感与公开趋势互相校准，避免只凭热度或兴趣做判断。</figcaption>
-          </figure>
-        </article>
+        </div>
+        <div id="period-cards" class="period-grid"></div>
       </section>
 
-      <section id="actions" class="section action-section">
-        <p class="section-kicker">Action Checklist</p>
-        <h2>2. 关键行动建议</h2>
-        <div class="action-grid">
-          <label class="action-item">
-            <input type="checkbox" />
-            <span class="action-index">01</span>
-            <strong>为每天的高价值材料补一个练习输出</strong>
-            <em>至少选 1 条材料转成一个问题、一组边界、一个 eval case、一个可复用提示词或一个项目内小实验。</em>
-          </label>
-          <label class="action-item">
-            <input type="checkbox" />
-            <span class="action-index">02</span>
-            <strong>把私域收藏和公开趋势做交叉验证</strong>
-            <em>当某类内容重复出现时，用 GitHub、产品市场、论文研究和新闻源做外部校准，避免只凭兴趣强度做判断。</em>
-          </label>
-          <label class="action-item">
-            <input type="checkbox" />
-            <span class="action-index">03</span>
-            <strong>给个人知识库增加行动后复盘字段</strong>
-            <em>记录每条洞察是否导致一次行动、项目调整或能力变化；没有行动结果的洞察，先不要高估价值。</em>
-          </label>
+      <section id="tracks" class="section section-muted">
+        <div class="section-heading">
+          <span>02</span>
+          <div>
+            <h2>五类主题频道</h2>
+            <p>同一来源可以同时服务多个主题；新闻热点也是全站统一证据底座的一部分。</p>
+          </div>
+        </div>
+        <div id="track-tabs" class="track-tabs" role="tablist" aria-label="主题频道"></div>
+        <div id="track-detail" class="track-detail"></div>
+      </section>
+
+      <section id="rollup" class="section">
+        <div class="rollup-grid">
+          <div>
+            <div class="section-heading compact">
+              <span>03</span>
+              <div>
+                <h2>从信号到判断</h2>
+                <p>避免日报、周报、月报重复堆叠，用稳定 ID 把内容逐层上卷。</p>
+              </div>
+            </div>
+            <ol id="rollup-steps" class="rollup-steps"></ol>
+          </div>
+          <figure class="hub-figure">
+            <button class="image-zoom" type="button" data-full="./public/assets/hub-overview.png" aria-label="查看 MEE Insight Hub 信息架构图大图">
+              <img src="./public/assets/hub-overview.png" alt="MEE Insight Hub 信息架构图" />
+            </button>
+            <figcaption>五类主题共享数据源底座，日报信号逐步上卷为周度主题簇与月度策略判断。</figcaption>
+          </figure>
         </div>
       </section>
 
-      <section id="sources" class="section source-section">
-        <p class="section-kicker">Public Source Note</p>
-        <h2>3. 公开化数据来源说明</h2>
-        <div class="source-layout">
-          <figure>
-            <button class="image-zoom" type="button" data-full="./public/assets/source-coverage.png" aria-label="查看公开化来源覆盖图大图">
-              <img src="./public/assets/source-coverage.png" alt="公开化来源覆盖图" />
-            </button>
-            <figcaption>来源覆盖图仅呈现可公开分享的统计层信息，不展示私域原文。</figcaption>
-          </figure>
-          <div class="source-copy">
-            <ul>
-              <li>本日报来源覆盖：总记录 100 条。</li>
-              <li>仍需处理的不可读或访问受限来源：9 条。</li>
-              <li>已被后续成功记录覆盖的失败来源：1 条。</li>
-              <li>强相关来源包括职业身份讨论、自动研究 Skill、Codex 教程、桌面 Agent、AI NPC、多智能体游戏、量化研究源和公开趋势种子。</li>
-            </ul>
-            <p>
-              公开网页只保留适合外部传播的标题、判断、公开参考资料和统计摘要；私域聊天语境、飞书文档令牌和未公开原文不进入页面。
-            </p>
+      <section id="evidence" class="section section-muted">
+        <div class="section-heading">
+          <span>04</span>
+          <div>
+            <h2>证据簇与跨周期去重</h2>
+            <p>每个洞察必须能回到证据簇；已上卷的内容只显示摘要和增量。</p>
           </div>
         </div>
+        <div id="evidence-clusters" class="evidence-grid"></div>
+      </section>
+
+      <section id="sources" class="section">
+        <div class="section-heading">
+          <span>05</span>
+          <div>
+            <h2>参考数据来源</h2>
+            <p>官方/一手源优先作为高可信证据，媒体/社区/排行榜作为趋势线索，登录墙和付费墙只进入索引。</p>
+          </div>
+        </div>
+        <div id="source-groups" class="source-grid"></div>
+      </section>
+
+      <section id="archive" class="section archive-section">
+        <div class="section-heading">
+          <span>06</span>
+          <div>
+            <h2>发布归档</h2>
+            <p>GitHub Pages 是默认主链路；Vercel 和 Feishu 只在显式 opt-in 时生成。</p>
+          </div>
+        </div>
+        <div id="publication-list" class="publication-list"></div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <span>MEE Insight Lab</span>
-      <span>Public research-page experiment, 2026-05-27</span>
+      <span>MEE Insight Hub</span>
+      <span>GitHub Pages first · Vercel and Feishu opt-in</span>
     </footer>
 
     <div class="lightbox" id="image-lightbox" role="dialog" aria-modal="true" aria-label="图片预览" aria-hidden="true">
