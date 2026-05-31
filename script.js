@@ -85,6 +85,87 @@
     return row;
   }
 
+  function renderReportIntro(report) {
+    const intro = el("div", "report-intro");
+    const introText = document.createElement("div");
+    introText.append(el("div", "report-kicker", report.kicker || report.label || "报告"));
+    introText.append(el("h3", "", report.title));
+    introText.append(el("p", "", report.lead || report.summary || ""));
+    intro.appendChild(introText);
+    if (report.visual && report.visual.src) {
+      const figure = el("figure", "report-figure");
+      const button = el("button", "image-zoom");
+      button.type = "button";
+      button.dataset.full = report.visual.src;
+      const img = document.createElement("img");
+      img.src = report.visual.src;
+      img.alt = report.visual.alt || report.title;
+      button.appendChild(img);
+      figure.append(button);
+      if (report.visual.alt) figure.append(el("figcaption", "", report.visual.alt));
+      intro.appendChild(figure);
+    }
+    return intro;
+  }
+
+  function renderSourceIndexReport(report) {
+    const wrapper = el("article", "report-body source-index-report");
+    const sourceIndex = report.source_index || {};
+    wrapper.appendChild(renderReportIntro(report));
+
+    const summary = el("section", "source-index-section");
+    summary.append(el("h4", "", "1. 来源覆盖概要"));
+    summary.append(list(sourceIndex.summary || report.source_summary || []));
+    wrapper.appendChild(summary);
+
+    const groupsSection = el("section", "source-index-section");
+    groupsSection.append(el("h4", "", "2. 来源类型归档"));
+    const groups = el("div", "source-index-grid");
+    (sourceIndex.groups || []).forEach((group) => {
+      const card = el("article", "source-index-card");
+      card.append(el("h5", "", group.title || group.label || "来源组"));
+      const meta = el("div", "meta-row");
+      meta.append(el("span", "", `${group.count || 0} 条`));
+      if (group.trust_tier) meta.append(el("span", "", group.trust_tier));
+      (group.source_types || []).slice(0, 4).forEach((item) => meta.append(el("span", "", item)));
+      card.append(meta);
+      if (group.why) {
+        card.append(el("strong", "", "为什么值得参考"));
+        card.append(el("p", "", group.why));
+      }
+      if (group.use_for) {
+        card.append(el("strong", "", "关联主题"));
+        card.append(el("p", "", group.use_for));
+      }
+      if (group.boundary) {
+        card.append(el("strong", "", "可信边界"));
+        card.append(el("p", "", group.boundary));
+      }
+      groups.append(card);
+    });
+    groupsSection.append(groups);
+    wrapper.appendChild(groupsSection);
+
+    const ledgerSection = el("section", "source-index-section");
+    ledgerSection.append(el("h4", "", "3. 不可读或访问受限 ledger"));
+    const ledger = el("div", "source-ledger-list");
+    (sourceIndex.ledger || []).forEach((item) => {
+      const card = el("article", "source-ledger-card");
+      card.append(el("strong", "", item.title || "待处理来源"));
+      card.append(el("span", "status", item.status || "待处理"));
+      if (item.note) card.append(el("p", "", item.note));
+      ledger.append(card);
+    });
+    ledgerSection.append(ledger);
+    wrapper.appendChild(ledgerSection);
+
+    const references = el("section", "source-index-section");
+    references.append(el("h4", "", "4. 公开参考入口"));
+    if (report.references && report.references.length) references.append(renderReferenceChips(report.references));
+    wrapper.appendChild(references);
+    return wrapper;
+  }
+
   function normalizeReportPacks(data) {
     const packs = data.report_packs || [];
     if (packs.length) return packs;
@@ -174,28 +255,13 @@
       target.textContent = "当前周期暂无报告正文。";
       return;
     }
-    const wrapper = el("article", "report-body");
-
-    const intro = el("div", "report-intro");
-    const introText = document.createElement("div");
-    introText.append(el("div", "report-kicker", report.kicker || report.label || "报告"));
-    introText.append(el("h3", "", report.title));
-    introText.append(el("p", "", report.lead || report.summary || ""));
-    intro.appendChild(introText);
-    if (report.visual && report.visual.src) {
-      const figure = el("figure", "report-figure");
-      const button = el("button", "image-zoom");
-      button.type = "button";
-      button.dataset.full = report.visual.src;
-      const img = document.createElement("img");
-      img.src = report.visual.src;
-      img.alt = report.visual.alt || report.title;
-      button.appendChild(img);
-      figure.append(button);
-      if (report.visual.alt) figure.append(el("figcaption", "", report.visual.alt));
-      intro.appendChild(figure);
+    if (report.report_kind === "source-index" || report.track_id === "sources") {
+      target.replaceChildren(renderSourceIndexReport(report));
+      setupLightbox();
+      return;
     }
-    wrapper.appendChild(intro);
+    const wrapper = el("article", "report-body");
+    wrapper.appendChild(renderReportIntro(report));
 
     const insightSection = el("section", "report-subsection");
     insightSection.append(el("h4", "", "1. 核心洞察"));
