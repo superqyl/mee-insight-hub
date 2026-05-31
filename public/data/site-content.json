@@ -1,7 +1,7 @@
 {
   "meta": {
     "site_name": "MEE Insight Hub",
-    "generated_at": "2026-05-31T12:19:55.341Z",
+    "generated_at": "2026-05-31T13:11:38.255Z",
     "cadence": "daily",
     "period": {
       "cadence": "daily",
@@ -461,7 +461,7 @@
           "evidence_density": {
             "total": 85,
             "activeGroups": 6,
-            "target": 6,
+            "suggested_floor": 6,
             "label": "high"
           },
           "insight_density_policy": {
@@ -655,7 +655,7 @@
           "evidence_density": {
             "total": 85,
             "activeGroups": 6,
-            "target": 6,
+            "suggested_floor": 6,
             "label": "high"
           },
           "insight_density_policy": {
@@ -849,7 +849,7 @@
           "evidence_density": {
             "total": 85,
             "activeGroups": 6,
-            "target": 6,
+            "suggested_floor": 6,
             "label": "high"
           },
           "insight_density_policy": {
@@ -1041,7 +1041,7 @@
           "evidence_density": {
             "total": 85,
             "activeGroups": 6,
-            "target": 6,
+            "suggested_floor": 6,
             "label": "high"
           },
           "insight_density_policy": {
@@ -1437,7 +1437,7 @@
           "evidence_density": {
             "total": 85,
             "activeGroups": 6,
-            "target": 6,
+            "suggested_floor": 6,
             "label": "high"
           },
           "insight_density_policy": {
@@ -1631,7 +1631,7 @@
           "evidence_density": {
             "total": 85,
             "activeGroups": 6,
-            "target": 6,
+            "suggested_floor": 6,
             "label": "high"
           },
           "insight_density_policy": {
@@ -1825,7 +1825,7 @@
           "evidence_density": {
             "total": 85,
             "activeGroups": 6,
-            "target": 6,
+            "suggested_floor": 6,
             "label": "high"
           },
           "insight_density_policy": {
@@ -2017,7 +2017,7 @@
           "evidence_density": {
             "total": 85,
             "activeGroups": 6,
-            "target": 6,
+            "suggested_floor": 6,
             "label": "high"
           },
           "insight_density_policy": {
@@ -2413,7 +2413,7 @@
           "evidence_density": {
             "total": 85,
             "activeGroups": 6,
-            "target": 6,
+            "suggested_floor": 6,
             "label": "high"
           },
           "insight_density_policy": {
@@ -2607,7 +2607,7 @@
           "evidence_density": {
             "total": 85,
             "activeGroups": 6,
-            "target": 6,
+            "suggested_floor": 6,
             "label": "high"
           },
           "insight_density_policy": {
@@ -2801,7 +2801,7 @@
           "evidence_density": {
             "total": 85,
             "activeGroups": 6,
-            "target": 6,
+            "suggested_floor": 6,
             "label": "high"
           },
           "insight_density_policy": {
@@ -2993,7 +2993,7 @@
           "evidence_density": {
             "total": 85,
             "activeGroups": 6,
-            "target": 6,
+            "suggested_floor": 6,
             "label": "high"
           },
           "insight_density_policy": {
@@ -3385,7 +3385,7 @@
       "evidence_density": {
         "total": 85,
         "activeGroups": 6,
-        "target": 6,
+        "suggested_floor": 6,
         "label": "high"
       },
       "insight_density_policy": {
@@ -3579,7 +3579,7 @@
       "evidence_density": {
         "total": 85,
         "activeGroups": 6,
-        "target": 6,
+        "suggested_floor": 6,
         "label": "high"
       },
       "insight_density_policy": {
@@ -3773,7 +3773,7 @@
       "evidence_density": {
         "total": 85,
         "activeGroups": 6,
-        "target": 6,
+        "suggested_floor": 6,
         "label": "high"
       },
       "insight_density_policy": {
@@ -3965,7 +3965,7 @@
       "evidence_density": {
         "total": 85,
         "activeGroups": 6,
-        "target": 6,
+        "suggested_floor": 6,
         "label": "high"
       },
       "insight_density_policy": {
