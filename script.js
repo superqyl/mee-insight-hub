@@ -3,14 +3,7 @@
     meta: {
       site_name: "MEE Insight Hub",
       hero_title: "公开情报与私域收藏洞察中枢",
-      current_thesis: "这里汇总每日、每周、每月的新闻热点、个人洞察、产品机会、MEE 自进化和参考来源；先读报告正文，再按证据簇追溯来源。",
-      summary: "建议阅读顺序：先看新闻热点判断外部变化，再看个人洞察沉淀能力变化，随后进入产品机会和 MEE 进化；参考来源只用于追溯，不抢占阅读入口。",
-      metrics: [
-        { label: "先读外部变化", value: "新闻热点" },
-        { label: "再看能力变化", value: "个人洞察" },
-        { label: "转成机会实验", value: "产品/商机" },
-        { label: "最后追溯证据", value: "97 源" }
-      ]
+      current_thesis: "这里汇总每日、每周、每月的新闻热点、个人洞察、产品机会、MEE 自进化和参考来源；先读报告正文，再按证据簇追溯来源。"
     },
     report_packs: [],
     reports: []
@@ -18,8 +11,6 @@
 
   const state = { data: fallback, selectedPack: "daily", selectedReport: "" };
   const progress = document.querySelector(".reading-progress");
-  const navLinks = Array.from(document.querySelectorAll(".site-nav a"));
-  const sections = navLinks.map((link) => document.querySelector(link.getAttribute("href"))).filter(Boolean);
 
   function el(tag, className, text) {
     const node = document.createElement(tag);
@@ -41,25 +32,6 @@
   function renderHero(data) {
     document.querySelector("#hero-title").textContent = data.meta.hero_title || fallback.meta.hero_title || data.meta.site_name || fallback.meta.site_name;
     document.querySelector("#hero-thesis").textContent = data.meta.current_thesis || fallback.meta.current_thesis;
-    document.querySelector("#hero-summary").textContent = data.meta.summary || fallback.meta.summary;
-    const metrics = document.querySelector("#hero-metrics");
-    const packs = normalizeReportPacks(data);
-    const reports = packs.flatMap((pack) => pack.reports || []);
-    const mainReports = reports.filter((report) => report.report_kind !== "source-index" && report.track_id !== "sources");
-    const sourceReports = reports.filter((report) => report.report_kind === "source-index" || report.track_id === "sources");
-    const heroMetrics = [
-      { label: "日报 / 周报 / 月报", value: `${packs.length} 个周期` },
-      { label: "主题报告正文", value: `${mainReports.length} 份` },
-      { label: "核心洞察", value: `${mainReports.reduce((sum, report) => sum + (report.insights || []).length, 0)} 条` },
-      { label: "来源索引", value: `${sourceReports.length} 份` },
-    ];
-    metrics.replaceChildren(...heroMetrics.map((metric) => {
-      const box = document.createElement("div");
-      const value = el("strong", "", metric.value);
-      const label = el("span", "", metric.label);
-      box.append(value, label);
-      return box;
-    }));
   }
 
   function renderReferenceChips(items) {
@@ -287,7 +259,7 @@
 
     const packBox = el("div", "report-pack-card");
     packBox.append(el("strong", "", pack.title || pack.label || "报告包"));
-    packBox.append(el("p", "", `${pack.summary || ""} 当前周期包含 ${reports.length} 份正文，按“新闻热点、个人洞察、产品商机、MEE 进化、参考来源”的阅读顺序组织。`));
+    packBox.append(el("p", "", `${pack.summary || ""} 当前周期包含 ${reports.length} 份正文，覆盖新闻热点、个人洞察、产品商机、MEE 进化和参考来源。`));
     packBox.append(el("span", "report-count", `${reports.length} 份报告正文`));
     summaryTarget?.replaceChildren(packBox);
 
@@ -421,14 +393,6 @@
     progress.style.width = `${ratio * 100}%`;
   }
 
-  function updateActiveNav() {
-    const current = sections.slice().reverse().find((section) => section.getBoundingClientRect().top <= 120);
-    navLinks.forEach((link) => {
-      const target = link.getAttribute("href").slice(1);
-      link.classList.toggle("active", Boolean(current && current.id === target));
-    });
-  }
-
   fetch("./public/data/site-content.json", { cache: "no-store" })
     .then((response) => response.ok ? response.json() : fallback)
     .then(render)
@@ -436,8 +400,6 @@
 
   window.addEventListener("scroll", () => {
     updateProgress();
-    updateActiveNav();
   });
   updateProgress();
-  updateActiveNav();
 })();
