@@ -1,14 +1,14 @@
 {
   "meta": {
     "site_name": "MEE Insight Hub",
-    "generated_at": "2026-05-31T13:11:38.255Z",
-    "cadence": "daily",
+    "generated_at": "2026-05-31T18:35:37.571Z",
+    "cadence": "weekly",
     "period": {
-      "cadence": "daily",
-      "from": "2026-05-30",
-      "to": "2026-05-30",
-      "label": "2026-05-30",
-      "display": "日报 2026-05-30"
+      "cadence": "weekly",
+      "from": "",
+      "to": "",
+      "label": "2026-W22",
+      "display": "周报 2026-W22"
     },
     "primary_url": "https://superqyl.github.io/mee-insight-hub/",
     "default_publish_backend": "github-pages",
@@ -78,7 +78,7 @@
     {
       "id": "daily",
       "label": "日报",
-      "title": "日报 2026-05-30",
+      "title": "日报 2026-05-31",
       "summary": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。",
       "reports": [
         {
@@ -86,12 +86,13 @@
           "track_id": "sources",
           "report_kind": "source-index",
           "label": "参考数据来源",
-          "title": "参考数据来源索引（日报 2026-05-30）",
+          "title": "参考数据来源索引（日报 2026-05-31）",
           "kicker": "日报 / 证据归档与可信边界",
           "lead": "本索引不是洞察报告，而是当期来源、证据簇、可读状态、可信边界和待补读 ledger 的追溯入口。",
-          "visual": {
-            "src": "./public/assets/judgment-network.png",
-            "alt": "来源、证据和报告路由关系图"
+          "visual_policy": {
+            "mode": "period-specific-only",
+            "status": "omitted",
+            "reason": "Source-index overview images must match the exact period and source counts; broad static diagrams are not valid formal visuals."
           },
           "source_index": {
             "summary": [
@@ -280,7 +281,7 @@
           "id": "daily-mee",
           "track_id": "mee",
           "label": "MEE 本体进化",
-          "title": "MEE 本体进化报告（日报 2026-05-30）",
+          "title": "MEE 本体进化报告（日报 2026-05-31）",
           "kicker": "日报 / 从工具链到治理链",
           "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：MEE 自身的调度、证据、Skill、发布和质量门禁当期有哪些可执行的进化点。",
           "visual": {
@@ -473,7 +474,7 @@
           "id": "daily-personal",
           "track_id": "personal",
           "label": "个人认知与洞察",
-          "title": "个人认知与洞察报告（日报 2026-05-30）",
+          "title": "个人认知与洞察报告（日报 2026-05-31）",
           "kicker": "日报 / 从收藏到能力复利",
           "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：当期材料如何帮助个人把收藏、阅读、判断、练习和复盘连成可持续更新的操作系统。",
           "visual": {
@@ -667,7 +668,7 @@
           "id": "daily-product",
           "track_id": "product",
           "label": "产品与商机",
-          "title": "产品与商机机会报告（日报 2026-05-30）",
+          "title": "产品与商机机会报告（日报 2026-05-31）",
           "kicker": "日报 / 从信号到可验证机会",
           "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：当期哪些公开趋势、开源机制、私域需求和市场变化可以转化为产品假设或商业实验。",
           "visual": {
@@ -861,7 +862,7 @@
           "id": "daily-news",
           "track_id": "news",
           "label": "新闻热点",
-          "title": "新闻热点与外部环境报告（日报 2026-05-30）",
+          "title": "新闻热点与外部环境报告（日报 2026-05-31）",
           "kicker": "日报 / 从热点到影响判断",
           "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：公开世界的变化如何影响 MEE 进化、个人判断、产品机会和风险感知。",
           "visual": {
@@ -1065,9 +1066,10 @@
           "title": "参考数据来源索引（周报 2026-W22）",
           "kicker": "周报 / 证据归档与可信边界",
           "lead": "本索引不是洞察报告，而是当期来源、证据簇、可读状态、可信边界和待补读 ledger 的追溯入口。",
-          "visual": {
-            "src": "./public/assets/judgment-network.png",
-            "alt": "来源、证据和报告路由关系图"
+          "visual_policy": {
+            "mode": "period-specific-only",
+            "status": "omitted",
+            "reason": "Source-index overview images must match the exact period and source counts; broad static diagrams are not valid formal visuals."
           },
           "source_index": {
             "summary": [
@@ -2041,9 +2043,10 @@
           "title": "参考数据来源索引（月报 2026-05）",
           "kicker": "月报 / 证据归档与可信边界",
           "lead": "本索引不是洞察报告，而是当期来源、证据簇、可读状态、可信边界和待补读 ledger 的追溯入口。",
-          "visual": {
-            "src": "./public/assets/judgment-network.png",
-            "alt": "来源、证据和报告路由关系图"
+          "visual_policy": {
+            "mode": "period-specific-only",
+            "status": "omitted",
+            "reason": "Source-index overview images must match the exact period and source counts; broad static diagrams are not valid formal visuals."
           },
           "source_index": {
             "summary": [
@@ -3006,16 +3009,17 @@
   ],
   "reports": [
     {
-      "id": "daily-sources",
+      "id": "weekly-sources",
       "track_id": "sources",
       "report_kind": "source-index",
       "label": "参考数据来源",
-      "title": "参考数据来源索引（日报 2026-05-30）",
-      "kicker": "日报 / 证据归档与可信边界",
+      "title": "参考数据来源索引（周报 2026-W22）",
+      "kicker": "周报 / 证据归档与可信边界",
       "lead": "本索引不是洞察报告，而是当期来源、证据簇、可读状态、可信边界和待补读 ledger 的追溯入口。",
-      "visual": {
-        "src": "./public/assets/judgment-network.png",
-        "alt": "来源、证据和报告路由关系图"
+      "visual_policy": {
+        "mode": "period-specific-only",
+        "status": "omitted",
+        "reason": "Source-index overview images must match the exact period and source counts; broad static diagrams are not valid formal visuals."
       },
       "source_index": {
         "summary": [
@@ -3201,12 +3205,12 @@
       ]
     },
     {
-      "id": "daily-mee",
+      "id": "weekly-mee",
       "track_id": "mee",
       "label": "MEE 本体进化",
-      "title": "MEE 本体进化报告（日报 2026-05-30）",
-      "kicker": "日报 / 从工具链到治理链",
-      "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：MEE 自身的调度、证据、Skill、发布和质量门禁当期有哪些可执行的进化点。",
+      "title": "MEE 本体进化报告（周报 2026-W22）",
+      "kicker": "周报 / 从工具链到治理链",
+      "lead": "本周层负责把多日重复信号压缩成主题簇、优先级和待验证假设。 本报告回答：MEE 自身的调度、证据、Skill、发布和质量门禁当期有哪些可执行的进化点。",
       "visual": {
         "src": "./public/assets/learning-as-skill.png",
         "alt": "MEE 发布与证据治理入口"
@@ -3394,12 +3398,12 @@
       }
     },
     {
-      "id": "daily-personal",
+      "id": "weekly-personal",
       "track_id": "personal",
       "label": "个人认知与洞察",
-      "title": "个人认知与洞察报告（日报 2026-05-30）",
-      "kicker": "日报 / 从收藏到能力复利",
-      "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：当期材料如何帮助个人把收藏、阅读、判断、练习和复盘连成可持续更新的操作系统。",
+      "title": "个人认知与洞察报告（周报 2026-W22）",
+      "kicker": "周报 / 从收藏到能力复利",
+      "lead": "本周层负责把多日重复信号压缩成主题簇、优先级和待验证假设。 本报告回答：当期材料如何帮助个人把收藏、阅读、判断、练习和复盘连成可持续更新的操作系统。",
       "visual": {
         "src": "./public/assets/personal-os.png",
         "alt": "个人操作系统：从信息输入到判断闭环"
@@ -3588,12 +3592,12 @@
       }
     },
     {
-      "id": "daily-product",
+      "id": "weekly-product",
       "track_id": "product",
       "label": "产品与商机",
-      "title": "产品与商机机会报告（日报 2026-05-30）",
-      "kicker": "日报 / 从信号到可验证机会",
-      "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：当期哪些公开趋势、开源机制、私域需求和市场变化可以转化为产品假设或商业实验。",
+      "title": "产品与商机机会报告（周报 2026-W22）",
+      "kicker": "周报 / 从信号到可验证机会",
+      "lead": "本周层负责把多日重复信号压缩成主题簇、优先级和待验证假设。 本报告回答：当期哪些公开趋势、开源机制、私域需求和市场变化可以转化为产品假设或商业实验。",
       "visual": {
         "src": "./public/assets/judgment-network.png",
         "alt": "从市场信号到产品判断网络"
@@ -3782,12 +3786,12 @@
       }
     },
     {
-      "id": "daily-news",
+      "id": "weekly-news",
       "track_id": "news",
       "label": "新闻热点",
-      "title": "新闻热点与外部环境报告（日报 2026-05-30）",
-      "kicker": "日报 / 从热点到影响判断",
-      "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：公开世界的变化如何影响 MEE 进化、个人判断、产品机会和风险感知。",
+      "title": "新闻热点与外部环境报告（周报 2026-W22）",
+      "kicker": "周报 / 从热点到影响判断",
+      "lead": "本周层负责把多日重复信号压缩成主题簇、优先级和待验证假设。 本报告回答：公开世界的变化如何影响 MEE 进化、个人判断、产品机会和风险感知。",
       "visual": {
         "src": "./public/assets/judgment-network.png",
         "alt": "新闻信号进入判断网络"
@@ -3976,9 +3980,9 @@
   ],
   "signals": [
     {
-      "id": "daily-new-signal",
-      "cadence": "daily",
-      "title": "日报新增信号",
+      "id": "weekly-new-signal",
+      "cadence": "weekly",
+      "title": "周报新增信号",
       "summary": "新增来源先进入 evidence cluster，按 MEE、个人、产品、新闻和来源五类主题共同路由；不可读或付费墙来源只进入索引与待补读。",
       "track_ids": [
         "mee",
@@ -3989,8 +3993,8 @@
       ]
     },
     {
-      "id": "daily-rollup-policy",
-      "cadence": "daily",
+      "id": "weekly-rollup-policy",
+      "cadence": "weekly",
       "title": "跨周期上卷",
       "summary": "日报只展示新增 delta；周报聚合多日重复信号并排序；月报沉淀跨周主线和策略建议，避免复制日报全文。",
       "track_ids": [
@@ -4252,9 +4256,9 @@
   ],
   "publications": [
     {
-      "id": "daily-2026-05-30",
-      "cadence": "daily",
-      "title": "日报 2026-05-30 · MEE Insight Hub",
+      "id": "weekly-2026-W22",
+      "cadence": "weekly",
+      "title": "周报 2026-W22 · MEE Insight Hub",
       "url": "https://superqyl.github.io/mee-insight-hub/",
       "href": "https://superqyl.github.io/mee-insight-hub/",
       "summary": "默认更新 GitHub Pages 静态站内容；Vercel 和 Feishu 只在显式 opt-in 时生成。",
