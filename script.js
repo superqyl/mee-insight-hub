@@ -2,14 +2,14 @@
   const fallback = {
     meta: {
       site_name: "MEE Insight Hub",
-      hero_title: "从每日信号到长期判断",
-      current_thesis: "一个持续更新的公开情报与私域收藏洞察站：汇聚新闻热点、AI 与工程趋势、产品机会、个人认知线索和 MEE 自进化记录，按日报、周报、月报沉淀成可追溯的判断与行动建议。",
-      summary: "先读新闻热点和个人洞察，把外部变化、你的收藏线索、产品机会和 MEE 进化放进同一张判断网络；来源索引用于追溯证据，不抢占阅读入口。",
+      hero_title: "公开情报与私域收藏洞察中枢",
+      current_thesis: "这里汇总每日、每周、每月的新闻热点、个人洞察、产品机会、MEE 自进化和参考来源；先读报告正文，再按证据簇追溯来源。",
+      summary: "建议阅读顺序：先看新闻热点判断外部变化，再看个人洞察沉淀能力变化，随后进入产品机会和 MEE 进化；参考来源只用于追溯，不抢占阅读入口。",
       metrics: [
-        { label: "报告周期", value: "日 / 周 / 月" },
-        { label: "优先阅读", value: "新闻 / 洞察" },
-        { label: "机会线索", value: "产品 / 商机" },
-        { label: "证据来源", value: "97" }
+        { label: "先读外部变化", value: "新闻热点" },
+        { label: "再看能力变化", value: "个人洞察" },
+        { label: "转成机会实验", value: "产品/商机" },
+        { label: "最后追溯证据", value: "97 源" }
       ]
     },
     periods: [],
@@ -202,12 +202,19 @@
     (report.insights || []).forEach((insight, index) => {
       const card = el("article", "insight-card");
       card.append(el("h5", "", `1.${index + 1}. ${insight.title}`));
-      card.append(el("p", "", insight.summary || ""));
+      const content = el("div", "insight-content");
+      const copy = el("div", "insight-copy");
+      copy.append(el("p", "insight-summary", insight.summary || ""));
+      if (insight.analysis && insight.analysis.length) {
+        const analysis = el("div", "insight-analysis");
+        insight.analysis.forEach((paragraph) => analysis.append(el("p", "", paragraph)));
+        copy.append(analysis);
+      }
       if (insight.sub_insights && insight.sub_insights.length) {
         const sub = el("div", "sub-insights");
         sub.append(el("strong", "", "子洞察"));
         sub.append(list(insight.sub_insights));
-        card.append(sub);
+        copy.append(sub);
       }
       if (insight.evidence && insight.evidence.length) {
         const ev = el("div", "evidence-line");
@@ -215,8 +222,23 @@
         const chips = el("div", "meta-row");
         insight.evidence.forEach((item) => chips.append(el("span", "", item)));
         ev.append(chips);
-        card.append(ev);
+        copy.append(ev);
       }
+      content.append(copy);
+      if (insight.visual && insight.visual.src) {
+        const figure = el("figure", "insight-figure");
+        const button = el("button", "image-zoom");
+        button.type = "button";
+        button.dataset.full = insight.visual.src;
+        const img = document.createElement("img");
+        img.src = insight.visual.src;
+        img.alt = insight.visual.alt || insight.title;
+        button.appendChild(img);
+        figure.append(button);
+        if (insight.visual.alt) figure.append(el("figcaption", "", insight.visual.alt));
+        content.append(figure);
+      }
+      card.append(content);
       insightSection.append(card);
     });
     wrapper.appendChild(insightSection);
@@ -378,10 +400,11 @@
       document.body.classList.remove("lightbox-lock");
     }
 
-    document.querySelectorAll(".image-zoom").forEach((button) => {
-      if (button.dataset.bound === "1") return;
-      button.dataset.bound = "1";
-      button.addEventListener("click", () => {
+    if (document.body.dataset.lightboxBound !== "1") {
+      document.body.dataset.lightboxBound = "1";
+      document.addEventListener("click", (event) => {
+        const button = event.target instanceof Element ? event.target.closest(".image-zoom") : null;
+        if (!button) return;
         const img = button.querySelector("img");
         const full = button.dataset.full || img?.currentSrc;
         if (!full) return;
@@ -392,10 +415,10 @@
         document.body.classList.add("lightbox-lock");
         lightboxClose?.focus();
       });
-    });
-    lightbox.addEventListener("click", (event) => { if (event.target === lightbox) close(); });
-    lightboxClose?.addEventListener("click", close);
-    document.addEventListener("keydown", (event) => { if (event.key === "Escape") close(); });
+      lightbox.addEventListener("click", (event) => { if (event.target === lightbox) close(); });
+      lightboxClose?.addEventListener("click", close);
+      document.addEventListener("keydown", (event) => { if (event.key === "Escape") close(); });
+    }
   }
 
   function updateProgress() {

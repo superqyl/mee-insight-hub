@@ -1,7 +1,7 @@
 {
   "meta": {
     "site_name": "MEE Insight Hub",
-    "generated_at": "2026-05-31T07:17:26.367Z",
+    "generated_at": "2026-05-31T09:10:57.581Z",
     "cadence": "daily",
     "period": {
       "cadence": "daily",
@@ -12,25 +12,25 @@
     },
     "primary_url": "https://superqyl.github.io/mee-insight-hub/",
     "default_publish_backend": "github-pages",
-    "hero_title": "从每日信号到长期判断",
-    "current_thesis": "一个持续更新的公开情报与私域收藏洞察站：汇聚新闻热点、AI 与工程趋势、产品机会、个人认知线索和 MEE 自进化记录，按日报、周报、月报沉淀成可追溯的判断与行动建议。",
-    "summary": "先读新闻热点和个人洞察，把外部变化、你的收藏线索、产品机会和 MEE 进化放进同一张判断网络；来源索引用于追溯证据，不抢占阅读入口。",
+    "hero_title": "公开情报与私域收藏洞察中枢",
+    "current_thesis": "这里汇总每日、每周、每月的新闻热点、个人洞察、产品机会、MEE 自进化和参考来源；先读报告正文，再按证据簇追溯来源。",
+    "summary": "建议阅读顺序：先看新闻热点判断外部变化，再看个人洞察沉淀能力变化，随后进入产品机会和 MEE 进化；参考来源只用于追溯，不抢占阅读入口。",
     "metrics": [
       {
-        "label": "报告周期",
-        "value": "日 / 周 / 月"
+        "label": "先读外部变化",
+        "value": "新闻热点"
       },
       {
-        "label": "优先阅读",
-        "value": "新闻 / 洞察"
+        "label": "再看能力变化",
+        "value": "个人洞察"
       },
       {
-        "label": "机会线索",
-        "value": "产品 / 商机"
+        "label": "转成机会实验",
+        "value": "产品/商机"
       },
       {
-        "label": "证据来源",
-        "value": "97"
+        "label": "最后追溯证据",
+        "value": "97 源"
       }
     ],
     "optional_backends": {
@@ -89,8 +89,8 @@
           "kicker": "日报 / 先看证据，再看结论",
           "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：当期有哪些来源进入统一证据系统，哪些可作为判断依据，哪些只能留在待补读或趋势线索层。",
           "visual": {
-            "src": "./public/assets/hub-overview.png",
-            "alt": "MEE Insight Hub 来源、证据和报告路由关系图"
+            "src": "./public/assets/judgment-network.png",
+            "alt": "来源、证据和报告路由关系图"
           },
           "insights": [
             {
@@ -107,7 +107,16 @@
                 "开源工程与仓库 (12)",
                 "产品、创业与市场 (11)",
                 "Skill / MCP / Agent 能力市场 (9)"
-              ]
+              ],
+              "analysis": [
+                "来源索引的价值不在于把链接列得更多，而在于把每条来源放到同一套判断管线里：先看是否可读，再看是否是一手材料或趋势线索，再判断它能支持哪个主题和哪条行动。",
+                "这会改变读者的使用方式。读者不必在新闻、GitHub、公众号和飞书文档之间来回跳，而是先进入报告结论，再通过证据簇回到来源；来源索引负责可追溯，不抢占主阅读入口。",
+                "因此，日报只应展示当期新增 delta 和待补读 ledger；周报/月报再把重复出现、能交叉验证的信号上卷为稳定判断。"
+              ],
+              "visual": {
+                "src": "./public/assets/judgment-network.png",
+                "alt": "来源到证据的统一处理管线"
+              }
             },
             {
               "title": "新闻源扩展服务全站，不只是新闻栏目",
@@ -121,7 +130,16 @@
                 "Reuters/Bloomberg/FT/WSJ/CNBC",
                 "SEC/FINRA/CFTC/Federal Reserve",
                 "国内官方政策公开信息"
-              ]
+              ],
+              "analysis": [
+                "新闻源扩展如果只服务新闻栏目，会变成另一个信息流；真正有价值的是让同一条外部变化同时校准 MEE 能力边界、个人学习优先级、产品机会和风险判断。",
+                "一手公告、监管文件和官方研究用于确认边界；媒体和社区用于发现叙事变化；榜单和讨论用于发现需求热度。三者的证据等级不同，不能混成同一种事实。",
+                "这也是为什么来源记录必须保留“为什么值得参考”和可信边界：不是为了写长表格，而是为了让后续报告知道哪些结论可以落地，哪些只能继续观察。"
+              ],
+              "visual": {
+                "src": "./public/assets/learning-as-skill.png",
+                "alt": "证据簇如何路由到报告正文"
+              }
             }
           ],
           "actions": [
@@ -156,7 +174,11 @@
               "label": "Hugging Face Papers",
               "url": "https://huggingface.co/papers"
             }
-          ]
+          ],
+          "insight_density_policy": {
+            "mode": "evidence-density-adaptive",
+            "rule": "Emit every supported, non-duplicate, decision-useful insight; do not pad to a minimum or truncate to a fixed maximum."
+          }
         },
         {
           "id": "daily-mee",
@@ -166,8 +188,8 @@
           "kicker": "日报 / 从工具链到治理链",
           "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：MEE 自身的调度、证据、Skill、发布和质量门禁当期有哪些可执行的进化点。",
           "visual": {
-            "src": "./public/assets/hub-overview.png",
-            "alt": "MEE Insight Hub 作为 MEE 发布与证据治理入口"
+            "src": "./public/assets/learning-as-skill.png",
+            "alt": "MEE 发布与证据治理入口"
           },
           "insights": [
             {
@@ -182,7 +204,16 @@
                 "mee radar site",
                 "MEE Insight Hub repository",
                 "intelligence-foraging-scheduler capsule"
-              ]
+              ],
+              "analysis": [
+                "MEE 的发布链路从 Feishu 文档切到 GitHub Pages，不只是换一个托管后端，而是把默认产物从内部协作文档切换为公开可读、可归档、可版本化的站点。",
+                "这要求生成器直接面向站点数据契约工作：报告正文、证据簇、图片资产、时间周期和隐私边界都必须在 JSON 层表达清楚，不能依赖飞书文档作为中间解释层。",
+                "Feishu 和 Vercel 保留为显式 opt-in 后端，可以避免自动化默认生成多套重复产物，也减少后续维护噪音。"
+              ],
+              "visual": {
+                "src": "./public/assets/learning-as-skill.png",
+                "alt": "MEE Insight Hub 作为发布与证据治理入口"
+              }
             },
             {
               "title": "报告质量门禁要检查正文层，而不只检查站点能打开",
@@ -196,7 +227,16 @@
                 "public/data/site-content.json",
                 "tests/mee-cli.test.mjs",
                 "reader contract"
-              ]
+              ],
+              "analysis": [
+                "站点能打开并不等于报告质量达标。真正的门禁应该检查读者能否看到完整报告：核心洞察是否有推导，子洞察是否能展开，行动建议是否可执行，参考来源是否能追溯。",
+                "这次退化的根因正是生成器和前端都把正文压成了薄摘要。修复不能只改 CSS，而要把“正文密度”变成数据契约和测试门禁。",
+                "后续任何日报、周报、月报都应该复用同一套正式读者合同，只改变时间窗口，而不是改变报告结构。"
+              ],
+              "visual": {
+                "src": "./public/assets/judgment-network.png",
+                "alt": "从站点打开到报告正文质量门禁"
+              }
             }
           ],
           "actions": [
@@ -228,7 +268,11 @@
               "label": "GitHub Topics: AI agents",
               "url": "https://github.com/topics/ai-agent"
             }
-          ]
+          ],
+          "insight_density_policy": {
+            "mode": "evidence-density-adaptive",
+            "rule": "Emit every supported, non-duplicate, decision-useful insight; do not pad to a minimum or truncate to a fixed maximum."
+          }
         },
         {
           "id": "daily-personal",
@@ -254,7 +298,16 @@
                 "GitHub/Skill 市场信号",
                 "公开产品与工程讨论",
                 "私域收藏的问题感"
-              ]
+              ],
+              "analysis": [
+                "个人竞争力的变化不在于多会几个工具，而在于能否把工具变成自己的操作系统：输入进入问题库，问题转成练习，练习形成判断，判断再反馈到下一轮收藏和行动。",
+                "如果收藏只是保存材料，它会变成负担；如果收藏能触发问题澄清、技能练习和小实验，它才会变成复利资产。",
+                "这也是日报的价值：它不只是告诉你今天看到了什么，而是提示哪些材料值得进入你的下一步练习和判断系统。"
+              ],
+              "visual": {
+                "src": "./public/assets/personal-os.png",
+                "alt": "个人操作系统：从信息输入到判断闭环"
+              }
             },
             {
               "title": "公开趋势和私域兴趣需要合并校准",
@@ -268,7 +321,16 @@
                 "Product Hunt / Hacker News",
                 "Reuters / The Verge",
                 "飞书收藏摘要"
-              ]
+              ],
+              "analysis": [
+                "公开趋势和私域兴趣分别有偏差：公开趋势容易被热点带跑，私域收藏容易放大个人兴趣。两者合并后，才有机会形成更可靠的判断网络。",
+                "判断网络要关注不一致处：你反复收藏但外部不热的东西，可能代表个人优势或盲区；外部很热但你没有兴趣的东西，可能代表噪音，也可能代表应该补课的能力缺口。",
+                "因此，个人洞察报告不应局限于 AI、量化或单个项目，而要覆盖学习方法、表达品味、职业杠杆、协作方式、产品感和风险感知。"
+              ],
+              "visual": {
+                "src": "./public/assets/learning-as-skill.png",
+                "alt": "把公开趋势与私域兴趣合并校准"
+              }
             }
           ],
           "actions": [
@@ -301,7 +363,11 @@
               "label": "GitHub Trending",
               "url": "https://github.com/trending"
             }
-          ]
+          ],
+          "insight_density_policy": {
+            "mode": "evidence-density-adaptive",
+            "rule": "Emit every supported, non-duplicate, decision-useful insight; do not pad to a minimum or truncate to a fixed maximum."
+          }
         },
         {
           "id": "daily-product",
@@ -327,7 +393,16 @@
                 "MEE Insight Hub",
                 "GitHub Pages 公开站点",
                 "飞书文档到站点的迁移需求"
-              ]
+              ],
+              "analysis": [
+                "报告站点本身就是一个产品机会样本：用户需要的不是“再生成一份摘要”，而是把私域收藏、公开来源、证据索引、图文表达和行动建议组织成可读、可追溯、可持续更新的研究页面。",
+                "这个机会的关键不在页面好看，而在链路完整：原始来源可追溯、报告正文能读懂、图片能帮助理解、行动建议能落地，且不同时间周期不重复堆叠。",
+                "如果这个链路跑顺，它可以扩展到团队情报、投资研究、产品机会雷达、客户行业洞察等多种场景。"
+              ],
+              "visual": {
+                "src": "./public/assets/judgment-network.png",
+                "alt": "从市场信号到产品判断网络"
+              }
             },
             {
               "title": "Agent 产品机会应优先落在高价值工作流",
@@ -341,7 +416,16 @@
                 "Product Hunt / AI tool directories",
                 "GitHub Agent repos",
                 "Adapora 相关工作流经验"
-              ]
+              ],
+              "analysis": [
+                "Agent 产品更适合先落在高价值工作流，而不是泛化聊天入口。高价值工作流通常有明确输入、过程证据、可复核输出、责任边界和复用频率。",
+                "审计、报告、研究、证据整理和质量门禁都符合这个特征。它们不是简单的内容生成任务，而是需要把证据、过程、权限、日志和交付物质量串起来。",
+                "这类产品机会的评估重点应是：能否减少人工复核负担，能否降低错误率，能否形成可审计交付物，而不只是提升表达效率。"
+              ],
+              "visual": {
+                "src": "./public/assets/learning-as-skill.png",
+                "alt": "高价值 Agent 工作流的证据链路"
+              }
             }
           ],
           "actions": [
@@ -374,7 +458,11 @@
               "label": "Indie Hackers",
               "url": "https://www.indiehackers.com/"
             }
-          ]
+          ],
+          "insight_density_policy": {
+            "mode": "evidence-density-adaptive",
+            "rule": "Emit every supported, non-duplicate, decision-useful insight; do not pad to a minimum or truncate to a fixed maximum."
+          }
         },
         {
           "id": "daily-news",
@@ -384,8 +472,8 @@
           "kicker": "日报 / 从热点到影响判断",
           "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：公开世界的变化如何影响 MEE 进化、个人判断、产品机会和风险感知。",
           "visual": {
-            "src": "./public/assets/source-coverage.png",
-            "alt": "公开来源覆盖与可信边界"
+            "src": "./public/assets/judgment-network.png",
+            "alt": "新闻信号进入判断网络"
           },
           "insights": [
             {
@@ -400,7 +488,16 @@
                 "OpenAI/Anthropic/DeepMind 官方源",
                 "Reuters/Bloomberg/FT/WSJ",
                 "SEC/FINRA/CFTC/央行/工信部/网信办"
-              ]
+              ],
+              "analysis": [
+                "新闻热点如果停留在事件罗列，读者仍然要自己判断“这和我有什么关系”。日报新闻栏目应该直接回答影响问题：它改变了能力边界、需求变化、监管风险还是市场机会。",
+                "一条新闻进入主报告前，必须说明它影响哪类主题，以及它属于事实、趋势、观点还是待验证线索。否则新闻越多，判断越弱。",
+                "因此，新闻报告的读法不是追热点，而是把热点转译成影响分析。"
+              ],
+              "visual": {
+                "src": "./public/assets/judgment-network.png",
+                "alt": "新闻信号如何进入判断网络"
+              }
             },
             {
               "title": "高价值新闻源要反哺所有主题",
@@ -414,12 +511,21 @@
                 "新闻、研究、产品、政策四类来源组合",
                 "source-index 多主题路由",
                 "evidence_cluster_id"
-              ]
+              ],
+              "analysis": [
+                "同一条高价值新闻经常会同时影响多个主题：AI 官方发布影响 MEE 能力规划，市场融资影响产品机会，监管变化影响风险边界，用户讨论影响个人学习优先级。",
+                "如果新闻只出现在新闻频道，价值会被截断；如果它能回流到 MEE、个人、产品和来源索引，才会变成全站统一情报底座的一部分。",
+                "这要求 source-index 支持多主题路由，并在报告中保留证据簇，而不是把新闻当作独立栏目消费。"
+              ],
+              "visual": {
+                "src": "./public/assets/learning-as-skill.png",
+                "alt": "新闻信号如何回流到多主题判断网络"
+              }
             }
           ],
           "actions": [
             "新闻条目进入报告前必须写出“对哪个主题有影响”。",
-            "高影响新闻至少配一个一手或准一手来源。",
+            "高影响新闻必须配套一手或准一手来源。",
             "把短期热点和长期变量分开，避免月报被日报噪音污染。",
             "新闻源默认可以服务全部五类主题，但结论必须标可信边界。"
           ],
@@ -445,7 +551,11 @@
               "label": "Google DeepMind Blog",
               "url": "https://deepmind.google/discover/blog/"
             }
-          ]
+          ],
+          "insight_density_policy": {
+            "mode": "evidence-density-adaptive",
+            "rule": "Emit every supported, non-duplicate, decision-useful insight; do not pad to a minimum or truncate to a fixed maximum."
+          }
         }
       ]
     },
@@ -463,8 +573,8 @@
           "kicker": "周报 / 先看证据，再看结论",
           "lead": "本周层负责把多日重复信号压缩成主题簇、优先级和待验证假设。 本报告回答：当期有哪些来源进入统一证据系统，哪些可作为判断依据，哪些只能留在待补读或趋势线索层。",
           "visual": {
-            "src": "./public/assets/hub-overview.png",
-            "alt": "MEE Insight Hub 来源、证据和报告路由关系图"
+            "src": "./public/assets/judgment-network.png",
+            "alt": "来源、证据和报告路由关系图"
           },
           "insights": [
             {
@@ -481,7 +591,16 @@
                 "开源工程与仓库 (12)",
                 "产品、创业与市场 (11)",
                 "Skill / MCP / Agent 能力市场 (9)"
-              ]
+              ],
+              "analysis": [
+                "来源索引的价值不在于把链接列得更多，而在于把每条来源放到同一套判断管线里：先看是否可读，再看是否是一手材料或趋势线索，再判断它能支持哪个主题和哪条行动。",
+                "这会改变读者的使用方式。读者不必在新闻、GitHub、公众号和飞书文档之间来回跳，而是先进入报告结论，再通过证据簇回到来源；来源索引负责可追溯，不抢占主阅读入口。",
+                "因此，日报只应展示当期新增 delta 和待补读 ledger；周报/月报再把重复出现、能交叉验证的信号上卷为稳定判断。"
+              ],
+              "visual": {
+                "src": "./public/assets/judgment-network.png",
+                "alt": "来源到证据的统一处理管线"
+              }
             },
             {
               "title": "新闻源扩展服务全站，不只是新闻栏目",
@@ -495,7 +614,16 @@
                 "Reuters/Bloomberg/FT/WSJ/CNBC",
                 "SEC/FINRA/CFTC/Federal Reserve",
                 "国内官方政策公开信息"
-              ]
+              ],
+              "analysis": [
+                "新闻源扩展如果只服务新闻栏目，会变成另一个信息流；真正有价值的是让同一条外部变化同时校准 MEE 能力边界、个人学习优先级、产品机会和风险判断。",
+                "一手公告、监管文件和官方研究用于确认边界；媒体和社区用于发现叙事变化；榜单和讨论用于发现需求热度。三者的证据等级不同，不能混成同一种事实。",
+                "这也是为什么来源记录必须保留“为什么值得参考”和可信边界：不是为了写长表格，而是为了让后续报告知道哪些结论可以落地，哪些只能继续观察。"
+              ],
+              "visual": {
+                "src": "./public/assets/learning-as-skill.png",
+                "alt": "证据簇如何路由到报告正文"
+              }
             }
           ],
           "actions": [
@@ -530,7 +658,11 @@
               "label": "Hugging Face Papers",
               "url": "https://huggingface.co/papers"
             }
-          ]
+          ],
+          "insight_density_policy": {
+            "mode": "evidence-density-adaptive",
+            "rule": "Emit every supported, non-duplicate, decision-useful insight; do not pad to a minimum or truncate to a fixed maximum."
+          }
         },
         {
           "id": "weekly-mee",
@@ -540,8 +672,8 @@
           "kicker": "周报 / 从工具链到治理链",
           "lead": "本周层负责把多日重复信号压缩成主题簇、优先级和待验证假设。 本报告回答：MEE 自身的调度、证据、Skill、发布和质量门禁当期有哪些可执行的进化点。",
           "visual": {
-            "src": "./public/assets/hub-overview.png",
-            "alt": "MEE Insight Hub 作为 MEE 发布与证据治理入口"
+            "src": "./public/assets/learning-as-skill.png",
+            "alt": "MEE 发布与证据治理入口"
           },
           "insights": [
             {
@@ -556,7 +688,16 @@
                 "mee radar site",
                 "MEE Insight Hub repository",
                 "intelligence-foraging-scheduler capsule"
-              ]
+              ],
+              "analysis": [
+                "MEE 的发布链路从 Feishu 文档切到 GitHub Pages，不只是换一个托管后端，而是把默认产物从内部协作文档切换为公开可读、可归档、可版本化的站点。",
+                "这要求生成器直接面向站点数据契约工作：报告正文、证据簇、图片资产、时间周期和隐私边界都必须在 JSON 层表达清楚，不能依赖飞书文档作为中间解释层。",
+                "Feishu 和 Vercel 保留为显式 opt-in 后端，可以避免自动化默认生成多套重复产物，也减少后续维护噪音。"
+              ],
+              "visual": {
+                "src": "./public/assets/learning-as-skill.png",
+                "alt": "MEE Insight Hub 作为发布与证据治理入口"
+              }
             },
             {
               "title": "报告质量门禁要检查正文层，而不只检查站点能打开",
@@ -570,7 +711,16 @@
                 "public/data/site-content.json",
                 "tests/mee-cli.test.mjs",
                 "reader contract"
-              ]
+              ],
+              "analysis": [
+                "站点能打开并不等于报告质量达标。真正的门禁应该检查读者能否看到完整报告：核心洞察是否有推导，子洞察是否能展开，行动建议是否可执行，参考来源是否能追溯。",
+                "这次退化的根因正是生成器和前端都把正文压成了薄摘要。修复不能只改 CSS，而要把“正文密度”变成数据契约和测试门禁。",
+                "后续任何日报、周报、月报都应该复用同一套正式读者合同，只改变时间窗口，而不是改变报告结构。"
+              ],
+              "visual": {
+                "src": "./public/assets/judgment-network.png",
+                "alt": "从站点打开到报告正文质量门禁"
+              }
             }
           ],
           "actions": [
@@ -602,7 +752,11 @@
               "label": "GitHub Topics: AI agents",
               "url": "https://github.com/topics/ai-agent"
             }
-          ]
+          ],
+          "insight_density_policy": {
+            "mode": "evidence-density-adaptive",
+            "rule": "Emit every supported, non-duplicate, decision-useful insight; do not pad to a minimum or truncate to a fixed maximum."
+          }
         },
         {
           "id": "weekly-personal",
@@ -628,7 +782,16 @@
                 "GitHub/Skill 市场信号",
                 "公开产品与工程讨论",
                 "私域收藏的问题感"
-              ]
+              ],
+              "analysis": [
+                "个人竞争力的变化不在于多会几个工具，而在于能否把工具变成自己的操作系统：输入进入问题库，问题转成练习，练习形成判断，判断再反馈到下一轮收藏和行动。",
+                "如果收藏只是保存材料，它会变成负担；如果收藏能触发问题澄清、技能练习和小实验，它才会变成复利资产。",
+                "这也是日报的价值：它不只是告诉你今天看到了什么，而是提示哪些材料值得进入你的下一步练习和判断系统。"
+              ],
+              "visual": {
+                "src": "./public/assets/personal-os.png",
+                "alt": "个人操作系统：从信息输入到判断闭环"
+              }
             },
             {
               "title": "公开趋势和私域兴趣需要合并校准",
@@ -642,7 +805,16 @@
                 "Product Hunt / Hacker News",
                 "Reuters / The Verge",
                 "飞书收藏摘要"
-              ]
+              ],
+              "analysis": [
+                "公开趋势和私域兴趣分别有偏差：公开趋势容易被热点带跑，私域收藏容易放大个人兴趣。两者合并后，才有机会形成更可靠的判断网络。",
+                "判断网络要关注不一致处：你反复收藏但外部不热的东西，可能代表个人优势或盲区；外部很热但你没有兴趣的东西，可能代表噪音，也可能代表应该补课的能力缺口。",
+                "因此，个人洞察报告不应局限于 AI、量化或单个项目，而要覆盖学习方法、表达品味、职业杠杆、协作方式、产品感和风险感知。"
+              ],
+              "visual": {
+                "src": "./public/assets/learning-as-skill.png",
+                "alt": "把公开趋势与私域兴趣合并校准"
+              }
             }
           ],
           "actions": [
@@ -675,7 +847,11 @@
               "label": "GitHub Trending",
               "url": "https://github.com/trending"
             }
-          ]
+          ],
+          "insight_density_policy": {
+            "mode": "evidence-density-adaptive",
+            "rule": "Emit every supported, non-duplicate, decision-useful insight; do not pad to a minimum or truncate to a fixed maximum."
+          }
         },
         {
           "id": "weekly-product",
@@ -701,7 +877,16 @@
                 "MEE Insight Hub",
                 "GitHub Pages 公开站点",
                 "飞书文档到站点的迁移需求"
-              ]
+              ],
+              "analysis": [
+                "报告站点本身就是一个产品机会样本：用户需要的不是“再生成一份摘要”，而是把私域收藏、公开来源、证据索引、图文表达和行动建议组织成可读、可追溯、可持续更新的研究页面。",
+                "这个机会的关键不在页面好看，而在链路完整：原始来源可追溯、报告正文能读懂、图片能帮助理解、行动建议能落地，且不同时间周期不重复堆叠。",
+                "如果这个链路跑顺，它可以扩展到团队情报、投资研究、产品机会雷达、客户行业洞察等多种场景。"
+              ],
+              "visual": {
+                "src": "./public/assets/judgment-network.png",
+                "alt": "从市场信号到产品判断网络"
+              }
             },
             {
               "title": "Agent 产品机会应优先落在高价值工作流",
@@ -715,7 +900,16 @@
                 "Product Hunt / AI tool directories",
                 "GitHub Agent repos",
                 "Adapora 相关工作流经验"
-              ]
+              ],
+              "analysis": [
+                "Agent 产品更适合先落在高价值工作流，而不是泛化聊天入口。高价值工作流通常有明确输入、过程证据、可复核输出、责任边界和复用频率。",
+                "审计、报告、研究、证据整理和质量门禁都符合这个特征。它们不是简单的内容生成任务，而是需要把证据、过程、权限、日志和交付物质量串起来。",
+                "这类产品机会的评估重点应是：能否减少人工复核负担，能否降低错误率，能否形成可审计交付物，而不只是提升表达效率。"
+              ],
+              "visual": {
+                "src": "./public/assets/learning-as-skill.png",
+                "alt": "高价值 Agent 工作流的证据链路"
+              }
             }
           ],
           "actions": [
@@ -748,7 +942,11 @@
               "label": "Indie Hackers",
               "url": "https://www.indiehackers.com/"
             }
-          ]
+          ],
+          "insight_density_policy": {
+            "mode": "evidence-density-adaptive",
+            "rule": "Emit every supported, non-duplicate, decision-useful insight; do not pad to a minimum or truncate to a fixed maximum."
+          }
         },
         {
           "id": "weekly-news",
@@ -758,8 +956,8 @@
           "kicker": "周报 / 从热点到影响判断",
           "lead": "本周层负责把多日重复信号压缩成主题簇、优先级和待验证假设。 本报告回答：公开世界的变化如何影响 MEE 进化、个人判断、产品机会和风险感知。",
           "visual": {
-            "src": "./public/assets/source-coverage.png",
-            "alt": "公开来源覆盖与可信边界"
+            "src": "./public/assets/judgment-network.png",
+            "alt": "新闻信号进入判断网络"
           },
           "insights": [
             {
@@ -774,7 +972,16 @@
                 "OpenAI/Anthropic/DeepMind 官方源",
                 "Reuters/Bloomberg/FT/WSJ",
                 "SEC/FINRA/CFTC/央行/工信部/网信办"
-              ]
+              ],
+              "analysis": [
+                "新闻热点如果停留在事件罗列，读者仍然要自己判断“这和我有什么关系”。日报新闻栏目应该直接回答影响问题：它改变了能力边界、需求变化、监管风险还是市场机会。",
+                "一条新闻进入主报告前，必须说明它影响哪类主题，以及它属于事实、趋势、观点还是待验证线索。否则新闻越多，判断越弱。",
+                "因此，新闻报告的读法不是追热点，而是把热点转译成影响分析。"
+              ],
+              "visual": {
+                "src": "./public/assets/judgment-network.png",
+                "alt": "新闻信号如何进入判断网络"
+              }
             },
             {
               "title": "高价值新闻源要反哺所有主题",
@@ -788,12 +995,21 @@
                 "新闻、研究、产品、政策四类来源组合",
                 "source-index 多主题路由",
                 "evidence_cluster_id"
-              ]
+              ],
+              "analysis": [
+                "同一条高价值新闻经常会同时影响多个主题：AI 官方发布影响 MEE 能力规划，市场融资影响产品机会，监管变化影响风险边界，用户讨论影响个人学习优先级。",
+                "如果新闻只出现在新闻频道，价值会被截断；如果它能回流到 MEE、个人、产品和来源索引，才会变成全站统一情报底座的一部分。",
+                "这要求 source-index 支持多主题路由，并在报告中保留证据簇，而不是把新闻当作独立栏目消费。"
+              ],
+              "visual": {
+                "src": "./public/assets/learning-as-skill.png",
+                "alt": "新闻信号如何回流到多主题判断网络"
+              }
             }
           ],
           "actions": [
             "新闻条目进入报告前必须写出“对哪个主题有影响”。",
-            "高影响新闻至少配一个一手或准一手来源。",
+            "高影响新闻必须配套一手或准一手来源。",
             "把短期热点和长期变量分开，避免月报被日报噪音污染。",
             "新闻源默认可以服务全部五类主题，但结论必须标可信边界。"
           ],
@@ -819,7 +1035,11 @@
               "label": "Google DeepMind Blog",
               "url": "https://deepmind.google/discover/blog/"
             }
-          ]
+          ],
+          "insight_density_policy": {
+            "mode": "evidence-density-adaptive",
+            "rule": "Emit every supported, non-duplicate, decision-useful insight; do not pad to a minimum or truncate to a fixed maximum."
+          }
         }
       ]
     },
@@ -837,8 +1057,8 @@
           "kicker": "月报 / 先看证据，再看结论",
           "lead": "本月层负责沉淀跨周仍成立的主线、策略建议和下月行动重点。 本报告回答：当期有哪些来源进入统一证据系统，哪些可作为判断依据，哪些只能留在待补读或趋势线索层。",
           "visual": {
-            "src": "./public/assets/hub-overview.png",
-            "alt": "MEE Insight Hub 来源、证据和报告路由关系图"
+            "src": "./public/assets/judgment-network.png",
+            "alt": "来源、证据和报告路由关系图"
           },
           "insights": [
             {
@@ -855,7 +1075,16 @@
                 "开源工程与仓库 (12)",
                 "产品、创业与市场 (11)",
                 "Skill / MCP / Agent 能力市场 (9)"
-              ]
+              ],
+              "analysis": [
+                "来源索引的价值不在于把链接列得更多，而在于把每条来源放到同一套判断管线里：先看是否可读，再看是否是一手材料或趋势线索，再判断它能支持哪个主题和哪条行动。",
+                "这会改变读者的使用方式。读者不必在新闻、GitHub、公众号和飞书文档之间来回跳，而是先进入报告结论，再通过证据簇回到来源；来源索引负责可追溯，不抢占主阅读入口。",
+                "因此，日报只应展示当期新增 delta 和待补读 ledger；周报/月报再把重复出现、能交叉验证的信号上卷为稳定判断。"
+              ],
+              "visual": {
+                "src": "./public/assets/judgment-network.png",
+                "alt": "来源到证据的统一处理管线"
+              }
             },
             {
               "title": "新闻源扩展服务全站，不只是新闻栏目",
@@ -869,7 +1098,16 @@
                 "Reuters/Bloomberg/FT/WSJ/CNBC",
                 "SEC/FINRA/CFTC/Federal Reserve",
                 "国内官方政策公开信息"
-              ]
+              ],
+              "analysis": [
+                "新闻源扩展如果只服务新闻栏目，会变成另一个信息流；真正有价值的是让同一条外部变化同时校准 MEE 能力边界、个人学习优先级、产品机会和风险判断。",
+                "一手公告、监管文件和官方研究用于确认边界；媒体和社区用于发现叙事变化；榜单和讨论用于发现需求热度。三者的证据等级不同，不能混成同一种事实。",
+                "这也是为什么来源记录必须保留“为什么值得参考”和可信边界：不是为了写长表格，而是为了让后续报告知道哪些结论可以落地，哪些只能继续观察。"
+              ],
+              "visual": {
+                "src": "./public/assets/learning-as-skill.png",
+                "alt": "证据簇如何路由到报告正文"
+              }
             }
           ],
           "actions": [
@@ -904,7 +1142,11 @@
               "label": "Hugging Face Papers",
               "url": "https://huggingface.co/papers"
             }
-          ]
+          ],
+          "insight_density_policy": {
+            "mode": "evidence-density-adaptive",
+            "rule": "Emit every supported, non-duplicate, decision-useful insight; do not pad to a minimum or truncate to a fixed maximum."
+          }
         },
         {
           "id": "monthly-mee",
@@ -914,8 +1156,8 @@
           "kicker": "月报 / 从工具链到治理链",
           "lead": "本月层负责沉淀跨周仍成立的主线、策略建议和下月行动重点。 本报告回答：MEE 自身的调度、证据、Skill、发布和质量门禁当期有哪些可执行的进化点。",
           "visual": {
-            "src": "./public/assets/hub-overview.png",
-            "alt": "MEE Insight Hub 作为 MEE 发布与证据治理入口"
+            "src": "./public/assets/learning-as-skill.png",
+            "alt": "MEE 发布与证据治理入口"
           },
           "insights": [
             {
@@ -930,7 +1172,16 @@
                 "mee radar site",
                 "MEE Insight Hub repository",
                 "intelligence-foraging-scheduler capsule"
-              ]
+              ],
+              "analysis": [
+                "MEE 的发布链路从 Feishu 文档切到 GitHub Pages，不只是换一个托管后端，而是把默认产物从内部协作文档切换为公开可读、可归档、可版本化的站点。",
+                "这要求生成器直接面向站点数据契约工作：报告正文、证据簇、图片资产、时间周期和隐私边界都必须在 JSON 层表达清楚，不能依赖飞书文档作为中间解释层。",
+                "Feishu 和 Vercel 保留为显式 opt-in 后端，可以避免自动化默认生成多套重复产物，也减少后续维护噪音。"
+              ],
+              "visual": {
+                "src": "./public/assets/learning-as-skill.png",
+                "alt": "MEE Insight Hub 作为发布与证据治理入口"
+              }
             },
             {
               "title": "报告质量门禁要检查正文层，而不只检查站点能打开",
@@ -944,7 +1195,16 @@
                 "public/data/site-content.json",
                 "tests/mee-cli.test.mjs",
                 "reader contract"
-              ]
+              ],
+              "analysis": [
+                "站点能打开并不等于报告质量达标。真正的门禁应该检查读者能否看到完整报告：核心洞察是否有推导，子洞察是否能展开，行动建议是否可执行，参考来源是否能追溯。",
+                "这次退化的根因正是生成器和前端都把正文压成了薄摘要。修复不能只改 CSS，而要把“正文密度”变成数据契约和测试门禁。",
+                "后续任何日报、周报、月报都应该复用同一套正式读者合同，只改变时间窗口，而不是改变报告结构。"
+              ],
+              "visual": {
+                "src": "./public/assets/judgment-network.png",
+                "alt": "从站点打开到报告正文质量门禁"
+              }
             }
           ],
           "actions": [
@@ -976,7 +1236,11 @@
               "label": "GitHub Topics: AI agents",
               "url": "https://github.com/topics/ai-agent"
             }
-          ]
+          ],
+          "insight_density_policy": {
+            "mode": "evidence-density-adaptive",
+            "rule": "Emit every supported, non-duplicate, decision-useful insight; do not pad to a minimum or truncate to a fixed maximum."
+          }
         },
         {
           "id": "monthly-personal",
@@ -1002,7 +1266,16 @@
                 "GitHub/Skill 市场信号",
                 "公开产品与工程讨论",
                 "私域收藏的问题感"
-              ]
+              ],
+              "analysis": [
+                "个人竞争力的变化不在于多会几个工具，而在于能否把工具变成自己的操作系统：输入进入问题库，问题转成练习，练习形成判断，判断再反馈到下一轮收藏和行动。",
+                "如果收藏只是保存材料，它会变成负担；如果收藏能触发问题澄清、技能练习和小实验，它才会变成复利资产。",
+                "这也是日报的价值：它不只是告诉你今天看到了什么，而是提示哪些材料值得进入你的下一步练习和判断系统。"
+              ],
+              "visual": {
+                "src": "./public/assets/personal-os.png",
+                "alt": "个人操作系统：从信息输入到判断闭环"
+              }
             },
             {
               "title": "公开趋势和私域兴趣需要合并校准",
@@ -1016,7 +1289,16 @@
                 "Product Hunt / Hacker News",
                 "Reuters / The Verge",
                 "飞书收藏摘要"
-              ]
+              ],
+              "analysis": [
+                "公开趋势和私域兴趣分别有偏差：公开趋势容易被热点带跑，私域收藏容易放大个人兴趣。两者合并后，才有机会形成更可靠的判断网络。",
+                "判断网络要关注不一致处：你反复收藏但外部不热的东西，可能代表个人优势或盲区；外部很热但你没有兴趣的东西，可能代表噪音，也可能代表应该补课的能力缺口。",
+                "因此，个人洞察报告不应局限于 AI、量化或单个项目，而要覆盖学习方法、表达品味、职业杠杆、协作方式、产品感和风险感知。"
+              ],
+              "visual": {
+                "src": "./public/assets/learning-as-skill.png",
+                "alt": "把公开趋势与私域兴趣合并校准"
+              }
             }
           ],
           "actions": [
@@ -1049,7 +1331,11 @@
               "label": "GitHub Trending",
               "url": "https://github.com/trending"
             }
-          ]
+          ],
+          "insight_density_policy": {
+            "mode": "evidence-density-adaptive",
+            "rule": "Emit every supported, non-duplicate, decision-useful insight; do not pad to a minimum or truncate to a fixed maximum."
+          }
         },
         {
           "id": "monthly-product",
@@ -1075,7 +1361,16 @@
                 "MEE Insight Hub",
                 "GitHub Pages 公开站点",
                 "飞书文档到站点的迁移需求"
-              ]
+              ],
+              "analysis": [
+                "报告站点本身就是一个产品机会样本：用户需要的不是“再生成一份摘要”，而是把私域收藏、公开来源、证据索引、图文表达和行动建议组织成可读、可追溯、可持续更新的研究页面。",
+                "这个机会的关键不在页面好看，而在链路完整：原始来源可追溯、报告正文能读懂、图片能帮助理解、行动建议能落地，且不同时间周期不重复堆叠。",
+                "如果这个链路跑顺，它可以扩展到团队情报、投资研究、产品机会雷达、客户行业洞察等多种场景。"
+              ],
+              "visual": {
+                "src": "./public/assets/judgment-network.png",
+                "alt": "从市场信号到产品判断网络"
+              }
             },
             {
               "title": "Agent 产品机会应优先落在高价值工作流",
@@ -1089,7 +1384,16 @@
                 "Product Hunt / AI tool directories",
                 "GitHub Agent repos",
                 "Adapora 相关工作流经验"
-              ]
+              ],
+              "analysis": [
+                "Agent 产品更适合先落在高价值工作流，而不是泛化聊天入口。高价值工作流通常有明确输入、过程证据、可复核输出、责任边界和复用频率。",
+                "审计、报告、研究、证据整理和质量门禁都符合这个特征。它们不是简单的内容生成任务，而是需要把证据、过程、权限、日志和交付物质量串起来。",
+                "这类产品机会的评估重点应是：能否减少人工复核负担，能否降低错误率，能否形成可审计交付物，而不只是提升表达效率。"
+              ],
+              "visual": {
+                "src": "./public/assets/learning-as-skill.png",
+                "alt": "高价值 Agent 工作流的证据链路"
+              }
             }
           ],
           "actions": [
@@ -1122,7 +1426,11 @@
               "label": "Indie Hackers",
               "url": "https://www.indiehackers.com/"
             }
-          ]
+          ],
+          "insight_density_policy": {
+            "mode": "evidence-density-adaptive",
+            "rule": "Emit every supported, non-duplicate, decision-useful insight; do not pad to a minimum or truncate to a fixed maximum."
+          }
         },
         {
           "id": "monthly-news",
@@ -1132,8 +1440,8 @@
           "kicker": "月报 / 从热点到影响判断",
           "lead": "本月层负责沉淀跨周仍成立的主线、策略建议和下月行动重点。 本报告回答：公开世界的变化如何影响 MEE 进化、个人判断、产品机会和风险感知。",
           "visual": {
-            "src": "./public/assets/source-coverage.png",
-            "alt": "公开来源覆盖与可信边界"
+            "src": "./public/assets/judgment-network.png",
+            "alt": "新闻信号进入判断网络"
           },
           "insights": [
             {
@@ -1148,7 +1456,16 @@
                 "OpenAI/Anthropic/DeepMind 官方源",
                 "Reuters/Bloomberg/FT/WSJ",
                 "SEC/FINRA/CFTC/央行/工信部/网信办"
-              ]
+              ],
+              "analysis": [
+                "新闻热点如果停留在事件罗列，读者仍然要自己判断“这和我有什么关系”。日报新闻栏目应该直接回答影响问题：它改变了能力边界、需求变化、监管风险还是市场机会。",
+                "一条新闻进入主报告前，必须说明它影响哪类主题，以及它属于事实、趋势、观点还是待验证线索。否则新闻越多，判断越弱。",
+                "因此，新闻报告的读法不是追热点，而是把热点转译成影响分析。"
+              ],
+              "visual": {
+                "src": "./public/assets/judgment-network.png",
+                "alt": "新闻信号如何进入判断网络"
+              }
             },
             {
               "title": "高价值新闻源要反哺所有主题",
@@ -1162,12 +1479,21 @@
                 "新闻、研究、产品、政策四类来源组合",
                 "source-index 多主题路由",
                 "evidence_cluster_id"
-              ]
+              ],
+              "analysis": [
+                "同一条高价值新闻经常会同时影响多个主题：AI 官方发布影响 MEE 能力规划，市场融资影响产品机会，监管变化影响风险边界，用户讨论影响个人学习优先级。",
+                "如果新闻只出现在新闻频道，价值会被截断；如果它能回流到 MEE、个人、产品和来源索引，才会变成全站统一情报底座的一部分。",
+                "这要求 source-index 支持多主题路由，并在报告中保留证据簇，而不是把新闻当作独立栏目消费。"
+              ],
+              "visual": {
+                "src": "./public/assets/learning-as-skill.png",
+                "alt": "新闻信号如何回流到多主题判断网络"
+              }
             }
           ],
           "actions": [
             "新闻条目进入报告前必须写出“对哪个主题有影响”。",
-            "高影响新闻至少配一个一手或准一手来源。",
+            "高影响新闻必须配套一手或准一手来源。",
             "把短期热点和长期变量分开，避免月报被日报噪音污染。",
             "新闻源默认可以服务全部五类主题，但结论必须标可信边界。"
           ],
@@ -1193,7 +1519,11 @@
               "label": "Google DeepMind Blog",
               "url": "https://deepmind.google/discover/blog/"
             }
-          ]
+          ],
+          "insight_density_policy": {
+            "mode": "evidence-density-adaptive",
+            "rule": "Emit every supported, non-duplicate, decision-useful insight; do not pad to a minimum or truncate to a fixed maximum."
+          }
         }
       ]
     }
@@ -1207,8 +1537,8 @@
       "kicker": "日报 / 先看证据，再看结论",
       "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：当期有哪些来源进入统一证据系统，哪些可作为判断依据，哪些只能留在待补读或趋势线索层。",
       "visual": {
-        "src": "./public/assets/hub-overview.png",
-        "alt": "MEE Insight Hub 来源、证据和报告路由关系图"
+        "src": "./public/assets/judgment-network.png",
+        "alt": "来源、证据和报告路由关系图"
       },
       "insights": [
         {
@@ -1225,7 +1555,16 @@
             "开源工程与仓库 (12)",
             "产品、创业与市场 (11)",
             "Skill / MCP / Agent 能力市场 (9)"
-          ]
+          ],
+          "analysis": [
+            "来源索引的价值不在于把链接列得更多，而在于把每条来源放到同一套判断管线里：先看是否可读，再看是否是一手材料或趋势线索，再判断它能支持哪个主题和哪条行动。",
+            "这会改变读者的使用方式。读者不必在新闻、GitHub、公众号和飞书文档之间来回跳，而是先进入报告结论，再通过证据簇回到来源；来源索引负责可追溯，不抢占主阅读入口。",
+            "因此，日报只应展示当期新增 delta 和待补读 ledger；周报/月报再把重复出现、能交叉验证的信号上卷为稳定判断。"
+          ],
+          "visual": {
+            "src": "./public/assets/judgment-network.png",
+            "alt": "来源到证据的统一处理管线"
+          }
         },
         {
           "title": "新闻源扩展服务全站，不只是新闻栏目",
@@ -1239,7 +1578,16 @@
             "Reuters/Bloomberg/FT/WSJ/CNBC",
             "SEC/FINRA/CFTC/Federal Reserve",
             "国内官方政策公开信息"
-          ]
+          ],
+          "analysis": [
+            "新闻源扩展如果只服务新闻栏目，会变成另一个信息流；真正有价值的是让同一条外部变化同时校准 MEE 能力边界、个人学习优先级、产品机会和风险判断。",
+            "一手公告、监管文件和官方研究用于确认边界；媒体和社区用于发现叙事变化；榜单和讨论用于发现需求热度。三者的证据等级不同，不能混成同一种事实。",
+            "这也是为什么来源记录必须保留“为什么值得参考”和可信边界：不是为了写长表格，而是为了让后续报告知道哪些结论可以落地，哪些只能继续观察。"
+          ],
+          "visual": {
+            "src": "./public/assets/learning-as-skill.png",
+            "alt": "证据簇如何路由到报告正文"
+          }
         }
       ],
       "actions": [
@@ -1274,7 +1622,11 @@
           "label": "Hugging Face Papers",
           "url": "https://huggingface.co/papers"
         }
-      ]
+      ],
+      "insight_density_policy": {
+        "mode": "evidence-density-adaptive",
+        "rule": "Emit every supported, non-duplicate, decision-useful insight; do not pad to a minimum or truncate to a fixed maximum."
+      }
     },
     {
       "id": "daily-mee",
@@ -1284,8 +1636,8 @@
       "kicker": "日报 / 从工具链到治理链",
       "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：MEE 自身的调度、证据、Skill、发布和质量门禁当期有哪些可执行的进化点。",
       "visual": {
-        "src": "./public/assets/hub-overview.png",
-        "alt": "MEE Insight Hub 作为 MEE 发布与证据治理入口"
+        "src": "./public/assets/learning-as-skill.png",
+        "alt": "MEE 发布与证据治理入口"
       },
       "insights": [
         {
@@ -1300,7 +1652,16 @@
             "mee radar site",
             "MEE Insight Hub repository",
             "intelligence-foraging-scheduler capsule"
-          ]
+          ],
+          "analysis": [
+            "MEE 的发布链路从 Feishu 文档切到 GitHub Pages，不只是换一个托管后端，而是把默认产物从内部协作文档切换为公开可读、可归档、可版本化的站点。",
+            "这要求生成器直接面向站点数据契约工作：报告正文、证据簇、图片资产、时间周期和隐私边界都必须在 JSON 层表达清楚，不能依赖飞书文档作为中间解释层。",
+            "Feishu 和 Vercel 保留为显式 opt-in 后端，可以避免自动化默认生成多套重复产物，也减少后续维护噪音。"
+          ],
+          "visual": {
+            "src": "./public/assets/learning-as-skill.png",
+            "alt": "MEE Insight Hub 作为发布与证据治理入口"
+          }
         },
         {
           "title": "报告质量门禁要检查正文层，而不只检查站点能打开",
@@ -1314,7 +1675,16 @@
             "public/data/site-content.json",
             "tests/mee-cli.test.mjs",
             "reader contract"
-          ]
+          ],
+          "analysis": [
+            "站点能打开并不等于报告质量达标。真正的门禁应该检查读者能否看到完整报告：核心洞察是否有推导，子洞察是否能展开，行动建议是否可执行，参考来源是否能追溯。",
+            "这次退化的根因正是生成器和前端都把正文压成了薄摘要。修复不能只改 CSS，而要把“正文密度”变成数据契约和测试门禁。",
+            "后续任何日报、周报、月报都应该复用同一套正式读者合同，只改变时间窗口，而不是改变报告结构。"
+          ],
+          "visual": {
+            "src": "./public/assets/judgment-network.png",
+            "alt": "从站点打开到报告正文质量门禁"
+          }
         }
       ],
       "actions": [
@@ -1346,7 +1716,11 @@
           "label": "GitHub Topics: AI agents",
           "url": "https://github.com/topics/ai-agent"
         }
-      ]
+      ],
+      "insight_density_policy": {
+        "mode": "evidence-density-adaptive",
+        "rule": "Emit every supported, non-duplicate, decision-useful insight; do not pad to a minimum or truncate to a fixed maximum."
+      }
     },
     {
       "id": "daily-personal",
@@ -1372,7 +1746,16 @@
             "GitHub/Skill 市场信号",
             "公开产品与工程讨论",
             "私域收藏的问题感"
-          ]
+          ],
+          "analysis": [
+            "个人竞争力的变化不在于多会几个工具，而在于能否把工具变成自己的操作系统：输入进入问题库，问题转成练习，练习形成判断，判断再反馈到下一轮收藏和行动。",
+            "如果收藏只是保存材料，它会变成负担；如果收藏能触发问题澄清、技能练习和小实验，它才会变成复利资产。",
+            "这也是日报的价值：它不只是告诉你今天看到了什么，而是提示哪些材料值得进入你的下一步练习和判断系统。"
+          ],
+          "visual": {
+            "src": "./public/assets/personal-os.png",
+            "alt": "个人操作系统：从信息输入到判断闭环"
+          }
         },
         {
           "title": "公开趋势和私域兴趣需要合并校准",
@@ -1386,7 +1769,16 @@
             "Product Hunt / Hacker News",
             "Reuters / The Verge",
             "飞书收藏摘要"
-          ]
+          ],
+          "analysis": [
+            "公开趋势和私域兴趣分别有偏差：公开趋势容易被热点带跑，私域收藏容易放大个人兴趣。两者合并后，才有机会形成更可靠的判断网络。",
+            "判断网络要关注不一致处：你反复收藏但外部不热的东西，可能代表个人优势或盲区；外部很热但你没有兴趣的东西，可能代表噪音，也可能代表应该补课的能力缺口。",
+            "因此，个人洞察报告不应局限于 AI、量化或单个项目，而要覆盖学习方法、表达品味、职业杠杆、协作方式、产品感和风险感知。"
+          ],
+          "visual": {
+            "src": "./public/assets/learning-as-skill.png",
+            "alt": "把公开趋势与私域兴趣合并校准"
+          }
         }
       ],
       "actions": [
@@ -1419,7 +1811,11 @@
           "label": "GitHub Trending",
           "url": "https://github.com/trending"
         }
-      ]
+      ],
+      "insight_density_policy": {
+        "mode": "evidence-density-adaptive",
+        "rule": "Emit every supported, non-duplicate, decision-useful insight; do not pad to a minimum or truncate to a fixed maximum."
+      }
     },
     {
       "id": "daily-product",
@@ -1445,7 +1841,16 @@
             "MEE Insight Hub",
             "GitHub Pages 公开站点",
             "飞书文档到站点的迁移需求"
-          ]
+          ],
+          "analysis": [
+            "报告站点本身就是一个产品机会样本：用户需要的不是“再生成一份摘要”，而是把私域收藏、公开来源、证据索引、图文表达和行动建议组织成可读、可追溯、可持续更新的研究页面。",
+            "这个机会的关键不在页面好看，而在链路完整：原始来源可追溯、报告正文能读懂、图片能帮助理解、行动建议能落地，且不同时间周期不重复堆叠。",
+            "如果这个链路跑顺，它可以扩展到团队情报、投资研究、产品机会雷达、客户行业洞察等多种场景。"
+          ],
+          "visual": {
+            "src": "./public/assets/judgment-network.png",
+            "alt": "从市场信号到产品判断网络"
+          }
         },
         {
           "title": "Agent 产品机会应优先落在高价值工作流",
@@ -1459,7 +1864,16 @@
             "Product Hunt / AI tool directories",
             "GitHub Agent repos",
             "Adapora 相关工作流经验"
-          ]
+          ],
+          "analysis": [
+            "Agent 产品更适合先落在高价值工作流，而不是泛化聊天入口。高价值工作流通常有明确输入、过程证据、可复核输出、责任边界和复用频率。",
+            "审计、报告、研究、证据整理和质量门禁都符合这个特征。它们不是简单的内容生成任务，而是需要把证据、过程、权限、日志和交付物质量串起来。",
+            "这类产品机会的评估重点应是：能否减少人工复核负担，能否降低错误率，能否形成可审计交付物，而不只是提升表达效率。"
+          ],
+          "visual": {
+            "src": "./public/assets/learning-as-skill.png",
+            "alt": "高价值 Agent 工作流的证据链路"
+          }
         }
       ],
       "actions": [
@@ -1492,7 +1906,11 @@
           "label": "Indie Hackers",
           "url": "https://www.indiehackers.com/"
         }
-      ]
+      ],
+      "insight_density_policy": {
+        "mode": "evidence-density-adaptive",
+        "rule": "Emit every supported, non-duplicate, decision-useful insight; do not pad to a minimum or truncate to a fixed maximum."
+      }
     },
     {
       "id": "daily-news",
@@ -1502,8 +1920,8 @@
       "kicker": "日报 / 从热点到影响判断",
       "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：公开世界的变化如何影响 MEE 进化、个人判断、产品机会和风险感知。",
       "visual": {
-        "src": "./public/assets/source-coverage.png",
-        "alt": "公开来源覆盖与可信边界"
+        "src": "./public/assets/judgment-network.png",
+        "alt": "新闻信号进入判断网络"
       },
       "insights": [
         {
@@ -1518,7 +1936,16 @@
             "OpenAI/Anthropic/DeepMind 官方源",
             "Reuters/Bloomberg/FT/WSJ",
             "SEC/FINRA/CFTC/央行/工信部/网信办"
-          ]
+          ],
+          "analysis": [
+            "新闻热点如果停留在事件罗列，读者仍然要自己判断“这和我有什么关系”。日报新闻栏目应该直接回答影响问题：它改变了能力边界、需求变化、监管风险还是市场机会。",
+            "一条新闻进入主报告前，必须说明它影响哪类主题，以及它属于事实、趋势、观点还是待验证线索。否则新闻越多，判断越弱。",
+            "因此，新闻报告的读法不是追热点，而是把热点转译成影响分析。"
+          ],
+          "visual": {
+            "src": "./public/assets/judgment-network.png",
+            "alt": "新闻信号如何进入判断网络"
+          }
         },
         {
           "title": "高价值新闻源要反哺所有主题",
@@ -1532,12 +1959,21 @@
             "新闻、研究、产品、政策四类来源组合",
             "source-index 多主题路由",
             "evidence_cluster_id"
-          ]
+          ],
+          "analysis": [
+            "同一条高价值新闻经常会同时影响多个主题：AI 官方发布影响 MEE 能力规划，市场融资影响产品机会，监管变化影响风险边界，用户讨论影响个人学习优先级。",
+            "如果新闻只出现在新闻频道，价值会被截断；如果它能回流到 MEE、个人、产品和来源索引，才会变成全站统一情报底座的一部分。",
+            "这要求 source-index 支持多主题路由，并在报告中保留证据簇，而不是把新闻当作独立栏目消费。"
+          ],
+          "visual": {
+            "src": "./public/assets/learning-as-skill.png",
+            "alt": "新闻信号如何回流到多主题判断网络"
+          }
         }
       ],
       "actions": [
         "新闻条目进入报告前必须写出“对哪个主题有影响”。",
-        "高影响新闻至少配一个一手或准一手来源。",
+        "高影响新闻必须配套一手或准一手来源。",
         "把短期热点和长期变量分开，避免月报被日报噪音污染。",
         "新闻源默认可以服务全部五类主题，但结论必须标可信边界。"
       ],
@@ -1563,7 +1999,11 @@
           "label": "Google DeepMind Blog",
           "url": "https://deepmind.google/discover/blog/"
         }
-      ]
+      ],
+      "insight_density_policy": {
+        "mode": "evidence-density-adaptive",
+        "rule": "Emit every supported, non-duplicate, decision-useful insight; do not pad to a minimum or truncate to a fixed maximum."
+      }
     }
   ],
   "signals": [
