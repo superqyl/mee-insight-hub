@@ -1,7 +1,7 @@
 {
   "meta": {
     "site_name": "MEE Insight Hub",
-    "generated_at": "2026-05-31T23:18:06.064Z",
+    "generated_at": "2026-06-01T02:02:18.889Z",
     "cadence": "daily",
     "period": {
       "cadence": "daily",
@@ -127,36 +127,65 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方一手公告，可用于确认产品能力与发布事实；具体评测表现和生产采用仍需结合系统卡、实际测试和成本约束。"
-            },
-            {
-              "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
-              "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/",
-              "source_name": "Google AI blog feed",
-              "source_id": "google-ai-blog-rss",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P0",
-              "published_at": "2026-05-29",
-              "summary": "Google 用 AI Studio 快速生成 I/O 2026 主题互动内容，说明官方正在把“用 AI 生成小型应用/互动页面”包装成面向普通开发者和内容团队的可感知能力。",
-              "key_points": [
-                "事实重点：Google AI Studio 被用于快速生成 I/O 主题互动体验。",
-                "观察重点：低门槛应用生成正在成为开发者工具的传播样板。",
-                "可借鉴点：报告站点、互动问答和轻应用可以作为高频内容表达形态。"
+              "boundary": "官方一手公告，可用于确认产品能力与发布事实；具体评测表现和生产采用仍需结合系统卡、实际测试和成本约束。",
+              "region": "global",
+              "benchmark_highlights": [
+                "SWE-Bench Pro：Opus 4.8 为 69.2%，高于 Opus 4.7 的 64.3%、GPT-5.5 的 58.6%、Gemini 3.1 Pro 的 54.2%。",
+                "Terminal-Bench 2.1：Opus 4.8 为 74.6%，高于 Opus 4.7 的 66.1% 和 Gemini 3.1 Pro 的 70.3%，但低于 GPT-5.5 的 78.2%。",
+                "OSWorld-Verified：Opus 4.8 为 83.4%，高于 Opus 4.7 的 82.8%、GPT-5.5 的 78.7%、Gemini 3.1 Pro 的 76.2%。",
+                "Finance Agent v2：Opus 4.8 为 53.9%，高于 Opus 4.7 的 51.5%、GPT-5.5 的 51.8%、Gemini 3.1 Pro 的 43.0%。"
               ],
-              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOQuiz2026_social.max-600x600.format-webp.webp",
-              "image": {
-                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOQuiz2026_social.max-600x600.format-webp.webp",
-                "alt": "Take our I/O 2026 quiz, vibe coded in Google AI Studio. 原始来源图片",
-                "origin": "source"
-              },
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
+              "benchmark_table": [
+                {
+                  "metric": "Agentic coding / SWE-Bench Pro",
+                  "opus_48": "69.2%",
+                  "opus_47": "64.3%",
+                  "gpt_55": "58.6%",
+                  "gemini_31": "54.2%"
+                },
+                {
+                  "metric": "Agentic terminal coding / Terminal-Bench 2.1",
+                  "opus_48": "74.6%",
+                  "opus_47": "66.1%",
+                  "gpt_55": "78.2%",
+                  "gemini_31": "70.3%"
+                },
+                {
+                  "metric": "Multidisciplinary reasoning / HLE no tools",
+                  "opus_48": "49.8%",
+                  "opus_47": "46.9%",
+                  "gpt_55": "41.4%",
+                  "gemini_31": "44.7%"
+                },
+                {
+                  "metric": "Multidisciplinary reasoning / HLE with tools",
+                  "opus_48": "57.9%",
+                  "opus_47": "54.7%",
+                  "gpt_55": "52.2%",
+                  "gemini_31": "51.4%"
+                },
+                {
+                  "metric": "Agentic computer use / OSWorld-Verified",
+                  "opus_48": "83.4%",
+                  "opus_47": "82.8%",
+                  "gpt_55": "78.7%",
+                  "gemini_31": "76.2%"
+                },
+                {
+                  "metric": "Knowledge work / GDPval-AA",
+                  "opus_48": "1890",
+                  "opus_47": "1753",
+                  "gpt_55": "1769",
+                  "gemini_31": "1314"
+                },
+                {
+                  "metric": "Agentic financial analysis / Finance Agent v2",
+                  "opus_48": "53.9%",
+                  "opus_47": "51.5%",
+                  "gpt_55": "51.8%",
+                  "gemini_31": "43.0%"
+                }
+              ]
             },
             {
               "title": "9 demos of Gemini Omni and Gemini 3.5 in action",
@@ -173,6 +202,8 @@
                 "观察重点：多模态能力正在从演示走向应用场景与开发者材料。",
                 "后续需要回读官方 demo，区分可用能力、概念展示和区域/权限限制。"
               ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
               "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Omni_and_Gemini_3.5_hero.max-600x600.format-webp.webp",
               "image": {
                 "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Omni_and_Gemini_3.5_hero.max-600x600.format-webp.webp",
@@ -185,7 +216,8 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。",
+              "region": "global"
             },
             {
               "title": "Check out real-life AI prototypes from the Futures Lab.",
@@ -202,6 +234,8 @@
                 "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
                 "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
               ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
               "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FutureLabs_social.max-600x600.format-webp.webp",
               "image": {
                 "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FutureLabs_social.max-600x600.format-webp.webp",
@@ -214,7 +248,8 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。",
+              "region": "global"
             },
             {
               "title": "Profiling in PyTorch (Part 1): A Beginner&apos;s Guide to torch.profiler",
@@ -231,6 +266,8 @@
                 "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
                 "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
               ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
               "image_url": "https://huggingface.co/blog/assets/torch-profiler/thumbnail.png",
               "image": {
                 "src": "https://huggingface.co/blog/assets/torch-profiler/thumbnail.png",
@@ -243,7 +280,8 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+              "region": "global"
             },
             {
               "title": "Catch up on 12 major I/O 2026 moments",
@@ -260,6 +298,8 @@
                 "观察重点：多模态能力正在从演示走向应用场景与开发者材料。",
                 "后续需要回读官方 demo，区分可用能力、概念展示和区域/权限限制。"
               ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
               "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_KNH.max-600x600.format-webp.webp",
               "image": {
                 "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_KNH.max-600x600.format-webp.webp",
@@ -272,7 +312,8 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。",
+              "region": "global"
             },
             {
               "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
@@ -289,6 +330,8 @@
                 "边界重点：前沿模型低于 50% 的成绩说明工具、权限、状态和流程仍是主要难点。",
                 "产品重点：企业 Agent 产品需要把可观测、回滚、审批和验证做成一等能力。"
               ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
               "image_url": "https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/QzGxABeEDggNYzvgSLQqU.png",
               "image": {
                 "src": "https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/QzGxABeEDggNYzvgSLQqU.png",
@@ -301,7 +344,8 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+              "region": "global"
             },
             {
               "title": "Harness, Scaffold, and the AI Agent Terms Worth Getting Right",
@@ -318,6 +362,8 @@
                 "判断重点：Harness、Scaffold、Runtime、Eval 不应混用。",
                 "沉淀重点：MEE 的 Skill、Capsule、solidify 和 source index 需要保持清晰边界。"
               ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
               "image_url": "https://huggingface.co/blog/assets/agent-glossary/thumbnail.png",
               "image": {
                 "src": "https://huggingface.co/blog/assets/agent-glossary/thumbnail.png",
@@ -330,27 +376,59 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+              "region": "global"
             },
             {
-              "title": "Catch up on the Dialogues stage at Google I/O 2026.",
-              "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-dialogues-recap/",
+              "title": "36Kr：Anthropic 高估值与算力投入引发新一轮 AI 创企商业化讨论",
+              "url": "https://eu.36kr.com/zh/p/3829988427409033",
+              "source_name": "36Kr",
+              "source_id": "36kr-anthropic-valuation-2026-05",
+              "source_group": "news",
+              "source_type": "media-news",
+              "trust_tier": "P2",
+              "published_at": "2026-05-29",
+              "summary": "36Kr 中文报道 Anthropic H 轮融资和估值变化，并把讨论延伸到算力投入、企业 API 收入、竞争加剧与合规成本。它不是一手融资公告，但能反映国内科技媒体如何解读前沿模型公司的资本、算力和商业化压力。",
+              "key_points": [
+                "事实重点：报道围绕 Anthropic 融资、估值、企业 API 收入和算力投入展开。",
+                "商业重点：高估值背后是企业级 API、算力基础设施和合作伙伴生态的竞争。",
+                "边界重点：该条应作为市场叙事与中文语境观察，不替代官方融资公告或财务资料。"
+              ],
+              "related_themes": [
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "中文媒体二次报道，适合观察市场叙事；估值、融资和财务数据需要回到原始公告或权威财经来源交叉验证。",
+              "region": "CN",
+              "image_url": "https://img.36krcdn.com/hsossms/20260529/v2_2ce0a731b09f4d1b971509be9ce30661@46958@ai_oswg1106577oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+              "image": {
+                "src": "https://img.36krcdn.com/hsossms/20260529/v2_2ce0a731b09f4d1b971509be9ce30661@46958@ai_oswg1106577oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+                "alt": "36Kr：Anthropic 高估值与算力投入引发新一轮 AI 创企商业化讨论 原始来源图片",
+                "origin": "source"
+              }
+            },
+            {
+              "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
+              "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/",
               "source_name": "Google AI blog feed",
               "source_id": "google-ai-blog-rss",
               "source_group": "news",
               "source_type": "commentary",
               "trust_tier": "P0",
-              "published_at": "2026-05-22",
-              "summary": "A recap of the 2026 I/O Dialogues, where leaders discuss the future of AI, quantum computing, robotics and creativity.",
+              "published_at": "2026-05-29",
+              "summary": "Google 用 AI Studio 快速生成 I/O 2026 主题互动内容，说明官方正在把“用 AI 生成小型应用/互动页面”包装成面向普通开发者和内容团队的可感知能力。",
               "key_points": [
-                "事实重点：优先确认发布时间、原始来源和新闻主体。",
-                "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
-                "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
+                "事实重点：Google AI Studio 被用于快速生成 I/O 主题互动体验。",
+                "观察重点：低门槛应用生成正在成为开发者工具的传播样板。",
+                "可借鉴点：报告站点、互动问答和轻应用可以作为高频内容表达形态。"
               ],
-              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IO26_Dialogues_3z680sK.max-600x600.format-webp.webp",
+              "benchmark_highlights": [],
+              "benchmark_table": [],
+              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOQuiz2026_social.max-600x600.format-webp.webp",
               "image": {
-                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IO26_Dialogues_3z680sK.max-600x600.format-webp.webp",
-                "alt": "Catch up on the Dialogues stage at Google I/O 2026. 原始来源图片",
+                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOQuiz2026_social.max-600x600.format-webp.webp",
+                "alt": "Take our I/O 2026 quiz, vibe coded in Google AI Studio. 原始来源图片",
                 "origin": "source"
               },
               "related_themes": [
@@ -359,36 +437,8 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
-            },
-            {
-              "title": "We’re announcing new community investments in Missouri.",
-              "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/missouri-programs/",
-              "source_name": "Google AI blog feed",
-              "source_id": "google-ai-blog-rss",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P0",
-              "published_at": "2026-05-20",
-              "summary": "We’re helping build the state’s next-generation workforce and investing in energy programs.",
-              "key_points": [
-                "事实重点：优先确认发布时间、原始来源和新闻主体。",
-                "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
-                "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
-              ],
-              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/MissouriSocial.max-600x600.format-webp.webp",
-              "image": {
-                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/MissouriSocial.max-600x600.format-webp.webp",
-                "alt": "We’re announcing new community investments in Missouri. 原始来源图片",
-                "origin": "source"
-              },
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。",
+              "region": "global"
             },
             {
               "title": "Reachy Mini goes fully local",
@@ -405,6 +455,8 @@
                 "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
                 "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
               ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
               "image_url": "https://huggingface.co/blog/assets/local-reachy-mini-conversation/thumbnail.png",
               "image": {
                 "src": "https://huggingface.co/blog/assets/local-reachy-mini-conversation/thumbnail.png",
@@ -417,7 +469,8 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+              "region": "global"
             },
             {
               "title": "Shipping a Trillion Parameters With a Hub Bucket: Delta Weight Sync in TRL",
@@ -434,6 +487,8 @@
                 "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
                 "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
               ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
               "image_url": "https://huggingface.co/blog/assets/delta-weight-sync/thumbnail.png",
               "image": {
                 "src": "https://huggingface.co/blog/assets/delta-weight-sync/thumbnail.png",
@@ -446,9 +501,100 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+              "region": "global"
+            },
+            {
+              "title": "中国石油昆仑大模型迭代升级，覆盖全产业链 152 个应用场景",
+              "url": "https://www.news.cn/energy/20260528/a011f484a0b442b587a94aca84a60d2b/c.html",
+              "source_name": "新华社",
+              "source_id": "xinhua-kunlun-model-2026-05-28",
+              "source_group": "news",
+              "source_type": "official-media-news",
+              "trust_tier": "P1",
+              "published_at": "2026-05-28",
+              "summary": "新华社报道，中国石油昆仑大模型发布迭代升级成果：六大 AI 高阶能力、全产业链 152 个应用场景规模化落地，并从通用问答转向主动智能、从试点试用转向全产业链覆盖。新闻价值在于它是国内产业大模型从展示走向生产系统的一手行业样本。",
+              "key_points": [
+                "事实重点：昆仑大模型覆盖能源化工全产业链 152 个应用场景。",
+                "能力重点：报道强调从“被动问答”到“主动干活”，对应企业 Agent 从聊天入口走向业务执行。",
+                "产业重点：能源行业的大模型落地样本可用于观察国内 B2B AI 的采购、部署和组织路径。"
+              ],
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "新华社公开报道，可用于确认产业落地事实；具体效果、ROI 和内部使用质量仍需企业案例或一线数据验证。",
+              "region": "CN",
+              "image_url": "https://www.news.cn/detail2020/images/ewm.png",
+              "image": {
+                "src": "https://www.news.cn/detail2020/images/ewm.png",
+                "alt": "中国石油昆仑大模型迭代升级，覆盖全产业链 152 个应用场景 原始来源图片",
+                "origin": "source"
+              }
+            },
+            {
+              "title": "摩尔线程从全功能 GPU 到 Agent 全场景落地",
+              "url": "https://www.leiphone.com/category/chips/HjyAOXhxHNvIRMKN.html",
+              "source_name": "雷峰网",
+              "source_id": "leiphone-moore-threads-agent-2026-05-26",
+              "source_group": "news",
+              "source_type": "media-news",
+              "trust_tier": "P2",
+              "published_at": "2026-05-26",
+              "summary": "雷峰网报道摩尔线程从国产 GPU、AI Agent 到具身智能的全场景布局，并提及国内 Token 消耗、AI 智能体普及目标、可视化测评系统和物理 AI 版图。它的价值在于呈现国内算力、终端、Agent 应用与政策叙事正在合流。",
+              "key_points": [
+                "事实重点：报道围绕国产 GPU、Agent、终端生态和具身智能展开，不是单一芯片发布。",
+                "数据重点：文章提及国内高频应用 Token 消耗、AI 智能体规模预测和普及目标。",
+                "观察重点：国内 AI 基础设施叙事正在从算力单点转为算力、软件栈、Agent 场景和测评体系的一体化输出。"
+              ],
+              "related_themes": [
+                "MEE",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "媒体报道可用于产业热点摘要；企业披露数据、测评结论和市场规模预测需结合官方材料、IDC 原文或第三方验证。",
+              "region": "CN",
+              "image_url": "https://www.leiphone.com/resWeb/images/common/logo-v2.png?v1",
+              "image": {
+                "src": "https://www.leiphone.com/resWeb/images/common/logo-v2.png?v1",
+                "alt": "摩尔线程从全功能 GPU 到 Agent 全场景落地 原始来源图片",
+                "origin": "source"
+              }
+            },
+            {
+              "title": "τ0-WM：最大规模预训练的开源具身世界模型来了",
+              "url": "https://www.qbitai.com/2026/05/426832.html",
+              "source_name": "量子位",
+              "source_id": "qbitai-tau0-wm-2026-05-31",
+              "source_group": "news",
+              "source_type": "media-news",
+              "trust_tier": "P2",
+              "published_at": "2026-05-31",
+              "summary": "量子位报道开源具身世界模型 τ0-WM：重点不是又一个机器人模型，而是具身智能数据路线发生变化，真机遥操作数据、Ego-Centric 第一视角数据、仿真数据和互联网视频正在重新组合成真实世界数据飞轮。该新闻适合观察国内具身智能从演示走向可规模化训练与部署的路径。",
+              "key_points": [
+                "事实重点：τ0-WM 关注动作之后的未来世界变化，而不只是动作空间内部一致性。",
+                "数据重点：报道强调 17800 小时真机遥操作数据进入预训练打底，真机数据从后训练耗材变成预训练燃料。",
+                "行业重点：具身智能竞争正从单点模型转向数据采集、部署、回流、再训练的系统闭环。"
+              ],
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "中文科技媒体报道，适合作为国内具身智能热点与方向线索；模型真实能力仍需回到论文、项目页、GitHub/Hugging Face 与第三方评测。",
+              "region": "CN",
+              "image_url": "https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png",
+              "image": {
+                "src": "https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png",
+                "alt": "τ0-WM：最大规模预训练的开源具身世界模型来了 原始来源图片",
+                "origin": "source"
+              }
             }
           ],
+          "news_selection_policy": "日报新闻热点按价值密度动态裁剪：综合发布时间、来源可信度、是否一手来源、是否含原始图片、是否影响 AI/产品/政策/市场/MEE 主题、以及中英文区域覆盖，最终选择 14 条；不使用固定 12 篇模板。",
           "watch_points": [
             "外部新闻源覆盖：25 条，Reuters、Bloomberg、FT、WSJ、CNBC。",
             "AI 官方与研究源覆盖：7 条，arXiv、Hugging Face、OpenAI、Anthropic、DeepMind。",
@@ -1740,36 +1886,65 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方一手公告，可用于确认产品能力与发布事实；具体评测表现和生产采用仍需结合系统卡、实际测试和成本约束。"
-            },
-            {
-              "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
-              "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/",
-              "source_name": "Google AI blog feed",
-              "source_id": "google-ai-blog-rss",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P0",
-              "published_at": "2026-05-29",
-              "summary": "Google 用 AI Studio 快速生成 I/O 2026 主题互动内容，说明官方正在把“用 AI 生成小型应用/互动页面”包装成面向普通开发者和内容团队的可感知能力。",
-              "key_points": [
-                "事实重点：Google AI Studio 被用于快速生成 I/O 主题互动体验。",
-                "观察重点：低门槛应用生成正在成为开发者工具的传播样板。",
-                "可借鉴点：报告站点、互动问答和轻应用可以作为高频内容表达形态。"
+              "boundary": "官方一手公告，可用于确认产品能力与发布事实；具体评测表现和生产采用仍需结合系统卡、实际测试和成本约束。",
+              "region": "global",
+              "benchmark_highlights": [
+                "SWE-Bench Pro：Opus 4.8 为 69.2%，高于 Opus 4.7 的 64.3%、GPT-5.5 的 58.6%、Gemini 3.1 Pro 的 54.2%。",
+                "Terminal-Bench 2.1：Opus 4.8 为 74.6%，高于 Opus 4.7 的 66.1% 和 Gemini 3.1 Pro 的 70.3%，但低于 GPT-5.5 的 78.2%。",
+                "OSWorld-Verified：Opus 4.8 为 83.4%，高于 Opus 4.7 的 82.8%、GPT-5.5 的 78.7%、Gemini 3.1 Pro 的 76.2%。",
+                "Finance Agent v2：Opus 4.8 为 53.9%，高于 Opus 4.7 的 51.5%、GPT-5.5 的 51.8%、Gemini 3.1 Pro 的 43.0%。"
               ],
-              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOQuiz2026_social.max-600x600.format-webp.webp",
-              "image": {
-                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOQuiz2026_social.max-600x600.format-webp.webp",
-                "alt": "Take our I/O 2026 quiz, vibe coded in Google AI Studio. 原始来源图片",
-                "origin": "source"
-              },
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
+              "benchmark_table": [
+                {
+                  "metric": "Agentic coding / SWE-Bench Pro",
+                  "opus_48": "69.2%",
+                  "opus_47": "64.3%",
+                  "gpt_55": "58.6%",
+                  "gemini_31": "54.2%"
+                },
+                {
+                  "metric": "Agentic terminal coding / Terminal-Bench 2.1",
+                  "opus_48": "74.6%",
+                  "opus_47": "66.1%",
+                  "gpt_55": "78.2%",
+                  "gemini_31": "70.3%"
+                },
+                {
+                  "metric": "Multidisciplinary reasoning / HLE no tools",
+                  "opus_48": "49.8%",
+                  "opus_47": "46.9%",
+                  "gpt_55": "41.4%",
+                  "gemini_31": "44.7%"
+                },
+                {
+                  "metric": "Multidisciplinary reasoning / HLE with tools",
+                  "opus_48": "57.9%",
+                  "opus_47": "54.7%",
+                  "gpt_55": "52.2%",
+                  "gemini_31": "51.4%"
+                },
+                {
+                  "metric": "Agentic computer use / OSWorld-Verified",
+                  "opus_48": "83.4%",
+                  "opus_47": "82.8%",
+                  "gpt_55": "78.7%",
+                  "gemini_31": "76.2%"
+                },
+                {
+                  "metric": "Knowledge work / GDPval-AA",
+                  "opus_48": "1890",
+                  "opus_47": "1753",
+                  "gpt_55": "1769",
+                  "gemini_31": "1314"
+                },
+                {
+                  "metric": "Agentic financial analysis / Finance Agent v2",
+                  "opus_48": "53.9%",
+                  "opus_47": "51.5%",
+                  "gpt_55": "51.8%",
+                  "gemini_31": "43.0%"
+                }
+              ]
             },
             {
               "title": "9 demos of Gemini Omni and Gemini 3.5 in action",
@@ -1786,6 +1961,8 @@
                 "观察重点：多模态能力正在从演示走向应用场景与开发者材料。",
                 "后续需要回读官方 demo，区分可用能力、概念展示和区域/权限限制。"
               ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
               "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Omni_and_Gemini_3.5_hero.max-600x600.format-webp.webp",
               "image": {
                 "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Omni_and_Gemini_3.5_hero.max-600x600.format-webp.webp",
@@ -1798,7 +1975,8 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。",
+              "region": "global"
             },
             {
               "title": "Check out real-life AI prototypes from the Futures Lab.",
@@ -1815,6 +1993,8 @@
                 "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
                 "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
               ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
               "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FutureLabs_social.max-600x600.format-webp.webp",
               "image": {
                 "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FutureLabs_social.max-600x600.format-webp.webp",
@@ -1827,7 +2007,8 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。",
+              "region": "global"
             },
             {
               "title": "Profiling in PyTorch (Part 1): A Beginner&apos;s Guide to torch.profiler",
@@ -1844,6 +2025,8 @@
                 "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
                 "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
               ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
               "image_url": "https://huggingface.co/blog/assets/torch-profiler/thumbnail.png",
               "image": {
                 "src": "https://huggingface.co/blog/assets/torch-profiler/thumbnail.png",
@@ -1856,7 +2039,8 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+              "region": "global"
             },
             {
               "title": "Catch up on 12 major I/O 2026 moments",
@@ -1873,6 +2057,8 @@
                 "观察重点：多模态能力正在从演示走向应用场景与开发者材料。",
                 "后续需要回读官方 demo，区分可用能力、概念展示和区域/权限限制。"
               ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
               "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_KNH.max-600x600.format-webp.webp",
               "image": {
                 "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_KNH.max-600x600.format-webp.webp",
@@ -1885,7 +2071,8 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。",
+              "region": "global"
             },
             {
               "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
@@ -1902,6 +2089,8 @@
                 "边界重点：前沿模型低于 50% 的成绩说明工具、权限、状态和流程仍是主要难点。",
                 "产品重点：企业 Agent 产品需要把可观测、回滚、审批和验证做成一等能力。"
               ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
               "image_url": "https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/QzGxABeEDggNYzvgSLQqU.png",
               "image": {
                 "src": "https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/QzGxABeEDggNYzvgSLQqU.png",
@@ -1914,7 +2103,8 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+              "region": "global"
             },
             {
               "title": "Harness, Scaffold, and the AI Agent Terms Worth Getting Right",
@@ -1931,6 +2121,8 @@
                 "判断重点：Harness、Scaffold、Runtime、Eval 不应混用。",
                 "沉淀重点：MEE 的 Skill、Capsule、solidify 和 source index 需要保持清晰边界。"
               ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
               "image_url": "https://huggingface.co/blog/assets/agent-glossary/thumbnail.png",
               "image": {
                 "src": "https://huggingface.co/blog/assets/agent-glossary/thumbnail.png",
@@ -1943,27 +2135,91 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+              "region": "global"
             },
             {
-              "title": "Towards Speed-of-Light Text Generation with Nemotron-Labs Diffusion Language Models",
-              "url": "https://huggingface.co/blog/nvidia/nemotron-labs-diffusion",
+              "title": "36Kr：Anthropic 高估值与算力投入引发新一轮 AI 创企商业化讨论",
+              "url": "https://eu.36kr.com/zh/p/3829988427409033",
+              "source_name": "36Kr",
+              "source_id": "36kr-anthropic-valuation-2026-05",
+              "source_group": "news",
+              "source_type": "media-news",
+              "trust_tier": "P2",
+              "published_at": "2026-05-29",
+              "summary": "36Kr 中文报道 Anthropic H 轮融资和估值变化，并把讨论延伸到算力投入、企业 API 收入、竞争加剧与合规成本。它不是一手融资公告，但能反映国内科技媒体如何解读前沿模型公司的资本、算力和商业化压力。",
+              "key_points": [
+                "事实重点：报道围绕 Anthropic 融资、估值、企业 API 收入和算力投入展开。",
+                "商业重点：高估值背后是企业级 API、算力基础设施和合作伙伴生态的竞争。",
+                "边界重点：该条应作为市场叙事与中文语境观察，不替代官方融资公告或财务资料。"
+              ],
+              "related_themes": [
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "中文媒体二次报道，适合观察市场叙事；估值、融资和财务数据需要回到原始公告或权威财经来源交叉验证。",
+              "region": "CN",
+              "image_url": "https://img.36krcdn.com/hsossms/20260529/v2_2ce0a731b09f4d1b971509be9ce30661@46958@ai_oswg1106577oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+              "image": {
+                "src": "https://img.36krcdn.com/hsossms/20260529/v2_2ce0a731b09f4d1b971509be9ce30661@46958@ai_oswg1106577oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+                "alt": "36Kr：Anthropic 高估值与算力投入引发新一轮 AI 创企商业化讨论 原始来源图片",
+                "origin": "source"
+              }
+            },
+            {
+              "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
+              "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/",
+              "source_name": "Google AI blog feed",
+              "source_id": "google-ai-blog-rss",
+              "source_group": "news",
+              "source_type": "commentary",
+              "trust_tier": "P0",
+              "published_at": "2026-05-29",
+              "summary": "Google 用 AI Studio 快速生成 I/O 2026 主题互动内容，说明官方正在把“用 AI 生成小型应用/互动页面”包装成面向普通开发者和内容团队的可感知能力。",
+              "key_points": [
+                "事实重点：Google AI Studio 被用于快速生成 I/O 主题互动体验。",
+                "观察重点：低门槛应用生成正在成为开发者工具的传播样板。",
+                "可借鉴点：报告站点、互动问答和轻应用可以作为高频内容表达形态。"
+              ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
+              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOQuiz2026_social.max-600x600.format-webp.webp",
+              "image": {
+                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOQuiz2026_social.max-600x600.format-webp.webp",
+                "alt": "Take our I/O 2026 quiz, vibe coded in Google AI Studio. 原始来源图片",
+                "origin": "source"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。",
+              "region": "global"
+            },
+            {
+              "title": "Reachy Mini goes fully local",
+              "url": "https://huggingface.co/blog/local-reachy-mini-conversation",
               "source_name": "Hugging Face blog feed",
               "source_id": "huggingface-blog-rss",
               "source_group": "news",
               "source_type": "commentary",
               "trust_tier": "P1",
-              "published_at": "2026-05-23",
-              "summary": "A Blog post by NVIDIA on Hugging Face",
+              "published_at": "2026-05-27",
+              "summary": "Reachy Mini fully local 指向本地化机器人/边缘 AI 的产品方向：把对话、控制和交互尽量放到本地执行，可降低网络依赖并改善隐私边界。",
               "key_points": [
                 "事实重点：优先确认发布时间、原始来源和新闻主体。",
                 "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
                 "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
               ],
-              "image_url": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/nvidia/nemotron-labs-diffusion.png",
+              "benchmark_highlights": [],
+              "benchmark_table": [],
+              "image_url": "https://huggingface.co/blog/assets/local-reachy-mini-conversation/thumbnail.png",
               "image": {
-                "src": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/nvidia/nemotron-labs-diffusion.png",
-                "alt": "Towards Speed-of-Light Text Generation with Nemotron-Labs Diffusion Language Models 原始来源图片",
+                "src": "https://huggingface.co/blog/assets/local-reachy-mini-conversation/thumbnail.png",
+                "alt": "Reachy Mini goes fully local 原始来源图片",
                 "origin": "source"
               },
               "related_themes": [
@@ -1972,85 +2228,30 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+              "region": "global"
             },
             {
-              "title": "Catch up on the Dialogues stage at Google I/O 2026.",
-              "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-dialogues-recap/",
-              "source_name": "Google AI blog feed",
-              "source_id": "google-ai-blog-rss",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P0",
-              "published_at": "2026-05-22",
-              "summary": "A recap of the 2026 I/O Dialogues, where leaders discuss the future of AI, quantum computing, robotics and creativity.",
-              "key_points": [
-                "事实重点：优先确认发布时间、原始来源和新闻主体。",
-                "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
-                "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
-              ],
-              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IO26_Dialogues_3z680sK.max-600x600.format-webp.webp",
-              "image": {
-                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IO26_Dialogues_3z680sK.max-600x600.format-webp.webp",
-                "alt": "Catch up on the Dialogues stage at Google I/O 2026. 原始来源图片",
-                "origin": "source"
-              },
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
-            },
-            {
-              "title": "We’re announcing new community investments in Missouri.",
-              "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/missouri-programs/",
-              "source_name": "Google AI blog feed",
-              "source_id": "google-ai-blog-rss",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P0",
-              "published_at": "2026-05-20",
-              "summary": "We’re helping build the state’s next-generation workforce and investing in energy programs.",
-              "key_points": [
-                "事实重点：优先确认发布时间、原始来源和新闻主体。",
-                "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
-                "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
-              ],
-              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/MissouriSocial.max-600x600.format-webp.webp",
-              "image": {
-                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/MissouriSocial.max-600x600.format-webp.webp",
-                "alt": "We’re announcing new community investments in Missouri. 原始来源图片",
-                "origin": "source"
-              },
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
-            },
-            {
-              "title": "SoftBank to build up AI data centres in France with major investment - Reuters",
-              "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNSGpvaWFPVFk5eDM4Y1RPY29QVXVhYXN4UHQyVlJ5NzJzUWMxRk90S2EwNVRjeE82MlJWeWhCMjNHN1NPSVQ2UjY5UlBBWHdQSmdKRURxZFF1YkRYVEFFbW03V3pFZ1dKSGxQdEsxVUdkNkxZalIybVhYRjlkSmlfTkZDd1RfaWFLdXFVMTF2VXZBOHlxcTVwQkRQbVNqbXRLYzN1Z1NEZVhhaUZWeXdraUZMVG1wVFVIeDZMRzB3?oc=5",
-              "source_name": "Reuters AI and technology news surfaced through Google News RSS",
-              "source_id": "reuters-ai-tech-rss",
+              "title": "Shipping a Trillion Parameters With a Hub Bucket: Delta Weight Sync in TRL",
+              "url": "https://huggingface.co/blog/delta-weight-sync",
+              "source_name": "Hugging Face blog feed",
+              "source_id": "huggingface-blog-rss",
               "source_group": "news",
               "source_type": "commentary",
               "trust_tier": "P1",
-              "published_at": "2026-05-30",
-              "summary": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+              "published_at": "2026-05-27",
+              "summary": "Delta Weight Sync 关注大模型权重分发与训练产物同步问题，说明开源模型生态的瓶颈正在从‘能否训练’扩展到‘如何低成本分发、复现和协作’。",
               "key_points": [
                 "事实重点：优先确认发布时间、原始来源和新闻主体。",
                 "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
                 "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
               ],
-              "image_url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
+              "benchmark_highlights": [],
+              "benchmark_table": [],
+              "image_url": "https://huggingface.co/blog/assets/delta-weight-sync/thumbnail.png",
               "image": {
-                "src": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
-                "alt": "SoftBank to build up AI data centres in France with major investment - Reuters 原始来源图片",
+                "src": "https://huggingface.co/blog/assets/delta-weight-sync/thumbnail.png",
+                "alt": "Shipping a Trillion Parameters With a Hub Bucket: Delta Weight Sync in TRL 原始来源图片",
                 "origin": "source"
               },
               "related_themes": [
@@ -2059,9 +2260,100 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+              "region": "global"
+            },
+            {
+              "title": "中国石油昆仑大模型迭代升级，覆盖全产业链 152 个应用场景",
+              "url": "https://www.news.cn/energy/20260528/a011f484a0b442b587a94aca84a60d2b/c.html",
+              "source_name": "新华社",
+              "source_id": "xinhua-kunlun-model-2026-05-28",
+              "source_group": "news",
+              "source_type": "official-media-news",
+              "trust_tier": "P1",
+              "published_at": "2026-05-28",
+              "summary": "新华社报道，中国石油昆仑大模型发布迭代升级成果：六大 AI 高阶能力、全产业链 152 个应用场景规模化落地，并从通用问答转向主动智能、从试点试用转向全产业链覆盖。新闻价值在于它是国内产业大模型从展示走向生产系统的一手行业样本。",
+              "key_points": [
+                "事实重点：昆仑大模型覆盖能源化工全产业链 152 个应用场景。",
+                "能力重点：报道强调从“被动问答”到“主动干活”，对应企业 Agent 从聊天入口走向业务执行。",
+                "产业重点：能源行业的大模型落地样本可用于观察国内 B2B AI 的采购、部署和组织路径。"
+              ],
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "新华社公开报道，可用于确认产业落地事实；具体效果、ROI 和内部使用质量仍需企业案例或一线数据验证。",
+              "region": "CN",
+              "image_url": "https://www.news.cn/detail2020/images/ewm.png",
+              "image": {
+                "src": "https://www.news.cn/detail2020/images/ewm.png",
+                "alt": "中国石油昆仑大模型迭代升级，覆盖全产业链 152 个应用场景 原始来源图片",
+                "origin": "source"
+              }
+            },
+            {
+              "title": "摩尔线程从全功能 GPU 到 Agent 全场景落地",
+              "url": "https://www.leiphone.com/category/chips/HjyAOXhxHNvIRMKN.html",
+              "source_name": "雷峰网",
+              "source_id": "leiphone-moore-threads-agent-2026-05-26",
+              "source_group": "news",
+              "source_type": "media-news",
+              "trust_tier": "P2",
+              "published_at": "2026-05-26",
+              "summary": "雷峰网报道摩尔线程从国产 GPU、AI Agent 到具身智能的全场景布局，并提及国内 Token 消耗、AI 智能体普及目标、可视化测评系统和物理 AI 版图。它的价值在于呈现国内算力、终端、Agent 应用与政策叙事正在合流。",
+              "key_points": [
+                "事实重点：报道围绕国产 GPU、Agent、终端生态和具身智能展开，不是单一芯片发布。",
+                "数据重点：文章提及国内高频应用 Token 消耗、AI 智能体规模预测和普及目标。",
+                "观察重点：国内 AI 基础设施叙事正在从算力单点转为算力、软件栈、Agent 场景和测评体系的一体化输出。"
+              ],
+              "related_themes": [
+                "MEE",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "媒体报道可用于产业热点摘要；企业披露数据、测评结论和市场规模预测需结合官方材料、IDC 原文或第三方验证。",
+              "region": "CN",
+              "image_url": "https://www.leiphone.com/resWeb/images/common/logo-v2.png?v1",
+              "image": {
+                "src": "https://www.leiphone.com/resWeb/images/common/logo-v2.png?v1",
+                "alt": "摩尔线程从全功能 GPU 到 Agent 全场景落地 原始来源图片",
+                "origin": "source"
+              }
+            },
+            {
+              "title": "τ0-WM：最大规模预训练的开源具身世界模型来了",
+              "url": "https://www.qbitai.com/2026/05/426832.html",
+              "source_name": "量子位",
+              "source_id": "qbitai-tau0-wm-2026-05-31",
+              "source_group": "news",
+              "source_type": "media-news",
+              "trust_tier": "P2",
+              "published_at": "2026-05-31",
+              "summary": "量子位报道开源具身世界模型 τ0-WM：重点不是又一个机器人模型，而是具身智能数据路线发生变化，真机遥操作数据、Ego-Centric 第一视角数据、仿真数据和互联网视频正在重新组合成真实世界数据飞轮。该新闻适合观察国内具身智能从演示走向可规模化训练与部署的路径。",
+              "key_points": [
+                "事实重点：τ0-WM 关注动作之后的未来世界变化，而不只是动作空间内部一致性。",
+                "数据重点：报道强调 17800 小时真机遥操作数据进入预训练打底，真机数据从后训练耗材变成预训练燃料。",
+                "行业重点：具身智能竞争正从单点模型转向数据采集、部署、回流、再训练的系统闭环。"
+              ],
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "中文科技媒体报道，适合作为国内具身智能热点与方向线索；模型真实能力仍需回到论文、项目页、GitHub/Hugging Face 与第三方评测。",
+              "region": "CN",
+              "image_url": "https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png",
+              "image": {
+                "src": "https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png",
+                "alt": "τ0-WM：最大规模预训练的开源具身世界模型来了 原始来源图片",
+                "origin": "source"
+              }
             }
           ],
+          "news_selection_policy": "周报新闻热点按价值密度动态裁剪：综合发布时间、来源可信度、是否一手来源、是否含原始图片、是否影响 AI/产品/政策/市场/MEE 主题、以及中英文区域覆盖，最终选择 14 条；不使用固定 12 篇模板。",
           "watch_points": [
             "外部新闻源覆盖：25 条，Reuters、Bloomberg、FT、WSJ、CNBC。",
             "AI 官方与研究源覆盖：7 条，arXiv、Hugging Face、OpenAI、Anthropic、DeepMind。",
@@ -3353,36 +3645,65 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方一手公告，可用于确认产品能力与发布事实；具体评测表现和生产采用仍需结合系统卡、实际测试和成本约束。"
-            },
-            {
-              "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
-              "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/",
-              "source_name": "Google AI blog feed",
-              "source_id": "google-ai-blog-rss",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P0",
-              "published_at": "2026-05-29",
-              "summary": "Google 用 AI Studio 快速生成 I/O 2026 主题互动内容，说明官方正在把“用 AI 生成小型应用/互动页面”包装成面向普通开发者和内容团队的可感知能力。",
-              "key_points": [
-                "事实重点：Google AI Studio 被用于快速生成 I/O 主题互动体验。",
-                "观察重点：低门槛应用生成正在成为开发者工具的传播样板。",
-                "可借鉴点：报告站点、互动问答和轻应用可以作为高频内容表达形态。"
+              "boundary": "官方一手公告，可用于确认产品能力与发布事实；具体评测表现和生产采用仍需结合系统卡、实际测试和成本约束。",
+              "region": "global",
+              "benchmark_highlights": [
+                "SWE-Bench Pro：Opus 4.8 为 69.2%，高于 Opus 4.7 的 64.3%、GPT-5.5 的 58.6%、Gemini 3.1 Pro 的 54.2%。",
+                "Terminal-Bench 2.1：Opus 4.8 为 74.6%，高于 Opus 4.7 的 66.1% 和 Gemini 3.1 Pro 的 70.3%，但低于 GPT-5.5 的 78.2%。",
+                "OSWorld-Verified：Opus 4.8 为 83.4%，高于 Opus 4.7 的 82.8%、GPT-5.5 的 78.7%、Gemini 3.1 Pro 的 76.2%。",
+                "Finance Agent v2：Opus 4.8 为 53.9%，高于 Opus 4.7 的 51.5%、GPT-5.5 的 51.8%、Gemini 3.1 Pro 的 43.0%。"
               ],
-              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOQuiz2026_social.max-600x600.format-webp.webp",
-              "image": {
-                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOQuiz2026_social.max-600x600.format-webp.webp",
-                "alt": "Take our I/O 2026 quiz, vibe coded in Google AI Studio. 原始来源图片",
-                "origin": "source"
-              },
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
+              "benchmark_table": [
+                {
+                  "metric": "Agentic coding / SWE-Bench Pro",
+                  "opus_48": "69.2%",
+                  "opus_47": "64.3%",
+                  "gpt_55": "58.6%",
+                  "gemini_31": "54.2%"
+                },
+                {
+                  "metric": "Agentic terminal coding / Terminal-Bench 2.1",
+                  "opus_48": "74.6%",
+                  "opus_47": "66.1%",
+                  "gpt_55": "78.2%",
+                  "gemini_31": "70.3%"
+                },
+                {
+                  "metric": "Multidisciplinary reasoning / HLE no tools",
+                  "opus_48": "49.8%",
+                  "opus_47": "46.9%",
+                  "gpt_55": "41.4%",
+                  "gemini_31": "44.7%"
+                },
+                {
+                  "metric": "Multidisciplinary reasoning / HLE with tools",
+                  "opus_48": "57.9%",
+                  "opus_47": "54.7%",
+                  "gpt_55": "52.2%",
+                  "gemini_31": "51.4%"
+                },
+                {
+                  "metric": "Agentic computer use / OSWorld-Verified",
+                  "opus_48": "83.4%",
+                  "opus_47": "82.8%",
+                  "gpt_55": "78.7%",
+                  "gemini_31": "76.2%"
+                },
+                {
+                  "metric": "Knowledge work / GDPval-AA",
+                  "opus_48": "1890",
+                  "opus_47": "1753",
+                  "gpt_55": "1769",
+                  "gemini_31": "1314"
+                },
+                {
+                  "metric": "Agentic financial analysis / Finance Agent v2",
+                  "opus_48": "53.9%",
+                  "opus_47": "51.5%",
+                  "gpt_55": "51.8%",
+                  "gemini_31": "43.0%"
+                }
+              ]
             },
             {
               "title": "9 demos of Gemini Omni and Gemini 3.5 in action",
@@ -3399,6 +3720,8 @@
                 "观察重点：多模态能力正在从演示走向应用场景与开发者材料。",
                 "后续需要回读官方 demo，区分可用能力、概念展示和区域/权限限制。"
               ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
               "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Omni_and_Gemini_3.5_hero.max-600x600.format-webp.webp",
               "image": {
                 "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Omni_and_Gemini_3.5_hero.max-600x600.format-webp.webp",
@@ -3411,7 +3734,8 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。",
+              "region": "global"
             },
             {
               "title": "Check out real-life AI prototypes from the Futures Lab.",
@@ -3428,6 +3752,8 @@
                 "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
                 "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
               ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
               "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FutureLabs_social.max-600x600.format-webp.webp",
               "image": {
                 "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FutureLabs_social.max-600x600.format-webp.webp",
@@ -3440,7 +3766,8 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。",
+              "region": "global"
             },
             {
               "title": "Profiling in PyTorch (Part 1): A Beginner&apos;s Guide to torch.profiler",
@@ -3457,6 +3784,8 @@
                 "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
                 "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
               ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
               "image_url": "https://huggingface.co/blog/assets/torch-profiler/thumbnail.png",
               "image": {
                 "src": "https://huggingface.co/blog/assets/torch-profiler/thumbnail.png",
@@ -3469,7 +3798,8 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+              "region": "global"
             },
             {
               "title": "Catch up on 12 major I/O 2026 moments",
@@ -3486,6 +3816,8 @@
                 "观察重点：多模态能力正在从演示走向应用场景与开发者材料。",
                 "后续需要回读官方 demo，区分可用能力、概念展示和区域/权限限制。"
               ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
               "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_KNH.max-600x600.format-webp.webp",
               "image": {
                 "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_KNH.max-600x600.format-webp.webp",
@@ -3498,7 +3830,8 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。",
+              "region": "global"
             },
             {
               "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
@@ -3515,6 +3848,8 @@
                 "边界重点：前沿模型低于 50% 的成绩说明工具、权限、状态和流程仍是主要难点。",
                 "产品重点：企业 Agent 产品需要把可观测、回滚、审批和验证做成一等能力。"
               ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
               "image_url": "https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/QzGxABeEDggNYzvgSLQqU.png",
               "image": {
                 "src": "https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/QzGxABeEDggNYzvgSLQqU.png",
@@ -3527,7 +3862,8 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+              "region": "global"
             },
             {
               "title": "Harness, Scaffold, and the AI Agent Terms Worth Getting Right",
@@ -3544,6 +3880,8 @@
                 "判断重点：Harness、Scaffold、Runtime、Eval 不应混用。",
                 "沉淀重点：MEE 的 Skill、Capsule、solidify 和 source index 需要保持清晰边界。"
               ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
               "image_url": "https://huggingface.co/blog/assets/agent-glossary/thumbnail.png",
               "image": {
                 "src": "https://huggingface.co/blog/assets/agent-glossary/thumbnail.png",
@@ -3556,27 +3894,59 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+              "region": "global"
             },
             {
-              "title": "Catch up on the Dialogues stage at Google I/O 2026.",
-              "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-dialogues-recap/",
+              "title": "36Kr：Anthropic 高估值与算力投入引发新一轮 AI 创企商业化讨论",
+              "url": "https://eu.36kr.com/zh/p/3829988427409033",
+              "source_name": "36Kr",
+              "source_id": "36kr-anthropic-valuation-2026-05",
+              "source_group": "news",
+              "source_type": "media-news",
+              "trust_tier": "P2",
+              "published_at": "2026-05-29",
+              "summary": "36Kr 中文报道 Anthropic H 轮融资和估值变化，并把讨论延伸到算力投入、企业 API 收入、竞争加剧与合规成本。它不是一手融资公告，但能反映国内科技媒体如何解读前沿模型公司的资本、算力和商业化压力。",
+              "key_points": [
+                "事实重点：报道围绕 Anthropic 融资、估值、企业 API 收入和算力投入展开。",
+                "商业重点：高估值背后是企业级 API、算力基础设施和合作伙伴生态的竞争。",
+                "边界重点：该条应作为市场叙事与中文语境观察，不替代官方融资公告或财务资料。"
+              ],
+              "related_themes": [
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "中文媒体二次报道，适合观察市场叙事；估值、融资和财务数据需要回到原始公告或权威财经来源交叉验证。",
+              "region": "CN",
+              "image_url": "https://img.36krcdn.com/hsossms/20260529/v2_2ce0a731b09f4d1b971509be9ce30661@46958@ai_oswg1106577oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+              "image": {
+                "src": "https://img.36krcdn.com/hsossms/20260529/v2_2ce0a731b09f4d1b971509be9ce30661@46958@ai_oswg1106577oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+                "alt": "36Kr：Anthropic 高估值与算力投入引发新一轮 AI 创企商业化讨论 原始来源图片",
+                "origin": "source"
+              }
+            },
+            {
+              "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
+              "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/",
               "source_name": "Google AI blog feed",
               "source_id": "google-ai-blog-rss",
               "source_group": "news",
               "source_type": "commentary",
               "trust_tier": "P0",
-              "published_at": "2026-05-22",
-              "summary": "A recap of the 2026 I/O Dialogues, where leaders discuss the future of AI, quantum computing, robotics and creativity.",
+              "published_at": "2026-05-29",
+              "summary": "Google 用 AI Studio 快速生成 I/O 2026 主题互动内容，说明官方正在把“用 AI 生成小型应用/互动页面”包装成面向普通开发者和内容团队的可感知能力。",
               "key_points": [
-                "事实重点：优先确认发布时间、原始来源和新闻主体。",
-                "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
-                "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
+                "事实重点：Google AI Studio 被用于快速生成 I/O 主题互动体验。",
+                "观察重点：低门槛应用生成正在成为开发者工具的传播样板。",
+                "可借鉴点：报告站点、互动问答和轻应用可以作为高频内容表达形态。"
               ],
-              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IO26_Dialogues_3z680sK.max-600x600.format-webp.webp",
+              "benchmark_highlights": [],
+              "benchmark_table": [],
+              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOQuiz2026_social.max-600x600.format-webp.webp",
               "image": {
-                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IO26_Dialogues_3z680sK.max-600x600.format-webp.webp",
-                "alt": "Catch up on the Dialogues stage at Google I/O 2026. 原始来源图片",
+                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOQuiz2026_social.max-600x600.format-webp.webp",
+                "alt": "Take our I/O 2026 quiz, vibe coded in Google AI Studio. 原始来源图片",
                 "origin": "source"
               },
               "related_themes": [
@@ -3585,36 +3955,8 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
-            },
-            {
-              "title": "We’re announcing new community investments in Missouri.",
-              "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/missouri-programs/",
-              "source_name": "Google AI blog feed",
-              "source_id": "google-ai-blog-rss",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P0",
-              "published_at": "2026-05-20",
-              "summary": "We’re helping build the state’s next-generation workforce and investing in energy programs.",
-              "key_points": [
-                "事实重点：优先确认发布时间、原始来源和新闻主体。",
-                "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
-                "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
-              ],
-              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/MissouriSocial.max-600x600.format-webp.webp",
-              "image": {
-                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/MissouriSocial.max-600x600.format-webp.webp",
-                "alt": "We’re announcing new community investments in Missouri. 原始来源图片",
-                "origin": "source"
-              },
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。",
+              "region": "global"
             },
             {
               "title": "Reachy Mini goes fully local",
@@ -3631,6 +3973,8 @@
                 "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
                 "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
               ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
               "image_url": "https://huggingface.co/blog/assets/local-reachy-mini-conversation/thumbnail.png",
               "image": {
                 "src": "https://huggingface.co/blog/assets/local-reachy-mini-conversation/thumbnail.png",
@@ -3643,7 +3987,8 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+              "region": "global"
             },
             {
               "title": "Shipping a Trillion Parameters With a Hub Bucket: Delta Weight Sync in TRL",
@@ -3660,6 +4005,8 @@
                 "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
                 "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
               ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
               "image_url": "https://huggingface.co/blog/assets/delta-weight-sync/thumbnail.png",
               "image": {
                 "src": "https://huggingface.co/blog/assets/delta-weight-sync/thumbnail.png",
@@ -3672,9 +4019,132 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+              "region": "global"
+            },
+            {
+              "title": "The Download: unlocking lithium and controlling Ebola",
+              "url": "https://www.technologyreview.com/2026/05/29/1138110/the-download-lithium-extraction-ebola-ai-pope/",
+              "source_name": "MIT Technology Review feed for AI, technology, and research context",
+              "source_id": "mit-tech-review-ai-rss",
+              "source_group": "news",
+              "source_type": "commentary",
+              "trust_tier": "P1",
+              "published_at": "2026-05-29",
+              "summary": "Anthropic is now valued higher than OpenAI.",
+              "key_points": [
+                "事实重点：优先确认发布时间、原始来源和新闻主体。",
+                "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
+                "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
+              ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
+              "image_url": "https://wp.technologyreview.com/wp-content/uploads/2026/05/AdobeStock_1948655467.jpg?resize=1200,600",
+              "image": {
+                "src": "https://wp.technologyreview.com/wp-content/uploads/2026/05/AdobeStock_1948655467.jpg?resize=1200,600",
+                "alt": "The Download: unlocking lithium and controlling Ebola 原始来源图片",
+                "origin": "source"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+              "region": "global"
+            },
+            {
+              "title": "中国石油昆仑大模型迭代升级，覆盖全产业链 152 个应用场景",
+              "url": "https://www.news.cn/energy/20260528/a011f484a0b442b587a94aca84a60d2b/c.html",
+              "source_name": "新华社",
+              "source_id": "xinhua-kunlun-model-2026-05-28",
+              "source_group": "news",
+              "source_type": "official-media-news",
+              "trust_tier": "P1",
+              "published_at": "2026-05-28",
+              "summary": "新华社报道，中国石油昆仑大模型发布迭代升级成果：六大 AI 高阶能力、全产业链 152 个应用场景规模化落地，并从通用问答转向主动智能、从试点试用转向全产业链覆盖。新闻价值在于它是国内产业大模型从展示走向生产系统的一手行业样本。",
+              "key_points": [
+                "事实重点：昆仑大模型覆盖能源化工全产业链 152 个应用场景。",
+                "能力重点：报道强调从“被动问答”到“主动干活”，对应企业 Agent 从聊天入口走向业务执行。",
+                "产业重点：能源行业的大模型落地样本可用于观察国内 B2B AI 的采购、部署和组织路径。"
+              ],
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "新华社公开报道，可用于确认产业落地事实；具体效果、ROI 和内部使用质量仍需企业案例或一线数据验证。",
+              "region": "CN",
+              "image_url": "https://www.news.cn/detail2020/images/ewm.png",
+              "image": {
+                "src": "https://www.news.cn/detail2020/images/ewm.png",
+                "alt": "中国石油昆仑大模型迭代升级，覆盖全产业链 152 个应用场景 原始来源图片",
+                "origin": "source"
+              }
+            },
+            {
+              "title": "摩尔线程从全功能 GPU 到 Agent 全场景落地",
+              "url": "https://www.leiphone.com/category/chips/HjyAOXhxHNvIRMKN.html",
+              "source_name": "雷峰网",
+              "source_id": "leiphone-moore-threads-agent-2026-05-26",
+              "source_group": "news",
+              "source_type": "media-news",
+              "trust_tier": "P2",
+              "published_at": "2026-05-26",
+              "summary": "雷峰网报道摩尔线程从国产 GPU、AI Agent 到具身智能的全场景布局，并提及国内 Token 消耗、AI 智能体普及目标、可视化测评系统和物理 AI 版图。它的价值在于呈现国内算力、终端、Agent 应用与政策叙事正在合流。",
+              "key_points": [
+                "事实重点：报道围绕国产 GPU、Agent、终端生态和具身智能展开，不是单一芯片发布。",
+                "数据重点：文章提及国内高频应用 Token 消耗、AI 智能体规模预测和普及目标。",
+                "观察重点：国内 AI 基础设施叙事正在从算力单点转为算力、软件栈、Agent 场景和测评体系的一体化输出。"
+              ],
+              "related_themes": [
+                "MEE",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "媒体报道可用于产业热点摘要；企业披露数据、测评结论和市场规模预测需结合官方材料、IDC 原文或第三方验证。",
+              "region": "CN",
+              "image_url": "https://www.leiphone.com/resWeb/images/common/logo-v2.png?v1",
+              "image": {
+                "src": "https://www.leiphone.com/resWeb/images/common/logo-v2.png?v1",
+                "alt": "摩尔线程从全功能 GPU 到 Agent 全场景落地 原始来源图片",
+                "origin": "source"
+              }
+            },
+            {
+              "title": "τ0-WM：最大规模预训练的开源具身世界模型来了",
+              "url": "https://www.qbitai.com/2026/05/426832.html",
+              "source_name": "量子位",
+              "source_id": "qbitai-tau0-wm-2026-05-31",
+              "source_group": "news",
+              "source_type": "media-news",
+              "trust_tier": "P2",
+              "published_at": "2026-05-31",
+              "summary": "量子位报道开源具身世界模型 τ0-WM：重点不是又一个机器人模型，而是具身智能数据路线发生变化，真机遥操作数据、Ego-Centric 第一视角数据、仿真数据和互联网视频正在重新组合成真实世界数据飞轮。该新闻适合观察国内具身智能从演示走向可规模化训练与部署的路径。",
+              "key_points": [
+                "事实重点：τ0-WM 关注动作之后的未来世界变化，而不只是动作空间内部一致性。",
+                "数据重点：报道强调 17800 小时真机遥操作数据进入预训练打底，真机数据从后训练耗材变成预训练燃料。",
+                "行业重点：具身智能竞争正从单点模型转向数据采集、部署、回流、再训练的系统闭环。"
+              ],
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "中文科技媒体报道，适合作为国内具身智能热点与方向线索；模型真实能力仍需回到论文、项目页、GitHub/Hugging Face 与第三方评测。",
+              "region": "CN",
+              "image_url": "https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png",
+              "image": {
+                "src": "https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png",
+                "alt": "τ0-WM：最大规模预训练的开源具身世界模型来了 原始来源图片",
+                "origin": "source"
+              }
             }
           ],
+          "news_selection_policy": "月报新闻热点按价值密度动态裁剪：综合发布时间、来源可信度、是否一手来源、是否含原始图片、是否影响 AI/产品/政策/市场/MEE 主题、以及中英文区域覆盖，最终选择 15 条；不使用固定 12 篇模板。",
           "watch_points": [
             "外部新闻源覆盖：25 条，Reuters、Bloomberg、FT、WSJ、CNBC。",
             "AI 官方与研究源覆盖：7 条，arXiv、Hugging Face、OpenAI、Anthropic、DeepMind。",
@@ -4962,36 +5432,65 @@
             "产品",
             "新闻"
           ],
-          "boundary": "官方一手公告，可用于确认产品能力与发布事实；具体评测表现和生产采用仍需结合系统卡、实际测试和成本约束。"
-        },
-        {
-          "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
-          "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/",
-          "source_name": "Google AI blog feed",
-          "source_id": "google-ai-blog-rss",
-          "source_group": "news",
-          "source_type": "commentary",
-          "trust_tier": "P0",
-          "published_at": "2026-05-29",
-          "summary": "Google 用 AI Studio 快速生成 I/O 2026 主题互动内容，说明官方正在把“用 AI 生成小型应用/互动页面”包装成面向普通开发者和内容团队的可感知能力。",
-          "key_points": [
-            "事实重点：Google AI Studio 被用于快速生成 I/O 主题互动体验。",
-            "观察重点：低门槛应用生成正在成为开发者工具的传播样板。",
-            "可借鉴点：报告站点、互动问答和轻应用可以作为高频内容表达形态。"
+          "boundary": "官方一手公告，可用于确认产品能力与发布事实；具体评测表现和生产采用仍需结合系统卡、实际测试和成本约束。",
+          "region": "global",
+          "benchmark_highlights": [
+            "SWE-Bench Pro：Opus 4.8 为 69.2%，高于 Opus 4.7 的 64.3%、GPT-5.5 的 58.6%、Gemini 3.1 Pro 的 54.2%。",
+            "Terminal-Bench 2.1：Opus 4.8 为 74.6%，高于 Opus 4.7 的 66.1% 和 Gemini 3.1 Pro 的 70.3%，但低于 GPT-5.5 的 78.2%。",
+            "OSWorld-Verified：Opus 4.8 为 83.4%，高于 Opus 4.7 的 82.8%、GPT-5.5 的 78.7%、Gemini 3.1 Pro 的 76.2%。",
+            "Finance Agent v2：Opus 4.8 为 53.9%，高于 Opus 4.7 的 51.5%、GPT-5.5 的 51.8%、Gemini 3.1 Pro 的 43.0%。"
           ],
-          "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOQuiz2026_social.max-600x600.format-webp.webp",
-          "image": {
-            "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOQuiz2026_social.max-600x600.format-webp.webp",
-            "alt": "Take our I/O 2026 quiz, vibe coded in Google AI Studio. 原始来源图片",
-            "origin": "source"
-          },
-          "related_themes": [
-            "MEE",
-            "个人",
-            "产品",
-            "新闻"
-          ],
-          "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
+          "benchmark_table": [
+            {
+              "metric": "Agentic coding / SWE-Bench Pro",
+              "opus_48": "69.2%",
+              "opus_47": "64.3%",
+              "gpt_55": "58.6%",
+              "gemini_31": "54.2%"
+            },
+            {
+              "metric": "Agentic terminal coding / Terminal-Bench 2.1",
+              "opus_48": "74.6%",
+              "opus_47": "66.1%",
+              "gpt_55": "78.2%",
+              "gemini_31": "70.3%"
+            },
+            {
+              "metric": "Multidisciplinary reasoning / HLE no tools",
+              "opus_48": "49.8%",
+              "opus_47": "46.9%",
+              "gpt_55": "41.4%",
+              "gemini_31": "44.7%"
+            },
+            {
+              "metric": "Multidisciplinary reasoning / HLE with tools",
+              "opus_48": "57.9%",
+              "opus_47": "54.7%",
+              "gpt_55": "52.2%",
+              "gemini_31": "51.4%"
+            },
+            {
+              "metric": "Agentic computer use / OSWorld-Verified",
+              "opus_48": "83.4%",
+              "opus_47": "82.8%",
+              "gpt_55": "78.7%",
+              "gemini_31": "76.2%"
+            },
+            {
+              "metric": "Knowledge work / GDPval-AA",
+              "opus_48": "1890",
+              "opus_47": "1753",
+              "gpt_55": "1769",
+              "gemini_31": "1314"
+            },
+            {
+              "metric": "Agentic financial analysis / Finance Agent v2",
+              "opus_48": "53.9%",
+              "opus_47": "51.5%",
+              "gpt_55": "51.8%",
+              "gemini_31": "43.0%"
+            }
+          ]
         },
         {
           "title": "9 demos of Gemini Omni and Gemini 3.5 in action",
@@ -5008,6 +5507,8 @@
             "观察重点：多模态能力正在从演示走向应用场景与开发者材料。",
             "后续需要回读官方 demo，区分可用能力、概念展示和区域/权限限制。"
           ],
+          "benchmark_highlights": [],
+          "benchmark_table": [],
           "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Omni_and_Gemini_3.5_hero.max-600x600.format-webp.webp",
           "image": {
             "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Omni_and_Gemini_3.5_hero.max-600x600.format-webp.webp",
@@ -5020,7 +5521,8 @@
             "产品",
             "新闻"
           ],
-          "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
+          "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。",
+          "region": "global"
         },
         {
           "title": "Check out real-life AI prototypes from the Futures Lab.",
@@ -5037,6 +5539,8 @@
             "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
             "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
           ],
+          "benchmark_highlights": [],
+          "benchmark_table": [],
           "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FutureLabs_social.max-600x600.format-webp.webp",
           "image": {
             "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FutureLabs_social.max-600x600.format-webp.webp",
@@ -5049,7 +5553,8 @@
             "产品",
             "新闻"
           ],
-          "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
+          "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。",
+          "region": "global"
         },
         {
           "title": "Profiling in PyTorch (Part 1): A Beginner&apos;s Guide to torch.profiler",
@@ -5066,6 +5571,8 @@
             "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
             "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
           ],
+          "benchmark_highlights": [],
+          "benchmark_table": [],
           "image_url": "https://huggingface.co/blog/assets/torch-profiler/thumbnail.png",
           "image": {
             "src": "https://huggingface.co/blog/assets/torch-profiler/thumbnail.png",
@@ -5078,7 +5585,8 @@
             "产品",
             "新闻"
           ],
-          "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+          "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+          "region": "global"
         },
         {
           "title": "Catch up on 12 major I/O 2026 moments",
@@ -5095,6 +5603,8 @@
             "观察重点：多模态能力正在从演示走向应用场景与开发者材料。",
             "后续需要回读官方 demo，区分可用能力、概念展示和区域/权限限制。"
           ],
+          "benchmark_highlights": [],
+          "benchmark_table": [],
           "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_KNH.max-600x600.format-webp.webp",
           "image": {
             "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/KW_KNH.max-600x600.format-webp.webp",
@@ -5107,7 +5617,8 @@
             "产品",
             "新闻"
           ],
-          "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
+          "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。",
+          "region": "global"
         },
         {
           "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
@@ -5124,6 +5635,8 @@
             "边界重点：前沿模型低于 50% 的成绩说明工具、权限、状态和流程仍是主要难点。",
             "产品重点：企业 Agent 产品需要把可观测、回滚、审批和验证做成一等能力。"
           ],
+          "benchmark_highlights": [],
+          "benchmark_table": [],
           "image_url": "https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/QzGxABeEDggNYzvgSLQqU.png",
           "image": {
             "src": "https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/QzGxABeEDggNYzvgSLQqU.png",
@@ -5136,7 +5649,8 @@
             "产品",
             "新闻"
           ],
-          "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+          "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+          "region": "global"
         },
         {
           "title": "Harness, Scaffold, and the AI Agent Terms Worth Getting Right",
@@ -5153,6 +5667,8 @@
             "判断重点：Harness、Scaffold、Runtime、Eval 不应混用。",
             "沉淀重点：MEE 的 Skill、Capsule、solidify 和 source index 需要保持清晰边界。"
           ],
+          "benchmark_highlights": [],
+          "benchmark_table": [],
           "image_url": "https://huggingface.co/blog/assets/agent-glossary/thumbnail.png",
           "image": {
             "src": "https://huggingface.co/blog/assets/agent-glossary/thumbnail.png",
@@ -5165,27 +5681,59 @@
             "产品",
             "新闻"
           ],
-          "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+          "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+          "region": "global"
         },
         {
-          "title": "Catch up on the Dialogues stage at Google I/O 2026.",
-          "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-dialogues-recap/",
+          "title": "36Kr：Anthropic 高估值与算力投入引发新一轮 AI 创企商业化讨论",
+          "url": "https://eu.36kr.com/zh/p/3829988427409033",
+          "source_name": "36Kr",
+          "source_id": "36kr-anthropic-valuation-2026-05",
+          "source_group": "news",
+          "source_type": "media-news",
+          "trust_tier": "P2",
+          "published_at": "2026-05-29",
+          "summary": "36Kr 中文报道 Anthropic H 轮融资和估值变化，并把讨论延伸到算力投入、企业 API 收入、竞争加剧与合规成本。它不是一手融资公告，但能反映国内科技媒体如何解读前沿模型公司的资本、算力和商业化压力。",
+          "key_points": [
+            "事实重点：报道围绕 Anthropic 融资、估值、企业 API 收入和算力投入展开。",
+            "商业重点：高估值背后是企业级 API、算力基础设施和合作伙伴生态的竞争。",
+            "边界重点：该条应作为市场叙事与中文语境观察，不替代官方融资公告或财务资料。"
+          ],
+          "related_themes": [
+            "个人",
+            "产品",
+            "新闻"
+          ],
+          "boundary": "中文媒体二次报道，适合观察市场叙事；估值、融资和财务数据需要回到原始公告或权威财经来源交叉验证。",
+          "region": "CN",
+          "image_url": "https://img.36krcdn.com/hsossms/20260529/v2_2ce0a731b09f4d1b971509be9ce30661@46958@ai_oswg1106577oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+          "image": {
+            "src": "https://img.36krcdn.com/hsossms/20260529/v2_2ce0a731b09f4d1b971509be9ce30661@46958@ai_oswg1106577oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg",
+            "alt": "36Kr：Anthropic 高估值与算力投入引发新一轮 AI 创企商业化讨论 原始来源图片",
+            "origin": "source"
+          }
+        },
+        {
+          "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/",
           "source_name": "Google AI blog feed",
           "source_id": "google-ai-blog-rss",
           "source_group": "news",
           "source_type": "commentary",
           "trust_tier": "P0",
-          "published_at": "2026-05-22",
-          "summary": "A recap of the 2026 I/O Dialogues, where leaders discuss the future of AI, quantum computing, robotics and creativity.",
+          "published_at": "2026-05-29",
+          "summary": "Google 用 AI Studio 快速生成 I/O 2026 主题互动内容，说明官方正在把“用 AI 生成小型应用/互动页面”包装成面向普通开发者和内容团队的可感知能力。",
           "key_points": [
-            "事实重点：优先确认发布时间、原始来源和新闻主体。",
-            "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
-            "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
+            "事实重点：Google AI Studio 被用于快速生成 I/O 主题互动体验。",
+            "观察重点：低门槛应用生成正在成为开发者工具的传播样板。",
+            "可借鉴点：报告站点、互动问答和轻应用可以作为高频内容表达形态。"
           ],
-          "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IO26_Dialogues_3z680sK.max-600x600.format-webp.webp",
+          "benchmark_highlights": [],
+          "benchmark_table": [],
+          "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOQuiz2026_social.max-600x600.format-webp.webp",
           "image": {
-            "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IO26_Dialogues_3z680sK.max-600x600.format-webp.webp",
-            "alt": "Catch up on the Dialogues stage at Google I/O 2026. 原始来源图片",
+            "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/IOQuiz2026_social.max-600x600.format-webp.webp",
+            "alt": "Take our I/O 2026 quiz, vibe coded in Google AI Studio. 原始来源图片",
             "origin": "source"
           },
           "related_themes": [
@@ -5194,36 +5742,8 @@
             "产品",
             "新闻"
           ],
-          "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
-        },
-        {
-          "title": "We’re announcing new community investments in Missouri.",
-          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/missouri-programs/",
-          "source_name": "Google AI blog feed",
-          "source_id": "google-ai-blog-rss",
-          "source_group": "news",
-          "source_type": "commentary",
-          "trust_tier": "P0",
-          "published_at": "2026-05-20",
-          "summary": "We’re helping build the state’s next-generation workforce and investing in energy programs.",
-          "key_points": [
-            "事实重点：优先确认发布时间、原始来源和新闻主体。",
-            "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
-            "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
-          ],
-          "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/MissouriSocial.max-600x600.format-webp.webp",
-          "image": {
-            "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/MissouriSocial.max-600x600.format-webp.webp",
-            "alt": "We’re announcing new community investments in Missouri. 原始来源图片",
-            "origin": "source"
-          },
-          "related_themes": [
-            "MEE",
-            "个人",
-            "产品",
-            "新闻"
-          ],
-          "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
+          "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。",
+          "region": "global"
         },
         {
           "title": "Reachy Mini goes fully local",
@@ -5240,6 +5760,8 @@
             "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
             "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
           ],
+          "benchmark_highlights": [],
+          "benchmark_table": [],
           "image_url": "https://huggingface.co/blog/assets/local-reachy-mini-conversation/thumbnail.png",
           "image": {
             "src": "https://huggingface.co/blog/assets/local-reachy-mini-conversation/thumbnail.png",
@@ -5252,7 +5774,8 @@
             "产品",
             "新闻"
           ],
-          "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+          "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+          "region": "global"
         },
         {
           "title": "Shipping a Trillion Parameters With a Hub Bucket: Delta Weight Sync in TRL",
@@ -5269,6 +5792,8 @@
             "摘要重点：提取它改变了哪些能力、产品、市场或政策条件。",
             "可信边界：高影响判断仍需回到官方材料或多源交叉验证。"
           ],
+          "benchmark_highlights": [],
+          "benchmark_table": [],
           "image_url": "https://huggingface.co/blog/assets/delta-weight-sync/thumbnail.png",
           "image": {
             "src": "https://huggingface.co/blog/assets/delta-weight-sync/thumbnail.png",
@@ -5281,9 +5806,100 @@
             "产品",
             "新闻"
           ],
-          "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+          "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+          "region": "global"
+        },
+        {
+          "title": "中国石油昆仑大模型迭代升级，覆盖全产业链 152 个应用场景",
+          "url": "https://www.news.cn/energy/20260528/a011f484a0b442b587a94aca84a60d2b/c.html",
+          "source_name": "新华社",
+          "source_id": "xinhua-kunlun-model-2026-05-28",
+          "source_group": "news",
+          "source_type": "official-media-news",
+          "trust_tier": "P1",
+          "published_at": "2026-05-28",
+          "summary": "新华社报道，中国石油昆仑大模型发布迭代升级成果：六大 AI 高阶能力、全产业链 152 个应用场景规模化落地，并从通用问答转向主动智能、从试点试用转向全产业链覆盖。新闻价值在于它是国内产业大模型从展示走向生产系统的一手行业样本。",
+          "key_points": [
+            "事实重点：昆仑大模型覆盖能源化工全产业链 152 个应用场景。",
+            "能力重点：报道强调从“被动问答”到“主动干活”，对应企业 Agent 从聊天入口走向业务执行。",
+            "产业重点：能源行业的大模型落地样本可用于观察国内 B2B AI 的采购、部署和组织路径。"
+          ],
+          "related_themes": [
+            "MEE",
+            "个人",
+            "产品",
+            "新闻"
+          ],
+          "boundary": "新华社公开报道，可用于确认产业落地事实；具体效果、ROI 和内部使用质量仍需企业案例或一线数据验证。",
+          "region": "CN",
+          "image_url": "https://www.news.cn/detail2020/images/ewm.png",
+          "image": {
+            "src": "https://www.news.cn/detail2020/images/ewm.png",
+            "alt": "中国石油昆仑大模型迭代升级，覆盖全产业链 152 个应用场景 原始来源图片",
+            "origin": "source"
+          }
+        },
+        {
+          "title": "摩尔线程从全功能 GPU 到 Agent 全场景落地",
+          "url": "https://www.leiphone.com/category/chips/HjyAOXhxHNvIRMKN.html",
+          "source_name": "雷峰网",
+          "source_id": "leiphone-moore-threads-agent-2026-05-26",
+          "source_group": "news",
+          "source_type": "media-news",
+          "trust_tier": "P2",
+          "published_at": "2026-05-26",
+          "summary": "雷峰网报道摩尔线程从国产 GPU、AI Agent 到具身智能的全场景布局，并提及国内 Token 消耗、AI 智能体普及目标、可视化测评系统和物理 AI 版图。它的价值在于呈现国内算力、终端、Agent 应用与政策叙事正在合流。",
+          "key_points": [
+            "事实重点：报道围绕国产 GPU、Agent、终端生态和具身智能展开，不是单一芯片发布。",
+            "数据重点：文章提及国内高频应用 Token 消耗、AI 智能体规模预测和普及目标。",
+            "观察重点：国内 AI 基础设施叙事正在从算力单点转为算力、软件栈、Agent 场景和测评体系的一体化输出。"
+          ],
+          "related_themes": [
+            "MEE",
+            "产品",
+            "新闻"
+          ],
+          "boundary": "媒体报道可用于产业热点摘要；企业披露数据、测评结论和市场规模预测需结合官方材料、IDC 原文或第三方验证。",
+          "region": "CN",
+          "image_url": "https://www.leiphone.com/resWeb/images/common/logo-v2.png?v1",
+          "image": {
+            "src": "https://www.leiphone.com/resWeb/images/common/logo-v2.png?v1",
+            "alt": "摩尔线程从全功能 GPU 到 Agent 全场景落地 原始来源图片",
+            "origin": "source"
+          }
+        },
+        {
+          "title": "τ0-WM：最大规模预训练的开源具身世界模型来了",
+          "url": "https://www.qbitai.com/2026/05/426832.html",
+          "source_name": "量子位",
+          "source_id": "qbitai-tau0-wm-2026-05-31",
+          "source_group": "news",
+          "source_type": "media-news",
+          "trust_tier": "P2",
+          "published_at": "2026-05-31",
+          "summary": "量子位报道开源具身世界模型 τ0-WM：重点不是又一个机器人模型，而是具身智能数据路线发生变化，真机遥操作数据、Ego-Centric 第一视角数据、仿真数据和互联网视频正在重新组合成真实世界数据飞轮。该新闻适合观察国内具身智能从演示走向可规模化训练与部署的路径。",
+          "key_points": [
+            "事实重点：τ0-WM 关注动作之后的未来世界变化，而不只是动作空间内部一致性。",
+            "数据重点：报道强调 17800 小时真机遥操作数据进入预训练打底，真机数据从后训练耗材变成预训练燃料。",
+            "行业重点：具身智能竞争正从单点模型转向数据采集、部署、回流、再训练的系统闭环。"
+          ],
+          "related_themes": [
+            "MEE",
+            "个人",
+            "产品",
+            "新闻"
+          ],
+          "boundary": "中文科技媒体报道，适合作为国内具身智能热点与方向线索；模型真实能力仍需回到论文、项目页、GitHub/Hugging Face 与第三方评测。",
+          "region": "CN",
+          "image_url": "https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png",
+          "image": {
+            "src": "https://www.qbitai.com/wp-content/uploads/imgs/qbitai-logo-1.png",
+            "alt": "τ0-WM：最大规模预训练的开源具身世界模型来了 原始来源图片",
+            "origin": "source"
+          }
         }
       ],
+      "news_selection_policy": "日报新闻热点按价值密度动态裁剪：综合发布时间、来源可信度、是否一手来源、是否含原始图片、是否影响 AI/产品/政策/市场/MEE 主题、以及中英文区域覆盖，最终选择 14 条；不使用固定 12 篇模板。",
       "watch_points": [
         "外部新闻源覆盖：25 条，Reuters、Bloomberg、FT、WSJ、CNBC。",
         "AI 官方与研究源覆盖：7 条，arXiv、Hugging Face、OpenAI、Anthropic、DeepMind。",

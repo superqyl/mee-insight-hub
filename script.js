@@ -233,6 +233,35 @@
         points.append(list(item.key_points));
         card.append(points);
       }
+      if (item.benchmark_highlights && item.benchmark_highlights.length) {
+        const benchmark = el("div", "news-benchmark");
+        benchmark.append(el("strong", "", "关键指标"));
+        benchmark.append(list(item.benchmark_highlights));
+        if (item.benchmark_table && item.benchmark_table.length) {
+          const tableWrap = el("div", "benchmark-table-wrap");
+          const table = document.createElement("table");
+          table.className = "benchmark-table";
+          const thead = document.createElement("thead");
+          const headRow = document.createElement("tr");
+          ["指标", "Opus 4.8", "Opus 4.7", "GPT-5.5", "Gemini 3.1 Pro"].forEach((label) => headRow.append(el("th", "", label)));
+          thead.append(headRow);
+          table.append(thead);
+          const tbody = document.createElement("tbody");
+          item.benchmark_table.forEach((row) => {
+            const tr = document.createElement("tr");
+            tr.append(el("td", "", row.metric || ""));
+            tr.append(el("td", "", row.opus_48 || ""));
+            tr.append(el("td", "", row.opus_47 || ""));
+            tr.append(el("td", "", row.gpt_55 || ""));
+            tr.append(el("td", "", row.gemini_31 || ""));
+            tbody.append(tr);
+          });
+          table.append(tbody);
+          tableWrap.append(table);
+          benchmark.append(tableWrap);
+        }
+        card.append(benchmark);
+      }
       const meta = el("div", "meta-row");
       [item.source_group, item.source_type, item.trust_tier].filter(Boolean).forEach((value) => meta.append(el("span", "", value)));
       if ((item.related_themes || []).length) meta.append(el("span", "", `关联：${item.related_themes.join(" / ")}`));
