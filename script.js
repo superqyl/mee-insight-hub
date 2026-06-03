@@ -233,6 +233,12 @@
         points.append(list(item.key_points));
         card.append(points);
       }
+      if (item.detail_highlights && item.detail_highlights.length) {
+        const details = el("div", "news-detail-highlights");
+        details.append(el("strong", "", "关键细节"));
+        details.append(list(item.detail_highlights));
+        card.append(details);
+      }
       if (item.benchmark_highlights && item.benchmark_highlights.length) {
         const benchmark = el("div", "news-benchmark");
         benchmark.append(el("strong", "", "关键指标"));

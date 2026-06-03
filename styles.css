@@ -160,6 +160,17 @@ h1, h2, h3, h4, a, p { overflow-wrap: anywhere; }
 .news-key-points strong { display: block; margin-bottom: 6px; color: var(--ink); }
 .news-key-points ul { margin: 0; padding-left: 18px; color: #44536b; }
 .news-key-points li { margin: 5px 0; }
+.news-detail-highlights {
+  margin-top: 12px;
+  padding: 12px 14px;
+  background: #f7fbf8;
+  border: 1px solid #cfebe3;
+  border-left: 3px solid var(--teal);
+  border-radius: 8px;
+}
+.news-detail-highlights strong { display: block; margin-bottom: 6px; color: var(--ink); }
+.news-detail-highlights ul { margin: 0; padding-left: 18px; color: #44536b; }
+.news-detail-highlights li { margin: 5px 0; }
 .news-benchmark {
   margin-top: 12px;
   padding: 12px 14px;
