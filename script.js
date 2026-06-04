@@ -203,8 +203,29 @@
     const wrapper = el("article", "report-body fact-summary-report");
     wrapper.appendChild(renderReportIntro(report));
 
+    const insights = report.news_insights || report.key_insights || [];
+    if (insights.length) {
+      const insightSection = el("section", "fact-summary-section news-insight-section");
+      insightSection.append(el("h4", "", "1. 关键洞察"));
+      const insightList = el("div", "news-insight-list");
+      insights.forEach((insight) => {
+        const card = el("article", "news-insight-card");
+        card.append(el("h5", "", insight.title || "当期关键洞察"));
+        if (insight.summary) card.append(el("p", "", insight.summary));
+        if (insight.supporting_items && insight.supporting_items.length) {
+          const support = el("div", "news-supporting-items");
+          support.append(el("strong", "", "相关热点"));
+          support.append(list(insight.supporting_items));
+          card.append(support);
+        }
+        insightList.append(card);
+      });
+      insightSection.append(insightList);
+      wrapper.append(insightSection);
+    }
+
     const itemsSection = el("section", "fact-summary-section");
-    itemsSection.append(el("h4", "", "1. 热点摘要"));
+    itemsSection.append(el("h4", "", `${insights.length ? "2" : "1"}. 热点新闻`));
     const grid = el("div", "news-digest-grid");
     (report.news_items || []).forEach((item, index) => {
       const card = el("article", "news-digest-card");
@@ -226,18 +247,15 @@
       card.append(el("h5", "", item.title || "未命名热点"));
       const newsMeta = [item.source_name, item.published_at && item.published_at !== "unknown" ? item.published_at : ""].filter(Boolean).join(" · ");
       if (newsMeta) card.append(el("p", "news-meta", newsMeta));
-      if (item.summary) card.append(el("p", "", item.summary));
-      if (item.key_points && item.key_points.length) {
-        const points = el("div", "news-key-points");
-        points.append(el("strong", "", "重点信息"));
-        points.append(list(item.key_points));
-        card.append(points);
-      }
-      if (item.detail_highlights && item.detail_highlights.length) {
-        const details = el("div", "news-detail-highlights");
-        details.append(el("strong", "", "关键细节"));
-        details.append(list(item.detail_highlights));
-        card.append(details);
+      const brief = item.news_brief || {};
+      const lead = brief.lead || item.summary || "";
+      if (lead) card.append(el("p", "news-lead", lead));
+      const briefBullets = brief.bullets || item.key_points || [];
+      if (briefBullets.length) {
+        const briefBlock = el("div", "news-brief");
+        briefBlock.append(el("strong", "", brief.label || "新闻要点"));
+        briefBlock.append(list(briefBullets));
+        card.append(briefBlock);
       }
       if (item.benchmark_highlights && item.benchmark_highlights.length) {
         const benchmark = el("div", "news-benchmark");
@@ -272,7 +290,8 @@
       [item.source_group, item.source_type, item.trust_tier].filter(Boolean).forEach((value) => meta.append(el("span", "", value)));
       if ((item.related_themes || []).length) meta.append(el("span", "", `关联：${item.related_themes.join(" / ")}`));
       if (meta.childNodes.length) card.append(meta);
-      if (item.boundary) card.append(el("p", "news-boundary", item.boundary));
+      const sourceNote = brief.source_note || item.boundary || "";
+      if (sourceNote) card.append(el("p", "news-boundary", sourceNote));
       if (item.url) {
         const link = document.createElement("a");
         link.className = "news-link";
@@ -289,13 +308,8 @@
     itemsSection.append(grid);
     wrapper.append(itemsSection);
 
-    const watchSection = el("section", "fact-summary-section");
-    watchSection.append(el("h4", "", "2. 观察重点"));
-    watchSection.append(list(report.watch_points || []));
-    wrapper.append(watchSection);
-
     const sourceSection = el("section", "fact-summary-section source-summary-block");
-    sourceSection.append(el("h4", "", "3. 参考数据来源"));
+    sourceSection.append(el("h4", "", `${insights.length ? "3" : "2"}. 参考数据来源`));
     sourceSection.append(list(report.source_summary || []));
     if (report.references && report.references.length) {
       sourceSection.append(el("strong", "source-reference-title", "公开参考资料"));
