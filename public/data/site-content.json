@@ -1,14 +1,14 @@
 {
   "meta": {
     "site_name": "MEE Insight Hub",
-    "generated_at": "2026-06-04T05:52:48.178Z",
+    "generated_at": "2026-06-05T23:38:56.652Z",
     "cadence": "daily",
     "period": {
       "cadence": "daily",
-      "from": "2026-06-02",
-      "to": "2026-06-02",
-      "label": "2026-06-02",
-      "display": "日报 2026-06-02"
+      "from": "2026-06-05",
+      "to": "2026-06-05",
+      "label": "2026-06-05",
+      "display": "日报 2026-06-05"
     },
     "primary_url": "https://superqyl.github.io/mee-insight-hub/",
     "default_publish_backend": "github-pages",
@@ -78,7 +78,7 @@
     {
       "id": "daily",
       "label": "日报",
-      "title": "日报 2026-06-02",
+      "title": "日报 2026-06-05",
       "summary": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。",
       "reports": [
         {
@@ -96,156 +96,59 @@
             ]
           },
           "label": "新闻热点",
-          "title": "新闻热点摘要（日报 2026-06-02）",
+          "title": "新闻热点摘要（日报 2026-06-05）",
           "kicker": "日报 / 事实摘要与外部变化",
           "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告先呈现当期公开世界发生了什么、这些热点共同指向哪些外部变化、以及每条新闻的事实边界；不把新闻摘要伪装成行动建议。",
           "news_insights": [
             {
-              "title": "AI 热点正在从模型发布转向执行形态",
-              "summary": "当期热点不只在讲模型名称或分数，而是在反复出现工作流编排、本地执行、多模态交互和设备入口。读者应把这些新闻看成“AI 能力如何落到真实任务”的事实信号。",
-              "supporting_items": [
-                "Holo3.1: Fast & Local Computer Use Agents",
-                "Microsoft teases new era of AI-driven devices at annual developer conference - Reuters"
-              ]
-            },
-            {
               "title": "安全、治理和公共部署正在进入发布主叙事",
               "summary": "政府牵头测试、模型公司公共项目和安全叙事开始与产品发布并列出现。新闻摘要应保留事实边界，但这些信号已经足以提示后续产品和 MEE 治理需要更重视验证、权限和责任链。",
               "supporting_items": [
-                "Trump administration to ask US AI firms to voluntarily submit models for cybersecurity tests - Reuters",
-                "Jun 2, 2026 Announcements Expanding Project Glasswing"
+                "US says it will speed development and use of AI for national security - Reuters"
+              ]
+            },
+            {
+              "title": "AI 基础设施已从技术背景变成市场与宏观变量",
+              "summary": "基础设施合同、硬件股价、数据中心和通胀讨论说明 AI 不再只是模型层竞争，也在改变资本开支、能源、网络互联和企业采购节奏。",
+              "supporting_items": [
+                "Thousand Token Wood: shipping a multi-agent economy on a 3B model"
+              ]
+            },
+            {
+              "title": "国内热点更强调行业场景、国产基础设施和规模化落地",
+              "summary": "国内来源的价值不只是补齐地域覆盖，而是提供行业级应用、国产软硬件栈和组织落地样本，可作为产品机会和 MEE 本体进化的独立证据层。",
+              "supporting_items": [
+                "Thousand Token Wood: shipping a multi-agent economy on a 3B model"
               ]
             }
           ],
           "news_items": [
             {
-              "title": "Holo3.1: Fast & Local Computer Use Agents",
-              "url": "https://huggingface.co/blog/Hcompany/holo31",
-              "source_name": "Hugging Face blog feed",
-              "source_id": "huggingface-blog-rss",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P1",
-              "published_at": "2026-06-02",
-              "summary": "H Company 在 Hugging Face 发布 Holo3.1，重点指向 fast、local 与 computer-use agent；该新闻适合观察本地化 Agent 在低延迟、隐私边界和屏幕动作执行上的产品化可能。",
-              "key_points": [
-                "新闻事实：H Company 在 Hugging Face 发布 Holo3.1，主张 fast、local 与 computer-use agent。",
-                "能力重点：本地化 computer-use agent 的核心价值在低延迟、隐私边界、屏幕理解和本机动作执行。",
-                "验证边界：进入产品判断前需要回读模型/代码许可、demo 约束和真实复现路径。"
-              ],
-              "detail_highlights": [
-                "事实层：该来源强调 fast、local 与 computer-use agent，说明端侧或本地化执行仍是 Agent 生态的重要分支。",
-                "能力层：如果它能把屏幕理解、动作执行和本地权限收口，价值会落在低延迟、隐私边界和自动化可靠性上。",
-                "验证层：应优先查看 README、模型/代码许可、demo 约束和真实可复现路径，避免只因“local agent”标题就进入产品判断。"
-              ],
-              "benchmark_highlights": [],
-              "benchmark_table": [],
-              "image_url": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/Hcompany/holo31.png",
-              "image": {
-                "src": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/Hcompany/holo31.png",
-                "alt": "Holo3.1: Fast & Local Computer Use Agents 原始来源图片",
-                "origin": "source"
-              },
-              "image_quality": {
-                "decision": "accepted"
-              },
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
-              "region": "global",
-              "news_brief": {
-                "label": "新闻要点",
-                "lead": "H Company 在 Hugging Face 发布 Holo3.1，重点指向 fast、local 与 computer-use agent；该新闻适合观察本地化 Agent 在低延迟、隐私边界和屏幕动作执行上的产品化可能。",
-                "bullets": [
-                  "H Company 在 Hugging Face 发布 Holo3.1，主张 fast、local 与 computer-use agent。",
-                  "本地化 computer-use agent 的核心价值在低延迟、隐私边界、屏幕理解和本机动作执行。",
-                  "进入产品判断前需要回读模型/代码许可、demo 约束和真实复现路径。",
-                  "该来源强调 fast、local 与 computer-use agent，说明端侧或本地化执行仍是 Agent 生态的重要分支。",
-                  "如果它能把屏幕理解、动作执行和本地权限收口，价值会落在低延迟、隐私边界和自动化可靠性上。"
-                ],
-                "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
-              }
-            },
-            {
-              "title": "Trump administration to ask US AI firms to voluntarily submit models for cybersecurity tests - Reuters",
-              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUVpoMXdGZFYyY3laSUs1ZWVEdFpWS0NHM01qbV8xSzJjVlpLQk5tQkh6djN6MXU4cVFKNjFXUnZMdWhXaUNhS1BRQnhhTldTaW5QLTBVbXNTR3BQSWFYLUFzT0xjb3dVbzlzbVk5bndJaVJXSnNycURmdVRlcFdaYUVieUNoSENnV1ZDWFpoZWFJamx5NkFDaWhpVUJISmQwbFptTDQxdWNabEhOcXhsSmwxU0hoak5M?oc=5",
-              "source_name": "Reuters AI and technology news surfaced through Google News RSS",
-              "source_id": "reuters-ai-tech-rss",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P1",
-              "published_at": "2026-06-02",
-              "summary": "Reuters 标题显示，特朗普政府计划要求美国 AI 公司自愿提交模型接受网络安全测试；该事件的重点是模型安全评估从企业自测进入政府牵头验证语境。",
-              "key_points": [
-                "新闻事实：Reuters 标题显示，美国政府准备要求美国 AI 公司自愿提交模型接受网络安全测试。",
-                "政策变化：模型安全评估正在从企业自测和自愿披露，扩展到政府牵头的测试与审查语境。",
-                "可信边界：当前站点只拿到聚合标题与摘要入口，需回读 Reuters 原文确认参与公司、测试机构和时间表。"
-              ],
-              "detail_highlights": [
-                "事件主体：Reuters 标题指向美国政府与美国 AI 公司之间的自愿模型提交和网络安全测试安排。",
-                "变化重点：安全测试从企业内部红队、第三方测评和自愿披露，进一步靠近政府牵头的验证框架。",
-                "后续核验：需要回读 Reuters 正文确认测试机构、参与范围、是否覆盖前沿模型和是否会演变为强制性要求。"
-              ],
-              "benchmark_highlights": [],
-              "benchmark_table": [],
-              "image_url": "",
-              "image": null,
-              "image_quality": {
-                "decision": "suppressed",
-                "reason": "source image is a Google News aggregator thumbnail, not an article-specific image",
-                "rejected_src": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-              },
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
-              "region": "global",
-              "news_brief": {
-                "label": "新闻要点",
-                "lead": "Reuters 标题显示，特朗普政府计划要求美国 AI 公司自愿提交模型接受网络安全测试；该事件的重点是模型安全评估从企业自测进入政府牵头验证语境。",
-                "bullets": [
-                  "Reuters 标题显示，美国政府准备要求美国 AI 公司自愿提交模型接受网络安全测试。",
-                  "模型安全评估正在从企业自测和自愿披露，扩展到政府牵头的测试与审查语境。",
-                  "当前站点只拿到聚合标题与摘要入口，需回读 Reuters 原文确认参与公司、测试机构和时间表。",
-                  "Reuters 标题指向美国政府与美国 AI 公司之间的自愿模型提交和网络安全测试安排。",
-                  "变化重点：安全测试从企业内部红队、第三方测评和自愿披露，进一步靠近政府牵头的验证框架。"
-                ],
-                "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
-              }
-            },
-            {
-              "title": "Jun 2, 2026 Announcements Expanding Project Glasswing",
-              "url": "https://www.anthropic.com/news/expanding-project-glasswing",
-              "source_name": "Anthropic official newsroom",
-              "source_id": "anthropic-news-page",
+              "title": "The latest AI news we announced in May 2026",
+              "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-may-2026/",
+              "source_name": "Google AI blog feed",
+              "source_id": "google-ai-blog-rss",
               "source_group": "news",
               "source_type": "commentary",
               "trust_tier": "P0",
-              "published_at": "unknown",
-              "summary": "Anthropic 扩展 Project Glasswing，覆盖教育、非营利、研究和社会影响场景；该新闻的重点是模型公司开始把安全、教育使用和公共利益部署作为产品发布之外的长期工程。",
+              "published_at": "2026-06-05",
+              "summary": "Here are Google’s latest AI updates from May 2026",
               "key_points": [
-                "新闻事实：Anthropic 扩展 Project Glasswing，聚焦教育、非营利、研究和社会影响场景。",
-                "治理变化：模型公司正在把安全、教育使用和社会部署项目作为产品发布之外的公共叙事。",
-                "可信边界：适合作为 AI 治理和部署边界线索，实际效果需看项目参与方、产出和后续评估。"
+                "新闻事实：Here are Google’s latest AI updates from May 2026。",
+                "来源脉络：该条来自 公开来源，标题指向“The latest AI news we announced in May 2026”。",
+                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
               ],
               "detail_highlights": [
-                "事件主体：Anthropic 扩展 Project Glasswing，覆盖教育、非营利、研究和社会影响场景。",
-                "治理细节：模型公司正在把社会部署、安全教育和公共利益项目放到产品发布之外的长期叙事中。",
-                "后续核验：需要关注参与组织、实际资助/支持形式、项目产出和后续评估，而不是只记录项目名称。"
+                "新闻事实：Here are Google’s latest AI updates from May 2026。",
+                "来源脉络：该条来自 公开来源，标题指向“The latest AI news we announced in May 2026”。",
+                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
               ],
               "benchmark_highlights": [],
               "benchmark_table": [],
-              "image_url": "https://cdn.sanity.io/images/4zrzovbb/website/19e93d85e033d3f992b78cbce2c5a3f60709bd3b-3840x2160.jpg",
+              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/May_AI_Recap_still.max-600x600.format-webp.webp",
               "image": {
-                "src": "https://cdn.sanity.io/images/4zrzovbb/website/19e93d85e033d3f992b78cbce2c5a3f60709bd3b-3840x2160.jpg",
-                "alt": "Jun 2, 2026 Announcements Expanding Project Glasswing 原始来源图片",
+                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/May_AI_Recap_still.max-600x600.format-webp.webp",
+                "alt": "The latest AI news we announced in May 2026 原始来源图片",
                 "origin": "source"
               },
               "image_quality": {
@@ -261,36 +164,84 @@
               "region": "global",
               "news_brief": {
                 "label": "新闻要点",
-                "lead": "Anthropic 扩展 Project Glasswing，覆盖教育、非营利、研究和社会影响场景；该新闻的重点是模型公司开始把安全、教育使用和公共利益部署作为产品发布之外的长期工程。",
+                "lead": "Here are Google’s latest AI updates from May 2026",
                 "bullets": [
-                  "Anthropic 扩展 Project Glasswing，聚焦教育、非营利、研究和社会影响场景。",
-                  "模型公司正在把安全、教育使用和社会部署项目作为产品发布之外的公共叙事。",
-                  "适合作为 AI 治理和部署边界线索，实际效果需看项目参与方、产出和后续评估。",
-                  "Anthropic 扩展 Project Glasswing，覆盖教育、非营利、研究和社会影响场景。",
-                  "治理细节：模型公司正在把社会部署、安全教育和公共利益项目放到产品发布之外的长期叙事中。"
+                  "Here are Google’s latest AI updates from May 2026。",
+                  "Here are Google’s latest AI updates from May 2026"
                 ],
                 "source_note": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
               }
             },
             {
-              "title": "Microsoft teases new era of AI-driven devices at annual developer conference - Reuters",
-              "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNd2hudE1XOEVGajhxeFBhMXZBbDRYTHJieG1waXZLRG85S3lNSGFKWnVCQnNLWnd0RmNsZjBGcFoxQlhqR3l5T1A5Ni02UU42SnRZUEJ5WWJMMUJPTWdBVjV2SW5NQ0NUQ25JWURYSEVJdmFTMGlGX2M3VHpWLUs2MG5MeFh4aUJrcjk4OG16OHk3S0tUSW9JUW5jR0JrWU9HRUNJcFpqcVdxVXFmR0wwOEIyODNESk5HWUE?oc=5",
+              "title": "Thousand Token Wood: shipping a multi-agent economy on a 3B model",
+              "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim",
+              "source_name": "Hugging Face blog feed",
+              "source_id": "huggingface-blog-rss",
+              "source_group": "news",
+              "source_type": "commentary",
+              "trust_tier": "P1",
+              "published_at": "2026-06-05",
+              "summary": "公开来源 报道，Thousand Token Wood: shipping a multi-agent economy on a 3B model。",
+              "key_points": [
+                "新闻事实：公开来源 报道，Thousand Token Wood: shipping a multi-agent economy on a 3B model。",
+                "来源脉络：该条来自 公开来源，标题指向“Thousand Token Wood: shipping a multi-agent economy on a 3B model”。",
+                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+              ],
+              "detail_highlights": [
+                "产业叙事：报道把国产 GPU、Agent、终端生态和具身智能放在同一套基础设施故事里。",
+                "机会线索：国内 AI 基础设施不再只是算力供给，也在向软件栈、应用场景和测评体系延伸。",
+                "可信边界：企业披露数据和媒体总结需要结合官方文档、客户案例和第三方测试校准。"
+              ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
+              "image_url": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/build-small-hackathon/thousand-token-wood-sim.png",
+              "image": {
+                "src": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/build-small-hackathon/thousand-token-wood-sim.png",
+                "alt": "Thousand Token Wood: shipping a multi-agent economy on a 3B model 原始来源图片",
+                "origin": "source"
+              },
+              "image_quality": {
+                "decision": "accepted"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+              "region": "global",
+              "news_brief": {
+                "label": "新闻要点",
+                "lead": "公开来源 报道，Thousand Token Wood: shipping a multi-agent economy on a 3B model。",
+                "bullets": [
+                  "公开来源 报道，Thousand Token Wood: shipping a multi-agent economy on a 3B model。",
+                  "报道把国产 GPU、Agent、终端生态和具身智能放在同一套基础设施故事里。",
+                  "国内 AI 基础设施不再只是算力供给，也在向软件栈、应用场景和测评体系延伸。",
+                  "企业披露数据和媒体总结需要结合官方文档、客户案例和第三方测试校准。"
+                ],
+                "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+              }
+            },
+            {
+              "title": "Japan could end up an 'AI colony' if it falls behind, digital minister warns - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNT0tsNGx5MmtYTGNpT2RxdkU2dEcyYzU2dU5MdGpRMVhVTzhWaHRGQWx6SmpOcjIyaW1aRDlXUjI5dndobV9zdV9ocGR1bU9nTzFJYW1RaWJsb3pJelBIcG4xU0tONEYyQnhZNUtBZmxMWDBKYWJJZlhTcmgxN2JPX2lHYWI5d0wzeE5ZMWNGS2RMclk2WTRaYk44T3FWYko0Z1dnUlN0dG9sdmIxWndqZzVOS0ZLOEFmd0tHSlNPaXBfSmtmOTQ0YW1iLV8?oc=5",
               "source_name": "Reuters AI and technology news surfaced through Google News RSS",
               "source_id": "reuters-ai-tech-rss",
               "source_group": "news",
               "source_type": "commentary",
               "trust_tier": "P1",
-              "published_at": "2026-06-02",
-              "summary": "Reuters 标题显示，Microsoft 在年度开发者大会上预告 AI-driven devices 新阶段；该事件的重点是 AI 能力从软件助手继续进入设备、硬件交互和开发者生态。",
+              "published_at": "2026-06-05",
+              "summary": "Reuters 报道，Japan could end up an 'AI colony' if it falls behind, digital minister warns - Reuters。",
               "key_points": [
-                "新闻事实：Reuters 标题显示，Microsoft 在年度开发者大会上预告 AI-driven devices 新阶段。",
-                "产品变化：AI 叙事从软件助手继续进入设备形态、操作系统入口和硬件交互链路。",
-                "可信边界：应回读 Microsoft 官方 keynote、开发者文档和 Reuters 正文，区分已发布能力与战略预告。"
+                "新闻事实：Reuters 报道，Japan could end up an 'AI colony' if it falls behind, digital minister warns - Reuters。",
+                "来源脉络：该条来自 Reuters，标题指向“Japan could end up an 'AI colony' if it falls behind, digital minister warns - Reuters”。",
+                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
               ],
               "detail_highlights": [
-                "事件主体：Microsoft 在年度开发者大会语境中强调 AI-driven devices，重点不是单一应用，而是设备入口和开发者生态。",
-                "产品细节：这类新闻应关注操作系统、硬件、端侧模型、开发者 SDK 和用户交互入口是否出现实质更新。",
-                "后续核验：需要对照 Microsoft 官方 keynote、Build/开发者文档和 Reuters 正文，区分已上线能力、预告能力和概念展示。"
+                "新闻事实：Reuters 报道，Japan could end up an 'AI colony' if it falls behind, digital minister warns - Reuters。",
+                "来源脉络：该条来自 Reuters，标题指向“Japan could end up an 'AI colony' if it falls behind, digital minister warns - Reuters”。",
+                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
               ],
               "benchmark_highlights": [],
               "benchmark_table": [],
@@ -311,25 +262,163 @@
               "region": "global",
               "news_brief": {
                 "label": "新闻要点",
-                "lead": "Reuters 标题显示，Microsoft 在年度开发者大会上预告 AI-driven devices 新阶段；该事件的重点是 AI 能力从软件助手继续进入设备、硬件交互和开发者生态。",
+                "lead": "Reuters 报道，Japan could end up an 'AI colony' if it falls behind, digital minister warns - Reuters。",
                 "bullets": [
-                  "Reuters 标题显示，Microsoft 在年度开发者大会上预告 AI-driven devices 新阶段。",
-                  "AI 叙事从软件助手继续进入设备形态、操作系统入口和硬件交互链路。",
-                  "应回读 Microsoft 官方 keynote、开发者文档和 Reuters 正文，区分已发布能力与战略预告。",
-                  "Microsoft 在年度开发者大会语境中强调 AI-driven devices，重点不是单一应用，而是设备入口和开发者生态。",
-                  "这类新闻应关注操作系统、硬件、端侧模型、开发者 SDK 和用户交互入口是否出现实质更新。"
+                  "Reuters 报道，Japan could end up an 'AI colony' if it falls behind, digital minister warns - Reuters。",
+                  "Reuters 报道，Japan could end up an 'AI colony' if it falls behind, digital minister warns - Reuters"
+                ],
+                "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+              }
+            },
+            {
+              "title": "US says it will speed development and use of AI for national security - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPME5TUTRobTZNTTZ5LTVzM2JRZDBuQl85YjRGV2RTMXZKZXBiMWFBVk1oZERpWm1TWkVnR0NLRjRqZDdaZWVIZ2JpR20yQm9LRElJZTJtT0YweWxCT0pLQXVLRTZYV1dVOFFfd05OeENfVm14NG1PbVNyckFhSU0xN1VMcmFnWGl6QnZTZWRwNjEwbWF3VjBnWHZtcnN0d3Rvd0g2TTA2QlI?oc=5",
+              "source_name": "Reuters AI and technology news surfaced through Google News RSS",
+              "source_id": "reuters-ai-tech-rss",
+              "source_group": "news",
+              "source_type": "commentary",
+              "trust_tier": "P1",
+              "published_at": "2026-06-05",
+              "summary": "Reuters 报道，US says it will speed development and use of AI for national security - Reuters。",
+              "key_points": [
+                "新闻事实：Reuters 报道，US says it will speed development and use of AI for national security - Reuters。",
+                "来源脉络：该条来自 Reuters，标题指向“US says it will speed development and use of AI for national security - Reuters”。",
+                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+              ],
+              "detail_highlights": [
+                "新闻事实：Reuters 报道，US says it will speed development and use of AI for national security - Reuters。",
+                "来源脉络：该条来自 Reuters，标题指向“US says it will speed development and use of AI for national security - Reuters”。",
+                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+              ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
+              "image_url": "",
+              "image": null,
+              "image_quality": {
+                "decision": "suppressed",
+                "reason": "source image is a Google News aggregator thumbnail, not an article-specific image",
+                "rejected_src": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+              "region": "global",
+              "news_brief": {
+                "label": "新闻要点",
+                "lead": "Reuters 报道，US says it will speed development and use of AI for national security - Reuters。",
+                "bullets": [
+                  "Reuters 报道，US says it will speed development and use of AI for national security - Reuters。",
+                  "Reuters 报道，US says it will speed development and use of AI for national security - Reuters"
+                ],
+                "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+              }
+            },
+            {
+              "title": "Trump says his team will 'look into' US taking stake in AI companies - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOQjJMRnpPRHVCampPWlVBNGFoOFl1T0N1NG5zdU81cjg4VDFocHhXbXJELWZoaS1Talg3aE5yTFI1b2dmN21TcW5kREdkYTJiS2pVbzBJYWFRbVl3c3ppNGJCdk9XRHA0bTZLRE9PRWF0RmRXdzIwNU1IdzNPeVMtS2VZNHRoamQ5QkNkanJBNF90anAyN19aX0YxZGVTV1JDNjY0QWwydEtER2FZ?oc=5",
+              "source_name": "Reuters AI and technology news surfaced through Google News RSS",
+              "source_id": "reuters-ai-tech-rss",
+              "source_group": "news",
+              "source_type": "commentary",
+              "trust_tier": "P1",
+              "published_at": "2026-06-05",
+              "summary": "Reuters 报道，Trump says his team will 'look into' US taking stake in AI companies - Reuters。",
+              "key_points": [
+                "新闻事实：Reuters 报道，Trump says his team will 'look into' US taking stake in AI companies - Reuters。",
+                "来源脉络：该条来自 Reuters，标题指向“Trump says his team will 'look into' US taking stake in AI companies - Reuters”。",
+                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+              ],
+              "detail_highlights": [
+                "新闻事实：Reuters 报道，Trump says his team will 'look into' US taking stake in AI companies - Reuters。",
+                "来源脉络：该条来自 Reuters，标题指向“Trump says his team will 'look into' US taking stake in AI companies - Reuters”。",
+                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+              ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
+              "image_url": "",
+              "image": null,
+              "image_quality": {
+                "decision": "suppressed",
+                "reason": "source image is a Google News aggregator thumbnail, not an article-specific image",
+                "rejected_src": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+              "region": "global",
+              "news_brief": {
+                "label": "新闻要点",
+                "lead": "Reuters 报道，Trump says his team will 'look into' US taking stake in AI companies - Reuters。",
+                "bullets": [
+                  "Reuters 报道，Trump says his team will 'look into' US taking stake in AI companies - Reuters。",
+                  "Reuters 报道，Trump says his team will 'look into' US taking stake in AI companies - Reuters"
+                ],
+                "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+              }
+            },
+            {
+              "title": "Exclusive: South Korea labour minister calls on tech firms to share excess AI profits with suppliers, staff - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOZ09wcEJnaW5yR1lxOFRVSVFESnQya1VkSVVmdzIxZkMyWDgxbkRDeHZDMFNSOWtMaWR1WVBjTXd6cG1uR0I3d2JmT3o4VkQ5VHhMYWJQV0EzMEJfWlVJTGJJY240VVhrUkpQcnpTS1RRUnd5NDFWMFVrclgtdzNvaE0yZWJ3bnBSRDR5RW4zbVFtamdnaGt2dDAtSDl6QURzQk9GWnhSSTYza2lEUUJmTnBMMEhzeXU2OVRZRDhvWUhUbzdWZTJtM3JDNmZ6WjRXSnNpZFhR?oc=5",
+              "source_name": "Reuters AI and technology news surfaced through Google News RSS",
+              "source_id": "reuters-ai-tech-rss",
+              "source_group": "news",
+              "source_type": "commentary",
+              "trust_tier": "P1",
+              "published_at": "2026-06-05",
+              "summary": "Reuters 报道，Exclusive: South Korea labour minister calls on tech firms to share excess AI profits with suppliers, staff - Reuters。",
+              "key_points": [
+                "新闻事实：Reuters 报道，Exclusive: South Korea labour minister calls on tech firms to share excess AI profits with suppliers, staff - Reuters。",
+                "来源脉络：该条来自 Reuters，标题指向“Exclusive: South Korea labour minister calls on tech firms to share excess AI profits with suppliers, staff - Reuters”。",
+                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+              ],
+              "detail_highlights": [
+                "新闻事实：Reuters 报道，Exclusive: South Korea labour minister calls on tech firms to share excess AI profits with suppliers, staff - Reuters。",
+                "来源脉络：该条来自 Reuters，标题指向“Exclusive: South Korea labour minister calls on tech firms to share excess AI profits with suppliers, staff - Reuters”。",
+                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+              ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
+              "image_url": "",
+              "image": null,
+              "image_quality": {
+                "decision": "suppressed",
+                "reason": "source image is a Google News aggregator thumbnail, not an article-specific image",
+                "rejected_src": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+              "region": "global",
+              "news_brief": {
+                "label": "新闻要点",
+                "lead": "Reuters 报道，Exclusive: South Korea labour minister calls on tech firms to share excess AI profits with suppliers, staff - Reuters。",
+                "bullets": [
+                  "Reuters 报道，Exclusive: South Korea labour minister calls on tech firms to share excess AI profits with suppliers, staff - Reuters。",
+                  "Reuters 报道，Exclusive: South Korea labour minister calls on tech firms to share excess AI profits with suppliers, staff - Reuters"
                 ],
                 "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
               }
             }
           ],
-          "news_selection_policy": "日报新闻热点按价值密度动态裁剪：综合发布时间、来源可信度、是否一手来源、是否含原始图片、是否影响 AI/产品/政策/市场/MEE 主题、以及中英文区域覆盖，候选池 49 条，最终选择 4 条；不使用固定 12 篇模板。日报额外执行跨日去重：已在前一份日报出现的同 URL/标题热点不再占用今日热点位；真实日期日报还会把明显早于当前窗口的旧新闻留给周报/月报。本次旧闻抑制 37 条。",
+          "news_selection_policy": "日报新闻热点按价值密度动态裁剪：综合发布时间、来源可信度、是否一手来源、是否含原始图片、是否影响 AI/产品/政策/市场/MEE 主题、以及中英文区域覆盖，候选池 49 条，最终选择 6 条；不使用固定 12 篇模板。日报额外执行跨日去重：已在前一份日报出现的同 URL/标题热点不再占用今日热点位；真实日期日报还会把明显早于当前窗口的旧新闻留给周报/月报。本次旧闻抑制 35 条。",
           "news_selection_stats": {
             "candidate_count": 49,
             "deduped_count": 41,
-            "eligible_count": 4,
+            "eligible_count": 6,
             "suppressed_previous_daily": 0,
-            "suppressed_stale_daily": 37
+            "suppressed_stale_daily": 35
           },
           "watch_points": [
             "外部新闻源覆盖：25 条，Reuters、Bloomberg、FT、WSJ、CNBC。",
@@ -378,7 +467,7 @@
             ]
           },
           "label": "个人认知与洞察",
-          "title": "个人认知与洞察报告（日报 2026-06-02）",
+          "title": "个人认知与洞察报告（日报 2026-06-05）",
           "kicker": "日报 / 从收藏到能力复利",
           "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：当期材料如何帮助个人把收藏、阅读、判断、练习和复盘连成可持续更新的操作系统。",
           "visual": {
@@ -711,7 +800,7 @@
             ]
           },
           "label": "产品与商机",
-          "title": "产品与商机机会报告（日报 2026-06-02）",
+          "title": "产品与商机机会报告（日报 2026-06-05）",
           "kicker": "日报 / 从信号到可验证机会",
           "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：当期哪些公开趋势、开源机制、私域需求和市场变化可以转化为产品假设或商业实验。",
           "visual": {
@@ -1070,7 +1159,7 @@
             ]
           },
           "label": "MEE 本体进化",
-          "title": "MEE 本体进化报告（日报 2026-06-02）",
+          "title": "MEE 本体进化报告（日报 2026-06-05）",
           "kicker": "日报 / 从工具链到治理链",
           "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：MEE 自身的调度、证据、Skill、发布和质量门禁当期有哪些可执行的进化点。",
           "visual": {
@@ -1377,7 +1466,7 @@
             ]
           },
           "label": "参考数据来源",
-          "title": "参考数据来源索引（日报 2026-06-02）",
+          "title": "参考数据来源索引（日报 2026-06-05）",
           "kicker": "日报 / 证据归档与可信边界",
           "lead": "本索引不是洞察报告，而是当期来源、证据簇、可读状态、可信边界和待补读 ledger 的追溯入口。",
           "visual_policy": {
@@ -1609,7 +1698,6 @@
               "title": "安全、治理和公共部署正在进入发布主叙事",
               "summary": "政府牵头测试、模型公司公共项目和安全叙事开始与产品发布并列出现。新闻摘要应保留事实边界，但这些信号已经足以提示后续产品和 MEE 治理需要更重视验证、权限和责任链。",
               "supporting_items": [
-                "Trump administration to ask US AI firms to voluntarily submit models for cybersecurity tests - Reuters",
                 "5 ways Google Search can level up your thrift and vintage shopping",
                 "2026 智源大会聚焦 Agent、世界模型、具身智能与真实世界部署",
                 "华为云创想者大会披露 Agentic AI 全生命周期布局"
@@ -1619,9 +1707,9 @@
               "title": "AI 基础设施已从技术背景变成市场与宏观变量",
               "summary": "基础设施合同、硬件股价、数据中心和通胀讨论说明 AI 不再只是模型层竞争，也在改变资本开支、能源、网络互联和企业采购节奏。",
               "supporting_items": [
-                "Profiling in PyTorch (Part 1): A Beginner&apos;s Guide to torch.profiler",
+                "Thousand Token Wood: shipping a multi-agent economy on a 3B model",
+                "Designing the hf CLI as an agent-optimized way to work with the Hub",
                 "36Kr：Anthropic 高估值与算力投入引发新一轮 AI 创企商业化讨论",
-                "Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic",
                 "Meta enters enterprise AI race with new business agent - Reuters"
               ]
             },
@@ -1629,10 +1717,10 @@
               "title": "国内热点更强调行业场景、国产基础设施和规模化落地",
               "summary": "国内来源的价值不只是补齐地域覆盖，而是提供行业级应用、国产软硬件栈和组织落地样本，可作为产品机会和 MEE 本体进化的独立证据层。",
               "supporting_items": [
+                "Thousand Token Wood: shipping a multi-agent economy on a 3B model",
+                "Designing the hf CLI as an agent-optimized way to work with the Hub",
                 "36Kr：Anthropic 高估值与算力投入引发新一轮 AI 创企商业化讨论",
-                "Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic",
-                "Meta enters enterprise AI race with new business agent - Reuters",
-                "中国石油昆仑大模型迭代升级，覆盖全产业链 152 个应用场景"
+                "Meta enters enterprise AI race with new business agent - Reuters"
               ]
             },
             {
@@ -1908,57 +1996,6 @@
               }
             },
             {
-              "title": "Profiling in PyTorch (Part 1): A Beginner&apos;s Guide to torch.profiler",
-              "url": "https://huggingface.co/blog/torch-profiler",
-              "source_name": "Hugging Face blog feed",
-              "source_id": "huggingface-blog-rss",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P1",
-              "published_at": "2026-05-29",
-              "summary": "PyTorch profiling 教程更新强化了性能观测基础：当模型和 agent 系统进入工程化阶段，profiling、trace 和瓶颈定位会成为比单次效果展示更重要的能力。",
-              "key_points": [
-                "新闻事实：PyTorch profiling 教程更新强化了性能观测基础：当模型和 agent 系统进入工程化阶段，profiling、trace 和瓶颈定位会成为比单次效果展示更重要的能力。",
-                "来源脉络：该条来自 公开来源，标题指向“Profiling in PyTorch (Part 1): A Beginner&apos;s Guide to torch.profiler”。",
-                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
-              ],
-              "detail_highlights": [
-                "工程事实：profiling 不是调参附属动作，而是定位训练/推理瓶颈、资源浪费和延迟异常的基础设施。",
-                "系统含义：当 Agent 或模型服务走向生产，trace、性能画像和成本归因会直接影响迭代质量。",
-                "MEE 可吸收点：报告和工具链也应输出可追溯的运行证据，而不是只描述“已生成”。"
-              ],
-              "benchmark_highlights": [],
-              "benchmark_table": [],
-              "image_url": "https://huggingface.co/blog/assets/torch-profiler/thumbnail.png",
-              "image": {
-                "src": "https://huggingface.co/blog/assets/torch-profiler/thumbnail.png",
-                "alt": "Profiling in PyTorch (Part 1): A Beginner&apos;s Guide to torch.profiler 原始来源图片",
-                "origin": "source"
-              },
-              "image_quality": {
-                "decision": "accepted"
-              },
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
-              "region": "global",
-              "news_brief": {
-                "label": "新闻要点",
-                "lead": "PyTorch profiling 教程更新强化了性能观测基础：当模型和 agent 系统进入工程化阶段，profiling、trace 和瓶颈定位会成为比单次效果展示更重要的能力。",
-                "bullets": [
-                  "PyTorch profiling 教程更新强化了性能观测基础：当模型和 agent 系统进入工程化阶段，profiling、trace 和瓶颈定位会成为比单次效果展示更重要的能力。",
-                  "profiling 不是调参附属动作，而是定位训练/推理瓶颈、资源浪费和延迟异常的基础设施。",
-                  "系统含义：当 Agent 或模型服务走向生产，trace、性能画像和成本归因会直接影响迭代质量。",
-                  "MEE 可吸收点：报告和工具链也应输出可追溯的运行证据，而不是只描述“已生成”。"
-                ],
-                "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
-              }
-            },
-            {
               "title": "Catch up on 12 major I/O 2026 moments",
               "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
               "source_name": "Google AI blog feed",
@@ -2011,33 +2048,84 @@
               }
             },
             {
-              "title": "Trump administration to ask US AI firms to voluntarily submit models for cybersecurity tests - Reuters",
-              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUVpoMXdGZFYyY3laSUs1ZWVEdFpWS0NHM01qbV8xSzJjVlpLQk5tQkh6djN6MXU4cVFKNjFXUnZMdWhXaUNhS1BRQnhhTldTaW5QLTBVbXNTR3BQSWFYLUFzT0xjb3dVbzlzbVk5bndJaVJXSnNycURmdVRlcFdaYUVieUNoSENnV1ZDWFpoZWFJamx5NkFDaWhpVUJISmQwbFptTDQxdWNabEhOcXhsSmwxU0hoak5M?oc=5",
-              "source_name": "Reuters AI and technology news surfaced through Google News RSS",
-              "source_id": "reuters-ai-tech-rss",
+              "title": "The latest AI news we announced in May 2026",
+              "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-may-2026/",
+              "source_name": "Google AI blog feed",
+              "source_id": "google-ai-blog-rss",
               "source_group": "news",
               "source_type": "commentary",
-              "trust_tier": "P1",
-              "published_at": "2026-06-02",
-              "summary": "Reuters 标题显示，特朗普政府计划要求美国 AI 公司自愿提交模型接受网络安全测试；该事件的重点是模型安全评估从企业自测进入政府牵头验证语境。",
+              "trust_tier": "P0",
+              "published_at": "2026-06-05",
+              "summary": "Here are Google’s latest AI updates from May 2026",
               "key_points": [
-                "新闻事实：Reuters 标题显示，美国政府准备要求美国 AI 公司自愿提交模型接受网络安全测试。",
-                "政策变化：模型安全评估正在从企业自测和自愿披露，扩展到政府牵头的测试与审查语境。",
-                "可信边界：当前站点只拿到聚合标题与摘要入口，需回读 Reuters 原文确认参与公司、测试机构和时间表。"
+                "新闻事实：Here are Google’s latest AI updates from May 2026。",
+                "来源脉络：该条来自 公开来源，标题指向“The latest AI news we announced in May 2026”。",
+                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
               ],
               "detail_highlights": [
-                "事件主体：Reuters 标题指向美国政府与美国 AI 公司之间的自愿模型提交和网络安全测试安排。",
-                "变化重点：安全测试从企业内部红队、第三方测评和自愿披露，进一步靠近政府牵头的验证框架。",
-                "后续核验：需要回读 Reuters 正文确认测试机构、参与范围、是否覆盖前沿模型和是否会演变为强制性要求。"
+                "新闻事实：Here are Google’s latest AI updates from May 2026。",
+                "来源脉络：该条来自 公开来源，标题指向“The latest AI news we announced in May 2026”。",
+                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
               ],
               "benchmark_highlights": [],
               "benchmark_table": [],
-              "image_url": "",
-              "image": null,
+              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/May_AI_Recap_still.max-600x600.format-webp.webp",
+              "image": {
+                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/May_AI_Recap_still.max-600x600.format-webp.webp",
+                "alt": "The latest AI news we announced in May 2026 原始来源图片",
+                "origin": "source"
+              },
               "image_quality": {
-                "decision": "suppressed",
-                "reason": "source image is a Google News aggregator thumbnail, not an article-specific image",
-                "rejected_src": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+                "decision": "accepted"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。",
+              "region": "global",
+              "news_brief": {
+                "label": "新闻要点",
+                "lead": "Here are Google’s latest AI updates from May 2026",
+                "bullets": [
+                  "Here are Google’s latest AI updates from May 2026。",
+                  "Here are Google’s latest AI updates from May 2026"
+                ],
+                "source_note": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
+              }
+            },
+            {
+              "title": "Thousand Token Wood: shipping a multi-agent economy on a 3B model",
+              "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim",
+              "source_name": "Hugging Face blog feed",
+              "source_id": "huggingface-blog-rss",
+              "source_group": "news",
+              "source_type": "commentary",
+              "trust_tier": "P1",
+              "published_at": "2026-06-05",
+              "summary": "公开来源 报道，Thousand Token Wood: shipping a multi-agent economy on a 3B model。",
+              "key_points": [
+                "新闻事实：公开来源 报道，Thousand Token Wood: shipping a multi-agent economy on a 3B model。",
+                "来源脉络：该条来自 公开来源，标题指向“Thousand Token Wood: shipping a multi-agent economy on a 3B model”。",
+                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+              ],
+              "detail_highlights": [
+                "产业叙事：报道把国产 GPU、Agent、终端生态和具身智能放在同一套基础设施故事里。",
+                "机会线索：国内 AI 基础设施不再只是算力供给，也在向软件栈、应用场景和测评体系延伸。",
+                "可信边界：企业披露数据和媒体总结需要结合官方文档、客户案例和第三方测试校准。"
+              ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
+              "image_url": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/build-small-hackathon/thousand-token-wood-sim.png",
+              "image": {
+                "src": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/build-small-hackathon/thousand-token-wood-sim.png",
+                "alt": "Thousand Token Wood: shipping a multi-agent economy on a 3B model 原始来源图片",
+                "origin": "source"
+              },
+              "image_quality": {
+                "decision": "accepted"
               },
               "related_themes": [
                 "MEE",
@@ -2049,13 +2137,12 @@
               "region": "global",
               "news_brief": {
                 "label": "新闻要点",
-                "lead": "Reuters 标题显示，特朗普政府计划要求美国 AI 公司自愿提交模型接受网络安全测试；该事件的重点是模型安全评估从企业自测进入政府牵头验证语境。",
+                "lead": "公开来源 报道，Thousand Token Wood: shipping a multi-agent economy on a 3B model。",
                 "bullets": [
-                  "Reuters 标题显示，美国政府准备要求美国 AI 公司自愿提交模型接受网络安全测试。",
-                  "模型安全评估正在从企业自测和自愿披露，扩展到政府牵头的测试与审查语境。",
-                  "当前站点只拿到聚合标题与摘要入口，需回读 Reuters 原文确认参与公司、测试机构和时间表。",
-                  "Reuters 标题指向美国政府与美国 AI 公司之间的自愿模型提交和网络安全测试安排。",
-                  "变化重点：安全测试从企业内部红队、第三方测评和自愿披露，进一步靠近政府牵头的验证框架。"
+                  "公开来源 报道，Thousand Token Wood: shipping a multi-agent economy on a 3B model。",
+                  "报道把国产 GPU、Agent、终端生态和具身智能放在同一套基础设施故事里。",
+                  "国内 AI 基础设施不再只是算力供给，也在向软件栈、应用场景和测评体系延伸。",
+                  "企业披露数据和媒体总结需要结合官方文档、客户案例和第三方测试校准。"
                 ],
                 "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
               }
@@ -2107,6 +2194,57 @@
                   "产品事实：fully local 的重点是把机器人交互、控制和部分智能能力留在本地，减少对云端实时连接的依赖。",
                   "本地化会改善隐私、稳定性和体验延迟，但也会带来模型尺寸、硬件能力和升级维护约束。",
                   "机会判断：适合观察“AI 能力从云端服务进入可触摸设备”的产品路径。"
+                ],
+                "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+              }
+            },
+            {
+              "title": "Designing the hf CLI as an agent-optimized way to work with the Hub",
+              "url": "https://huggingface.co/blog/hf-cli-for-agents",
+              "source_name": "Hugging Face blog feed",
+              "source_id": "huggingface-blog-rss",
+              "source_group": "news",
+              "source_type": "commentary",
+              "trust_tier": "P1",
+              "published_at": "2026-06-04",
+              "summary": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+              "key_points": [
+                "新闻事实：We’re on a journey to advance and democratize artificial intelligence through open source and open science。",
+                "来源脉络：该条来自 公开来源，标题指向“Designing the hf CLI as an agent-optimized way to work with the Hub”。",
+                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+              ],
+              "detail_highlights": [
+                "产业叙事：报道把国产 GPU、Agent、终端生态和具身智能放在同一套基础设施故事里。",
+                "机会线索：国内 AI 基础设施不再只是算力供给，也在向软件栈、应用场景和测评体系延伸。",
+                "可信边界：企业披露数据和媒体总结需要结合官方文档、客户案例和第三方测试校准。"
+              ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
+              "image_url": "https://huggingface.co/blog/assets/hf-cli-for-agents/thumbnail.png",
+              "image": {
+                "src": "https://huggingface.co/blog/assets/hf-cli-for-agents/thumbnail.png",
+                "alt": "Designing the hf CLI as an agent-optimized way to work with the Hub 原始来源图片",
+                "origin": "source"
+              },
+              "image_quality": {
+                "decision": "accepted"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+              "region": "global",
+              "news_brief": {
+                "label": "新闻要点",
+                "lead": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+                "bullets": [
+                  "We’re on a journey to advance and democratize artificial intelligence through open source and open science。",
+                  "报道把国产 GPU、Agent、终端生态和具身智能放在同一套基础设施故事里。",
+                  "国内 AI 基础设施不再只是算力供给，也在向软件栈、应用场景和测评体系延伸。",
+                  "企业披露数据和媒体总结需要结合官方文档、客户案例和第三方测试校准。"
                 ],
                 "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
               }
@@ -2306,106 +2444,6 @@
               }
             },
             {
-              "title": "Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic",
-              "url": "https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption",
-              "source_name": "Hugging Face blog feed",
-              "source_id": "huggingface-blog-rss",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P1",
-              "published_at": "2026-06-01",
-              "summary": "公开来源 报道，Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic。",
-              "key_points": [
-                "新闻事实：公开来源 报道，Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic。",
-                "来源脉络：该条来自 公开来源，标题指向“Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic”。",
-                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
-              ],
-              "detail_highlights": [
-                "产业叙事：报道把国产 GPU、Agent、终端生态和具身智能放在同一套基础设施故事里。",
-                "机会线索：国内 AI 基础设施不再只是算力供给，也在向软件栈、应用场景和测评体系延伸。",
-                "可信边界：企业披露数据和媒体总结需要结合官方文档、客户案例和第三方测试校准。"
-              ],
-              "benchmark_highlights": [],
-              "benchmark_table": [],
-              "image_url": "https://cdn-uploads.huggingface.co/production/uploads/65b12ed52be9660f0b7e5f72/mu_IH3lDD1qGRQZptFmPP.png",
-              "image": {
-                "src": "https://cdn-uploads.huggingface.co/production/uploads/65b12ed52be9660f0b7e5f72/mu_IH3lDD1qGRQZptFmPP.png",
-                "alt": "Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic 原始来源图片",
-                "origin": "source"
-              },
-              "image_quality": {
-                "decision": "accepted"
-              },
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
-              "region": "global",
-              "news_brief": {
-                "label": "新闻要点",
-                "lead": "公开来源 报道，Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic。",
-                "bullets": [
-                  "公开来源 报道，Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic。",
-                  "报道把国产 GPU、Agent、终端生态和具身智能放在同一套基础设施故事里。",
-                  "国内 AI 基础设施不再只是算力供给，也在向软件栈、应用场景和测评体系延伸。",
-                  "企业披露数据和媒体总结需要结合官方文档、客户案例和第三方测试校准。"
-                ],
-                "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
-              }
-            },
-            {
-              "title": "Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action",
-              "url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
-              "source_name": "Hugging Face blog feed",
-              "source_id": "huggingface-blog-rss",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P1",
-              "published_at": "2026-06-01",
-              "summary": "公开来源 报道，Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action。",
-              "key_points": [
-                "新闻事实：公开来源 报道，Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action。",
-                "来源脉络：该条来自 公开来源，标题指向“Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action”。",
-                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
-              ],
-              "detail_highlights": [
-                "新闻事实：公开来源 报道，Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action。",
-                "来源脉络：该条来自 公开来源，标题指向“Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action”。",
-                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
-              ],
-              "benchmark_highlights": [],
-              "benchmark_table": [],
-              "image_url": "https://cdn-uploads.huggingface.co/production/uploads/6799309995f2227228bc38f3/js_kXqJrfpYZd1hZvwPug.png",
-              "image": {
-                "src": "https://cdn-uploads.huggingface.co/production/uploads/6799309995f2227228bc38f3/js_kXqJrfpYZd1hZvwPug.png",
-                "alt": "Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action 原始来源图片",
-                "origin": "source"
-              },
-              "image_quality": {
-                "decision": "accepted"
-              },
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
-              "region": "global",
-              "news_brief": {
-                "label": "新闻要点",
-                "lead": "公开来源 报道，Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action。",
-                "bullets": [
-                  "公开来源 报道，Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action。",
-                  "公开来源 报道，Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action"
-                ],
-                "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
-              }
-            },
-            {
               "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
               "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/",
               "source_name": "Google AI blog feed",
@@ -2453,57 +2491,6 @@
                   "报告站点、互动问答和轻应用可以作为高频内容表达形态。"
                 ],
                 "source_note": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
-              }
-            },
-            {
-              "title": "Reachy Mini goes fully local",
-              "url": "https://huggingface.co/blog/local-reachy-mini-conversation",
-              "source_name": "Hugging Face blog feed",
-              "source_id": "huggingface-blog-rss",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P1",
-              "published_at": "2026-05-27",
-              "summary": "Reachy Mini fully local 指向本地化机器人/边缘 AI 的产品方向：把对话、控制和交互尽量放到本地执行，可降低网络依赖并改善隐私边界。",
-              "key_points": [
-                "新闻事实：Reachy Mini fully local 指向本地化机器人/边缘 AI 的产品方向：把对话、控制和交互尽量放到本地执行，可降低网络依赖并改善隐私边界。",
-                "来源脉络：该条来自 公开来源，标题指向“Reachy Mini goes fully local”。",
-                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
-              ],
-              "detail_highlights": [
-                "产品事实：fully local 的重点是把机器人交互、控制和部分智能能力留在本地，减少对云端实时连接的依赖。",
-                "用户价值：本地化会改善隐私、稳定性和体验延迟，但也会带来模型尺寸、硬件能力和升级维护约束。",
-                "机会判断：适合观察“AI 能力从云端服务进入可触摸设备”的产品路径。"
-              ],
-              "benchmark_highlights": [],
-              "benchmark_table": [],
-              "image_url": "https://huggingface.co/blog/assets/local-reachy-mini-conversation/thumbnail.png",
-              "image": {
-                "src": "https://huggingface.co/blog/assets/local-reachy-mini-conversation/thumbnail.png",
-                "alt": "Reachy Mini goes fully local 原始来源图片",
-                "origin": "source"
-              },
-              "image_quality": {
-                "decision": "accepted"
-              },
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
-              "region": "global",
-              "news_brief": {
-                "label": "新闻要点",
-                "lead": "Reachy Mini fully local 指向本地化机器人/边缘 AI 的产品方向：把对话、控制和交互尽量放到本地执行，可降低网络依赖并改善隐私边界。",
-                "bullets": [
-                  "Reachy Mini fully local 指向本地化机器人/边缘 AI 的产品方向：把对话、控制和交互尽量放到本地执行，可降低网络依赖并改善隐私边界。",
-                  "产品事实：fully local 的重点是把机器人交互、控制和部分智能能力留在本地，减少对云端实时连接的依赖。",
-                  "本地化会改善隐私、稳定性和体验延迟，但也会带来模型尺寸、硬件能力和升级维护约束。",
-                  "机会判断：适合观察“AI 能力从云端服务进入可触摸设备”的产品路径。"
-                ],
-                "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
               }
             },
             {
@@ -2556,33 +2543,34 @@
               }
             },
             {
-              "title": "AI to double data centre power and water consumption by 2030, UN researchers say - Reuters",
-              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQd3F4Sm9fUl9mNVUweWpTMHQ5WktMSmNCZU5BdGVpaE5yWGpUQmJqcjRVMEIxWFlUQmJvOXBKaTFoUTFRN2FvZmlILUJpTHBTd0pxdU94bW1mdlZvdGJraGQyR1o0bV8tbnV6SzdUMkMxNTlZdXRIekRfWktrdXpfNnVuVWJBanlTSjZ6T2h2cEtCRU5RX1ZscEFmWlFZVEMtNDViUjdoZGNxdDBreFk2TW9qaDF5dy1Qd3hyck1DR2NMdw?oc=5",
-              "source_name": "Reuters AI and technology news surfaced through Google News RSS",
-              "source_id": "reuters-ai-tech-rss",
+              "title": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
+              "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+              "source_name": "Hugging Face blog feed",
+              "source_id": "huggingface-blog-rss",
               "source_group": "news",
               "source_type": "commentary",
               "trust_tier": "P1",
-              "published_at": "2026-06-03",
-              "summary": "Reuters 报道，AI to double data centre power and water consumption by 2030, UN researchers say - Reuters。",
+              "published_at": "2026-06-04",
+              "summary": "公开来源 报道，Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI。",
               "key_points": [
-                "新闻事实：Reuters 报道，AI to double data centre power and water consumption by 2030, UN researchers say - Reuters。",
-                "来源脉络：该条来自 Reuters，标题指向“AI to double data centre power and water consumption by 2030, UN researchers say - Reuters”。",
+                "新闻事实：公开来源 报道，Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI。",
+                "来源脉络：该条来自 公开来源，标题指向“Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI”。",
                 "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
               ],
               "detail_highlights": [
-                "新闻事实：Reuters 报道，AI to double data centre power and water consumption by 2030, UN researchers say - Reuters。",
-                "来源脉络：该条来自 Reuters，标题指向“AI to double data centre power and water consumption by 2030, UN researchers say - Reuters”。",
-                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+                "事实展开：公开来源 报道，Nemotron 3。",
+                "事实展开：5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI。"
               ],
               "benchmark_highlights": [],
               "benchmark_table": [],
-              "image_url": "",
-              "image": null,
+              "image_url": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/nvidia/nemotron-3-5-content-safety.png",
+              "image": {
+                "src": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/nvidia/nemotron-3-5-content-safety.png",
+                "alt": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI 原始来源图片",
+                "origin": "source"
+              },
               "image_quality": {
-                "decision": "suppressed",
-                "reason": "source image is a Google News aggregator thumbnail, not an article-specific image",
-                "rejected_src": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+                "decision": "accepted"
               },
               "related_themes": [
                 "MEE",
@@ -2594,42 +2582,44 @@
               "region": "global",
               "news_brief": {
                 "label": "新闻要点",
-                "lead": "Reuters 报道，AI to double data centre power and water consumption by 2030, UN researchers say - Reuters。",
+                "lead": "公开来源 报道，Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI。",
                 "bullets": [
-                  "Reuters 报道，AI to double data centre power and water consumption by 2030, UN researchers say - Reuters。",
-                  "Reuters 报道，AI to double data centre power and water consumption by 2030, UN researchers say - Reuters"
+                  "公开来源 报道，Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI。",
+                  "公开来源 报道，Nemotron 3。",
+                  "5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI。"
                 ],
                 "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
               }
             },
             {
-              "title": "OpenAI's Altman to urge US lawmakers not to require AI model approvals - Reuters",
-              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQNnd1b0RYcWdFY0pNdzRoM0w5eXkxYTNIZTNMOGxCVWx0ZUlVcmFuMXBMRnRjbl9FdVN0Mm1KeGFMTUpNM3o4YVF2WGZkeUhVWkdmNnRBNEc5YmQ5N2FXNEZhbFFsUUYtLU1NS2cxaEJ0U0hHSmxWZHEza3FvbmExd1NBUnBfUFdWLUcwT2I1T09GYXNDNjVGU1k5ekw2U1NMczJDaHp5UHhyU29M?oc=5",
-              "source_name": "Reuters AI and technology news surfaced through Google News RSS",
-              "source_id": "reuters-ai-tech-rss",
+              "title": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios",
+              "url": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
+              "source_name": "Hugging Face blog feed",
+              "source_id": "huggingface-blog-rss",
               "source_group": "news",
               "source_type": "commentary",
               "trust_tier": "P1",
-              "published_at": "2026-06-03",
-              "summary": "Reuters 报道，OpenAI's Altman to urge US lawmakers not to require AI model approvals - Reuters。",
+              "published_at": "2026-06-04",
+              "summary": "公开来源 报道，EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios。",
               "key_points": [
-                "新闻事实：Reuters 报道，OpenAI's Altman to urge US lawmakers not to require AI model approvals - Reuters。",
-                "来源脉络：该条来自 Reuters，标题指向“OpenAI's Altman to urge US lawmakers not to require AI model approvals - Reuters”。",
+                "新闻事实：公开来源 报道，EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios。",
+                "来源脉络：该条来自 公开来源，标题指向“EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios”。",
                 "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
               ],
               "detail_highlights": [
-                "新闻事实：Reuters 报道，OpenAI's Altman to urge US lawmakers not to require AI model approvals - Reuters。",
-                "来源脉络：该条来自 Reuters，标题指向“OpenAI's Altman to urge US lawmakers not to require AI model approvals - Reuters”。",
-                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+                "事实展开：公开来源 报道，EVA-Bench Data 2。",
+                "事实展开：0: 3 Domains, 121 Tools, 213 Scenarios。"
               ],
               "benchmark_highlights": [],
               "benchmark_table": [],
-              "image_url": "",
-              "image": null,
+              "image_url": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/ServiceNow-AI/eva-bench-data.png",
+              "image": {
+                "src": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/ServiceNow-AI/eva-bench-data.png",
+                "alt": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios 原始来源图片",
+                "origin": "source"
+              },
               "image_quality": {
-                "decision": "suppressed",
-                "reason": "source image is a Google News aggregator thumbnail, not an article-specific image",
-                "rejected_src": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+                "decision": "accepted"
               },
               "related_themes": [
                 "MEE",
@@ -2641,10 +2631,11 @@
               "region": "global",
               "news_brief": {
                 "label": "新闻要点",
-                "lead": "Reuters 报道，OpenAI's Altman to urge US lawmakers not to require AI model approvals - Reuters。",
+                "lead": "公开来源 报道，EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios。",
                 "bullets": [
-                  "Reuters 报道，OpenAI's Altman to urge US lawmakers not to require AI model approvals - Reuters。",
-                  "Reuters 报道，OpenAI's Altman to urge US lawmakers not to require AI model approvals - Reuters"
+                  "公开来源 报道，EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios。",
+                  "公开来源 报道，EVA-Bench Data 2。",
+                  "0: 3 Domains, 121 Tools, 213 Scenarios。"
                 ],
                 "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
               }
@@ -2696,6 +2687,99 @@
                   "A recap of the 2026 I/O Dialogues, where leaders discuss the future of AI, quantum computing, robotics and creativity"
                 ],
                 "source_note": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
+              }
+            },
+            {
+              "title": "Direct Preference Optimization Beyond Chatbots",
+              "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
+              "source_name": "Hugging Face blog feed",
+              "source_id": "huggingface-blog-rss",
+              "source_group": "news",
+              "source_type": "commentary",
+              "trust_tier": "P1",
+              "published_at": "2026-06-03",
+              "summary": "公开来源 报道，Direct Preference Optimization Beyond Chatbots。",
+              "key_points": [
+                "新闻事实：公开来源 报道，Direct Preference Optimization Beyond Chatbots。",
+                "来源脉络：该条来自 公开来源，标题指向“Direct Preference Optimization Beyond Chatbots”。",
+                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+              ],
+              "detail_highlights": [
+                "新闻事实：公开来源 报道，Direct Preference Optimization Beyond Chatbots。",
+                "来源脉络：该条来自 公开来源，标题指向“Direct Preference Optimization Beyond Chatbots”。",
+                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+              ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
+              "image_url": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots.png",
+              "image": {
+                "src": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots.png",
+                "alt": "Direct Preference Optimization Beyond Chatbots 原始来源图片",
+                "origin": "source"
+              },
+              "image_quality": {
+                "decision": "accepted"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+              "region": "global",
+              "news_brief": {
+                "label": "新闻要点",
+                "lead": "公开来源 报道，Direct Preference Optimization Beyond Chatbots。",
+                "bullets": [
+                  "公开来源 报道，Direct Preference Optimization Beyond Chatbots。",
+                  "公开来源 报道，Direct Preference Optimization Beyond Chatbots"
+                ],
+                "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+              }
+            },
+            {
+              "title": "Speeding up agentic workflows with WebSockets",
+              "url": "https://openai.com/index/speeding-up-agentic-workflows-with-websockets",
+              "source_name": "OpenAI official news feed",
+              "source_id": "openai-news-rss",
+              "source_group": "ai-research",
+              "source_type": "official-news",
+              "trust_tier": "P0",
+              "published_at": "unknown",
+              "summary": "OpenAI 官方文章围绕 agentic workflows 的实时通信与 WebSockets 体验展开，适合作为 Agent 产品形态、工具调用延迟和交互式工作流设计的事实线索。",
+              "key_points": [
+                "这是官方技术/产品材料，不是社区二手摘要。",
+                "关注点不是“OpenAI 有新闻”，而是实时交互能力如何影响 Agent 工作流体验。",
+                "进入产品与 MEE 报告前，应结合具体 API、成本和工程约束复核。"
+              ],
+              "related_themes": [
+                "MEE",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "官方来源，可用于追踪产品能力边界；是否采用仍需回到接口文档、SDK 示例和实际集成测试。",
+              "image_url": "",
+              "image": null,
+              "image_quality": {
+                "decision": "missing"
+              },
+              "detail_highlights": [
+                "产业叙事：报道把国产 GPU、Agent、终端生态和具身智能放在同一套基础设施故事里。",
+                "机会线索：国内 AI 基础设施不再只是算力供给，也在向软件栈、应用场景和测评体系延伸。",
+                "可信边界：企业披露数据和媒体总结需要结合官方文档、客户案例和第三方测试校准。"
+              ],
+              "news_brief": {
+                "label": "新闻要点",
+                "lead": "OpenAI 官方文章围绕 agentic workflows 的实时通信与 WebSockets 体验展开，适合作为 Agent 产品形态、工具调用延迟和交互式工作流设计的事实线索。",
+                "bullets": [
+                  "这是官方技术/产品材料，不是社区二手摘要。",
+                  "关注点不是“OpenAI 有新闻”，而是实时交互能力如何影响 Agent 工作流体验。",
+                  "进入产品与 MEE 报告前，应结合具体 API、成本和工程约束复核。",
+                  "报道把国产 GPU、Agent、终端生态和具身智能放在同一套基础设施故事里。",
+                  "国内 AI 基础设施不再只是算力供给，也在向软件栈、应用场景和测评体系延伸。"
+                ],
+                "source_note": "官方来源，可用于追踪产品能力边界；是否采用仍需回到接口文档、SDK 示例和实际集成测试。"
               }
             },
             {
@@ -4270,19 +4354,19 @@
               "title": "安全、治理和公共部署正在进入发布主叙事",
               "summary": "政府牵头测试、模型公司公共项目和安全叙事开始与产品发布并列出现。新闻摘要应保留事实边界，但这些信号已经足以提示后续产品和 MEE 治理需要更重视验证、权限和责任链。",
               "supporting_items": [
-                "Trump administration to ask US AI firms to voluntarily submit models for cybersecurity tests - Reuters",
                 "5 ways Google Search can level up your thrift and vintage shopping",
                 "Jun 2, 2026 Announcements Expanding Project Glasswing",
-                "Jun 1, 2026 Announcements Anthropic confidentially submits draft S-1 to the SEC"
+                "US says it will speed development and use of AI for national security - Reuters",
+                "Jun 3, 2026 Policy What we learned mapping a year’s worth of AI-enabled cyber threats"
               ]
             },
             {
               "title": "AI 基础设施已从技术背景变成市场与宏观变量",
               "summary": "基础设施合同、硬件股价、数据中心和通胀讨论说明 AI 不再只是模型层竞争，也在改变资本开支、能源、网络互联和企业采购节奏。",
               "supporting_items": [
-                "Profiling in PyTorch (Part 1): A Beginner&apos;s Guide to torch.profiler",
+                "Thousand Token Wood: shipping a multi-agent economy on a 3B model",
+                "Designing the hf CLI as an agent-optimized way to work with the Hub",
                 "36Kr：Anthropic 高估值与算力投入引发新一轮 AI 创企商业化讨论",
-                "Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic",
                 "Meta enters enterprise AI race with new business agent - Reuters"
               ]
             },
@@ -4290,10 +4374,10 @@
               "title": "国内热点更强调行业场景、国产基础设施和规模化落地",
               "summary": "国内来源的价值不只是补齐地域覆盖，而是提供行业级应用、国产软硬件栈和组织落地样本，可作为产品机会和 MEE 本体进化的独立证据层。",
               "supporting_items": [
+                "Thousand Token Wood: shipping a multi-agent economy on a 3B model",
+                "Designing the hf CLI as an agent-optimized way to work with the Hub",
                 "36Kr：Anthropic 高估值与算力投入引发新一轮 AI 创企商业化讨论",
-                "Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic",
-                "Meta enters enterprise AI race with new business agent - Reuters",
-                "Speeding up agentic workflows with WebSockets"
+                "Meta enters enterprise AI race with new business agent - Reuters"
               ]
             },
             {
@@ -4569,57 +4653,6 @@
               }
             },
             {
-              "title": "Profiling in PyTorch (Part 1): A Beginner&apos;s Guide to torch.profiler",
-              "url": "https://huggingface.co/blog/torch-profiler",
-              "source_name": "Hugging Face blog feed",
-              "source_id": "huggingface-blog-rss",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P1",
-              "published_at": "2026-05-29",
-              "summary": "PyTorch profiling 教程更新强化了性能观测基础：当模型和 agent 系统进入工程化阶段，profiling、trace 和瓶颈定位会成为比单次效果展示更重要的能力。",
-              "key_points": [
-                "新闻事实：PyTorch profiling 教程更新强化了性能观测基础：当模型和 agent 系统进入工程化阶段，profiling、trace 和瓶颈定位会成为比单次效果展示更重要的能力。",
-                "来源脉络：该条来自 公开来源，标题指向“Profiling in PyTorch (Part 1): A Beginner&apos;s Guide to torch.profiler”。",
-                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
-              ],
-              "detail_highlights": [
-                "工程事实：profiling 不是调参附属动作，而是定位训练/推理瓶颈、资源浪费和延迟异常的基础设施。",
-                "系统含义：当 Agent 或模型服务走向生产，trace、性能画像和成本归因会直接影响迭代质量。",
-                "MEE 可吸收点：报告和工具链也应输出可追溯的运行证据，而不是只描述“已生成”。"
-              ],
-              "benchmark_highlights": [],
-              "benchmark_table": [],
-              "image_url": "https://huggingface.co/blog/assets/torch-profiler/thumbnail.png",
-              "image": {
-                "src": "https://huggingface.co/blog/assets/torch-profiler/thumbnail.png",
-                "alt": "Profiling in PyTorch (Part 1): A Beginner&apos;s Guide to torch.profiler 原始来源图片",
-                "origin": "source"
-              },
-              "image_quality": {
-                "decision": "accepted"
-              },
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
-              "region": "global",
-              "news_brief": {
-                "label": "新闻要点",
-                "lead": "PyTorch profiling 教程更新强化了性能观测基础：当模型和 agent 系统进入工程化阶段，profiling、trace 和瓶颈定位会成为比单次效果展示更重要的能力。",
-                "bullets": [
-                  "PyTorch profiling 教程更新强化了性能观测基础：当模型和 agent 系统进入工程化阶段，profiling、trace 和瓶颈定位会成为比单次效果展示更重要的能力。",
-                  "profiling 不是调参附属动作，而是定位训练/推理瓶颈、资源浪费和延迟异常的基础设施。",
-                  "系统含义：当 Agent 或模型服务走向生产，trace、性能画像和成本归因会直接影响迭代质量。",
-                  "MEE 可吸收点：报告和工具链也应输出可追溯的运行证据，而不是只描述“已生成”。"
-                ],
-                "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
-              }
-            },
-            {
               "title": "Catch up on 12 major I/O 2026 moments",
               "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
               "source_name": "Google AI blog feed",
@@ -4672,33 +4705,84 @@
               }
             },
             {
-              "title": "Trump administration to ask US AI firms to voluntarily submit models for cybersecurity tests - Reuters",
-              "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUVpoMXdGZFYyY3laSUs1ZWVEdFpWS0NHM01qbV8xSzJjVlpLQk5tQkh6djN6MXU4cVFKNjFXUnZMdWhXaUNhS1BRQnhhTldTaW5QLTBVbXNTR3BQSWFYLUFzT0xjb3dVbzlzbVk5bndJaVJXSnNycURmdVRlcFdaYUVieUNoSENnV1ZDWFpoZWFJamx5NkFDaWhpVUJISmQwbFptTDQxdWNabEhOcXhsSmwxU0hoak5M?oc=5",
-              "source_name": "Reuters AI and technology news surfaced through Google News RSS",
-              "source_id": "reuters-ai-tech-rss",
+              "title": "The latest AI news we announced in May 2026",
+              "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-may-2026/",
+              "source_name": "Google AI blog feed",
+              "source_id": "google-ai-blog-rss",
               "source_group": "news",
               "source_type": "commentary",
-              "trust_tier": "P1",
-              "published_at": "2026-06-02",
-              "summary": "Reuters 标题显示，特朗普政府计划要求美国 AI 公司自愿提交模型接受网络安全测试；该事件的重点是模型安全评估从企业自测进入政府牵头验证语境。",
+              "trust_tier": "P0",
+              "published_at": "2026-06-05",
+              "summary": "Here are Google’s latest AI updates from May 2026",
               "key_points": [
-                "新闻事实：Reuters 标题显示，美国政府准备要求美国 AI 公司自愿提交模型接受网络安全测试。",
-                "政策变化：模型安全评估正在从企业自测和自愿披露，扩展到政府牵头的测试与审查语境。",
-                "可信边界：当前站点只拿到聚合标题与摘要入口，需回读 Reuters 原文确认参与公司、测试机构和时间表。"
+                "新闻事实：Here are Google’s latest AI updates from May 2026。",
+                "来源脉络：该条来自 公开来源，标题指向“The latest AI news we announced in May 2026”。",
+                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
               ],
               "detail_highlights": [
-                "事件主体：Reuters 标题指向美国政府与美国 AI 公司之间的自愿模型提交和网络安全测试安排。",
-                "变化重点：安全测试从企业内部红队、第三方测评和自愿披露，进一步靠近政府牵头的验证框架。",
-                "后续核验：需要回读 Reuters 正文确认测试机构、参与范围、是否覆盖前沿模型和是否会演变为强制性要求。"
+                "新闻事实：Here are Google’s latest AI updates from May 2026。",
+                "来源脉络：该条来自 公开来源，标题指向“The latest AI news we announced in May 2026”。",
+                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
               ],
               "benchmark_highlights": [],
               "benchmark_table": [],
-              "image_url": "",
-              "image": null,
+              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/May_AI_Recap_still.max-600x600.format-webp.webp",
+              "image": {
+                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/May_AI_Recap_still.max-600x600.format-webp.webp",
+                "alt": "The latest AI news we announced in May 2026 原始来源图片",
+                "origin": "source"
+              },
               "image_quality": {
-                "decision": "suppressed",
-                "reason": "source image is a Google News aggregator thumbnail, not an article-specific image",
-                "rejected_src": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+                "decision": "accepted"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。",
+              "region": "global",
+              "news_brief": {
+                "label": "新闻要点",
+                "lead": "Here are Google’s latest AI updates from May 2026",
+                "bullets": [
+                  "Here are Google’s latest AI updates from May 2026。",
+                  "Here are Google’s latest AI updates from May 2026"
+                ],
+                "source_note": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
+              }
+            },
+            {
+              "title": "Thousand Token Wood: shipping a multi-agent economy on a 3B model",
+              "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim",
+              "source_name": "Hugging Face blog feed",
+              "source_id": "huggingface-blog-rss",
+              "source_group": "news",
+              "source_type": "commentary",
+              "trust_tier": "P1",
+              "published_at": "2026-06-05",
+              "summary": "公开来源 报道，Thousand Token Wood: shipping a multi-agent economy on a 3B model。",
+              "key_points": [
+                "新闻事实：公开来源 报道，Thousand Token Wood: shipping a multi-agent economy on a 3B model。",
+                "来源脉络：该条来自 公开来源，标题指向“Thousand Token Wood: shipping a multi-agent economy on a 3B model”。",
+                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+              ],
+              "detail_highlights": [
+                "产业叙事：报道把国产 GPU、Agent、终端生态和具身智能放在同一套基础设施故事里。",
+                "机会线索：国内 AI 基础设施不再只是算力供给，也在向软件栈、应用场景和测评体系延伸。",
+                "可信边界：企业披露数据和媒体总结需要结合官方文档、客户案例和第三方测试校准。"
+              ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
+              "image_url": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/build-small-hackathon/thousand-token-wood-sim.png",
+              "image": {
+                "src": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/build-small-hackathon/thousand-token-wood-sim.png",
+                "alt": "Thousand Token Wood: shipping a multi-agent economy on a 3B model 原始来源图片",
+                "origin": "source"
+              },
+              "image_quality": {
+                "decision": "accepted"
               },
               "related_themes": [
                 "MEE",
@@ -4710,13 +4794,12 @@
               "region": "global",
               "news_brief": {
                 "label": "新闻要点",
-                "lead": "Reuters 标题显示，特朗普政府计划要求美国 AI 公司自愿提交模型接受网络安全测试；该事件的重点是模型安全评估从企业自测进入政府牵头验证语境。",
+                "lead": "公开来源 报道，Thousand Token Wood: shipping a multi-agent economy on a 3B model。",
                 "bullets": [
-                  "Reuters 标题显示，美国政府准备要求美国 AI 公司自愿提交模型接受网络安全测试。",
-                  "模型安全评估正在从企业自测和自愿披露，扩展到政府牵头的测试与审查语境。",
-                  "当前站点只拿到聚合标题与摘要入口，需回读 Reuters 原文确认参与公司、测试机构和时间表。",
-                  "Reuters 标题指向美国政府与美国 AI 公司之间的自愿模型提交和网络安全测试安排。",
-                  "变化重点：安全测试从企业内部红队、第三方测评和自愿披露，进一步靠近政府牵头的验证框架。"
+                  "公开来源 报道，Thousand Token Wood: shipping a multi-agent economy on a 3B model。",
+                  "报道把国产 GPU、Agent、终端生态和具身智能放在同一套基础设施故事里。",
+                  "国内 AI 基础设施不再只是算力供给，也在向软件栈、应用场景和测评体系延伸。",
+                  "企业披露数据和媒体总结需要结合官方文档、客户案例和第三方测试校准。"
                 ],
                 "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
               }
@@ -4768,6 +4851,57 @@
                   "产品事实：fully local 的重点是把机器人交互、控制和部分智能能力留在本地，减少对云端实时连接的依赖。",
                   "本地化会改善隐私、稳定性和体验延迟，但也会带来模型尺寸、硬件能力和升级维护约束。",
                   "机会判断：适合观察“AI 能力从云端服务进入可触摸设备”的产品路径。"
+                ],
+                "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+              }
+            },
+            {
+              "title": "Designing the hf CLI as an agent-optimized way to work with the Hub",
+              "url": "https://huggingface.co/blog/hf-cli-for-agents",
+              "source_name": "Hugging Face blog feed",
+              "source_id": "huggingface-blog-rss",
+              "source_group": "news",
+              "source_type": "commentary",
+              "trust_tier": "P1",
+              "published_at": "2026-06-04",
+              "summary": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+              "key_points": [
+                "新闻事实：We’re on a journey to advance and democratize artificial intelligence through open source and open science。",
+                "来源脉络：该条来自 公开来源，标题指向“Designing the hf CLI as an agent-optimized way to work with the Hub”。",
+                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+              ],
+              "detail_highlights": [
+                "产业叙事：报道把国产 GPU、Agent、终端生态和具身智能放在同一套基础设施故事里。",
+                "机会线索：国内 AI 基础设施不再只是算力供给，也在向软件栈、应用场景和测评体系延伸。",
+                "可信边界：企业披露数据和媒体总结需要结合官方文档、客户案例和第三方测试校准。"
+              ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
+              "image_url": "https://huggingface.co/blog/assets/hf-cli-for-agents/thumbnail.png",
+              "image": {
+                "src": "https://huggingface.co/blog/assets/hf-cli-for-agents/thumbnail.png",
+                "alt": "Designing the hf CLI as an agent-optimized way to work with the Hub 原始来源图片",
+                "origin": "source"
+              },
+              "image_quality": {
+                "decision": "accepted"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+              "region": "global",
+              "news_brief": {
+                "label": "新闻要点",
+                "lead": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+                "bullets": [
+                  "We’re on a journey to advance and democratize artificial intelligence through open source and open science。",
+                  "报道把国产 GPU、Agent、终端生态和具身智能放在同一套基础设施故事里。",
+                  "国内 AI 基础设施不再只是算力供给，也在向软件栈、应用场景和测评体系延伸。",
+                  "企业披露数据和媒体总结需要结合官方文档、客户案例和第三方测试校准。"
                 ],
                 "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
               }
@@ -4967,106 +5101,6 @@
               }
             },
             {
-              "title": "Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic",
-              "url": "https://huggingface.co/blog/ibm-research/agent-logic-and-scalable-ai-adoption",
-              "source_name": "Hugging Face blog feed",
-              "source_id": "huggingface-blog-rss",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P1",
-              "published_at": "2026-06-01",
-              "summary": "公开来源 报道，Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic。",
-              "key_points": [
-                "新闻事实：公开来源 报道，Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic。",
-                "来源脉络：该条来自 公开来源，标题指向“Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic”。",
-                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
-              ],
-              "detail_highlights": [
-                "产业叙事：报道把国产 GPU、Agent、终端生态和具身智能放在同一套基础设施故事里。",
-                "机会线索：国内 AI 基础设施不再只是算力供给，也在向软件栈、应用场景和测评体系延伸。",
-                "可信边界：企业披露数据和媒体总结需要结合官方文档、客户案例和第三方测试校准。"
-              ],
-              "benchmark_highlights": [],
-              "benchmark_table": [],
-              "image_url": "https://cdn-uploads.huggingface.co/production/uploads/65b12ed52be9660f0b7e5f72/mu_IH3lDD1qGRQZptFmPP.png",
-              "image": {
-                "src": "https://cdn-uploads.huggingface.co/production/uploads/65b12ed52be9660f0b7e5f72/mu_IH3lDD1qGRQZptFmPP.png",
-                "alt": "Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic 原始来源图片",
-                "origin": "source"
-              },
-              "image_quality": {
-                "decision": "accepted"
-              },
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
-              "region": "global",
-              "news_brief": {
-                "label": "新闻要点",
-                "lead": "公开来源 报道，Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic。",
-                "bullets": [
-                  "公开来源 报道，Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic。",
-                  "报道把国产 GPU、Agent、终端生态和具身智能放在同一套基础设施故事里。",
-                  "国内 AI 基础设施不再只是算力供给，也在向软件栈、应用场景和测评体系延伸。",
-                  "企业披露数据和媒体总结需要结合官方文档、客户案例和第三方测试校准。"
-                ],
-                "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
-              }
-            },
-            {
-              "title": "Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action",
-              "url": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
-              "source_name": "Hugging Face blog feed",
-              "source_id": "huggingface-blog-rss",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P1",
-              "published_at": "2026-06-01",
-              "summary": "公开来源 报道，Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action。",
-              "key_points": [
-                "新闻事实：公开来源 报道，Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action。",
-                "来源脉络：该条来自 公开来源，标题指向“Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action”。",
-                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
-              ],
-              "detail_highlights": [
-                "新闻事实：公开来源 报道，Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action。",
-                "来源脉络：该条来自 公开来源，标题指向“Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action”。",
-                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
-              ],
-              "benchmark_highlights": [],
-              "benchmark_table": [],
-              "image_url": "https://cdn-uploads.huggingface.co/production/uploads/6799309995f2227228bc38f3/js_kXqJrfpYZd1hZvwPug.png",
-              "image": {
-                "src": "https://cdn-uploads.huggingface.co/production/uploads/6799309995f2227228bc38f3/js_kXqJrfpYZd1hZvwPug.png",
-                "alt": "Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action 原始来源图片",
-                "origin": "source"
-              },
-              "image_quality": {
-                "decision": "accepted"
-              },
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
-              "region": "global",
-              "news_brief": {
-                "label": "新闻要点",
-                "lead": "公开来源 报道，Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action。",
-                "bullets": [
-                  "公开来源 报道，Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action。",
-                  "公开来源 报道，Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action"
-                ],
-                "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
-              }
-            },
-            {
               "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
               "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/",
               "source_name": "Google AI blog feed",
@@ -5114,57 +5148,6 @@
                   "报告站点、互动问答和轻应用可以作为高频内容表达形态。"
                 ],
                 "source_note": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
-              }
-            },
-            {
-              "title": "Reachy Mini goes fully local",
-              "url": "https://huggingface.co/blog/local-reachy-mini-conversation",
-              "source_name": "Hugging Face blog feed",
-              "source_id": "huggingface-blog-rss",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P1",
-              "published_at": "2026-05-27",
-              "summary": "Reachy Mini fully local 指向本地化机器人/边缘 AI 的产品方向：把对话、控制和交互尽量放到本地执行，可降低网络依赖并改善隐私边界。",
-              "key_points": [
-                "新闻事实：Reachy Mini fully local 指向本地化机器人/边缘 AI 的产品方向：把对话、控制和交互尽量放到本地执行，可降低网络依赖并改善隐私边界。",
-                "来源脉络：该条来自 公开来源，标题指向“Reachy Mini goes fully local”。",
-                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
-              ],
-              "detail_highlights": [
-                "产品事实：fully local 的重点是把机器人交互、控制和部分智能能力留在本地，减少对云端实时连接的依赖。",
-                "用户价值：本地化会改善隐私、稳定性和体验延迟，但也会带来模型尺寸、硬件能力和升级维护约束。",
-                "机会判断：适合观察“AI 能力从云端服务进入可触摸设备”的产品路径。"
-              ],
-              "benchmark_highlights": [],
-              "benchmark_table": [],
-              "image_url": "https://huggingface.co/blog/assets/local-reachy-mini-conversation/thumbnail.png",
-              "image": {
-                "src": "https://huggingface.co/blog/assets/local-reachy-mini-conversation/thumbnail.png",
-                "alt": "Reachy Mini goes fully local 原始来源图片",
-                "origin": "source"
-              },
-              "image_quality": {
-                "decision": "accepted"
-              },
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
-              "region": "global",
-              "news_brief": {
-                "label": "新闻要点",
-                "lead": "Reachy Mini fully local 指向本地化机器人/边缘 AI 的产品方向：把对话、控制和交互尽量放到本地执行，可降低网络依赖并改善隐私边界。",
-                "bullets": [
-                  "Reachy Mini fully local 指向本地化机器人/边缘 AI 的产品方向：把对话、控制和交互尽量放到本地执行，可降低网络依赖并改善隐私边界。",
-                  "产品事实：fully local 的重点是把机器人交互、控制和部分智能能力留在本地，减少对云端实时连接的依赖。",
-                  "本地化会改善隐私、稳定性和体验延迟，但也会带来模型尺寸、硬件能力和升级维护约束。",
-                  "机会判断：适合观察“AI 能力从云端服务进入可触摸设备”的产品路径。"
-                ],
-                "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
               }
             },
             {
@@ -5217,33 +5200,34 @@
               }
             },
             {
-              "title": "AI to double data centre power and water consumption by 2030, UN researchers say - Reuters",
-              "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQd3F4Sm9fUl9mNVUweWpTMHQ5WktMSmNCZU5BdGVpaE5yWGpUQmJqcjRVMEIxWFlUQmJvOXBKaTFoUTFRN2FvZmlILUJpTHBTd0pxdU94bW1mdlZvdGJraGQyR1o0bV8tbnV6SzdUMkMxNTlZdXRIekRfWktrdXpfNnVuVWJBanlTSjZ6T2h2cEtCRU5RX1ZscEFmWlFZVEMtNDViUjdoZGNxdDBreFk2TW9qaDF5dy1Qd3hyck1DR2NMdw?oc=5",
-              "source_name": "Reuters AI and technology news surfaced through Google News RSS",
-              "source_id": "reuters-ai-tech-rss",
+              "title": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
+              "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+              "source_name": "Hugging Face blog feed",
+              "source_id": "huggingface-blog-rss",
               "source_group": "news",
               "source_type": "commentary",
               "trust_tier": "P1",
-              "published_at": "2026-06-03",
-              "summary": "Reuters 报道，AI to double data centre power and water consumption by 2030, UN researchers say - Reuters。",
+              "published_at": "2026-06-04",
+              "summary": "公开来源 报道，Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI。",
               "key_points": [
-                "新闻事实：Reuters 报道，AI to double data centre power and water consumption by 2030, UN researchers say - Reuters。",
-                "来源脉络：该条来自 Reuters，标题指向“AI to double data centre power and water consumption by 2030, UN researchers say - Reuters”。",
+                "新闻事实：公开来源 报道，Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI。",
+                "来源脉络：该条来自 公开来源，标题指向“Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI”。",
                 "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
               ],
               "detail_highlights": [
-                "新闻事实：Reuters 报道，AI to double data centre power and water consumption by 2030, UN researchers say - Reuters。",
-                "来源脉络：该条来自 Reuters，标题指向“AI to double data centre power and water consumption by 2030, UN researchers say - Reuters”。",
-                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+                "事实展开：公开来源 报道，Nemotron 3。",
+                "事实展开：5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI。"
               ],
               "benchmark_highlights": [],
               "benchmark_table": [],
-              "image_url": "",
-              "image": null,
+              "image_url": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/nvidia/nemotron-3-5-content-safety.png",
+              "image": {
+                "src": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/nvidia/nemotron-3-5-content-safety.png",
+                "alt": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI 原始来源图片",
+                "origin": "source"
+              },
               "image_quality": {
-                "decision": "suppressed",
-                "reason": "source image is a Google News aggregator thumbnail, not an article-specific image",
-                "rejected_src": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+                "decision": "accepted"
               },
               "related_themes": [
                 "MEE",
@@ -5255,42 +5239,44 @@
               "region": "global",
               "news_brief": {
                 "label": "新闻要点",
-                "lead": "Reuters 报道，AI to double data centre power and water consumption by 2030, UN researchers say - Reuters。",
+                "lead": "公开来源 报道，Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI。",
                 "bullets": [
-                  "Reuters 报道，AI to double data centre power and water consumption by 2030, UN researchers say - Reuters。",
-                  "Reuters 报道，AI to double data centre power and water consumption by 2030, UN researchers say - Reuters"
+                  "公开来源 报道，Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI。",
+                  "公开来源 报道，Nemotron 3。",
+                  "5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI。"
                 ],
                 "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
               }
             },
             {
-              "title": "OpenAI's Altman to urge US lawmakers not to require AI model approvals - Reuters",
-              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQNnd1b0RYcWdFY0pNdzRoM0w5eXkxYTNIZTNMOGxCVWx0ZUlVcmFuMXBMRnRjbl9FdVN0Mm1KeGFMTUpNM3o4YVF2WGZkeUhVWkdmNnRBNEc5YmQ5N2FXNEZhbFFsUUYtLU1NS2cxaEJ0U0hHSmxWZHEza3FvbmExd1NBUnBfUFdWLUcwT2I1T09GYXNDNjVGU1k5ekw2U1NMczJDaHp5UHhyU29M?oc=5",
-              "source_name": "Reuters AI and technology news surfaced through Google News RSS",
-              "source_id": "reuters-ai-tech-rss",
+              "title": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios",
+              "url": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
+              "source_name": "Hugging Face blog feed",
+              "source_id": "huggingface-blog-rss",
               "source_group": "news",
               "source_type": "commentary",
               "trust_tier": "P1",
-              "published_at": "2026-06-03",
-              "summary": "Reuters 报道，OpenAI's Altman to urge US lawmakers not to require AI model approvals - Reuters。",
+              "published_at": "2026-06-04",
+              "summary": "公开来源 报道，EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios。",
               "key_points": [
-                "新闻事实：Reuters 报道，OpenAI's Altman to urge US lawmakers not to require AI model approvals - Reuters。",
-                "来源脉络：该条来自 Reuters，标题指向“OpenAI's Altman to urge US lawmakers not to require AI model approvals - Reuters”。",
+                "新闻事实：公开来源 报道，EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios。",
+                "来源脉络：该条来自 公开来源，标题指向“EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios”。",
                 "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
               ],
               "detail_highlights": [
-                "新闻事实：Reuters 报道，OpenAI's Altman to urge US lawmakers not to require AI model approvals - Reuters。",
-                "来源脉络：该条来自 Reuters，标题指向“OpenAI's Altman to urge US lawmakers not to require AI model approvals - Reuters”。",
-                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+                "事实展开：公开来源 报道，EVA-Bench Data 2。",
+                "事实展开：0: 3 Domains, 121 Tools, 213 Scenarios。"
               ],
               "benchmark_highlights": [],
               "benchmark_table": [],
-              "image_url": "",
-              "image": null,
+              "image_url": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/ServiceNow-AI/eva-bench-data.png",
+              "image": {
+                "src": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/ServiceNow-AI/eva-bench-data.png",
+                "alt": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios 原始来源图片",
+                "origin": "source"
+              },
               "image_quality": {
-                "decision": "suppressed",
-                "reason": "source image is a Google News aggregator thumbnail, not an article-specific image",
-                "rejected_src": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+                "decision": "accepted"
               },
               "related_themes": [
                 "MEE",
@@ -5302,10 +5288,11 @@
               "region": "global",
               "news_brief": {
                 "label": "新闻要点",
-                "lead": "Reuters 报道，OpenAI's Altman to urge US lawmakers not to require AI model approvals - Reuters。",
+                "lead": "公开来源 报道，EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios。",
                 "bullets": [
-                  "Reuters 报道，OpenAI's Altman to urge US lawmakers not to require AI model approvals - Reuters。",
-                  "Reuters 报道，OpenAI's Altman to urge US lawmakers not to require AI model approvals - Reuters"
+                  "公开来源 报道，EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios。",
+                  "公开来源 报道，EVA-Bench Data 2。",
+                  "0: 3 Domains, 121 Tools, 213 Scenarios。"
                 ],
                 "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
               }
@@ -5406,55 +5393,6 @@
                   "公开来源 报道，Direct Preference Optimization Beyond Chatbots"
                 ],
                 "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
-              }
-            },
-            {
-              "title": "We’re announcing new community investments in Missouri.",
-              "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/missouri-programs/",
-              "source_name": "Google AI blog feed",
-              "source_id": "google-ai-blog-rss",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P0",
-              "published_at": "2026-05-20",
-              "summary": "We’re helping build the state’s next-generation workforce and investing in energy programs.",
-              "key_points": [
-                "新闻事实：We’re helping build the state’s next-generation workforce and investing in energy programs。",
-                "来源脉络：该条来自 公开来源，标题指向“We’re announcing new community investments in Missouri.”。",
-                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
-              ],
-              "detail_highlights": [
-                "新闻事实：We’re helping build the state’s next-generation workforce and investing in energy programs。",
-                "来源脉络：该条来自 公开来源，标题指向“We’re announcing new community investments in Missouri.”。",
-                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
-              ],
-              "benchmark_highlights": [],
-              "benchmark_table": [],
-              "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/MissouriSocial.max-600x600.format-webp.webp",
-              "image": {
-                "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/MissouriSocial.max-600x600.format-webp.webp",
-                "alt": "We’re announcing new community investments in Missouri. 原始来源图片",
-                "origin": "source"
-              },
-              "image_quality": {
-                "decision": "accepted"
-              },
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。",
-              "region": "global",
-              "news_brief": {
-                "label": "新闻要点",
-                "lead": "We’re helping build the state’s next-generation workforce and investing in energy programs.",
-                "bullets": [
-                  "We’re helping build the state’s next-generation workforce and investing in energy programs。",
-                  "We’re helping build the state’s next-generation workforce and investing in energy programs"
-                ],
-                "source_note": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
               }
             },
             {
@@ -5593,6 +5531,58 @@
               }
             },
             {
+              "title": "Jun 2, 2026 Announcements Expanding Project Glasswing",
+              "url": "https://www.anthropic.com/news/expanding-project-glasswing",
+              "source_name": "Anthropic official newsroom",
+              "source_id": "anthropic-news-page",
+              "source_group": "news",
+              "source_type": "commentary",
+              "trust_tier": "P0",
+              "published_at": "unknown",
+              "summary": "Anthropic 扩展 Project Glasswing，覆盖教育、非营利、研究和社会影响场景；该新闻的重点是模型公司开始把安全、教育使用和公共利益部署作为产品发布之外的长期工程。",
+              "key_points": [
+                "新闻事实：Anthropic 扩展 Project Glasswing，聚焦教育、非营利、研究和社会影响场景。",
+                "治理变化：模型公司正在把安全、教育使用和社会部署项目作为产品发布之外的公共叙事。",
+                "可信边界：适合作为 AI 治理和部署边界线索，实际效果需看项目参与方、产出和后续评估。"
+              ],
+              "detail_highlights": [
+                "事件主体：Anthropic 扩展 Project Glasswing，覆盖教育、非营利、研究和社会影响场景。",
+                "治理细节：模型公司正在把社会部署、安全教育和公共利益项目放到产品发布之外的长期叙事中。",
+                "后续核验：需要关注参与组织、实际资助/支持形式、项目产出和后续评估，而不是只记录项目名称。"
+              ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
+              "image_url": "https://cdn.sanity.io/images/4zrzovbb/website/19e93d85e033d3f992b78cbce2c5a3f60709bd3b-3840x2160.jpg",
+              "image": {
+                "src": "https://cdn.sanity.io/images/4zrzovbb/website/19e93d85e033d3f992b78cbce2c5a3f60709bd3b-3840x2160.jpg",
+                "alt": "Jun 2, 2026 Announcements Expanding Project Glasswing 原始来源图片",
+                "origin": "source"
+              },
+              "image_quality": {
+                "decision": "accepted"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。",
+              "region": "global",
+              "news_brief": {
+                "label": "新闻要点",
+                "lead": "Anthropic 扩展 Project Glasswing，覆盖教育、非营利、研究和社会影响场景；该新闻的重点是模型公司开始把安全、教育使用和公共利益部署作为产品发布之外的长期工程。",
+                "bullets": [
+                  "Anthropic 扩展 Project Glasswing，聚焦教育、非营利、研究和社会影响场景。",
+                  "模型公司正在把安全、教育使用和社会部署项目作为产品发布之外的公共叙事。",
+                  "适合作为 AI 治理和部署边界线索，实际效果需看项目参与方、产出和后续评估。",
+                  "Anthropic 扩展 Project Glasswing，覆盖教育、非营利、研究和社会影响场景。",
+                  "治理细节：模型公司正在把社会部署、安全教育和公共利益项目放到产品发布之外的长期叙事中。"
+                ],
+                "source_note": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
+              }
+            },
+            {
               "title": "News — Google DeepMind",
               "url": "https://deepmind.google/discover/blog/",
               "source_name": "Google DeepMind official blog page",
@@ -5645,24 +5635,24 @@
               }
             },
             {
-              "title": "Jun 2, 2026 Announcements Expanding Project Glasswing",
-              "url": "https://www.anthropic.com/news/expanding-project-glasswing",
-              "source_name": "Anthropic official newsroom",
-              "source_id": "anthropic-news-page",
+              "title": "Japan could end up an 'AI colony' if it falls behind, digital minister warns - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNT0tsNGx5MmtYTGNpT2RxdkU2dEcyYzU2dU5MdGpRMVhVTzhWaHRGQWx6SmpOcjIyaW1aRDlXUjI5dndobV9zdV9ocGR1bU9nTzFJYW1RaWJsb3pJelBIcG4xU0tONEYyQnhZNUtBZmxMWDBKYWJJZlhTcmgxN2JPX2lHYWI5d0wzeE5ZMWNGS2RMclk2WTRaYk44T3FWYko0Z1dnUlN0dG9sdmIxWndqZzVOS0ZLOEFmd0tHSlNPaXBfSmtmOTQ0YW1iLV8?oc=5",
+              "source_name": "Reuters AI and technology news surfaced through Google News RSS",
+              "source_id": "reuters-ai-tech-rss",
               "source_group": "news",
               "source_type": "commentary",
-              "trust_tier": "P0",
-              "published_at": "unknown",
-              "summary": "Anthropic 扩展 Project Glasswing，覆盖教育、非营利、研究和社会影响场景；该新闻的重点是模型公司开始把安全、教育使用和公共利益部署作为产品发布之外的长期工程。",
+              "trust_tier": "P1",
+              "published_at": "2026-06-05",
+              "summary": "Reuters 报道，Japan could end up an 'AI colony' if it falls behind, digital minister warns - Reuters。",
               "key_points": [
-                "新闻事实：Anthropic 扩展 Project Glasswing，聚焦教育、非营利、研究和社会影响场景。",
-                "治理变化：模型公司正在把安全、教育使用和社会部署项目作为产品发布之外的公共叙事。",
-                "可信边界：适合作为 AI 治理和部署边界线索，实际效果需看项目参与方、产出和后续评估。"
+                "新闻事实：Reuters 报道，Japan could end up an 'AI colony' if it falls behind, digital minister warns - Reuters。",
+                "来源脉络：该条来自 Reuters，标题指向“Japan could end up an 'AI colony' if it falls behind, digital minister warns - Reuters”。",
+                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
               ],
               "detail_highlights": [
-                "事件主体：Anthropic 扩展 Project Glasswing，覆盖教育、非营利、研究和社会影响场景。",
-                "治理细节：模型公司正在把社会部署、安全教育和公共利益项目放到产品发布之外的长期叙事中。",
-                "后续核验：需要关注参与组织、实际资助/支持形式、项目产出和后续评估，而不是只记录项目名称。"
+                "新闻事实：Reuters 报道，Japan could end up an 'AI colony' if it falls behind, digital minister warns - Reuters。",
+                "来源脉络：该条来自 Reuters，标题指向“Japan could end up an 'AI colony' if it falls behind, digital minister warns - Reuters”。",
+                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
               ],
               "benchmark_highlights": [],
               "benchmark_table": [],
@@ -5670,8 +5660,8 @@
               "image": null,
               "image_quality": {
                 "decision": "suppressed",
-                "reason": "same source image was used by multiple distinct news items",
-                "rejected_src": "https://cdn.sanity.io/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg"
+                "reason": "source image is a Google News aggregator thumbnail, not an article-specific image",
+                "rejected_src": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
               },
               "related_themes": [
                 "MEE",
@@ -5679,19 +5669,157 @@
                 "产品",
                 "新闻"
               ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。",
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
               "region": "global",
               "news_brief": {
                 "label": "新闻要点",
-                "lead": "Anthropic 扩展 Project Glasswing，覆盖教育、非营利、研究和社会影响场景；该新闻的重点是模型公司开始把安全、教育使用和公共利益部署作为产品发布之外的长期工程。",
+                "lead": "Reuters 报道，Japan could end up an 'AI colony' if it falls behind, digital minister warns - Reuters。",
                 "bullets": [
-                  "Anthropic 扩展 Project Glasswing，聚焦教育、非营利、研究和社会影响场景。",
-                  "模型公司正在把安全、教育使用和社会部署项目作为产品发布之外的公共叙事。",
-                  "适合作为 AI 治理和部署边界线索，实际效果需看项目参与方、产出和后续评估。",
-                  "Anthropic 扩展 Project Glasswing，覆盖教育、非营利、研究和社会影响场景。",
-                  "治理细节：模型公司正在把社会部署、安全教育和公共利益项目放到产品发布之外的长期叙事中。"
+                  "Reuters 报道，Japan could end up an 'AI colony' if it falls behind, digital minister warns - Reuters。",
+                  "Reuters 报道，Japan could end up an 'AI colony' if it falls behind, digital minister warns - Reuters"
                 ],
-                "source_note": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
+                "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+              }
+            },
+            {
+              "title": "US says it will speed development and use of AI for national security - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPME5TUTRobTZNTTZ5LTVzM2JRZDBuQl85YjRGV2RTMXZKZXBiMWFBVk1oZERpWm1TWkVnR0NLRjRqZDdaZWVIZ2JpR20yQm9LRElJZTJtT0YweWxCT0pLQXVLRTZYV1dVOFFfd05OeENfVm14NG1PbVNyckFhSU0xN1VMcmFnWGl6QnZTZWRwNjEwbWF3VjBnWHZtcnN0d3Rvd0g2TTA2QlI?oc=5",
+              "source_name": "Reuters AI and technology news surfaced through Google News RSS",
+              "source_id": "reuters-ai-tech-rss",
+              "source_group": "news",
+              "source_type": "commentary",
+              "trust_tier": "P1",
+              "published_at": "2026-06-05",
+              "summary": "Reuters 报道，US says it will speed development and use of AI for national security - Reuters。",
+              "key_points": [
+                "新闻事实：Reuters 报道，US says it will speed development and use of AI for national security - Reuters。",
+                "来源脉络：该条来自 Reuters，标题指向“US says it will speed development and use of AI for national security - Reuters”。",
+                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+              ],
+              "detail_highlights": [
+                "新闻事实：Reuters 报道，US says it will speed development and use of AI for national security - Reuters。",
+                "来源脉络：该条来自 Reuters，标题指向“US says it will speed development and use of AI for national security - Reuters”。",
+                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+              ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
+              "image_url": "",
+              "image": null,
+              "image_quality": {
+                "decision": "suppressed",
+                "reason": "source image is a Google News aggregator thumbnail, not an article-specific image",
+                "rejected_src": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+              "region": "global",
+              "news_brief": {
+                "label": "新闻要点",
+                "lead": "Reuters 报道，US says it will speed development and use of AI for national security - Reuters。",
+                "bullets": [
+                  "Reuters 报道，US says it will speed development and use of AI for national security - Reuters。",
+                  "Reuters 报道，US says it will speed development and use of AI for national security - Reuters"
+                ],
+                "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+              }
+            },
+            {
+              "title": "Trump says his team will 'look into' US taking stake in AI companies - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOQjJMRnpPRHVCampPWlVBNGFoOFl1T0N1NG5zdU81cjg4VDFocHhXbXJELWZoaS1Talg3aE5yTFI1b2dmN21TcW5kREdkYTJiS2pVbzBJYWFRbVl3c3ppNGJCdk9XRHA0bTZLRE9PRWF0RmRXdzIwNU1IdzNPeVMtS2VZNHRoamQ5QkNkanJBNF90anAyN19aX0YxZGVTV1JDNjY0QWwydEtER2FZ?oc=5",
+              "source_name": "Reuters AI and technology news surfaced through Google News RSS",
+              "source_id": "reuters-ai-tech-rss",
+              "source_group": "news",
+              "source_type": "commentary",
+              "trust_tier": "P1",
+              "published_at": "2026-06-05",
+              "summary": "Reuters 报道，Trump says his team will 'look into' US taking stake in AI companies - Reuters。",
+              "key_points": [
+                "新闻事实：Reuters 报道，Trump says his team will 'look into' US taking stake in AI companies - Reuters。",
+                "来源脉络：该条来自 Reuters，标题指向“Trump says his team will 'look into' US taking stake in AI companies - Reuters”。",
+                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+              ],
+              "detail_highlights": [
+                "新闻事实：Reuters 报道，Trump says his team will 'look into' US taking stake in AI companies - Reuters。",
+                "来源脉络：该条来自 Reuters，标题指向“Trump says his team will 'look into' US taking stake in AI companies - Reuters”。",
+                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+              ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
+              "image_url": "",
+              "image": null,
+              "image_quality": {
+                "decision": "suppressed",
+                "reason": "source image is a Google News aggregator thumbnail, not an article-specific image",
+                "rejected_src": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+              "region": "global",
+              "news_brief": {
+                "label": "新闻要点",
+                "lead": "Reuters 报道，Trump says his team will 'look into' US taking stake in AI companies - Reuters。",
+                "bullets": [
+                  "Reuters 报道，Trump says his team will 'look into' US taking stake in AI companies - Reuters。",
+                  "Reuters 报道，Trump says his team will 'look into' US taking stake in AI companies - Reuters"
+                ],
+                "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+              }
+            },
+            {
+              "title": "Exclusive: South Korea labour minister calls on tech firms to share excess AI profits with suppliers, staff - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOZ09wcEJnaW5yR1lxOFRVSVFESnQya1VkSVVmdzIxZkMyWDgxbkRDeHZDMFNSOWtMaWR1WVBjTXd6cG1uR0I3d2JmT3o4VkQ5VHhMYWJQV0EzMEJfWlVJTGJJY240VVhrUkpQcnpTS1RRUnd5NDFWMFVrclgtdzNvaE0yZWJ3bnBSRDR5RW4zbVFtamdnaGt2dDAtSDl6QURzQk9GWnhSSTYza2lEUUJmTnBMMEhzeXU2OVRZRDhvWUhUbzdWZTJtM3JDNmZ6WjRXSnNpZFhR?oc=5",
+              "source_name": "Reuters AI and technology news surfaced through Google News RSS",
+              "source_id": "reuters-ai-tech-rss",
+              "source_group": "news",
+              "source_type": "commentary",
+              "trust_tier": "P1",
+              "published_at": "2026-06-05",
+              "summary": "Reuters 报道，Exclusive: South Korea labour minister calls on tech firms to share excess AI profits with suppliers, staff - Reuters。",
+              "key_points": [
+                "新闻事实：Reuters 报道，Exclusive: South Korea labour minister calls on tech firms to share excess AI profits with suppliers, staff - Reuters。",
+                "来源脉络：该条来自 Reuters，标题指向“Exclusive: South Korea labour minister calls on tech firms to share excess AI profits with suppliers, staff - Reuters”。",
+                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+              ],
+              "detail_highlights": [
+                "新闻事实：Reuters 报道，Exclusive: South Korea labour minister calls on tech firms to share excess AI profits with suppliers, staff - Reuters。",
+                "来源脉络：该条来自 Reuters，标题指向“Exclusive: South Korea labour minister calls on tech firms to share excess AI profits with suppliers, staff - Reuters”。",
+                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+              ],
+              "benchmark_highlights": [],
+              "benchmark_table": [],
+              "image_url": "",
+              "image": null,
+              "image_quality": {
+                "decision": "suppressed",
+                "reason": "source image is a Google News aggregator thumbnail, not an article-specific image",
+                "rejected_src": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+              },
+              "related_themes": [
+                "MEE",
+                "个人",
+                "产品",
+                "新闻"
+              ],
+              "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+              "region": "global",
+              "news_brief": {
+                "label": "新闻要点",
+                "lead": "Reuters 报道，Exclusive: South Korea labour minister calls on tech firms to share excess AI profits with suppliers, staff - Reuters。",
+                "bullets": [
+                  "Reuters 报道，Exclusive: South Korea labour minister calls on tech firms to share excess AI profits with suppliers, staff - Reuters。",
+                  "Reuters 报道，Exclusive: South Korea labour minister calls on tech firms to share excess AI profits with suppliers, staff - Reuters"
+                ],
+                "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
               }
             },
             {
@@ -5703,25 +5831,26 @@
               "source_type": "commentary",
               "trust_tier": "P0",
               "published_at": "unknown",
-              "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+              "summary": "In March, we launched the Claude Partner Network, a program for the firms that help enterprises put Claude into production.. Today, we’re announcing two new components that make this ecosystem easier for customers to navigate.",
               "key_points": [
-                "新闻事实：Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems。",
+                "新闻事实：In March, we launched the Claude Partner Network, a program for the firms that help enterprises put Claude into production.. Today, we’re announcing two new components that make this ecosystem easier for customers to navigate。",
                 "来源脉络：该条来自 公开来源，标题指向“Jun 3, 2026 Announcements Introducing the Services Track and Partner Hub of the Claude Partner Network”。",
                 "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
               ],
               "detail_highlights": [
-                "新闻事实：Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems。",
-                "来源脉络：该条来自 公开来源，标题指向“Jun 3, 2026 Announcements Introducing the Services Track and Partner Hub of the Claude Partner Network”。",
-                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+                "事实展开：In March, we launched the Claude Partner Network, a program for the firms that help enterprises put Claude into production。",
+                "事实展开：Today, we’re announcing two new components that make this ecosystem easier for customers to navigate。"
               ],
               "benchmark_highlights": [],
               "benchmark_table": [],
-              "image_url": "",
-              "image": null,
+              "image_url": "https://www.anthropic.com/api/opengraph-illustration?name=Hand%20ShapeBuild&backgroundColor=fig",
+              "image": {
+                "src": "https://www.anthropic.com/api/opengraph-illustration?name=Hand%20ShapeBuild&backgroundColor=fig",
+                "alt": "Jun 3, 2026 Announcements Introducing the Services Track and Partner Hub of the Claude Partner Network 原始来源图片",
+                "origin": "source"
+              },
               "image_quality": {
-                "decision": "suppressed",
-                "reason": "same source image was used by multiple distinct news items",
-                "rejected_src": "https://cdn.sanity.io/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg"
+                "decision": "accepted"
               },
               "related_themes": [
                 "MEE",
@@ -5733,10 +5862,11 @@
               "region": "global",
               "news_brief": {
                 "label": "新闻要点",
-                "lead": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+                "lead": "In March, we launched the Claude Partner Network, a program for the firms that help enterprises put Claude into production.. Today, we’re announcing two new components that make this ecosystem easier for customers to navigate.",
                 "bullets": [
-                  "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems。",
-                  "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems"
+                  "In March, we launched the Claude Partner Network, a program for the firms that help enterprises put Claude into production.. Today, we’re announcing two new components that make this ecosystem easier for customers to navigate。",
+                  "In March, we launched the Claude Partner Network, a program for the firms that help enterprises put Claude into production。",
+                  "Today, we’re announcing two new components that make this ecosystem easier for customers to navigate。"
                 ],
                 "source_note": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
               }
@@ -5750,25 +5880,26 @@
               "source_type": "commentary",
               "trust_tier": "P0",
               "published_at": "unknown",
-              "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+              "summary": "As AI transforms the nature of and methods behind cyberattacks, how well do the techniques and frameworks used by the security community hold up? In a new report, we seek to answer that question.",
               "key_points": [
-                "新闻事实：Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems。",
+                "新闻事实：As AI transforms the nature of and methods behind cyberattacks, how well do the techniques and frameworks used by the security community hold up? In a new report, we seek to answer that question。",
                 "来源脉络：该条来自 公开来源，标题指向“Jun 3, 2026 Policy What we learned mapping a year’s worth of AI-enabled cyber threats”。",
                 "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
               ],
               "detail_highlights": [
-                "新闻事实：Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems。",
-                "来源脉络：该条来自 公开来源，标题指向“Jun 3, 2026 Policy What we learned mapping a year’s worth of AI-enabled cyber threats”。",
-                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+                "事实展开：As AI transforms the nature of and methods behind cyberattacks, how well do the techniques and frameworks used by the security community hold up。",
+                "事实展开：In a new report, we seek to answer that question。"
               ],
               "benchmark_highlights": [],
               "benchmark_table": [],
-              "image_url": "",
-              "image": null,
+              "image_url": "https://www.anthropic.com/api/opengraph-illustration?name=Object-LaptopSecure&backgroundColor=cactus",
+              "image": {
+                "src": "https://www.anthropic.com/api/opengraph-illustration?name=Object-LaptopSecure&backgroundColor=cactus",
+                "alt": "Jun 3, 2026 Policy What we learned mapping a year’s worth of AI-enabled cyber threats 原始来源图片",
+                "origin": "source"
+              },
               "image_quality": {
-                "decision": "suppressed",
-                "reason": "same source image was used by multiple distinct news items",
-                "rejected_src": "https://cdn.sanity.io/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg"
+                "decision": "accepted"
               },
               "related_themes": [
                 "MEE",
@@ -5780,42 +5911,45 @@
               "region": "global",
               "news_brief": {
                 "label": "新闻要点",
-                "lead": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+                "lead": "As AI transforms the nature of and methods behind cyberattacks, how well do the techniques and frameworks used by the security community hold up? In a new report, we seek to answer that question.",
                 "bullets": [
-                  "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems。",
-                  "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems"
+                  "As AI transforms the nature of and methods behind cyberattacks, how well do the techniques and frameworks used by the security community hold up? In a new report, we seek to answer that question。",
+                  "As AI transforms the nature of and methods behind cyberattacks, how well do the techniques and frameworks used by the security community hold up。",
+                  "In a new report, we seek to answer that question。"
                 ],
                 "source_note": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
               }
             },
             {
-              "title": "Jun 1, 2026 Announcements Anthropic confidentially submits draft S-1 to the SEC",
-              "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+              "title": "May 27, 2026 Announcements Anthropic opens Milan office to support Italian enterprise, research, and developers",
+              "url": "https://www.anthropic.com/news/milan-office-opening",
               "source_name": "Anthropic official newsroom",
               "source_id": "anthropic-news-page",
               "source_group": "news",
               "source_type": "commentary",
               "trust_tier": "P0",
               "published_at": "unknown",
-              "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+              "summary": "We're opening a new office in Milan, our sixth in Europe.",
               "key_points": [
-                "新闻事实：Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems。",
-                "来源脉络：该条来自 公开来源，标题指向“Jun 1, 2026 Announcements Anthropic confidentially submits draft S-1 to the SEC”。",
+                "新闻事实：We're opening a new office in Milan, our sixth in Europe。",
+                "来源脉络：该条来自 公开来源，标题指向“May 27, 2026 Announcements Anthropic opens Milan office to support Italian enterprise, research, and developers”。",
                 "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
               ],
               "detail_highlights": [
-                "新闻事实：Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems。",
-                "来源脉络：该条来自 公开来源，标题指向“Jun 1, 2026 Announcements Anthropic confidentially submits draft S-1 to the SEC”。",
+                "新闻事实：We're opening a new office in Milan, our sixth in Europe。",
+                "来源脉络：该条来自 公开来源，标题指向“May 27, 2026 Announcements Anthropic opens Milan office to support Italian enterprise, research, and developers”。",
                 "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
               ],
               "benchmark_highlights": [],
               "benchmark_table": [],
-              "image_url": "",
-              "image": null,
+              "image_url": "https://www.anthropic.com/api/opengraph-illustration?name=Hand%20City&backgroundColor=fig",
+              "image": {
+                "src": "https://www.anthropic.com/api/opengraph-illustration?name=Hand%20City&backgroundColor=fig",
+                "alt": "May 27, 2026 Announcements Anthropic opens Milan office to support Italian enterprise, research, and developers 原始来源图片",
+                "origin": "source"
+              },
               "image_quality": {
-                "decision": "suppressed",
-                "reason": "same source image was used by multiple distinct news items",
-                "rejected_src": "https://cdn.sanity.io/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg"
+                "decision": "accepted"
               },
               "related_themes": [
                 "MEE",
@@ -5827,57 +5961,10 @@
               "region": "global",
               "news_brief": {
                 "label": "新闻要点",
-                "lead": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+                "lead": "We're opening a new office in Milan, our sixth in Europe.",
                 "bullets": [
-                  "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems。",
-                  "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems"
-                ],
-                "source_note": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
-              }
-            },
-            {
-              "title": "May 28, 2026 Announcements Anthropic raises $65B in Series H funding at $965B post-money valuation",
-              "url": "https://www.anthropic.com/news/series-h",
-              "source_name": "Anthropic official newsroom",
-              "source_id": "anthropic-news-page",
-              "source_group": "news",
-              "source_type": "commentary",
-              "trust_tier": "P0",
-              "published_at": "unknown",
-              "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
-              "key_points": [
-                "新闻事实：Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems。",
-                "来源脉络：该条来自 公开来源，标题指向“May 28, 2026 Announcements Anthropic raises $65B in Series H funding at $965B post-money valuation”。",
-                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
-              ],
-              "detail_highlights": [
-                "新闻事实：Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems。",
-                "来源脉络：该条来自 公开来源，标题指向“May 28, 2026 Announcements Anthropic raises $65B in Series H funding at $965B post-money valuation”。",
-                "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
-              ],
-              "benchmark_highlights": [],
-              "benchmark_table": [],
-              "image_url": "",
-              "image": null,
-              "image_quality": {
-                "decision": "suppressed",
-                "reason": "same source image was used by multiple distinct news items",
-                "rejected_src": "https://cdn.sanity.io/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg"
-              },
-              "related_themes": [
-                "MEE",
-                "个人",
-                "产品",
-                "新闻"
-              ],
-              "boundary": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。",
-              "region": "global",
-              "news_brief": {
-                "label": "新闻要点",
-                "lead": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
-                "bullets": [
-                  "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems。",
-                  "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems"
+                  "We're opening a new office in Milan, our sixth in Europe。",
+                  "We're opening a new office in Milan, our sixth in Europe"
                 ],
                 "source_note": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
               }
@@ -7384,156 +7471,59 @@
         ]
       },
       "label": "新闻热点",
-      "title": "新闻热点摘要（日报 2026-06-02）",
+      "title": "新闻热点摘要（日报 2026-06-05）",
       "kicker": "日报 / 事实摘要与外部变化",
       "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告先呈现当期公开世界发生了什么、这些热点共同指向哪些外部变化、以及每条新闻的事实边界；不把新闻摘要伪装成行动建议。",
       "news_insights": [
         {
-          "title": "AI 热点正在从模型发布转向执行形态",
-          "summary": "当期热点不只在讲模型名称或分数，而是在反复出现工作流编排、本地执行、多模态交互和设备入口。读者应把这些新闻看成“AI 能力如何落到真实任务”的事实信号。",
-          "supporting_items": [
-            "Holo3.1: Fast & Local Computer Use Agents",
-            "Microsoft teases new era of AI-driven devices at annual developer conference - Reuters"
-          ]
-        },
-        {
           "title": "安全、治理和公共部署正在进入发布主叙事",
           "summary": "政府牵头测试、模型公司公共项目和安全叙事开始与产品发布并列出现。新闻摘要应保留事实边界，但这些信号已经足以提示后续产品和 MEE 治理需要更重视验证、权限和责任链。",
           "supporting_items": [
-            "Trump administration to ask US AI firms to voluntarily submit models for cybersecurity tests - Reuters",
-            "Jun 2, 2026 Announcements Expanding Project Glasswing"
+            "US says it will speed development and use of AI for national security - Reuters"
+          ]
+        },
+        {
+          "title": "AI 基础设施已从技术背景变成市场与宏观变量",
+          "summary": "基础设施合同、硬件股价、数据中心和通胀讨论说明 AI 不再只是模型层竞争，也在改变资本开支、能源、网络互联和企业采购节奏。",
+          "supporting_items": [
+            "Thousand Token Wood: shipping a multi-agent economy on a 3B model"
+          ]
+        },
+        {
+          "title": "国内热点更强调行业场景、国产基础设施和规模化落地",
+          "summary": "国内来源的价值不只是补齐地域覆盖，而是提供行业级应用、国产软硬件栈和组织落地样本，可作为产品机会和 MEE 本体进化的独立证据层。",
+          "supporting_items": [
+            "Thousand Token Wood: shipping a multi-agent economy on a 3B model"
           ]
         }
       ],
       "news_items": [
         {
-          "title": "Holo3.1: Fast & Local Computer Use Agents",
-          "url": "https://huggingface.co/blog/Hcompany/holo31",
-          "source_name": "Hugging Face blog feed",
-          "source_id": "huggingface-blog-rss",
-          "source_group": "news",
-          "source_type": "commentary",
-          "trust_tier": "P1",
-          "published_at": "2026-06-02",
-          "summary": "H Company 在 Hugging Face 发布 Holo3.1，重点指向 fast、local 与 computer-use agent；该新闻适合观察本地化 Agent 在低延迟、隐私边界和屏幕动作执行上的产品化可能。",
-          "key_points": [
-            "新闻事实：H Company 在 Hugging Face 发布 Holo3.1，主张 fast、local 与 computer-use agent。",
-            "能力重点：本地化 computer-use agent 的核心价值在低延迟、隐私边界、屏幕理解和本机动作执行。",
-            "验证边界：进入产品判断前需要回读模型/代码许可、demo 约束和真实复现路径。"
-          ],
-          "detail_highlights": [
-            "事实层：该来源强调 fast、local 与 computer-use agent，说明端侧或本地化执行仍是 Agent 生态的重要分支。",
-            "能力层：如果它能把屏幕理解、动作执行和本地权限收口，价值会落在低延迟、隐私边界和自动化可靠性上。",
-            "验证层：应优先查看 README、模型/代码许可、demo 约束和真实可复现路径，避免只因“local agent”标题就进入产品判断。"
-          ],
-          "benchmark_highlights": [],
-          "benchmark_table": [],
-          "image_url": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/Hcompany/holo31.png",
-          "image": {
-            "src": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/Hcompany/holo31.png",
-            "alt": "Holo3.1: Fast & Local Computer Use Agents 原始来源图片",
-            "origin": "source"
-          },
-          "image_quality": {
-            "decision": "accepted"
-          },
-          "related_themes": [
-            "MEE",
-            "个人",
-            "产品",
-            "新闻"
-          ],
-          "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
-          "region": "global",
-          "news_brief": {
-            "label": "新闻要点",
-            "lead": "H Company 在 Hugging Face 发布 Holo3.1，重点指向 fast、local 与 computer-use agent；该新闻适合观察本地化 Agent 在低延迟、隐私边界和屏幕动作执行上的产品化可能。",
-            "bullets": [
-              "H Company 在 Hugging Face 发布 Holo3.1，主张 fast、local 与 computer-use agent。",
-              "本地化 computer-use agent 的核心价值在低延迟、隐私边界、屏幕理解和本机动作执行。",
-              "进入产品判断前需要回读模型/代码许可、demo 约束和真实复现路径。",
-              "该来源强调 fast、local 与 computer-use agent，说明端侧或本地化执行仍是 Agent 生态的重要分支。",
-              "如果它能把屏幕理解、动作执行和本地权限收口，价值会落在低延迟、隐私边界和自动化可靠性上。"
-            ],
-            "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
-          }
-        },
-        {
-          "title": "Trump administration to ask US AI firms to voluntarily submit models for cybersecurity tests - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUVpoMXdGZFYyY3laSUs1ZWVEdFpWS0NHM01qbV8xSzJjVlpLQk5tQkh6djN6MXU4cVFKNjFXUnZMdWhXaUNhS1BRQnhhTldTaW5QLTBVbXNTR3BQSWFYLUFzT0xjb3dVbzlzbVk5bndJaVJXSnNycURmdVRlcFdaYUVieUNoSENnV1ZDWFpoZWFJamx5NkFDaWhpVUJISmQwbFptTDQxdWNabEhOcXhsSmwxU0hoak5M?oc=5",
-          "source_name": "Reuters AI and technology news surfaced through Google News RSS",
-          "source_id": "reuters-ai-tech-rss",
-          "source_group": "news",
-          "source_type": "commentary",
-          "trust_tier": "P1",
-          "published_at": "2026-06-02",
-          "summary": "Reuters 标题显示，特朗普政府计划要求美国 AI 公司自愿提交模型接受网络安全测试；该事件的重点是模型安全评估从企业自测进入政府牵头验证语境。",
-          "key_points": [
-            "新闻事实：Reuters 标题显示，美国政府准备要求美国 AI 公司自愿提交模型接受网络安全测试。",
-            "政策变化：模型安全评估正在从企业自测和自愿披露，扩展到政府牵头的测试与审查语境。",
-            "可信边界：当前站点只拿到聚合标题与摘要入口，需回读 Reuters 原文确认参与公司、测试机构和时间表。"
-          ],
-          "detail_highlights": [
-            "事件主体：Reuters 标题指向美国政府与美国 AI 公司之间的自愿模型提交和网络安全测试安排。",
-            "变化重点：安全测试从企业内部红队、第三方测评和自愿披露，进一步靠近政府牵头的验证框架。",
-            "后续核验：需要回读 Reuters 正文确认测试机构、参与范围、是否覆盖前沿模型和是否会演变为强制性要求。"
-          ],
-          "benchmark_highlights": [],
-          "benchmark_table": [],
-          "image_url": "",
-          "image": null,
-          "image_quality": {
-            "decision": "suppressed",
-            "reason": "source image is a Google News aggregator thumbnail, not an article-specific image",
-            "rejected_src": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-          },
-          "related_themes": [
-            "MEE",
-            "个人",
-            "产品",
-            "新闻"
-          ],
-          "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
-          "region": "global",
-          "news_brief": {
-            "label": "新闻要点",
-            "lead": "Reuters 标题显示，特朗普政府计划要求美国 AI 公司自愿提交模型接受网络安全测试；该事件的重点是模型安全评估从企业自测进入政府牵头验证语境。",
-            "bullets": [
-              "Reuters 标题显示，美国政府准备要求美国 AI 公司自愿提交模型接受网络安全测试。",
-              "模型安全评估正在从企业自测和自愿披露，扩展到政府牵头的测试与审查语境。",
-              "当前站点只拿到聚合标题与摘要入口，需回读 Reuters 原文确认参与公司、测试机构和时间表。",
-              "Reuters 标题指向美国政府与美国 AI 公司之间的自愿模型提交和网络安全测试安排。",
-              "变化重点：安全测试从企业内部红队、第三方测评和自愿披露，进一步靠近政府牵头的验证框架。"
-            ],
-            "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
-          }
-        },
-        {
-          "title": "Jun 2, 2026 Announcements Expanding Project Glasswing",
-          "url": "https://www.anthropic.com/news/expanding-project-glasswing",
-          "source_name": "Anthropic official newsroom",
-          "source_id": "anthropic-news-page",
+          "title": "The latest AI news we announced in May 2026",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-may-2026/",
+          "source_name": "Google AI blog feed",
+          "source_id": "google-ai-blog-rss",
           "source_group": "news",
           "source_type": "commentary",
           "trust_tier": "P0",
-          "published_at": "unknown",
-          "summary": "Anthropic 扩展 Project Glasswing，覆盖教育、非营利、研究和社会影响场景；该新闻的重点是模型公司开始把安全、教育使用和公共利益部署作为产品发布之外的长期工程。",
+          "published_at": "2026-06-05",
+          "summary": "Here are Google’s latest AI updates from May 2026",
           "key_points": [
-            "新闻事实：Anthropic 扩展 Project Glasswing，聚焦教育、非营利、研究和社会影响场景。",
-            "治理变化：模型公司正在把安全、教育使用和社会部署项目作为产品发布之外的公共叙事。",
-            "可信边界：适合作为 AI 治理和部署边界线索，实际效果需看项目参与方、产出和后续评估。"
+            "新闻事实：Here are Google’s latest AI updates from May 2026。",
+            "来源脉络：该条来自 公开来源，标题指向“The latest AI news we announced in May 2026”。",
+            "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
           ],
           "detail_highlights": [
-            "事件主体：Anthropic 扩展 Project Glasswing，覆盖教育、非营利、研究和社会影响场景。",
-            "治理细节：模型公司正在把社会部署、安全教育和公共利益项目放到产品发布之外的长期叙事中。",
-            "后续核验：需要关注参与组织、实际资助/支持形式、项目产出和后续评估，而不是只记录项目名称。"
+            "新闻事实：Here are Google’s latest AI updates from May 2026。",
+            "来源脉络：该条来自 公开来源，标题指向“The latest AI news we announced in May 2026”。",
+            "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
           ],
           "benchmark_highlights": [],
           "benchmark_table": [],
-          "image_url": "https://cdn.sanity.io/images/4zrzovbb/website/19e93d85e033d3f992b78cbce2c5a3f60709bd3b-3840x2160.jpg",
+          "image_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/May_AI_Recap_still.max-600x600.format-webp.webp",
           "image": {
-            "src": "https://cdn.sanity.io/images/4zrzovbb/website/19e93d85e033d3f992b78cbce2c5a3f60709bd3b-3840x2160.jpg",
-            "alt": "Jun 2, 2026 Announcements Expanding Project Glasswing 原始来源图片",
+            "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/May_AI_Recap_still.max-600x600.format-webp.webp",
+            "alt": "The latest AI news we announced in May 2026 原始来源图片",
             "origin": "source"
           },
           "image_quality": {
@@ -7549,36 +7539,84 @@
           "region": "global",
           "news_brief": {
             "label": "新闻要点",
-            "lead": "Anthropic 扩展 Project Glasswing，覆盖教育、非营利、研究和社会影响场景；该新闻的重点是模型公司开始把安全、教育使用和公共利益部署作为产品发布之外的长期工程。",
+            "lead": "Here are Google’s latest AI updates from May 2026",
             "bullets": [
-              "Anthropic 扩展 Project Glasswing，聚焦教育、非营利、研究和社会影响场景。",
-              "模型公司正在把安全、教育使用和社会部署项目作为产品发布之外的公共叙事。",
-              "适合作为 AI 治理和部署边界线索，实际效果需看项目参与方、产出和后续评估。",
-              "Anthropic 扩展 Project Glasswing，覆盖教育、非营利、研究和社会影响场景。",
-              "治理细节：模型公司正在把社会部署、安全教育和公共利益项目放到产品发布之外的长期叙事中。"
+              "Here are Google’s latest AI updates from May 2026。",
+              "Here are Google’s latest AI updates from May 2026"
             ],
             "source_note": "官方或准一手来源，可用于校准事实与能力边界；仍需核对发布时间、上下文和实际可用范围。"
           }
         },
         {
-          "title": "Microsoft teases new era of AI-driven devices at annual developer conference - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNd2hudE1XOEVGajhxeFBhMXZBbDRYTHJieG1waXZLRG85S3lNSGFKWnVCQnNLWnd0RmNsZjBGcFoxQlhqR3l5T1A5Ni02UU42SnRZUEJ5WWJMMUJPTWdBVjV2SW5NQ0NUQ25JWURYSEVJdmFTMGlGX2M3VHpWLUs2MG5MeFh4aUJrcjk4OG16OHk3S0tUSW9JUW5jR0JrWU9HRUNJcFpqcVdxVXFmR0wwOEIyODNESk5HWUE?oc=5",
+          "title": "Thousand Token Wood: shipping a multi-agent economy on a 3B model",
+          "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim",
+          "source_name": "Hugging Face blog feed",
+          "source_id": "huggingface-blog-rss",
+          "source_group": "news",
+          "source_type": "commentary",
+          "trust_tier": "P1",
+          "published_at": "2026-06-05",
+          "summary": "公开来源 报道，Thousand Token Wood: shipping a multi-agent economy on a 3B model。",
+          "key_points": [
+            "新闻事实：公开来源 报道，Thousand Token Wood: shipping a multi-agent economy on a 3B model。",
+            "来源脉络：该条来自 公开来源，标题指向“Thousand Token Wood: shipping a multi-agent economy on a 3B model”。",
+            "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+          ],
+          "detail_highlights": [
+            "产业叙事：报道把国产 GPU、Agent、终端生态和具身智能放在同一套基础设施故事里。",
+            "机会线索：国内 AI 基础设施不再只是算力供给，也在向软件栈、应用场景和测评体系延伸。",
+            "可信边界：企业披露数据和媒体总结需要结合官方文档、客户案例和第三方测试校准。"
+          ],
+          "benchmark_highlights": [],
+          "benchmark_table": [],
+          "image_url": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/build-small-hackathon/thousand-token-wood-sim.png",
+          "image": {
+            "src": "https://cdn-thumbnails.huggingface.co/social-thumbnails/blog/build-small-hackathon/thousand-token-wood-sim.png",
+            "alt": "Thousand Token Wood: shipping a multi-agent economy on a 3B model 原始来源图片",
+            "origin": "source"
+          },
+          "image_quality": {
+            "decision": "accepted"
+          },
+          "related_themes": [
+            "MEE",
+            "个人",
+            "产品",
+            "新闻"
+          ],
+          "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+          "region": "global",
+          "news_brief": {
+            "label": "新闻要点",
+            "lead": "公开来源 报道，Thousand Token Wood: shipping a multi-agent economy on a 3B model。",
+            "bullets": [
+              "公开来源 报道，Thousand Token Wood: shipping a multi-agent economy on a 3B model。",
+              "报道把国产 GPU、Agent、终端生态和具身智能放在同一套基础设施故事里。",
+              "国内 AI 基础设施不再只是算力供给，也在向软件栈、应用场景和测评体系延伸。",
+              "企业披露数据和媒体总结需要结合官方文档、客户案例和第三方测试校准。"
+            ],
+            "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+          }
+        },
+        {
+          "title": "Japan could end up an 'AI colony' if it falls behind, digital minister warns - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNT0tsNGx5MmtYTGNpT2RxdkU2dEcyYzU2dU5MdGpRMVhVTzhWaHRGQWx6SmpOcjIyaW1aRDlXUjI5dndobV9zdV9ocGR1bU9nTzFJYW1RaWJsb3pJelBIcG4xU0tONEYyQnhZNUtBZmxMWDBKYWJJZlhTcmgxN2JPX2lHYWI5d0wzeE5ZMWNGS2RMclk2WTRaYk44T3FWYko0Z1dnUlN0dG9sdmIxWndqZzVOS0ZLOEFmd0tHSlNPaXBfSmtmOTQ0YW1iLV8?oc=5",
           "source_name": "Reuters AI and technology news surfaced through Google News RSS",
           "source_id": "reuters-ai-tech-rss",
           "source_group": "news",
           "source_type": "commentary",
           "trust_tier": "P1",
-          "published_at": "2026-06-02",
-          "summary": "Reuters 标题显示，Microsoft 在年度开发者大会上预告 AI-driven devices 新阶段；该事件的重点是 AI 能力从软件助手继续进入设备、硬件交互和开发者生态。",
+          "published_at": "2026-06-05",
+          "summary": "Reuters 报道，Japan could end up an 'AI colony' if it falls behind, digital minister warns - Reuters。",
           "key_points": [
-            "新闻事实：Reuters 标题显示，Microsoft 在年度开发者大会上预告 AI-driven devices 新阶段。",
-            "产品变化：AI 叙事从软件助手继续进入设备形态、操作系统入口和硬件交互链路。",
-            "可信边界：应回读 Microsoft 官方 keynote、开发者文档和 Reuters 正文，区分已发布能力与战略预告。"
+            "新闻事实：Reuters 报道，Japan could end up an 'AI colony' if it falls behind, digital minister warns - Reuters。",
+            "来源脉络：该条来自 Reuters，标题指向“Japan could end up an 'AI colony' if it falls behind, digital minister warns - Reuters”。",
+            "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
           ],
           "detail_highlights": [
-            "事件主体：Microsoft 在年度开发者大会语境中强调 AI-driven devices，重点不是单一应用，而是设备入口和开发者生态。",
-            "产品细节：这类新闻应关注操作系统、硬件、端侧模型、开发者 SDK 和用户交互入口是否出现实质更新。",
-            "后续核验：需要对照 Microsoft 官方 keynote、Build/开发者文档和 Reuters 正文，区分已上线能力、预告能力和概念展示。"
+            "新闻事实：Reuters 报道，Japan could end up an 'AI colony' if it falls behind, digital minister warns - Reuters。",
+            "来源脉络：该条来自 Reuters，标题指向“Japan could end up an 'AI colony' if it falls behind, digital minister warns - Reuters”。",
+            "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
           ],
           "benchmark_highlights": [],
           "benchmark_table": [],
@@ -7599,25 +7637,163 @@
           "region": "global",
           "news_brief": {
             "label": "新闻要点",
-            "lead": "Reuters 标题显示，Microsoft 在年度开发者大会上预告 AI-driven devices 新阶段；该事件的重点是 AI 能力从软件助手继续进入设备、硬件交互和开发者生态。",
+            "lead": "Reuters 报道，Japan could end up an 'AI colony' if it falls behind, digital minister warns - Reuters。",
             "bullets": [
-              "Reuters 标题显示，Microsoft 在年度开发者大会上预告 AI-driven devices 新阶段。",
-              "AI 叙事从软件助手继续进入设备形态、操作系统入口和硬件交互链路。",
-              "应回读 Microsoft 官方 keynote、开发者文档和 Reuters 正文，区分已发布能力与战略预告。",
-              "Microsoft 在年度开发者大会语境中强调 AI-driven devices，重点不是单一应用，而是设备入口和开发者生态。",
-              "这类新闻应关注操作系统、硬件、端侧模型、开发者 SDK 和用户交互入口是否出现实质更新。"
+              "Reuters 报道，Japan could end up an 'AI colony' if it falls behind, digital minister warns - Reuters。",
+              "Reuters 报道，Japan could end up an 'AI colony' if it falls behind, digital minister warns - Reuters"
+            ],
+            "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+          }
+        },
+        {
+          "title": "US says it will speed development and use of AI for national security - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPME5TUTRobTZNTTZ5LTVzM2JRZDBuQl85YjRGV2RTMXZKZXBiMWFBVk1oZERpWm1TWkVnR0NLRjRqZDdaZWVIZ2JpR20yQm9LRElJZTJtT0YweWxCT0pLQXVLRTZYV1dVOFFfd05OeENfVm14NG1PbVNyckFhSU0xN1VMcmFnWGl6QnZTZWRwNjEwbWF3VjBnWHZtcnN0d3Rvd0g2TTA2QlI?oc=5",
+          "source_name": "Reuters AI and technology news surfaced through Google News RSS",
+          "source_id": "reuters-ai-tech-rss",
+          "source_group": "news",
+          "source_type": "commentary",
+          "trust_tier": "P1",
+          "published_at": "2026-06-05",
+          "summary": "Reuters 报道，US says it will speed development and use of AI for national security - Reuters。",
+          "key_points": [
+            "新闻事实：Reuters 报道，US says it will speed development and use of AI for national security - Reuters。",
+            "来源脉络：该条来自 Reuters，标题指向“US says it will speed development and use of AI for national security - Reuters”。",
+            "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+          ],
+          "detail_highlights": [
+            "新闻事实：Reuters 报道，US says it will speed development and use of AI for national security - Reuters。",
+            "来源脉络：该条来自 Reuters，标题指向“US says it will speed development and use of AI for national security - Reuters”。",
+            "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+          ],
+          "benchmark_highlights": [],
+          "benchmark_table": [],
+          "image_url": "",
+          "image": null,
+          "image_quality": {
+            "decision": "suppressed",
+            "reason": "source image is a Google News aggregator thumbnail, not an article-specific image",
+            "rejected_src": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+          },
+          "related_themes": [
+            "MEE",
+            "个人",
+            "产品",
+            "新闻"
+          ],
+          "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+          "region": "global",
+          "news_brief": {
+            "label": "新闻要点",
+            "lead": "Reuters 报道，US says it will speed development and use of AI for national security - Reuters。",
+            "bullets": [
+              "Reuters 报道，US says it will speed development and use of AI for national security - Reuters。",
+              "Reuters 报道，US says it will speed development and use of AI for national security - Reuters"
+            ],
+            "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+          }
+        },
+        {
+          "title": "Trump says his team will 'look into' US taking stake in AI companies - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOQjJMRnpPRHVCampPWlVBNGFoOFl1T0N1NG5zdU81cjg4VDFocHhXbXJELWZoaS1Talg3aE5yTFI1b2dmN21TcW5kREdkYTJiS2pVbzBJYWFRbVl3c3ppNGJCdk9XRHA0bTZLRE9PRWF0RmRXdzIwNU1IdzNPeVMtS2VZNHRoamQ5QkNkanJBNF90anAyN19aX0YxZGVTV1JDNjY0QWwydEtER2FZ?oc=5",
+          "source_name": "Reuters AI and technology news surfaced through Google News RSS",
+          "source_id": "reuters-ai-tech-rss",
+          "source_group": "news",
+          "source_type": "commentary",
+          "trust_tier": "P1",
+          "published_at": "2026-06-05",
+          "summary": "Reuters 报道，Trump says his team will 'look into' US taking stake in AI companies - Reuters。",
+          "key_points": [
+            "新闻事实：Reuters 报道，Trump says his team will 'look into' US taking stake in AI companies - Reuters。",
+            "来源脉络：该条来自 Reuters，标题指向“Trump says his team will 'look into' US taking stake in AI companies - Reuters”。",
+            "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+          ],
+          "detail_highlights": [
+            "新闻事实：Reuters 报道，Trump says his team will 'look into' US taking stake in AI companies - Reuters。",
+            "来源脉络：该条来自 Reuters，标题指向“Trump says his team will 'look into' US taking stake in AI companies - Reuters”。",
+            "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+          ],
+          "benchmark_highlights": [],
+          "benchmark_table": [],
+          "image_url": "",
+          "image": null,
+          "image_quality": {
+            "decision": "suppressed",
+            "reason": "source image is a Google News aggregator thumbnail, not an article-specific image",
+            "rejected_src": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+          },
+          "related_themes": [
+            "MEE",
+            "个人",
+            "产品",
+            "新闻"
+          ],
+          "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+          "region": "global",
+          "news_brief": {
+            "label": "新闻要点",
+            "lead": "Reuters 报道，Trump says his team will 'look into' US taking stake in AI companies - Reuters。",
+            "bullets": [
+              "Reuters 报道，Trump says his team will 'look into' US taking stake in AI companies - Reuters。",
+              "Reuters 报道，Trump says his team will 'look into' US taking stake in AI companies - Reuters"
+            ],
+            "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
+          }
+        },
+        {
+          "title": "Exclusive: South Korea labour minister calls on tech firms to share excess AI profits with suppliers, staff - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOZ09wcEJnaW5yR1lxOFRVSVFESnQya1VkSVVmdzIxZkMyWDgxbkRDeHZDMFNSOWtMaWR1WVBjTXd6cG1uR0I3d2JmT3o4VkQ5VHhMYWJQV0EzMEJfWlVJTGJJY240VVhrUkpQcnpTS1RRUnd5NDFWMFVrclgtdzNvaE0yZWJ3bnBSRDR5RW4zbVFtamdnaGt2dDAtSDl6QURzQk9GWnhSSTYza2lEUUJmTnBMMEhzeXU2OVRZRDhvWUhUbzdWZTJtM3JDNmZ6WjRXSnNpZFhR?oc=5",
+          "source_name": "Reuters AI and technology news surfaced through Google News RSS",
+          "source_id": "reuters-ai-tech-rss",
+          "source_group": "news",
+          "source_type": "commentary",
+          "trust_tier": "P1",
+          "published_at": "2026-06-05",
+          "summary": "Reuters 报道，Exclusive: South Korea labour minister calls on tech firms to share excess AI profits with suppliers, staff - Reuters。",
+          "key_points": [
+            "新闻事实：Reuters 报道，Exclusive: South Korea labour minister calls on tech firms to share excess AI profits with suppliers, staff - Reuters。",
+            "来源脉络：该条来自 Reuters，标题指向“Exclusive: South Korea labour minister calls on tech firms to share excess AI profits with suppliers, staff - Reuters”。",
+            "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+          ],
+          "detail_highlights": [
+            "新闻事实：Reuters 报道，Exclusive: South Korea labour minister calls on tech firms to share excess AI profits with suppliers, staff - Reuters。",
+            "来源脉络：该条来自 Reuters，标题指向“Exclusive: South Korea labour minister calls on tech firms to share excess AI profits with suppliers, staff - Reuters”。",
+            "可读边界：当前摘要只保留可核验事实和公开标题，不把聚合页说明或写作原则当作新闻内容。"
+          ],
+          "benchmark_highlights": [],
+          "benchmark_table": [],
+          "image_url": "",
+          "image": null,
+          "image_quality": {
+            "decision": "suppressed",
+            "reason": "source image is a Google News aggregator thumbnail, not an article-specific image",
+            "rejected_src": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+          },
+          "related_themes": [
+            "MEE",
+            "个人",
+            "产品",
+            "新闻"
+          ],
+          "boundary": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。",
+          "region": "global",
+          "news_brief": {
+            "label": "新闻要点",
+            "lead": "Reuters 报道，Exclusive: South Korea labour minister calls on tech firms to share excess AI profits with suppliers, staff - Reuters。",
+            "bullets": [
+              "Reuters 报道，Exclusive: South Korea labour minister calls on tech firms to share excess AI profits with suppliers, staff - Reuters。",
+              "Reuters 报道，Exclusive: South Korea labour minister calls on tech firms to share excess AI profits with suppliers, staff - Reuters"
             ],
             "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
           }
         }
       ],
-      "news_selection_policy": "日报新闻热点按价值密度动态裁剪：综合发布时间、来源可信度、是否一手来源、是否含原始图片、是否影响 AI/产品/政策/市场/MEE 主题、以及中英文区域覆盖，候选池 49 条，最终选择 4 条；不使用固定 12 篇模板。日报额外执行跨日去重：已在前一份日报出现的同 URL/标题热点不再占用今日热点位；真实日期日报还会把明显早于当前窗口的旧新闻留给周报/月报。本次旧闻抑制 37 条。",
+      "news_selection_policy": "日报新闻热点按价值密度动态裁剪：综合发布时间、来源可信度、是否一手来源、是否含原始图片、是否影响 AI/产品/政策/市场/MEE 主题、以及中英文区域覆盖，候选池 49 条，最终选择 6 条；不使用固定 12 篇模板。日报额外执行跨日去重：已在前一份日报出现的同 URL/标题热点不再占用今日热点位；真实日期日报还会把明显早于当前窗口的旧新闻留给周报/月报。本次旧闻抑制 35 条。",
       "news_selection_stats": {
         "candidate_count": 49,
         "deduped_count": 41,
-        "eligible_count": 4,
+        "eligible_count": 6,
         "suppressed_previous_daily": 0,
-        "suppressed_stale_daily": 37
+        "suppressed_stale_daily": 35
       },
       "watch_points": [
         "外部新闻源覆盖：25 条，Reuters、Bloomberg、FT、WSJ、CNBC。",
@@ -7666,7 +7842,7 @@
         ]
       },
       "label": "个人认知与洞察",
-      "title": "个人认知与洞察报告（日报 2026-06-02）",
+      "title": "个人认知与洞察报告（日报 2026-06-05）",
       "kicker": "日报 / 从收藏到能力复利",
       "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：当期材料如何帮助个人把收藏、阅读、判断、练习和复盘连成可持续更新的操作系统。",
       "visual": {
@@ -7999,7 +8175,7 @@
         ]
       },
       "label": "产品与商机",
-      "title": "产品与商机机会报告（日报 2026-06-02）",
+      "title": "产品与商机机会报告（日报 2026-06-05）",
       "kicker": "日报 / 从信号到可验证机会",
       "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：当期哪些公开趋势、开源机制、私域需求和市场变化可以转化为产品假设或商业实验。",
       "visual": {
@@ -8358,7 +8534,7 @@
         ]
       },
       "label": "MEE 本体进化",
-      "title": "MEE 本体进化报告（日报 2026-06-02）",
+      "title": "MEE 本体进化报告（日报 2026-06-05）",
       "kicker": "日报 / 从工具链到治理链",
       "lead": "今日层负责呈现新增 delta、初步判断、待补读问题和当天可执行动作。 本报告回答：MEE 自身的调度、证据、Skill、发布和质量门禁当期有哪些可执行的进化点。",
       "visual": {
@@ -8665,7 +8841,7 @@
         ]
       },
       "label": "参考数据来源",
-      "title": "参考数据来源索引（日报 2026-06-02）",
+      "title": "参考数据来源索引（日报 2026-06-05）",
       "kicker": "日报 / 证据归档与可信边界",
       "lead": "本索引不是洞察报告，而是当期来源、证据簇、可读状态、可信边界和待补读 ledger 的追溯入口。",
       "visual_policy": {
@@ -9135,9 +9311,9 @@
   ],
   "publications": [
     {
-      "id": "daily-2026-06-02",
+      "id": "daily-2026-06-05",
       "cadence": "daily",
-      "title": "日报 2026-06-02 · MEE Insight Hub",
+      "title": "日报 2026-06-05 · MEE Insight Hub",
       "url": "https://superqyl.github.io/mee-insight-hub/",
       "href": "https://superqyl.github.io/mee-insight-hub/",
       "summary": "默认更新 GitHub Pages 静态站内容；Vercel 和 Feishu 只在显式 opt-in 时生成。",
