@@ -1,9 +1,9 @@
 (function () {
   const fallback = {
     meta: {
-      site_name: "MEE Insight Hub",
-      hero_title: "公开情报与私域收藏洞察中枢",
-      current_thesis: "这里汇总每日、每周、每月的新闻热点、个人洞察、产品机会、MEE 自进化和参考来源；先读报告正文，再按证据簇追溯来源。"
+      site_name: "M²E² Data Insight Center",
+      hero_title: "M²E²数据洞察中心",
+      current_thesis: "基于M²E²（神谱多智能体自进化引擎），汇总每日/每周/每月热点数据源，进行全面分析并形成深度洞察"
     },
     report_packs: [],
     reports: []

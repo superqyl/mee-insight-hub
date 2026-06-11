@@ -1,6 +1,6 @@
-# MEE Insight Hub
+# M²E² Data Insight Center
 
-MEE Insight Hub is the public, GitHub Pages-first intelligence site for MEE's recurring insight publications. It organizes daily, weekly, and monthly material into one source-driven hub instead of publishing isolated report pages.
+M²E² Data Insight Center is the public, GitHub Pages-first intelligence site for M²E² recurring insight publications. It organizes daily, weekly, and monthly material into one source-driven hub instead of publishing isolated report pages.
 
 Production URL:
 
