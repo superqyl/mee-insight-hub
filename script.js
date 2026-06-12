@@ -165,7 +165,7 @@
   }
 
   function preferredReportOrder(reports) {
-    const order = ["news", "personal", "product", "mee", "sources"];
+    const order = ["news", "personal", "product", "m2e2", "sources"];
     return (reports || []).slice().sort((a, b) => {
       const ai = order.indexOf(a.track_id);
       const bi = order.indexOf(b.track_id);
@@ -338,7 +338,7 @@
 
     const packBox = el("div", "report-pack-card");
     packBox.append(el("strong", "", pack.title || pack.label || "报告包"));
-    packBox.append(el("p", "", `${pack.summary || ""} 当前周期包含 ${reports.length} 份正文，覆盖新闻热点、个人洞察、产品商机、MEE 进化和参考来源。`));
+    packBox.append(el("p", "", `${pack.summary || ""} 当前周期包含 ${reports.length} 份正文，覆盖新闻热点、个人洞察、产品商机、M²E² 进化和参考来源。`));
     packBox.append(el("span", "report-count", `${reports.length} 份报告正文`));
     summaryTarget?.replaceChildren(packBox);
 

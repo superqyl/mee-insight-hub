@@ -64,4 +64,4 @@ if $WITH_FEISHU; then
   run_cmd "feishu" "$FEISHU_SITE_DEPLOY_CMD"
 fi
 
-echo "Done. Primary site: https://superqyl.github.io/mee-insight-hub/"
+echo "Done. Primary site: https://superqyl.github.io/m2e2-insight-hub/"

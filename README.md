@@ -5,14 +5,14 @@ M²E² Data Insight Center is the public, GitHub Pages-first intelligence site f
 Production URL:
 
 ```text
-https://superqyl.github.io/mee-insight-hub/
+https://superqyl.github.io/m2e2-insight-hub/
 ```
 
 ## Positioning
 
 The site covers five shared tracks:
 
-- MEE self-evolution
+- M²E² self-evolution
 - Personal cognition and insight
 - Product and business opportunities
 - News and market hotspots
@@ -34,21 +34,21 @@ Vercel and Feishu remain available only as explicit opt-in backends:
 
 The default path must not create Feishu documents or Vercel deployments.
 
-## MEE Generation Commands
+## M²E² Generation Commands
 
-From the MEE repository:
+From the M²E² repository:
 
 ```bash
-node tools/mee radar site --cadence daily --from 2026-05-30 --to 2026-05-30 --out /Users/michael/ai/projects/mee-insight-hub
-node tools/mee radar site --cadence weekly --week 2026-W22 --out /Users/michael/ai/projects/mee-insight-hub
-node tools/mee radar site --cadence monthly --month 2026-05 --out /Users/michael/ai/projects/mee-insight-hub
+node tools/m2e2 radar site --cadence daily --from 2026-05-30 --to 2026-05-30 --out /Users/michael/ai/projects/m2e2-insight-hub
+node tools/m2e2 radar site --cadence weekly --week 2026-W22 --out /Users/michael/ai/projects/m2e2-insight-hub
+node tools/m2e2 radar site --cadence monthly --month 2026-05 --out /Users/michael/ai/projects/m2e2-insight-hub
 ```
 
 Optional backends require explicit flags:
 
 ```bash
-node tools/mee radar site --cadence daily --from 2026-05-30 --to 2026-05-30 --out /Users/michael/ai/projects/mee-insight-hub --with-vercel
-node tools/mee radar site --cadence daily --from 2026-05-30 --to 2026-05-30 --out /Users/michael/ai/projects/mee-insight-hub --with-feishu
+node tools/m2e2 radar site --cadence daily --from 2026-05-30 --to 2026-05-30 --out /Users/michael/ai/projects/m2e2-insight-hub --with-vercel
+node tools/m2e2 radar site --cadence daily --from 2026-05-30 --to 2026-05-30 --out /Users/michael/ai/projects/m2e2-insight-hub --with-feishu
 ```
 
 ## Content Model
@@ -103,7 +103,7 @@ open http://127.0.0.1:4173/
 Use:
 
 ```text
-Repository: superqyl/mee-insight-hub
+Repository: superqyl/m2e2-insight-hub
 Branch: main
 Source: root
 ```

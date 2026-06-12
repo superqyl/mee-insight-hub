@@ -10,7 +10,7 @@
       "label": "2026-06-11",
       "display": "日报 2026-06-11"
     },
-    "primary_url": "https://superqyl.github.io/mee-insight-hub/",
+    "primary_url": "https://superqyl.github.io/m2e2-insight-hub/",
     "default_publish_backend": "github-pages",
     "hero_title": "M²E²数据洞察中心",
     "current_thesis": "基于M²E²（神谱多智能体自进化引擎），汇总每日/每周/每月热点数据源，进行全面分析并形成深度洞察",
@@ -153,7 +153,7 @@
               "detail_highlights": [
                 "工程事实：profiling 不是调参附属动作，而是定位训练/推理瓶颈、资源浪费和延迟异常的基础设施。",
                 "系统含义：当 Agent 或模型服务走向生产，trace、性能画像和成本归因会直接影响迭代质量。",
-                "MEE 可吸收点：报告和工具链也应输出可追溯的运行证据，而不是只描述“已生成”。"
+                "M²E² 可吸收点：报告和工具链也应输出可追溯的运行证据，而不是只描述“已生成”。"
               ],
               "benchmark_highlights": [],
               "benchmark_table": [],
@@ -167,7 +167,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -181,7 +181,7 @@
                   "PyTorch profiling 教程更新强化了性能观测基础：当模型和 agent 系统进入工程化阶段，profiling、trace 和瓶颈定位会成为比单次效果展示更重要的能力。",
                   "profiling 不是调参附属动作，而是定位训练/推理瓶颈、资源浪费和延迟异常的基础设施。",
                   "系统含义：当 Agent 或模型服务走向生产，trace、性能画像和成本归因会直接影响迭代质量。",
-                  "MEE 可吸收点：报告和工具链也应输出可追溯的运行证据，而不是只描述“已生成”。"
+                  "M²E² 可吸收点：报告和工具链也应输出可追溯的运行证据，而不是只描述“已生成”。"
                 ],
                 "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
               }
@@ -218,7 +218,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -236,7 +236,7 @@
               }
             }
           ],
-          "news_selection_policy": "日报新闻热点按价值密度动态裁剪：综合发布时间、来源可信度、是否一手来源、是否含原始图片、是否影响 AI/产品/政策/市场/MEE 主题、以及中英文区域覆盖，候选池 49 条，最终选择 2 条；不使用固定 12 篇模板。日报额外执行跨日去重：已在前一份日报出现的同 URL/标题热点不再占用今日热点位；真实日期日报还会把明显早于当前窗口的旧新闻留给周报/月报。本次跨日抑制 3 条。本次旧闻抑制 36 条。",
+          "news_selection_policy": "日报新闻热点按价值密度动态裁剪：综合发布时间、来源可信度、是否一手来源、是否含原始图片、是否影响 AI/产品/政策/市场/M²E² 主题、以及中英文区域覆盖，候选池 49 条，最终选择 2 条；不使用固定 12 篇模板。日报额外执行跨日去重：已在前一份日报出现的同 URL/标题热点不再占用今日热点位；真实日期日报还会把明显早于当前窗口的旧新闻留给周报/月报。本次跨日抑制 3 条。本次旧闻抑制 36 条。",
           "news_selection_stats": {
             "candidate_count": 49,
             "deduped_count": 41,
@@ -248,7 +248,7 @@
             "外部新闻源覆盖：25 条，Reuters、Bloomberg、FT、WSJ、CNBC。",
             "AI 官方与研究源覆盖：7 条，arXiv、Hugging Face、OpenAI、Anthropic、DeepMind。",
             "产品/市场源覆盖：11 条，Product Hunt、Hacker News、Indie Hackers、BetaList、Futurepedia。",
-            "新闻报告只做事实摘要、来源说明和观察重点；是否进入 MEE、个人、产品洞察，由对应分析报告再基于证据簇提炼。"
+            "新闻报告只做事实摘要、来源说明和观察重点；是否进入 M²E²、个人、产品洞察，由对应分析报告再基于证据簇提炼。"
           ],
           "source_summary": [
             "Skill / MCP / Agent 能力市场: 9 个启用来源；可信边界：第三方能力先进入供应链审查，不直接安装或写入母体真源。",
@@ -260,11 +260,11 @@
           "references": [
             {
               "label": "M²E² Data Insight Center GitHub Pages",
-              "url": "https://superqyl.github.io/mee-insight-hub/"
+              "url": "https://superqyl.github.io/m2e2-insight-hub/"
             },
             {
               "label": "M²E² Data Insight Center repository",
-              "url": "https://github.com/superqyl/mee-insight-hub"
+              "url": "https://github.com/superqyl/m2e2-insight-hub"
             },
             {
               "label": "Reuters Technology",
@@ -442,7 +442,7 @@
               "summary": "本周期 开源工程与仓库 覆盖 12 条启用来源，适合作为「个人认知与洞察」的证据簇输入，而不是被固定压缩进模板洞察数量。",
               "sub_insights": [
                 "来源形态：GitHub Trending、GitHub Search、GitHub Topics、Awesome lists。",
-                "主要价值：为 MEE 运行时、Skill 供应链、工程架构和产品实现提供可迁移机制。",
+                "主要价值：为 M²E² 运行时、Skill 供应链、工程架构和产品实现提供可迁移机制。",
                 "可信边界：仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。"
               ],
               "analysis": [
@@ -517,7 +517,7 @@
               "summary": "本周期 新闻、行业与政策 覆盖 25 条启用来源，适合作为「个人认知与洞察」的证据簇输入，而不是被固定压缩进模板洞察数量。",
               "sub_insights": [
                 "来源形态：Reuters、Bloomberg、FT、WSJ。",
-                "主要价值：作为全站共同情报底座，服务 MEE、个人、产品、新闻热点和风险感知五类主题。",
+                "主要价值：作为全站共同情报底座，服务 M²E²、个人、产品、新闻热点和风险感知五类主题。",
                 "可信边界：媒体报道进入趋势层；高影响判断需回到官方公告、一手资料或多源交叉确认。"
               ],
               "analysis": [
@@ -584,11 +584,11 @@
           "references": [
             {
               "label": "M²E² Data Insight Center GitHub Pages",
-              "url": "https://superqyl.github.io/mee-insight-hub/"
+              "url": "https://superqyl.github.io/m2e2-insight-hub/"
             },
             {
               "label": "M²E² Data Insight Center repository",
-              "url": "https://github.com/superqyl/mee-insight-hub"
+              "url": "https://github.com/superqyl/m2e2-insight-hub"
             },
             {
               "label": "Hacker News",
@@ -775,7 +775,7 @@
               "summary": "本周期 开源工程与仓库 覆盖 12 条启用来源，适合作为「产品与商机」的证据簇输入，而不是被固定压缩进模板洞察数量。",
               "sub_insights": [
                 "来源形态：GitHub Trending、GitHub Search、GitHub Topics、Awesome lists。",
-                "主要价值：为 MEE 运行时、Skill 供应链、工程架构和产品实现提供可迁移机制。",
+                "主要价值：为 M²E² 运行时、Skill 供应链、工程架构和产品实现提供可迁移机制。",
                 "可信边界：仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。"
               ],
               "analysis": [
@@ -875,7 +875,7 @@
               "summary": "本周期 新闻、行业与政策 覆盖 25 条启用来源，适合作为「产品与商机」的证据簇输入，而不是被固定压缩进模板洞察数量。",
               "sub_insights": [
                 "来源形态：Reuters、Bloomberg、FT、WSJ。",
-                "主要价值：作为全站共同情报底座，服务 MEE、个人、产品、新闻热点和风险感知五类主题。",
+                "主要价值：作为全站共同情报底座，服务 M²E²、个人、产品、新闻热点和风险感知五类主题。",
                 "可信边界：媒体报道进入趋势层；高影响判断需回到官方公告、一手资料或多源交叉确认。"
               ],
               "analysis": [
@@ -943,11 +943,11 @@
           "references": [
             {
               "label": "M²E² Data Insight Center GitHub Pages",
-              "url": "https://superqyl.github.io/mee-insight-hub/"
+              "url": "https://superqyl.github.io/m2e2-insight-hub/"
             },
             {
               "label": "M²E² Data Insight Center repository",
-              "url": "https://github.com/superqyl/mee-insight-hub"
+              "url": "https://github.com/superqyl/m2e2-insight-hub"
             },
             {
               "label": "Product Hunt",
@@ -969,8 +969,8 @@
           }
         },
         {
-          "id": "daily-mee",
-          "track_id": "mee",
+          "id": "daily-m2e2",
+          "track_id": "m2e2",
           "report_kind": "analysis-insight",
           "report_contract": {
             "id": "analysis-insight",
@@ -1005,7 +1005,7 @@
                 "intelligence-foraging-scheduler capsule"
               ],
               "analysis": [
-                "MEE 的发布链路从 Feishu 文档切到 GitHub Pages，不只是换一个托管后端，而是把默认产物从内部协作文档切换为公开可读、可归档、可版本化的站点。",
+                "M²E² 的发布链路从 Feishu 文档切到 GitHub Pages，不只是换一个托管后端，而是把默认产物从内部协作文档切换为公开可读、可归档、可版本化的站点。",
                 "这要求生成器直接面向站点数据契约工作：报告正文、证据簇、图片资产、时间周期和隐私边界都必须在 JSON 层表达清楚，不能依赖飞书文档作为中间解释层。",
                 "Feishu 和 Vercel 保留为显式 opt-in 后端，可以避免自动化默认生成多套重复产物，也减少后续维护噪音。"
               ],
@@ -1024,7 +1024,7 @@
               ],
               "evidence": [
                 "public/data/site-content.json",
-                "tests/mee-cli.test.mjs",
+                "tests/m2e2-cli.test.mjs",
                 "reader contract"
               ],
               "analysis": [
@@ -1075,7 +1075,7 @@
               ],
               "evidence": [
                 "insight_density_policy",
-                "tests/mee-cli.test.mjs",
+                "tests/m2e2-cli.test.mjs",
                 "source group coverage"
               ],
               "visual": {
@@ -1094,7 +1094,7 @@
               "analysis": [
                 "此前多次退化都不是因为站点完全坏了，而是因为弱模板仍能通过基础测试：有 HTML、有 JSON、有图、有章节。读者发现的问题是能打开但不好读，这要求测试从技术可用转向交付可用。",
                 "报告正文验收至少要覆盖三件事：主报告不是薄卡片，来源索引不是洞察报告，图片不能用错周期或错语义的旧资产。只有这些门禁同时存在，自动化才不容易把旧模板带回来。",
-                "这类 QA 应固化到 MEE 母体，因为它不是某次网页实验的局部要求，而是所有报告型交付的通用质量规则。"
+                "这类 QA 应固化到 M²E² 母体，因为它不是某次网页实验的局部要求，而是所有报告型交付的通用质量规则。"
               ],
               "evidence": [
                 "reader-first contract",
@@ -1117,7 +1117,7 @@
               "analysis": [
                 "旧链路里，Feishu 文档本身承载了很多结构：标题层级、来源摘要、图文布局和表格索引。切到站点直出后，如果不把这些结构迁移到 JSON 数据层，前端只能渲染出漂亮但空泛的壳。",
                 "因此，站点生成器要像正式发布器一样工作，而不是 demo renderer。它需要知道每个报告的类型、周期、洞察、证据、行动和来源索引结构，才能支撑日报、周报、月报长期运行。",
-                "这也是默认关闭 Feishu 的前提：不是不再需要高质量报告，而是高质量报告的第一真源从 Feishu 页面迁移到 MEE 的结构化站点数据。"
+                "这也是默认关闭 Feishu 的前提：不是不再需要高质量报告，而是高质量报告的第一真源从 Feishu 页面迁移到 M²E² 的结构化站点数据。"
               ],
               "evidence": [
                 "GitHub Pages default",
@@ -1134,7 +1134,7 @@
               "summary": "本周期 开源工程与仓库 覆盖 12 条启用来源，适合作为「M²E² 本体进化」的证据簇输入，而不是被固定压缩进模板洞察数量。",
               "sub_insights": [
                 "来源形态：GitHub Trending、GitHub Search、GitHub Topics、Awesome lists。",
-                "主要价值：为 MEE 运行时、Skill 供应链、工程架构和产品实现提供可迁移机制。",
+                "主要价值：为 M²E² 运行时、Skill 供应链、工程架构和产品实现提供可迁移机制。",
                 "可信边界：仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。"
               ],
               "analysis": [
@@ -1209,7 +1209,7 @@
               "summary": "本周期 新闻、行业与政策 覆盖 25 条启用来源，适合作为「M²E² 本体进化」的证据簇输入，而不是被固定压缩进模板洞察数量。",
               "sub_insights": [
                 "来源形态：Reuters、Bloomberg、FT、WSJ。",
-                "主要价值：作为全站共同情报底座，服务 MEE、个人、产品、新闻热点和风险感知五类主题。",
+                "主要价值：作为全站共同情报底座，服务 M²E²、个人、产品、新闻热点和风险感知五类主题。",
                 "可信边界：媒体报道进入趋势层；高影响判断需回到官方公告、一手资料或多源交叉确认。"
               ],
               "analysis": [
@@ -1249,15 +1249,15 @@
           "references": [
             {
               "label": "M²E² Data Insight Center GitHub Pages",
-              "url": "https://superqyl.github.io/mee-insight-hub/"
+              "url": "https://superqyl.github.io/m2e2-insight-hub/"
             },
             {
               "label": "M²E² Data Insight Center repository",
-              "url": "https://github.com/superqyl/mee-insight-hub"
+              "url": "https://github.com/superqyl/m2e2-insight-hub"
             },
             {
               "label": "M²E² repository",
-              "url": "https://github.com/superqyl/mee"
+              "url": "https://github.com/superqyl/m2e2"
             },
             {
               "label": "GitHub Topics: AI agents",
@@ -1316,7 +1316,7 @@
                   "飞书文档"
                 ],
                 "why": "飞书私聊/群聊、微信公众号、飞书文档 代表真实问题感、兴趣偏好和协作上下文；公开报告只保留标题、链接、短摘要和可信边界，私聊正文留在本地 runtime。",
-                "use_for": "可服务主题：MEE、个人、产品、新闻、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
+                "use_for": "可服务主题：M²E²、个人、产品、新闻、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
                 "boundary": "只公开标题、链接、短摘要和可信边界；私聊原文留在本地 runtime。",
                 "trust_tier": "P2/P3"
               },
@@ -1332,7 +1332,7 @@
                   "superqyl starred"
                 ],
                 "why": "GitHub Trending、GitHub Search、GitHub Topics、Awesome lists 能暴露真实工程机制、维护活跃度、目录结构、权限边界和可迁移实现样本；进入洞察前需要深读 README、示例和 issue，而不是只看 star 或标题。",
-                "use_for": "可服务主题：MEE、个人、产品、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
+                "use_for": "可服务主题：M²E²、个人、产品、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
                 "boundary": "仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。",
                 "trust_tier": "P1/P2"
               },
@@ -1346,8 +1346,8 @@
                   "ClawHub",
                   "MCP registries"
                 ],
-                "why": "Anthropic Skills、Claude Code Skills、ClawHub、MCP registries 适合观察能力封装、召回方式、失败模式、权限边界和 eval case 设计，可反哺 MEE Skill 供应链治理与产品化能力市场判断。",
-                "use_for": "可服务主题：MEE、产品、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
+                "why": "Anthropic Skills、Claude Code Skills、ClawHub、MCP registries 适合观察能力封装、召回方式、失败模式、权限边界和 eval case 设计，可反哺 M²E² Skill 供应链治理与产品化能力市场判断。",
+                "use_for": "可服务主题：M²E²、产品、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
                 "boundary": "第三方能力先进入供应链审查，不直接安装或写入母体真源。",
                 "trust_tier": "P1/P3"
               },
@@ -1367,7 +1367,7 @@
                   "NVIDIA"
                 ],
                 "why": "arXiv、Hugging Face、OpenAI、Anthropic 用于校准模型、Agent、工具调用、记忆和评测的能力边界；价值在于方法、实验条件和局限，而不是把论文标题直接转成结论。",
-                "use_for": "可服务主题：MEE、个人、产品、新闻、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
+                "use_for": "可服务主题：M²E²、个人、产品、新闻、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
                 "boundary": "论文和官方博客需要核对方法、实验条件、局限和发布日期，不能把标题当结论。",
                 "trust_tier": "P0/P1"
               },
@@ -1407,7 +1407,7 @@
                   "官方政策源"
                 ],
                 "why": "Reuters、Bloomberg、FT、WSJ 提供外部环境变化、监管风险、市场叙事和行业节奏；同一条新闻可同时影响 M²E² 进化、个人判断、产品机会和风险边界。",
-                "use_for": "可服务主题：MEE、个人、产品、新闻、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
+                "use_for": "可服务主题：M²E²、个人、产品、新闻、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
                 "boundary": "媒体报道进入趋势层；高影响判断需回到官方公告、一手资料或多源交叉确认。",
                 "trust_tier": "P1/P2"
               },
@@ -1465,11 +1465,11 @@
           "references": [
             {
               "label": "M²E² Data Insight Center GitHub Pages",
-              "url": "https://superqyl.github.io/mee-insight-hub/"
+              "url": "https://superqyl.github.io/m2e2-insight-hub/"
             },
             {
               "label": "M²E² Data Insight Center repository",
-              "url": "https://github.com/superqyl/mee-insight-hub"
+              "url": "https://github.com/superqyl/m2e2-insight-hub"
             },
             {
               "label": "arXiv q-fin",
@@ -1553,7 +1553,7 @@
             },
             {
               "title": "安全、治理和公共部署正在进入发布主叙事",
-              "summary": "政府牵头测试、模型公司公共项目和安全叙事开始与产品发布并列出现。新闻摘要应保留事实边界，但这些信号已经足以提示后续产品和 MEE 治理需要更重视验证、权限和责任链。",
+              "summary": "政府牵头测试、模型公司公共项目和安全叙事开始与产品发布并列出现。新闻摘要应保留事实边界，但这些信号已经足以提示后续产品和 M²E² 治理需要更重视验证、权限和责任链。",
               "supporting_items": [
                 "5 ways Google Search can level up your thrift and vintage shopping",
                 "2026 智源大会聚焦 Agent、世界模型、具身智能与真实世界部署",
@@ -1602,7 +1602,7 @@
               "summary": "Anthropic 发布 Claude Opus 4.8：在 Opus 4.7 基础上提升编码、agentic skills、推理和知识工作任务表现；同篇公告还提到 claude.ai 的 effort control、Claude Code 的 Dynamic workflows，以及 Opus 4.8 fast mode 的成本变化。",
               "key_points": [
                 "Claude Opus 4.8 是官方产品发布，不是媒体二次转述。",
-                "Dynamic workflows 是 Claude Code 面向大规模问题处理的新能力，应进入 MEE 与 Agent 工作流能力边界观察。",
+                "Dynamic workflows 是 Claude Code 面向大规模问题处理的新能力，应进入 M²E² 与 Agent 工作流能力边界观察。",
                 "fast mode 成本变化会影响产品侧对高阶模型的调用策略与体验设计。"
               ],
               "image_url": "https://cdn.sanity.io/images/4zrzovbb/website/0eaa0ed2dce9810169112e1c77de2585fcf1f5c2-2880x1620.jpg",
@@ -1612,7 +1612,7 @@
                 "origin": "source"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -1690,7 +1690,7 @@
                 "lead": "Anthropic 于 2026-05-28 发布 Claude Opus 4.8。新闻重点不只是“模型升级”：Claude Code 新增 Dynamic workflows，可规划任务并在单个会话中运行数百个并行 subagents；claude.ai / Cowork 加入 effort control；Messages API 允许在 messages array 中插入 system entries；fast mode 为 2.5 倍速度，且较前代 fast mode 便宜三倍。官方 benchmark 表显示 Opus 4.8 在 SWE-Bench Pro 达 69.2%、OSWorld-Verified 达 83.4%、Finance Agent v2 达 53.9%，但 Terminal-Bench 2.1 仍低于 GPT-5.5 的 78.2%。",
                 "bullets": [
                   "Claude Opus 4.8 是官方产品发布，不是媒体二次转述。",
-                  "Dynamic workflows 是 Claude Code 面向大规模问题处理的新能力，应进入 MEE 与 Agent 工作流能力边界观察。",
+                  "Dynamic workflows 是 Claude Code 面向大规模问题处理的新能力，应进入 M²E² 与 Agent 工作流能力边界观察。",
                   "fast mode 成本变化会影响产品侧对高阶模型的调用策略与体验设计。",
                   "Dynamic workflows：官方描述为 Claude Code 面向大型任务先规划、再并行调度 subagents、最后验证与汇报的工作流能力，重点不只是模型分数，而是 Agent 执行编排能力。",
                   "effort control：claude.ai / Cowork 中新增 effort 控制，说明模型产品正在把“思考成本、响应速度、任务复杂度”显式交给用户或系统配置。"
@@ -1716,7 +1716,7 @@
               "detail_highlights": [
                 "工程事实：profiling 不是调参附属动作，而是定位训练/推理瓶颈、资源浪费和延迟异常的基础设施。",
                 "系统含义：当 Agent 或模型服务走向生产，trace、性能画像和成本归因会直接影响迭代质量。",
-                "MEE 可吸收点：报告和工具链也应输出可追溯的运行证据，而不是只描述“已生成”。"
+                "M²E² 可吸收点：报告和工具链也应输出可追溯的运行证据，而不是只描述“已生成”。"
               ],
               "benchmark_highlights": [],
               "benchmark_table": [],
@@ -1730,7 +1730,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -1744,7 +1744,7 @@
                   "PyTorch profiling 教程更新强化了性能观测基础：当模型和 agent 系统进入工程化阶段，profiling、trace 和瓶颈定位会成为比单次效果展示更重要的能力。",
                   "profiling 不是调参附属动作，而是定位训练/推理瓶颈、资源浪费和延迟异常的基础设施。",
                   "系统含义：当 Agent 或模型服务走向生产，trace、性能画像和成本归因会直接影响迭代质量。",
-                  "MEE 可吸收点：报告和工具链也应输出可追溯的运行证据，而不是只描述“已生成”。"
+                  "M²E² 可吸收点：报告和工具链也应输出可追溯的运行证据，而不是只描述“已生成”。"
                 ],
                 "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
               }
@@ -1767,7 +1767,7 @@
               "detail_highlights": [
                 "发布语境：这组材料来自 Google I/O 相关展示，重点是把 Gemini Omni 与 Gemini 3.5 放进多模态、演示和开发者入口的产品叙事里。",
                 "能力观察：它展示的是交互形态和应用节奏，不能直接等同于可生产部署能力；后续需要区分 demo、可用 API、区域权限与成本。",
-                "对 MEE 的价值：适合用来校准“多模态材料如何转成洞察报告/交互页面”的表达方式，而不是只记录模型名称。"
+                "对 M²E² 的价值：适合用来校准“多模态材料如何转成洞察报告/交互页面”的表达方式，而不是只记录模型名称。"
               ],
               "benchmark_highlights": [],
               "benchmark_table": [],
@@ -1781,7 +1781,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -1832,7 +1832,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -1868,7 +1868,7 @@
               "detail_highlights": [
                 "发布语境：这组材料来自 Google I/O 相关展示，重点是把 Gemini Omni 与 Gemini 3.5 放进多模态、演示和开发者入口的产品叙事里。",
                 "能力观察：它展示的是交互形态和应用节奏，不能直接等同于可生产部署能力；后续需要区分 demo、可用 API、区域权限与成本。",
-                "对 MEE 的价值：适合用来校准“多模态材料如何转成洞察报告/交互页面”的表达方式，而不是只记录模型名称。"
+                "对 M²E² 的价值：适合用来校准“多模态材料如何转成洞察报告/交互页面”的表达方式，而不是只记录模型名称。"
               ],
               "benchmark_highlights": [],
               "benchmark_table": [],
@@ -1882,7 +1882,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -1934,7 +1934,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -1985,7 +1985,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -2034,7 +2034,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -2085,7 +2085,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -2136,7 +2136,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -2185,7 +2185,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -2283,7 +2283,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -2332,7 +2332,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -2381,7 +2381,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -2431,7 +2431,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -2479,7 +2479,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -2510,10 +2510,10 @@
               "key_points": [
                 "这是官方技术/产品材料，不是社区二手摘要。",
                 "关注点不是“OpenAI 有新闻”，而是实时交互能力如何影响 Agent 工作流体验。",
-                "进入产品与 MEE 报告前，应结合具体 API、成本和工程约束复核。"
+                "进入产品与 M²E² 报告前，应结合具体 API、成本和工程约束复核。"
               ],
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "产品",
                 "新闻"
               ],
@@ -2534,7 +2534,7 @@
                 "bullets": [
                   "这是官方技术/产品材料，不是社区二手摘要。",
                   "关注点不是“OpenAI 有新闻”，而是实时交互能力如何影响 Agent 工作流体验。",
-                  "进入产品与 MEE 报告前，应结合具体 API、成本和工程约束复核。",
+                  "进入产品与 M²E² 报告前，应结合具体 API、成本和工程约束复核。",
                   "报道把国产 GPU、Agent、终端生态和具身智能放在同一套基础设施故事里。",
                   "国内 AI 基础设施不再只是算力供给，也在向软件栈、应用场景和测评体系延伸。"
                 ],
@@ -2616,7 +2616,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -2649,7 +2649,7 @@
                 "产业重点：能源行业的大模型落地样本可用于观察国内 B2B AI 的采购、部署和组织路径。"
               ],
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -2709,7 +2709,7 @@
                 "decision": "missing"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -2744,7 +2744,7 @@
                 "观察重点：国内 AI 基础设施叙事正在从算力单点转为算力、软件栈、Agent 场景和测评体系的一体化输出。"
               ],
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "产品",
                 "新闻"
               ],
@@ -2791,7 +2791,7 @@
                 "观察重点：主题从“模型发布”扩展到自主智能体、真实世界部署和安全边界。"
               ],
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -2839,7 +2839,7 @@
                 "行业重点：具身智能竞争正从单点模型转向数据采集、部署、回流、再训练的系统闭环。"
               ],
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -2887,7 +2887,7 @@
                 "产品重点：云厂商正在把 Agent 从模型能力包装为平台、行业方案和开发者生态。"
               ],
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "产品",
                 "新闻"
               ],
@@ -2919,7 +2919,7 @@
               }
             }
           ],
-          "news_selection_policy": "周报新闻热点按价值密度动态裁剪：综合发布时间、来源可信度、是否一手来源、是否含原始图片、是否影响 AI/产品/政策/市场/MEE 主题、以及中英文区域覆盖，候选池 49 条，最终选择 26 条；不使用固定 12 篇模板。周报/月报允许聚合历史高影响事件，但应按主题簇压缩而不是复制日报全文。",
+          "news_selection_policy": "周报新闻热点按价值密度动态裁剪：综合发布时间、来源可信度、是否一手来源、是否含原始图片、是否影响 AI/产品/政策/市场/M²E² 主题、以及中英文区域覆盖，候选池 49 条，最终选择 26 条；不使用固定 12 篇模板。周报/月报允许聚合历史高影响事件，但应按主题簇压缩而不是复制日报全文。",
           "news_selection_stats": {
             "candidate_count": 49,
             "deduped_count": 41,
@@ -2931,7 +2931,7 @@
             "外部新闻源覆盖：25 条，Reuters、Bloomberg、FT、WSJ、CNBC。",
             "AI 官方与研究源覆盖：7 条，arXiv、Hugging Face、OpenAI、Anthropic、DeepMind。",
             "产品/市场源覆盖：11 条，Product Hunt、Hacker News、Indie Hackers、BetaList、Futurepedia。",
-            "新闻报告只做事实摘要、来源说明和观察重点；是否进入 MEE、个人、产品洞察，由对应分析报告再基于证据簇提炼。"
+            "新闻报告只做事实摘要、来源说明和观察重点；是否进入 M²E²、个人、产品洞察，由对应分析报告再基于证据簇提炼。"
           ],
           "source_summary": [
             "Skill / MCP / Agent 能力市场: 9 个启用来源；可信边界：第三方能力先进入供应链审查，不直接安装或写入母体真源。",
@@ -2943,11 +2943,11 @@
           "references": [
             {
               "label": "M²E² Data Insight Center GitHub Pages",
-              "url": "https://superqyl.github.io/mee-insight-hub/"
+              "url": "https://superqyl.github.io/m2e2-insight-hub/"
             },
             {
               "label": "M²E² Data Insight Center repository",
-              "url": "https://github.com/superqyl/mee-insight-hub"
+              "url": "https://github.com/superqyl/m2e2-insight-hub"
             },
             {
               "label": "Reuters Technology",
@@ -3125,7 +3125,7 @@
               "summary": "本周期 开源工程与仓库 覆盖 12 条启用来源，适合作为「个人认知与洞察」的证据簇输入，而不是被固定压缩进模板洞察数量。",
               "sub_insights": [
                 "来源形态：GitHub Trending、GitHub Search、GitHub Topics、Awesome lists。",
-                "主要价值：为 MEE 运行时、Skill 供应链、工程架构和产品实现提供可迁移机制。",
+                "主要价值：为 M²E² 运行时、Skill 供应链、工程架构和产品实现提供可迁移机制。",
                 "可信边界：仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。"
               ],
               "analysis": [
@@ -3200,7 +3200,7 @@
               "summary": "本周期 新闻、行业与政策 覆盖 25 条启用来源，适合作为「个人认知与洞察」的证据簇输入，而不是被固定压缩进模板洞察数量。",
               "sub_insights": [
                 "来源形态：Reuters、Bloomberg、FT、WSJ。",
-                "主要价值：作为全站共同情报底座，服务 MEE、个人、产品、新闻热点和风险感知五类主题。",
+                "主要价值：作为全站共同情报底座，服务 M²E²、个人、产品、新闻热点和风险感知五类主题。",
                 "可信边界：媒体报道进入趋势层；高影响判断需回到官方公告、一手资料或多源交叉确认。"
               ],
               "analysis": [
@@ -3267,11 +3267,11 @@
           "references": [
             {
               "label": "M²E² Data Insight Center GitHub Pages",
-              "url": "https://superqyl.github.io/mee-insight-hub/"
+              "url": "https://superqyl.github.io/m2e2-insight-hub/"
             },
             {
               "label": "M²E² Data Insight Center repository",
-              "url": "https://github.com/superqyl/mee-insight-hub"
+              "url": "https://github.com/superqyl/m2e2-insight-hub"
             },
             {
               "label": "Hacker News",
@@ -3458,7 +3458,7 @@
               "summary": "本周期 开源工程与仓库 覆盖 12 条启用来源，适合作为「产品与商机」的证据簇输入，而不是被固定压缩进模板洞察数量。",
               "sub_insights": [
                 "来源形态：GitHub Trending、GitHub Search、GitHub Topics、Awesome lists。",
-                "主要价值：为 MEE 运行时、Skill 供应链、工程架构和产品实现提供可迁移机制。",
+                "主要价值：为 M²E² 运行时、Skill 供应链、工程架构和产品实现提供可迁移机制。",
                 "可信边界：仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。"
               ],
               "analysis": [
@@ -3558,7 +3558,7 @@
               "summary": "本周期 新闻、行业与政策 覆盖 25 条启用来源，适合作为「产品与商机」的证据簇输入，而不是被固定压缩进模板洞察数量。",
               "sub_insights": [
                 "来源形态：Reuters、Bloomberg、FT、WSJ。",
-                "主要价值：作为全站共同情报底座，服务 MEE、个人、产品、新闻热点和风险感知五类主题。",
+                "主要价值：作为全站共同情报底座，服务 M²E²、个人、产品、新闻热点和风险感知五类主题。",
                 "可信边界：媒体报道进入趋势层；高影响判断需回到官方公告、一手资料或多源交叉确认。"
               ],
               "analysis": [
@@ -3626,11 +3626,11 @@
           "references": [
             {
               "label": "M²E² Data Insight Center GitHub Pages",
-              "url": "https://superqyl.github.io/mee-insight-hub/"
+              "url": "https://superqyl.github.io/m2e2-insight-hub/"
             },
             {
               "label": "M²E² Data Insight Center repository",
-              "url": "https://github.com/superqyl/mee-insight-hub"
+              "url": "https://github.com/superqyl/m2e2-insight-hub"
             },
             {
               "label": "Product Hunt",
@@ -3652,8 +3652,8 @@
           }
         },
         {
-          "id": "weekly-mee",
-          "track_id": "mee",
+          "id": "weekly-m2e2",
+          "track_id": "m2e2",
           "report_kind": "analysis-insight",
           "report_contract": {
             "id": "analysis-insight",
@@ -3688,7 +3688,7 @@
                 "intelligence-foraging-scheduler capsule"
               ],
               "analysis": [
-                "MEE 的发布链路从 Feishu 文档切到 GitHub Pages，不只是换一个托管后端，而是把默认产物从内部协作文档切换为公开可读、可归档、可版本化的站点。",
+                "M²E² 的发布链路从 Feishu 文档切到 GitHub Pages，不只是换一个托管后端，而是把默认产物从内部协作文档切换为公开可读、可归档、可版本化的站点。",
                 "这要求生成器直接面向站点数据契约工作：报告正文、证据簇、图片资产、时间周期和隐私边界都必须在 JSON 层表达清楚，不能依赖飞书文档作为中间解释层。",
                 "Feishu 和 Vercel 保留为显式 opt-in 后端，可以避免自动化默认生成多套重复产物，也减少后续维护噪音。"
               ],
@@ -3707,7 +3707,7 @@
               ],
               "evidence": [
                 "public/data/site-content.json",
-                "tests/mee-cli.test.mjs",
+                "tests/m2e2-cli.test.mjs",
                 "reader contract"
               ],
               "analysis": [
@@ -3758,7 +3758,7 @@
               ],
               "evidence": [
                 "insight_density_policy",
-                "tests/mee-cli.test.mjs",
+                "tests/m2e2-cli.test.mjs",
                 "source group coverage"
               ],
               "visual": {
@@ -3777,7 +3777,7 @@
               "analysis": [
                 "此前多次退化都不是因为站点完全坏了，而是因为弱模板仍能通过基础测试：有 HTML、有 JSON、有图、有章节。读者发现的问题是能打开但不好读，这要求测试从技术可用转向交付可用。",
                 "报告正文验收至少要覆盖三件事：主报告不是薄卡片，来源索引不是洞察报告，图片不能用错周期或错语义的旧资产。只有这些门禁同时存在，自动化才不容易把旧模板带回来。",
-                "这类 QA 应固化到 MEE 母体，因为它不是某次网页实验的局部要求，而是所有报告型交付的通用质量规则。"
+                "这类 QA 应固化到 M²E² 母体，因为它不是某次网页实验的局部要求，而是所有报告型交付的通用质量规则。"
               ],
               "evidence": [
                 "reader-first contract",
@@ -3800,7 +3800,7 @@
               "analysis": [
                 "旧链路里，Feishu 文档本身承载了很多结构：标题层级、来源摘要、图文布局和表格索引。切到站点直出后，如果不把这些结构迁移到 JSON 数据层，前端只能渲染出漂亮但空泛的壳。",
                 "因此，站点生成器要像正式发布器一样工作，而不是 demo renderer。它需要知道每个报告的类型、周期、洞察、证据、行动和来源索引结构，才能支撑日报、周报、月报长期运行。",
-                "这也是默认关闭 Feishu 的前提：不是不再需要高质量报告，而是高质量报告的第一真源从 Feishu 页面迁移到 MEE 的结构化站点数据。"
+                "这也是默认关闭 Feishu 的前提：不是不再需要高质量报告，而是高质量报告的第一真源从 Feishu 页面迁移到 M²E² 的结构化站点数据。"
               ],
               "evidence": [
                 "GitHub Pages default",
@@ -3817,7 +3817,7 @@
               "summary": "本周期 开源工程与仓库 覆盖 12 条启用来源，适合作为「M²E² 本体进化」的证据簇输入，而不是被固定压缩进模板洞察数量。",
               "sub_insights": [
                 "来源形态：GitHub Trending、GitHub Search、GitHub Topics、Awesome lists。",
-                "主要价值：为 MEE 运行时、Skill 供应链、工程架构和产品实现提供可迁移机制。",
+                "主要价值：为 M²E² 运行时、Skill 供应链、工程架构和产品实现提供可迁移机制。",
                 "可信边界：仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。"
               ],
               "analysis": [
@@ -3892,7 +3892,7 @@
               "summary": "本周期 新闻、行业与政策 覆盖 25 条启用来源，适合作为「M²E² 本体进化」的证据簇输入，而不是被固定压缩进模板洞察数量。",
               "sub_insights": [
                 "来源形态：Reuters、Bloomberg、FT、WSJ。",
-                "主要价值：作为全站共同情报底座，服务 MEE、个人、产品、新闻热点和风险感知五类主题。",
+                "主要价值：作为全站共同情报底座，服务 M²E²、个人、产品、新闻热点和风险感知五类主题。",
                 "可信边界：媒体报道进入趋势层；高影响判断需回到官方公告、一手资料或多源交叉确认。"
               ],
               "analysis": [
@@ -3932,15 +3932,15 @@
           "references": [
             {
               "label": "M²E² Data Insight Center GitHub Pages",
-              "url": "https://superqyl.github.io/mee-insight-hub/"
+              "url": "https://superqyl.github.io/m2e2-insight-hub/"
             },
             {
               "label": "M²E² Data Insight Center repository",
-              "url": "https://github.com/superqyl/mee-insight-hub"
+              "url": "https://github.com/superqyl/m2e2-insight-hub"
             },
             {
               "label": "M²E² repository",
-              "url": "https://github.com/superqyl/mee"
+              "url": "https://github.com/superqyl/m2e2"
             },
             {
               "label": "GitHub Topics: AI agents",
@@ -3999,7 +3999,7 @@
                   "飞书文档"
                 ],
                 "why": "飞书私聊/群聊、微信公众号、飞书文档 代表真实问题感、兴趣偏好和协作上下文；公开报告只保留标题、链接、短摘要和可信边界，私聊正文留在本地 runtime。",
-                "use_for": "可服务主题：MEE、个人、产品、新闻、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
+                "use_for": "可服务主题：M²E²、个人、产品、新闻、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
                 "boundary": "只公开标题、链接、短摘要和可信边界；私聊原文留在本地 runtime。",
                 "trust_tier": "P2/P3"
               },
@@ -4015,7 +4015,7 @@
                   "superqyl starred"
                 ],
                 "why": "GitHub Trending、GitHub Search、GitHub Topics、Awesome lists 能暴露真实工程机制、维护活跃度、目录结构、权限边界和可迁移实现样本；进入洞察前需要深读 README、示例和 issue，而不是只看 star 或标题。",
-                "use_for": "可服务主题：MEE、个人、产品、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
+                "use_for": "可服务主题：M²E²、个人、产品、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
                 "boundary": "仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。",
                 "trust_tier": "P1/P2"
               },
@@ -4029,8 +4029,8 @@
                   "ClawHub",
                   "MCP registries"
                 ],
-                "why": "Anthropic Skills、Claude Code Skills、ClawHub、MCP registries 适合观察能力封装、召回方式、失败模式、权限边界和 eval case 设计，可反哺 MEE Skill 供应链治理与产品化能力市场判断。",
-                "use_for": "可服务主题：MEE、产品、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
+                "why": "Anthropic Skills、Claude Code Skills、ClawHub、MCP registries 适合观察能力封装、召回方式、失败模式、权限边界和 eval case 设计，可反哺 M²E² Skill 供应链治理与产品化能力市场判断。",
+                "use_for": "可服务主题：M²E²、产品、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
                 "boundary": "第三方能力先进入供应链审查，不直接安装或写入母体真源。",
                 "trust_tier": "P1/P3"
               },
@@ -4050,7 +4050,7 @@
                   "NVIDIA"
                 ],
                 "why": "arXiv、Hugging Face、OpenAI、Anthropic 用于校准模型、Agent、工具调用、记忆和评测的能力边界；价值在于方法、实验条件和局限，而不是把论文标题直接转成结论。",
-                "use_for": "可服务主题：MEE、个人、产品、新闻、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
+                "use_for": "可服务主题：M²E²、个人、产品、新闻、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
                 "boundary": "论文和官方博客需要核对方法、实验条件、局限和发布日期，不能把标题当结论。",
                 "trust_tier": "P0/P1"
               },
@@ -4090,7 +4090,7 @@
                   "官方政策源"
                 ],
                 "why": "Reuters、Bloomberg、FT、WSJ 提供外部环境变化、监管风险、市场叙事和行业节奏；同一条新闻可同时影响 M²E² 进化、个人判断、产品机会和风险边界。",
-                "use_for": "可服务主题：MEE、个人、产品、新闻、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
+                "use_for": "可服务主题：M²E²、个人、产品、新闻、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
                 "boundary": "媒体报道进入趋势层；高影响判断需回到官方公告、一手资料或多源交叉确认。",
                 "trust_tier": "P1/P2"
               },
@@ -4148,11 +4148,11 @@
           "references": [
             {
               "label": "M²E² Data Insight Center GitHub Pages",
-              "url": "https://superqyl.github.io/mee-insight-hub/"
+              "url": "https://superqyl.github.io/m2e2-insight-hub/"
             },
             {
               "label": "M²E² Data Insight Center repository",
-              "url": "https://github.com/superqyl/mee-insight-hub"
+              "url": "https://github.com/superqyl/m2e2-insight-hub"
             },
             {
               "label": "arXiv q-fin",
@@ -4267,7 +4267,7 @@
             },
             {
               "title": "安全、治理和公共部署正在进入发布主叙事",
-              "summary": "政府牵头测试、模型公司公共项目和安全叙事开始与产品发布并列出现。新闻摘要应保留事实边界，但这些信号已经足以提示后续产品和 MEE 治理需要更重视验证、权限和责任链。",
+              "summary": "政府牵头测试、模型公司公共项目和安全叙事开始与产品发布并列出现。新闻摘要应保留事实边界，但这些信号已经足以提示后续产品和 M²E² 治理需要更重视验证、权限和责任链。",
               "supporting_items": [
                 "5 ways Google Search can level up your thrift and vintage shopping",
                 "Jun 2, 2026 Announcements Expanding Project Glasswing",
@@ -4317,7 +4317,7 @@
               "summary": "Anthropic 发布 Claude Opus 4.8：在 Opus 4.7 基础上提升编码、agentic skills、推理和知识工作任务表现；同篇公告还提到 claude.ai 的 effort control、Claude Code 的 Dynamic workflows，以及 Opus 4.8 fast mode 的成本变化。",
               "key_points": [
                 "Claude Opus 4.8 是官方产品发布，不是媒体二次转述。",
-                "Dynamic workflows 是 Claude Code 面向大规模问题处理的新能力，应进入 MEE 与 Agent 工作流能力边界观察。",
+                "Dynamic workflows 是 Claude Code 面向大规模问题处理的新能力，应进入 M²E² 与 Agent 工作流能力边界观察。",
                 "fast mode 成本变化会影响产品侧对高阶模型的调用策略与体验设计。"
               ],
               "image_url": "https://cdn.sanity.io/images/4zrzovbb/website/0eaa0ed2dce9810169112e1c77de2585fcf1f5c2-2880x1620.jpg",
@@ -4327,7 +4327,7 @@
                 "origin": "source"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -4405,7 +4405,7 @@
                 "lead": "Anthropic 于 2026-05-28 发布 Claude Opus 4.8。新闻重点不只是“模型升级”：Claude Code 新增 Dynamic workflows，可规划任务并在单个会话中运行数百个并行 subagents；claude.ai / Cowork 加入 effort control；Messages API 允许在 messages array 中插入 system entries；fast mode 为 2.5 倍速度，且较前代 fast mode 便宜三倍。官方 benchmark 表显示 Opus 4.8 在 SWE-Bench Pro 达 69.2%、OSWorld-Verified 达 83.4%、Finance Agent v2 达 53.9%，但 Terminal-Bench 2.1 仍低于 GPT-5.5 的 78.2%。",
                 "bullets": [
                   "Claude Opus 4.8 是官方产品发布，不是媒体二次转述。",
-                  "Dynamic workflows 是 Claude Code 面向大规模问题处理的新能力，应进入 MEE 与 Agent 工作流能力边界观察。",
+                  "Dynamic workflows 是 Claude Code 面向大规模问题处理的新能力，应进入 M²E² 与 Agent 工作流能力边界观察。",
                   "fast mode 成本变化会影响产品侧对高阶模型的调用策略与体验设计。",
                   "Dynamic workflows：官方描述为 Claude Code 面向大型任务先规划、再并行调度 subagents、最后验证与汇报的工作流能力，重点不只是模型分数，而是 Agent 执行编排能力。",
                   "effort control：claude.ai / Cowork 中新增 effort 控制，说明模型产品正在把“思考成本、响应速度、任务复杂度”显式交给用户或系统配置。"
@@ -4431,7 +4431,7 @@
               "detail_highlights": [
                 "工程事实：profiling 不是调参附属动作，而是定位训练/推理瓶颈、资源浪费和延迟异常的基础设施。",
                 "系统含义：当 Agent 或模型服务走向生产，trace、性能画像和成本归因会直接影响迭代质量。",
-                "MEE 可吸收点：报告和工具链也应输出可追溯的运行证据，而不是只描述“已生成”。"
+                "M²E² 可吸收点：报告和工具链也应输出可追溯的运行证据，而不是只描述“已生成”。"
               ],
               "benchmark_highlights": [],
               "benchmark_table": [],
@@ -4445,7 +4445,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -4459,7 +4459,7 @@
                   "PyTorch profiling 教程更新强化了性能观测基础：当模型和 agent 系统进入工程化阶段，profiling、trace 和瓶颈定位会成为比单次效果展示更重要的能力。",
                   "profiling 不是调参附属动作，而是定位训练/推理瓶颈、资源浪费和延迟异常的基础设施。",
                   "系统含义：当 Agent 或模型服务走向生产，trace、性能画像和成本归因会直接影响迭代质量。",
-                  "MEE 可吸收点：报告和工具链也应输出可追溯的运行证据，而不是只描述“已生成”。"
+                  "M²E² 可吸收点：报告和工具链也应输出可追溯的运行证据，而不是只描述“已生成”。"
                 ],
                 "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
               }
@@ -4482,7 +4482,7 @@
               "detail_highlights": [
                 "发布语境：这组材料来自 Google I/O 相关展示，重点是把 Gemini Omni 与 Gemini 3.5 放进多模态、演示和开发者入口的产品叙事里。",
                 "能力观察：它展示的是交互形态和应用节奏，不能直接等同于可生产部署能力；后续需要区分 demo、可用 API、区域权限与成本。",
-                "对 MEE 的价值：适合用来校准“多模态材料如何转成洞察报告/交互页面”的表达方式，而不是只记录模型名称。"
+                "对 M²E² 的价值：适合用来校准“多模态材料如何转成洞察报告/交互页面”的表达方式，而不是只记录模型名称。"
               ],
               "benchmark_highlights": [],
               "benchmark_table": [],
@@ -4496,7 +4496,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -4547,7 +4547,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -4583,7 +4583,7 @@
               "detail_highlights": [
                 "发布语境：这组材料来自 Google I/O 相关展示，重点是把 Gemini Omni 与 Gemini 3.5 放进多模态、演示和开发者入口的产品叙事里。",
                 "能力观察：它展示的是交互形态和应用节奏，不能直接等同于可生产部署能力；后续需要区分 demo、可用 API、区域权限与成本。",
-                "对 MEE 的价值：适合用来校准“多模态材料如何转成洞察报告/交互页面”的表达方式，而不是只记录模型名称。"
+                "对 M²E² 的价值：适合用来校准“多模态材料如何转成洞察报告/交互页面”的表达方式，而不是只记录模型名称。"
               ],
               "benchmark_highlights": [],
               "benchmark_table": [],
@@ -4597,7 +4597,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -4649,7 +4649,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -4700,7 +4700,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -4749,7 +4749,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -4800,7 +4800,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -4851,7 +4851,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -4900,7 +4900,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -4998,7 +4998,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -5047,7 +5047,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -5096,7 +5096,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -5146,7 +5146,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -5194,7 +5194,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -5225,10 +5225,10 @@
               "key_points": [
                 "这是官方技术/产品材料，不是社区二手摘要。",
                 "关注点不是“OpenAI 有新闻”，而是实时交互能力如何影响 Agent 工作流体验。",
-                "进入产品与 MEE 报告前，应结合具体 API、成本和工程约束复核。"
+                "进入产品与 M²E² 报告前，应结合具体 API、成本和工程约束复核。"
               ],
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "产品",
                 "新闻"
               ],
@@ -5249,7 +5249,7 @@
                 "bullets": [
                   "这是官方技术/产品材料，不是社区二手摘要。",
                   "关注点不是“OpenAI 有新闻”，而是实时交互能力如何影响 Agent 工作流体验。",
-                  "进入产品与 MEE 报告前，应结合具体 API、成本和工程约束复核。",
+                  "进入产品与 M²E² 报告前，应结合具体 API、成本和工程约束复核。",
                   "报道把国产 GPU、Agent、终端生态和具身智能放在同一套基础设施故事里。",
                   "国内 AI 基础设施不再只是算力供给，也在向软件栈、应用场景和测评体系延伸。"
                 ],
@@ -5331,7 +5331,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -5380,7 +5380,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -5418,7 +5418,7 @@
               "detail_highlights": [
                 "发布语境：这组材料来自 Google I/O 相关展示，重点是把 Gemini Omni 与 Gemini 3.5 放进多模态、演示和开发者入口的产品叙事里。",
                 "能力观察：它展示的是交互形态和应用节奏，不能直接等同于可生产部署能力；后续需要区分 demo、可用 API、区域权限与成本。",
-                "对 MEE 的价值：适合用来校准“多模态材料如何转成洞察报告/交互页面”的表达方式，而不是只记录模型名称。"
+                "对 M²E² 的价值：适合用来校准“多模态材料如何转成洞察报告/交互页面”的表达方式，而不是只记录模型名称。"
               ],
               "benchmark_highlights": [],
               "benchmark_table": [],
@@ -5432,7 +5432,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -5484,7 +5484,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -5532,7 +5532,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -5581,7 +5581,7 @@
                 "decision": "accepted"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -5629,7 +5629,7 @@
                 "rejected_src": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -5676,7 +5676,7 @@
                 "rejected_src": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -5723,7 +5723,7 @@
                 "rejected_src": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -5770,7 +5770,7 @@
                 "rejected_src": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -5817,7 +5817,7 @@
                 "rejected_src": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -5850,7 +5850,7 @@
                 "产业重点：能源行业的大模型落地样本可用于观察国内 B2B AI 的采购、部署和组织路径。"
               ],
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -5910,7 +5910,7 @@
                 "decision": "missing"
               },
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -5945,7 +5945,7 @@
                 "观察重点：国内 AI 基础设施叙事正在从算力单点转为算力、软件栈、Agent 场景和测评体系的一体化输出。"
               ],
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "产品",
                 "新闻"
               ],
@@ -5992,7 +5992,7 @@
                 "观察重点：主题从“模型发布”扩展到自主智能体、真实世界部署和安全边界。"
               ],
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -6040,7 +6040,7 @@
                 "行业重点：具身智能竞争正从单点模型转向数据采集、部署、回流、再训练的系统闭环。"
               ],
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "个人",
                 "产品",
                 "新闻"
@@ -6088,7 +6088,7 @@
                 "产品重点：云厂商正在把 Agent 从模型能力包装为平台、行业方案和开发者生态。"
               ],
               "related_themes": [
-                "MEE",
+                "M²E²",
                 "产品",
                 "新闻"
               ],
@@ -6120,7 +6120,7 @@
               }
             }
           ],
-          "news_selection_policy": "月报新闻热点按价值密度动态裁剪：综合发布时间、来源可信度、是否一手来源、是否含原始图片、是否影响 AI/产品/政策/市场/MEE 主题、以及中英文区域覆盖，候选池 49 条，最终选择 36 条；不使用固定 12 篇模板。周报/月报允许聚合历史高影响事件，但应按主题簇压缩而不是复制日报全文。",
+          "news_selection_policy": "月报新闻热点按价值密度动态裁剪：综合发布时间、来源可信度、是否一手来源、是否含原始图片、是否影响 AI/产品/政策/市场/M²E² 主题、以及中英文区域覆盖，候选池 49 条，最终选择 36 条；不使用固定 12 篇模板。周报/月报允许聚合历史高影响事件，但应按主题簇压缩而不是复制日报全文。",
           "news_selection_stats": {
             "candidate_count": 49,
             "deduped_count": 41,
@@ -6132,7 +6132,7 @@
             "外部新闻源覆盖：25 条，Reuters、Bloomberg、FT、WSJ、CNBC。",
             "AI 官方与研究源覆盖：7 条，arXiv、Hugging Face、OpenAI、Anthropic、DeepMind。",
             "产品/市场源覆盖：11 条，Product Hunt、Hacker News、Indie Hackers、BetaList、Futurepedia。",
-            "新闻报告只做事实摘要、来源说明和观察重点；是否进入 MEE、个人、产品洞察，由对应分析报告再基于证据簇提炼。"
+            "新闻报告只做事实摘要、来源说明和观察重点；是否进入 M²E²、个人、产品洞察，由对应分析报告再基于证据簇提炼。"
           ],
           "source_summary": [
             "Skill / MCP / Agent 能力市场: 9 个启用来源；可信边界：第三方能力先进入供应链审查，不直接安装或写入母体真源。",
@@ -6144,11 +6144,11 @@
           "references": [
             {
               "label": "M²E² Data Insight Center GitHub Pages",
-              "url": "https://superqyl.github.io/mee-insight-hub/"
+              "url": "https://superqyl.github.io/m2e2-insight-hub/"
             },
             {
               "label": "M²E² Data Insight Center repository",
-              "url": "https://github.com/superqyl/mee-insight-hub"
+              "url": "https://github.com/superqyl/m2e2-insight-hub"
             },
             {
               "label": "Reuters Technology",
@@ -6326,7 +6326,7 @@
               "summary": "本周期 开源工程与仓库 覆盖 12 条启用来源，适合作为「个人认知与洞察」的证据簇输入，而不是被固定压缩进模板洞察数量。",
               "sub_insights": [
                 "来源形态：GitHub Trending、GitHub Search、GitHub Topics、Awesome lists。",
-                "主要价值：为 MEE 运行时、Skill 供应链、工程架构和产品实现提供可迁移机制。",
+                "主要价值：为 M²E² 运行时、Skill 供应链、工程架构和产品实现提供可迁移机制。",
                 "可信边界：仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。"
               ],
               "analysis": [
@@ -6401,7 +6401,7 @@
               "summary": "本周期 新闻、行业与政策 覆盖 25 条启用来源，适合作为「个人认知与洞察」的证据簇输入，而不是被固定压缩进模板洞察数量。",
               "sub_insights": [
                 "来源形态：Reuters、Bloomberg、FT、WSJ。",
-                "主要价值：作为全站共同情报底座，服务 MEE、个人、产品、新闻热点和风险感知五类主题。",
+                "主要价值：作为全站共同情报底座，服务 M²E²、个人、产品、新闻热点和风险感知五类主题。",
                 "可信边界：媒体报道进入趋势层；高影响判断需回到官方公告、一手资料或多源交叉确认。"
               ],
               "analysis": [
@@ -6468,11 +6468,11 @@
           "references": [
             {
               "label": "M²E² Data Insight Center GitHub Pages",
-              "url": "https://superqyl.github.io/mee-insight-hub/"
+              "url": "https://superqyl.github.io/m2e2-insight-hub/"
             },
             {
               "label": "M²E² Data Insight Center repository",
-              "url": "https://github.com/superqyl/mee-insight-hub"
+              "url": "https://github.com/superqyl/m2e2-insight-hub"
             },
             {
               "label": "Hacker News",
@@ -6659,7 +6659,7 @@
               "summary": "本周期 开源工程与仓库 覆盖 12 条启用来源，适合作为「产品与商机」的证据簇输入，而不是被固定压缩进模板洞察数量。",
               "sub_insights": [
                 "来源形态：GitHub Trending、GitHub Search、GitHub Topics、Awesome lists。",
-                "主要价值：为 MEE 运行时、Skill 供应链、工程架构和产品实现提供可迁移机制。",
+                "主要价值：为 M²E² 运行时、Skill 供应链、工程架构和产品实现提供可迁移机制。",
                 "可信边界：仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。"
               ],
               "analysis": [
@@ -6759,7 +6759,7 @@
               "summary": "本周期 新闻、行业与政策 覆盖 25 条启用来源，适合作为「产品与商机」的证据簇输入，而不是被固定压缩进模板洞察数量。",
               "sub_insights": [
                 "来源形态：Reuters、Bloomberg、FT、WSJ。",
-                "主要价值：作为全站共同情报底座，服务 MEE、个人、产品、新闻热点和风险感知五类主题。",
+                "主要价值：作为全站共同情报底座，服务 M²E²、个人、产品、新闻热点和风险感知五类主题。",
                 "可信边界：媒体报道进入趋势层；高影响判断需回到官方公告、一手资料或多源交叉确认。"
               ],
               "analysis": [
@@ -6827,11 +6827,11 @@
           "references": [
             {
               "label": "M²E² Data Insight Center GitHub Pages",
-              "url": "https://superqyl.github.io/mee-insight-hub/"
+              "url": "https://superqyl.github.io/m2e2-insight-hub/"
             },
             {
               "label": "M²E² Data Insight Center repository",
-              "url": "https://github.com/superqyl/mee-insight-hub"
+              "url": "https://github.com/superqyl/m2e2-insight-hub"
             },
             {
               "label": "Product Hunt",
@@ -6853,8 +6853,8 @@
           }
         },
         {
-          "id": "monthly-mee",
-          "track_id": "mee",
+          "id": "monthly-m2e2",
+          "track_id": "m2e2",
           "report_kind": "analysis-insight",
           "report_contract": {
             "id": "analysis-insight",
@@ -6889,7 +6889,7 @@
                 "intelligence-foraging-scheduler capsule"
               ],
               "analysis": [
-                "MEE 的发布链路从 Feishu 文档切到 GitHub Pages，不只是换一个托管后端，而是把默认产物从内部协作文档切换为公开可读、可归档、可版本化的站点。",
+                "M²E² 的发布链路从 Feishu 文档切到 GitHub Pages，不只是换一个托管后端，而是把默认产物从内部协作文档切换为公开可读、可归档、可版本化的站点。",
                 "这要求生成器直接面向站点数据契约工作：报告正文、证据簇、图片资产、时间周期和隐私边界都必须在 JSON 层表达清楚，不能依赖飞书文档作为中间解释层。",
                 "Feishu 和 Vercel 保留为显式 opt-in 后端，可以避免自动化默认生成多套重复产物，也减少后续维护噪音。"
               ],
@@ -6908,7 +6908,7 @@
               ],
               "evidence": [
                 "public/data/site-content.json",
-                "tests/mee-cli.test.mjs",
+                "tests/m2e2-cli.test.mjs",
                 "reader contract"
               ],
               "analysis": [
@@ -6959,7 +6959,7 @@
               ],
               "evidence": [
                 "insight_density_policy",
-                "tests/mee-cli.test.mjs",
+                "tests/m2e2-cli.test.mjs",
                 "source group coverage"
               ],
               "visual": {
@@ -6978,7 +6978,7 @@
               "analysis": [
                 "此前多次退化都不是因为站点完全坏了，而是因为弱模板仍能通过基础测试：有 HTML、有 JSON、有图、有章节。读者发现的问题是能打开但不好读，这要求测试从技术可用转向交付可用。",
                 "报告正文验收至少要覆盖三件事：主报告不是薄卡片，来源索引不是洞察报告，图片不能用错周期或错语义的旧资产。只有这些门禁同时存在，自动化才不容易把旧模板带回来。",
-                "这类 QA 应固化到 MEE 母体，因为它不是某次网页实验的局部要求，而是所有报告型交付的通用质量规则。"
+                "这类 QA 应固化到 M²E² 母体，因为它不是某次网页实验的局部要求，而是所有报告型交付的通用质量规则。"
               ],
               "evidence": [
                 "reader-first contract",
@@ -7001,7 +7001,7 @@
               "analysis": [
                 "旧链路里，Feishu 文档本身承载了很多结构：标题层级、来源摘要、图文布局和表格索引。切到站点直出后，如果不把这些结构迁移到 JSON 数据层，前端只能渲染出漂亮但空泛的壳。",
                 "因此，站点生成器要像正式发布器一样工作，而不是 demo renderer。它需要知道每个报告的类型、周期、洞察、证据、行动和来源索引结构，才能支撑日报、周报、月报长期运行。",
-                "这也是默认关闭 Feishu 的前提：不是不再需要高质量报告，而是高质量报告的第一真源从 Feishu 页面迁移到 MEE 的结构化站点数据。"
+                "这也是默认关闭 Feishu 的前提：不是不再需要高质量报告，而是高质量报告的第一真源从 Feishu 页面迁移到 M²E² 的结构化站点数据。"
               ],
               "evidence": [
                 "GitHub Pages default",
@@ -7018,7 +7018,7 @@
               "summary": "本周期 开源工程与仓库 覆盖 12 条启用来源，适合作为「M²E² 本体进化」的证据簇输入，而不是被固定压缩进模板洞察数量。",
               "sub_insights": [
                 "来源形态：GitHub Trending、GitHub Search、GitHub Topics、Awesome lists。",
-                "主要价值：为 MEE 运行时、Skill 供应链、工程架构和产品实现提供可迁移机制。",
+                "主要价值：为 M²E² 运行时、Skill 供应链、工程架构和产品实现提供可迁移机制。",
                 "可信边界：仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。"
               ],
               "analysis": [
@@ -7093,7 +7093,7 @@
               "summary": "本周期 新闻、行业与政策 覆盖 25 条启用来源，适合作为「M²E² 本体进化」的证据簇输入，而不是被固定压缩进模板洞察数量。",
               "sub_insights": [
                 "来源形态：Reuters、Bloomberg、FT、WSJ。",
-                "主要价值：作为全站共同情报底座，服务 MEE、个人、产品、新闻热点和风险感知五类主题。",
+                "主要价值：作为全站共同情报底座，服务 M²E²、个人、产品、新闻热点和风险感知五类主题。",
                 "可信边界：媒体报道进入趋势层；高影响判断需回到官方公告、一手资料或多源交叉确认。"
               ],
               "analysis": [
@@ -7133,15 +7133,15 @@
           "references": [
             {
               "label": "M²E² Data Insight Center GitHub Pages",
-              "url": "https://superqyl.github.io/mee-insight-hub/"
+              "url": "https://superqyl.github.io/m2e2-insight-hub/"
             },
             {
               "label": "M²E² Data Insight Center repository",
-              "url": "https://github.com/superqyl/mee-insight-hub"
+              "url": "https://github.com/superqyl/m2e2-insight-hub"
             },
             {
               "label": "M²E² repository",
-              "url": "https://github.com/superqyl/mee"
+              "url": "https://github.com/superqyl/m2e2"
             },
             {
               "label": "GitHub Topics: AI agents",
@@ -7200,7 +7200,7 @@
                   "飞书文档"
                 ],
                 "why": "飞书私聊/群聊、微信公众号、飞书文档 代表真实问题感、兴趣偏好和协作上下文；公开报告只保留标题、链接、短摘要和可信边界，私聊正文留在本地 runtime。",
-                "use_for": "可服务主题：MEE、个人、产品、新闻、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
+                "use_for": "可服务主题：M²E²、个人、产品、新闻、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
                 "boundary": "只公开标题、链接、短摘要和可信边界；私聊原文留在本地 runtime。",
                 "trust_tier": "P2/P3"
               },
@@ -7216,7 +7216,7 @@
                   "superqyl starred"
                 ],
                 "why": "GitHub Trending、GitHub Search、GitHub Topics、Awesome lists 能暴露真实工程机制、维护活跃度、目录结构、权限边界和可迁移实现样本；进入洞察前需要深读 README、示例和 issue，而不是只看 star 或标题。",
-                "use_for": "可服务主题：MEE、个人、产品、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
+                "use_for": "可服务主题：M²E²、个人、产品、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
                 "boundary": "仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。",
                 "trust_tier": "P1/P2"
               },
@@ -7230,8 +7230,8 @@
                   "ClawHub",
                   "MCP registries"
                 ],
-                "why": "Anthropic Skills、Claude Code Skills、ClawHub、MCP registries 适合观察能力封装、召回方式、失败模式、权限边界和 eval case 设计，可反哺 MEE Skill 供应链治理与产品化能力市场判断。",
-                "use_for": "可服务主题：MEE、产品、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
+                "why": "Anthropic Skills、Claude Code Skills、ClawHub、MCP registries 适合观察能力封装、召回方式、失败模式、权限边界和 eval case 设计，可反哺 M²E² Skill 供应链治理与产品化能力市场判断。",
+                "use_for": "可服务主题：M²E²、产品、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
                 "boundary": "第三方能力先进入供应链审查，不直接安装或写入母体真源。",
                 "trust_tier": "P1/P3"
               },
@@ -7251,7 +7251,7 @@
                   "NVIDIA"
                 ],
                 "why": "arXiv、Hugging Face、OpenAI、Anthropic 用于校准模型、Agent、工具调用、记忆和评测的能力边界；价值在于方法、实验条件和局限，而不是把论文标题直接转成结论。",
-                "use_for": "可服务主题：MEE、个人、产品、新闻、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
+                "use_for": "可服务主题：M²E²、个人、产品、新闻、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
                 "boundary": "论文和官方博客需要核对方法、实验条件、局限和发布日期，不能把标题当结论。",
                 "trust_tier": "P0/P1"
               },
@@ -7291,7 +7291,7 @@
                   "官方政策源"
                 ],
                 "why": "Reuters、Bloomberg、FT、WSJ 提供外部环境变化、监管风险、市场叙事和行业节奏；同一条新闻可同时影响 M²E² 进化、个人判断、产品机会和风险边界。",
-                "use_for": "可服务主题：MEE、个人、产品、新闻、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
+                "use_for": "可服务主题：M²E²、个人、产品、新闻、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
                 "boundary": "媒体报道进入趋势层；高影响判断需回到官方公告、一手资料或多源交叉确认。",
                 "trust_tier": "P1/P2"
               },
@@ -7349,11 +7349,11 @@
           "references": [
             {
               "label": "M²E² Data Insight Center GitHub Pages",
-              "url": "https://superqyl.github.io/mee-insight-hub/"
+              "url": "https://superqyl.github.io/m2e2-insight-hub/"
             },
             {
               "label": "M²E² Data Insight Center repository",
-              "url": "https://github.com/superqyl/mee-insight-hub"
+              "url": "https://github.com/superqyl/m2e2-insight-hub"
             },
             {
               "label": "arXiv q-fin",
@@ -7573,7 +7573,7 @@
           "detail_highlights": [
             "工程事实：profiling 不是调参附属动作，而是定位训练/推理瓶颈、资源浪费和延迟异常的基础设施。",
             "系统含义：当 Agent 或模型服务走向生产，trace、性能画像和成本归因会直接影响迭代质量。",
-            "MEE 可吸收点：报告和工具链也应输出可追溯的运行证据，而不是只描述“已生成”。"
+            "M²E² 可吸收点：报告和工具链也应输出可追溯的运行证据，而不是只描述“已生成”。"
           ],
           "benchmark_highlights": [],
           "benchmark_table": [],
@@ -7587,7 +7587,7 @@
             "decision": "accepted"
           },
           "related_themes": [
-            "MEE",
+            "M²E²",
             "个人",
             "产品",
             "新闻"
@@ -7601,7 +7601,7 @@
               "PyTorch profiling 教程更新强化了性能观测基础：当模型和 agent 系统进入工程化阶段，profiling、trace 和瓶颈定位会成为比单次效果展示更重要的能力。",
               "profiling 不是调参附属动作，而是定位训练/推理瓶颈、资源浪费和延迟异常的基础设施。",
               "系统含义：当 Agent 或模型服务走向生产，trace、性能画像和成本归因会直接影响迭代质量。",
-              "MEE 可吸收点：报告和工具链也应输出可追溯的运行证据，而不是只描述“已生成”。"
+              "M²E² 可吸收点：报告和工具链也应输出可追溯的运行证据，而不是只描述“已生成”。"
             ],
             "source_note": "高可信公开来源，可作为事实摘要或趋势入口；用于行动判断前仍需回读原文和交叉验证。"
           }
@@ -7638,7 +7638,7 @@
             "decision": "accepted"
           },
           "related_themes": [
-            "MEE",
+            "M²E²",
             "个人",
             "产品",
             "新闻"
@@ -7656,7 +7656,7 @@
           }
         }
       ],
-      "news_selection_policy": "日报新闻热点按价值密度动态裁剪：综合发布时间、来源可信度、是否一手来源、是否含原始图片、是否影响 AI/产品/政策/市场/MEE 主题、以及中英文区域覆盖，候选池 49 条，最终选择 2 条；不使用固定 12 篇模板。日报额外执行跨日去重：已在前一份日报出现的同 URL/标题热点不再占用今日热点位；真实日期日报还会把明显早于当前窗口的旧新闻留给周报/月报。本次跨日抑制 3 条。本次旧闻抑制 36 条。",
+      "news_selection_policy": "日报新闻热点按价值密度动态裁剪：综合发布时间、来源可信度、是否一手来源、是否含原始图片、是否影响 AI/产品/政策/市场/M²E² 主题、以及中英文区域覆盖，候选池 49 条，最终选择 2 条；不使用固定 12 篇模板。日报额外执行跨日去重：已在前一份日报出现的同 URL/标题热点不再占用今日热点位；真实日期日报还会把明显早于当前窗口的旧新闻留给周报/月报。本次跨日抑制 3 条。本次旧闻抑制 36 条。",
       "news_selection_stats": {
         "candidate_count": 49,
         "deduped_count": 41,
@@ -7668,7 +7668,7 @@
         "外部新闻源覆盖：25 条，Reuters、Bloomberg、FT、WSJ、CNBC。",
         "AI 官方与研究源覆盖：7 条，arXiv、Hugging Face、OpenAI、Anthropic、DeepMind。",
         "产品/市场源覆盖：11 条，Product Hunt、Hacker News、Indie Hackers、BetaList、Futurepedia。",
-        "新闻报告只做事实摘要、来源说明和观察重点；是否进入 MEE、个人、产品洞察，由对应分析报告再基于证据簇提炼。"
+        "新闻报告只做事实摘要、来源说明和观察重点；是否进入 M²E²、个人、产品洞察，由对应分析报告再基于证据簇提炼。"
       ],
       "source_summary": [
         "Skill / MCP / Agent 能力市场: 9 个启用来源；可信边界：第三方能力先进入供应链审查，不直接安装或写入母体真源。",
@@ -7680,11 +7680,11 @@
       "references": [
         {
           "label": "M²E² Data Insight Center GitHub Pages",
-          "url": "https://superqyl.github.io/mee-insight-hub/"
+          "url": "https://superqyl.github.io/m2e2-insight-hub/"
         },
         {
           "label": "M²E² Data Insight Center repository",
-          "url": "https://github.com/superqyl/mee-insight-hub"
+          "url": "https://github.com/superqyl/m2e2-insight-hub"
         },
         {
           "label": "Reuters Technology",
@@ -7862,7 +7862,7 @@
           "summary": "本周期 开源工程与仓库 覆盖 12 条启用来源，适合作为「个人认知与洞察」的证据簇输入，而不是被固定压缩进模板洞察数量。",
           "sub_insights": [
             "来源形态：GitHub Trending、GitHub Search、GitHub Topics、Awesome lists。",
-            "主要价值：为 MEE 运行时、Skill 供应链、工程架构和产品实现提供可迁移机制。",
+            "主要价值：为 M²E² 运行时、Skill 供应链、工程架构和产品实现提供可迁移机制。",
             "可信边界：仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。"
           ],
           "analysis": [
@@ -7937,7 +7937,7 @@
           "summary": "本周期 新闻、行业与政策 覆盖 25 条启用来源，适合作为「个人认知与洞察」的证据簇输入，而不是被固定压缩进模板洞察数量。",
           "sub_insights": [
             "来源形态：Reuters、Bloomberg、FT、WSJ。",
-            "主要价值：作为全站共同情报底座，服务 MEE、个人、产品、新闻热点和风险感知五类主题。",
+            "主要价值：作为全站共同情报底座，服务 M²E²、个人、产品、新闻热点和风险感知五类主题。",
             "可信边界：媒体报道进入趋势层；高影响判断需回到官方公告、一手资料或多源交叉确认。"
           ],
           "analysis": [
@@ -8004,11 +8004,11 @@
       "references": [
         {
           "label": "M²E² Data Insight Center GitHub Pages",
-          "url": "https://superqyl.github.io/mee-insight-hub/"
+          "url": "https://superqyl.github.io/m2e2-insight-hub/"
         },
         {
           "label": "M²E² Data Insight Center repository",
-          "url": "https://github.com/superqyl/mee-insight-hub"
+          "url": "https://github.com/superqyl/m2e2-insight-hub"
         },
         {
           "label": "Hacker News",
@@ -8195,7 +8195,7 @@
           "summary": "本周期 开源工程与仓库 覆盖 12 条启用来源，适合作为「产品与商机」的证据簇输入，而不是被固定压缩进模板洞察数量。",
           "sub_insights": [
             "来源形态：GitHub Trending、GitHub Search、GitHub Topics、Awesome lists。",
-            "主要价值：为 MEE 运行时、Skill 供应链、工程架构和产品实现提供可迁移机制。",
+            "主要价值：为 M²E² 运行时、Skill 供应链、工程架构和产品实现提供可迁移机制。",
             "可信边界：仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。"
           ],
           "analysis": [
@@ -8295,7 +8295,7 @@
           "summary": "本周期 新闻、行业与政策 覆盖 25 条启用来源，适合作为「产品与商机」的证据簇输入，而不是被固定压缩进模板洞察数量。",
           "sub_insights": [
             "来源形态：Reuters、Bloomberg、FT、WSJ。",
-            "主要价值：作为全站共同情报底座，服务 MEE、个人、产品、新闻热点和风险感知五类主题。",
+            "主要价值：作为全站共同情报底座，服务 M²E²、个人、产品、新闻热点和风险感知五类主题。",
             "可信边界：媒体报道进入趋势层；高影响判断需回到官方公告、一手资料或多源交叉确认。"
           ],
           "analysis": [
@@ -8363,11 +8363,11 @@
       "references": [
         {
           "label": "M²E² Data Insight Center GitHub Pages",
-          "url": "https://superqyl.github.io/mee-insight-hub/"
+          "url": "https://superqyl.github.io/m2e2-insight-hub/"
         },
         {
           "label": "M²E² Data Insight Center repository",
-          "url": "https://github.com/superqyl/mee-insight-hub"
+          "url": "https://github.com/superqyl/m2e2-insight-hub"
         },
         {
           "label": "Product Hunt",
@@ -8389,8 +8389,8 @@
       }
     },
     {
-      "id": "daily-mee",
-      "track_id": "mee",
+      "id": "daily-m2e2",
+      "track_id": "m2e2",
       "report_kind": "analysis-insight",
       "report_contract": {
         "id": "analysis-insight",
@@ -8425,7 +8425,7 @@
             "intelligence-foraging-scheduler capsule"
           ],
           "analysis": [
-            "MEE 的发布链路从 Feishu 文档切到 GitHub Pages，不只是换一个托管后端，而是把默认产物从内部协作文档切换为公开可读、可归档、可版本化的站点。",
+            "M²E² 的发布链路从 Feishu 文档切到 GitHub Pages，不只是换一个托管后端，而是把默认产物从内部协作文档切换为公开可读、可归档、可版本化的站点。",
             "这要求生成器直接面向站点数据契约工作：报告正文、证据簇、图片资产、时间周期和隐私边界都必须在 JSON 层表达清楚，不能依赖飞书文档作为中间解释层。",
             "Feishu 和 Vercel 保留为显式 opt-in 后端，可以避免自动化默认生成多套重复产物，也减少后续维护噪音。"
           ],
@@ -8444,7 +8444,7 @@
           ],
           "evidence": [
             "public/data/site-content.json",
-            "tests/mee-cli.test.mjs",
+            "tests/m2e2-cli.test.mjs",
             "reader contract"
           ],
           "analysis": [
@@ -8495,7 +8495,7 @@
           ],
           "evidence": [
             "insight_density_policy",
-            "tests/mee-cli.test.mjs",
+            "tests/m2e2-cli.test.mjs",
             "source group coverage"
           ],
           "visual": {
@@ -8514,7 +8514,7 @@
           "analysis": [
             "此前多次退化都不是因为站点完全坏了，而是因为弱模板仍能通过基础测试：有 HTML、有 JSON、有图、有章节。读者发现的问题是能打开但不好读，这要求测试从技术可用转向交付可用。",
             "报告正文验收至少要覆盖三件事：主报告不是薄卡片，来源索引不是洞察报告，图片不能用错周期或错语义的旧资产。只有这些门禁同时存在，自动化才不容易把旧模板带回来。",
-            "这类 QA 应固化到 MEE 母体，因为它不是某次网页实验的局部要求，而是所有报告型交付的通用质量规则。"
+            "这类 QA 应固化到 M²E² 母体，因为它不是某次网页实验的局部要求，而是所有报告型交付的通用质量规则。"
           ],
           "evidence": [
             "reader-first contract",
@@ -8537,7 +8537,7 @@
           "analysis": [
             "旧链路里，Feishu 文档本身承载了很多结构：标题层级、来源摘要、图文布局和表格索引。切到站点直出后，如果不把这些结构迁移到 JSON 数据层，前端只能渲染出漂亮但空泛的壳。",
             "因此，站点生成器要像正式发布器一样工作，而不是 demo renderer。它需要知道每个报告的类型、周期、洞察、证据、行动和来源索引结构，才能支撑日报、周报、月报长期运行。",
-            "这也是默认关闭 Feishu 的前提：不是不再需要高质量报告，而是高质量报告的第一真源从 Feishu 页面迁移到 MEE 的结构化站点数据。"
+            "这也是默认关闭 Feishu 的前提：不是不再需要高质量报告，而是高质量报告的第一真源从 Feishu 页面迁移到 M²E² 的结构化站点数据。"
           ],
           "evidence": [
             "GitHub Pages default",
@@ -8554,7 +8554,7 @@
           "summary": "本周期 开源工程与仓库 覆盖 12 条启用来源，适合作为「M²E² 本体进化」的证据簇输入，而不是被固定压缩进模板洞察数量。",
           "sub_insights": [
             "来源形态：GitHub Trending、GitHub Search、GitHub Topics、Awesome lists。",
-            "主要价值：为 MEE 运行时、Skill 供应链、工程架构和产品实现提供可迁移机制。",
+            "主要价值：为 M²E² 运行时、Skill 供应链、工程架构和产品实现提供可迁移机制。",
             "可信边界：仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。"
           ],
           "analysis": [
@@ -8629,7 +8629,7 @@
           "summary": "本周期 新闻、行业与政策 覆盖 25 条启用来源，适合作为「M²E² 本体进化」的证据簇输入，而不是被固定压缩进模板洞察数量。",
           "sub_insights": [
             "来源形态：Reuters、Bloomberg、FT、WSJ。",
-            "主要价值：作为全站共同情报底座，服务 MEE、个人、产品、新闻热点和风险感知五类主题。",
+            "主要价值：作为全站共同情报底座，服务 M²E²、个人、产品、新闻热点和风险感知五类主题。",
             "可信边界：媒体报道进入趋势层；高影响判断需回到官方公告、一手资料或多源交叉确认。"
           ],
           "analysis": [
@@ -8669,15 +8669,15 @@
       "references": [
         {
           "label": "M²E² Data Insight Center GitHub Pages",
-          "url": "https://superqyl.github.io/mee-insight-hub/"
+          "url": "https://superqyl.github.io/m2e2-insight-hub/"
         },
         {
           "label": "M²E² Data Insight Center repository",
-          "url": "https://github.com/superqyl/mee-insight-hub"
+          "url": "https://github.com/superqyl/m2e2-insight-hub"
         },
         {
           "label": "M²E² repository",
-          "url": "https://github.com/superqyl/mee"
+          "url": "https://github.com/superqyl/m2e2"
         },
         {
           "label": "GitHub Topics: AI agents",
@@ -8736,7 +8736,7 @@
               "飞书文档"
             ],
             "why": "飞书私聊/群聊、微信公众号、飞书文档 代表真实问题感、兴趣偏好和协作上下文；公开报告只保留标题、链接、短摘要和可信边界，私聊正文留在本地 runtime。",
-            "use_for": "可服务主题：MEE、个人、产品、新闻、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
+            "use_for": "可服务主题：M²E²、个人、产品、新闻、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
             "boundary": "只公开标题、链接、短摘要和可信边界；私聊原文留在本地 runtime。",
             "trust_tier": "P2/P3"
           },
@@ -8752,7 +8752,7 @@
               "superqyl starred"
             ],
             "why": "GitHub Trending、GitHub Search、GitHub Topics、Awesome lists 能暴露真实工程机制、维护活跃度、目录结构、权限边界和可迁移实现样本；进入洞察前需要深读 README、示例和 issue，而不是只看 star 或标题。",
-            "use_for": "可服务主题：MEE、个人、产品、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
+            "use_for": "可服务主题：M²E²、个人、产品、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
             "boundary": "仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。",
             "trust_tier": "P1/P2"
           },
@@ -8766,8 +8766,8 @@
               "ClawHub",
               "MCP registries"
             ],
-            "why": "Anthropic Skills、Claude Code Skills、ClawHub、MCP registries 适合观察能力封装、召回方式、失败模式、权限边界和 eval case 设计，可反哺 MEE Skill 供应链治理与产品化能力市场判断。",
-            "use_for": "可服务主题：MEE、产品、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
+            "why": "Anthropic Skills、Claude Code Skills、ClawHub、MCP registries 适合观察能力封装、召回方式、失败模式、权限边界和 eval case 设计，可反哺 M²E² Skill 供应链治理与产品化能力市场判断。",
+            "use_for": "可服务主题：M²E²、产品、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
             "boundary": "第三方能力先进入供应链审查，不直接安装或写入母体真源。",
             "trust_tier": "P1/P3"
           },
@@ -8787,7 +8787,7 @@
               "NVIDIA"
             ],
             "why": "arXiv、Hugging Face、OpenAI、Anthropic 用于校准模型、Agent、工具调用、记忆和评测的能力边界；价值在于方法、实验条件和局限，而不是把论文标题直接转成结论。",
-            "use_for": "可服务主题：MEE、个人、产品、新闻、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
+            "use_for": "可服务主题：M²E²、个人、产品、新闻、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
             "boundary": "论文和官方博客需要核对方法、实验条件、局限和发布日期，不能把标题当结论。",
             "trust_tier": "P0/P1"
           },
@@ -8827,7 +8827,7 @@
               "官方政策源"
             ],
             "why": "Reuters、Bloomberg、FT、WSJ 提供外部环境变化、监管风险、市场叙事和行业节奏；同一条新闻可同时影响 M²E² 进化、个人判断、产品机会和风险边界。",
-            "use_for": "可服务主题：MEE、个人、产品、新闻、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
+            "use_for": "可服务主题：M²E²、个人、产品、新闻、来源。进入主报告前按可读状态、可信层级、delta 状态和 evidence_cluster_id 归档。",
             "boundary": "媒体报道进入趋势层；高影响判断需回到官方公告、一手资料或多源交叉确认。",
             "trust_tier": "P1/P2"
           },
@@ -8885,11 +8885,11 @@
       "references": [
         {
           "label": "M²E² Data Insight Center GitHub Pages",
-          "url": "https://superqyl.github.io/mee-insight-hub/"
+          "url": "https://superqyl.github.io/m2e2-insight-hub/"
         },
         {
           "label": "M²E² Data Insight Center repository",
-          "url": "https://github.com/superqyl/mee-insight-hub"
+          "url": "https://github.com/superqyl/m2e2-insight-hub"
         },
         {
           "label": "arXiv q-fin",
@@ -8907,9 +8907,9 @@
       "id": "daily-new-signal",
       "cadence": "daily",
       "title": "日报新增信号",
-      "summary": "新增来源先进入 evidence cluster，按 MEE、个人、产品、新闻和来源五类主题共同路由；不可读或付费墙来源只进入索引与待补读。",
+      "summary": "新增来源先进入 evidence cluster，按 M²E²、个人、产品、新闻和来源五类主题共同路由；不可读或付费墙来源只进入索引与待补读。",
       "track_ids": [
-        "mee",
+        "m2e2",
         "personal",
         "product",
         "news",
@@ -8931,13 +8931,13 @@
       "id": "agent-operating-system",
       "name": "Agent 运行时与个人操作系统",
       "track_ids": [
-        "mee",
+        "m2e2",
         "personal",
         "product"
       ],
       "insight_ids": [
         "personal-os",
-        "mee-runtime"
+        "m2e2-runtime"
       ],
       "rollup_rule": "当同一信号同时涉及工具、流程、权限、日志、恢复和训练时，优先聚合为运行时/操作系统主题簇。"
     },
@@ -8945,7 +8945,7 @@
       "id": "source-to-evidence",
       "name": "从来源到证据",
       "track_ids": [
-        "mee",
+        "m2e2",
         "news",
         "sources"
       ],
@@ -8984,7 +8984,7 @@
   ],
   "tracks": [
     {
-      "id": "mee",
+      "id": "m2e2",
       "name": "M²E² 本体进化",
       "label": "M²E² 本体进化",
       "question": "M²E² 的调度、记忆、Skill、证据和发布链路如何变得更稳、更可审计？",
@@ -9128,21 +9128,21 @@
         "量化、金融与市场基础设施"
       ],
       "supports": [
-        "mee",
+        "m2e2",
         "personal",
         "product",
         "news",
         "sources"
       ],
       "tracks": [
-        "MEE",
+        "M²E²",
         "个人",
         "产品",
         "新闻",
         "来源"
       ],
       "method": "每条来源保留标题、链接、发布时间或抓取时间、来源类型、可读状态、关联主题、为什么值得参考和可信边界。",
-      "summary": "所有来源先进入 source-index/evidence cluster，再按 MEE、个人、产品、新闻、来源五类主题共同路由。"
+      "summary": "所有来源先进入 source-index/evidence cluster，再按 M²E²、个人、产品、新闻、来源五类主题共同路由。"
     },
     {
       "id": "cadence-rollup",
@@ -9163,13 +9163,13 @@
         "产品市场"
       ],
       "supports": [
-        "mee",
+        "m2e2",
         "personal",
         "product",
         "news"
       ],
       "tracks": [
-        "MEE",
+        "M²E²",
         "个人",
         "产品",
         "新闻"
@@ -9183,8 +9183,8 @@
       "id": "daily-2026-06-11",
       "cadence": "daily",
       "title": "日报 2026-06-11 · M²E²数据洞察中心",
-      "url": "https://superqyl.github.io/mee-insight-hub/",
-      "href": "https://superqyl.github.io/mee-insight-hub/",
+      "url": "https://superqyl.github.io/m2e2-insight-hub/",
+      "href": "https://superqyl.github.io/m2e2-insight-hub/",
       "summary": "默认更新 GitHub Pages 静态站内容；Vercel 和 Feishu 只在显式 opt-in 时生成。",
       "backend": "github-pages",
       "status": "planned_or_updated"
@@ -9224,7 +9224,7 @@
       "trust_tier": "P2/P3",
       "description": "飞书私聊/群聊转发、微信公众号和飞书文档只公开统计、标题和必要摘要，不公开私聊正文；它们最适合暴露真实问题感。",
       "used_for": [
-        "MEE",
+        "M²E²",
         "个人",
         "产品",
         "新闻",
@@ -9243,12 +9243,12 @@
         "Awesome lists",
         "superqyl starred"
       ],
-      "role": "为 MEE 运行时、Skill 供应链、工程架构和产品实现提供可迁移机制。",
+      "role": "为 M²E² 运行时、Skill 供应链、工程架构和产品实现提供可迁移机制。",
       "trust_boundary": "仓库需要深读 README、示例、目录结构、维护活跃度和权限模型；star 数只作趋势线索。",
       "trust_tier": "P1/P2",
       "description": "GitHub Trending、Search、Topics、Awesome lists 与 superqyl starred 用于发现可迁移工程机制、Skill 供应链模式和产品实现样本。",
       "used_for": [
-        "MEE",
+        "M²E²",
         "个人",
         "产品",
         "来源"
@@ -9270,7 +9270,7 @@
       "trust_tier": "P1/P3",
       "description": "Anthropic Skills、Claude Code Skills、ClawHub、MCP registries 和 Agent skill 市场用于观察能力封装、召回、权限和评测设计。",
       "used_for": [
-        "MEE",
+        "M²E²",
         "产品",
         "来源"
       ]
@@ -9296,7 +9296,7 @@
       "trust_tier": "P0/P1",
       "description": "OpenAI、Anthropic、Google DeepMind、Microsoft Research、Meta AI、Apple ML、NVIDIA、Papers with Code 和 Hugging Face 等用于校准能力边界。",
       "used_for": [
-        "MEE",
+        "M²E²",
         "个人",
         "产品",
         "新闻",
@@ -9346,12 +9346,12 @@
         "机器之心",
         "官方政策源"
       ],
-      "role": "作为全站共同情报底座，服务 MEE、个人、产品、新闻热点和风险感知五类主题。",
+      "role": "作为全站共同情报底座，服务 M²E²、个人、产品、新闻热点和风险感知五类主题。",
       "trust_boundary": "媒体报道进入趋势层；高影响判断需回到官方公告、一手资料或多源交叉确认。",
       "trust_tier": "P1/P2",
       "description": "Reuters、Bloomberg、FT、WSJ、CNBC、BBC、The Verge、TechCrunch、36Kr、财新、机器之心、量子位和政策公开信息用于捕捉外部变化。",
       "used_for": [
-        "MEE",
+        "M²E²",
         "个人",
         "产品",
         "新闻",
